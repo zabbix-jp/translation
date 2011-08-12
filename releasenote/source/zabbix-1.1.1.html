@@ -1,0 +1,100 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.1.1</p>
+
+<p>ZABBIX is an all-in-one 24x7 monitoring solution without high cost. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. The full license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.1.1. The release does not introduce new functionality, it fixes issues some problems of ZABBIX 1.1. The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<p>The release does not fix support of PostgreSQL. Please expect it in ZABBIX 1.1.2</p>
+
+<h3>What's New in 1.1.1</h3>
+
+<h4>ZABBIX Server</h4>
+
+<ul>
+<li>added new parameter StatFile for ZABBIX server</li>
+<li>added startup script for Fedora Core 5</li>
+</ul>
+
+<h4>ZABBIX Agent</h4>
+
+<ul>
+<li>added support of "system.swap.out" for Linux 2.4</li>
+<li>added support of "system.swap.in" for Linux 2.4</li>
+</ul>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>fixed selection popup if return string contains single quote</li>
+<li>fixed incorrect characters in item key selector</li>
+<li>fixed processing of SNMP having non-standard port</li>
+<li>fixed database data to get rid of zero multiplier for disk spaces</li>
+<li>misc fixes for WEB frontend</li>
+<li>fixed srv_status.php: Cannot use object of type CLink ...</li>
+<li>added removal of stat file on agent shutdown</li>
+<li>fixed processing of web.page.get and long data sent by agent</li>
+<li>fixed B64 en-decoding of large data</li>
+<li>fixed problem with undefined PACKETSZ under Mac OS/X</li>
+<li>disabled excessive debug printing for system.run</li>
+<li>umask(022) changed to umask(002)</li>
+<li>added additional symbols for trigger expressions (slash, space)</li>
+<li>fixed permissions of log files when starting as 'root'</li>
+<li>fixed agent crash while evaluating proc.mem[]</li>
+<li>changed type of lastlogsize to long in structure METRIC</li>
+<li>ZABBIX agent to bind even if TIME_WAIT sockets exist</li>
+<li>ZABBIX server to bind even if TIME_WAIT sockets exist</li>
+<li>fixed notification report for Oracle</li>
+<li>fixed displayin of long history of alarms</li>
+<li>fixed value mapping for latest data</li>
+<li>fixed value mapping for screens</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide <a href="http://www.zabbix.com/manual/v1.1/install.php">http://www.zabbix.com/manual/v1.1/install.php</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous releases, no execution of database patches required. See Upgrade Guide <a href="http://www.zabbix.com/manual/v1.1/config_upgrading.php">http://www.zabbix.com/manual/v1.1/config_upgrading.php</a> for full details on upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>RedHat AS2 Linux, Intel, kernel 2.4.x, Oracle 9.2.0.4</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a>.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual <a href="http://www.zabbix.com/manual/v1.1/index.php">http://www.zabbix.com/manual/v1.1/index.php</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

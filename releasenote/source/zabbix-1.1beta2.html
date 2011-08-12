@@ -1,0 +1,103 @@
+<p>This document contains the release notes for ZABBIX version 1.1beta2. The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New</h3>
+
+<h4>Autoregistartion of new hosts</h4>
+
+<p>ZABBIX Server is extented to support automatic registration of new hosts. When ZABBIX Agent tries to contact ZABBIX Server for the first time, and its hostname matches pattern defined in ZABBIX configuration (General->Autoregistration), ZABBIX will automatically add this host along with all necessary information from linked templates.</p>
+
+<h4>New parameter for ZABBIX agent (UNIX only)</h4>
+
+<p>UNIX agent, zabbix_agentd, will show a list of supported and unsupported parameter if started with flag '-p'. This is useful when one wants to get quick list of what's supported on a specific platform.</p>
+
+<h4>Support of repeated notifications</h4>
+
+<p>Repeated notifcations allow periodical sending of notifications of a problem not solved in a timely manner. Repeated notifications can be configured in the Action Definition form.</p>
+
+<h4>Support of new parameters</h4>
+
+<ul>
+<li>service.ntp&lt;,ip&gt;&lt;,port&gt;</li>
+
+<p>checks availability of NTP service. It returns time returned by NTP server, 0 - if NTP server is not available or in case of any other errors. Both IP and Port are optional. This is Simple Check processed by ZABBIX Server.</p>
+
+<li>check_service[service.ntp&lt;,ip&gt;&lt;,port&gt;]</li>
+
+<p>checks availability of NTP service on agent side. It returns time returned by NTP server, 0 - if NTP server is not available or in case of any other errors. Both IP and Port are optional.</p>
+
+<li>proc.memory[process&lt;,username&gt;&lt;,mode&gt;]</li>
+
+<p>returns memory used by &lt;process&gt; running under &lt;username&gt;. Username is optional. Mode can be one of the folowing: avg,min,max,sum (default). (Linux only)</p>
+
+<li>proc.num[process&lt;,username&gt;]</li>
+
+<p>returns number of processes running under &lt;username&gt;. Username is optional. (Linux only)</p>
+
+<li>vfs.file.regmatch[file,regexp]</li>
+
+<p>returns 1 if the file contains pattern give as a Posix Regular Expression, 0 - otherwise (UNIX only)</p>
+
+<li>vfs.file.regexp[file, regexp]</li>
+
+<p>returns one matched line from file. Pattern is given as a Posix Regular Expression. (UNIX only)</p>
+</ul>
+
+<h4>ZABBIX GUI</h4>
+
+<p>Added mass-delete function for IT Services. Other improvements.</p>
+
+<h4>Fixes</div>
+
+<ul>
+<li>Fixed compilation issues under all supported UNIX platforms.</li>
+<li>Partially fixed "Add items from template" functionality. Currently it adds items only.</li>
+<li>Fixed crash of zabbix_sender.</li>
+<li>Deleted hosts will not be shown.</li>
+<li>Fixed compilation of LDAP functionality.</li>
+<li>Other fixes.</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide http://www.zabbix.com/manual/v1.1/install.php for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous release, execution of database patches required. See Upgrade Guide http://www.zabbix.com/manual/v1.1/config_upgrading.php for full detail on upgrade procedure.</p>
+	
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms: Ubuntu Linux, AMD64, kernel 2.6.11</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from www.zabbix.com/download.php. The agents are compatible with ZABBIX v1.0 and all releases in 1.1 series.</p>
+
+<h3>Use in production environments</h3>
+
+<p>ZABBIX 1.1beta2 is BETA software, therefore we cannot recommend it for immediate use in production. Although tested throughout our release cycle, this release does not have the benefit of use in production environments that ZABBIX v1.0 has and therefore should be treated with the same level of caution as you would a new product.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual http://www.zabbix.com/manual/v1.1/index.php</li>
+<li>ZABBIX Forums (http://www.zabbix.com/forum)</li>
+<li>ZABBIX Support (http://www.zabbix.com/support.php)</li>
+</ul>

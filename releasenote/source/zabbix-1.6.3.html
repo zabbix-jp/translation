@@ -1,0 +1,190 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.6.3.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>It is highly recommended to upgrade from 1.6, 1.6.1 and 1.6.2.</p>
+
+<p>This document contains the release notes for ZABBIX 1.6.3.</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>Important</h3>
+
+<p>It is recommended to create the following indexes in order to speed up performance of ZABBIX front-end as well as server side:</p>
+
+<p>CREATE UNIQUE INDEX history_log_2 on history_log (itemid,id);<br>
+CREATE UNIQUE INDEX history_text_2 on history_text (itemid,id);<br>
+CREATE INDEX graphs_items_2 on graphs_items (graphid);</p>
+
+
+<h3>What's New in 1.6.3</h3>
+
+<h4>Dynamic Menu</h4>
+
+<p>The main menu is made dynamic in order to simplify switching from one screen to another.</p>
+
+<h4>New Supported Checks</h4>
+
+<p>Added support of vfs.dev.read/write under FreeBSD. Also added support of &lt;mode&gt; for system.cpu.util under Solaris. Linux agent supports iowait,interrupt,softirq and steal for system.cpu.util.</p>
+
+<h4>Much Faster Dynamic SNMP Indexes </h4>
+
+<p>Added caching of dynamic SNMP indexes, which makes execution of complex SNMP checks much faster. The development work was sponsored by <a href="http://www.zabbix.com/users.php#xs4all">XS4ALL</a>, the best ISP in the Netherlands!</p>
+
+<h4>Flexible Configuration of Default Dropdown Behaviour</h4>
+
+<p>New defines ZBX_DROPDOWN_FIRST_ENTRY and ZBX_DROPDOWN_FIRST_REMEMBER in file include/defines.inc.php can be used to change what dropdown entry is selected by default and if ZABBIX front-end should remember older selection. This can be very useful for large ZABBIX installations.</p>
+
+<h4>Other Improvements and Bug Fixes</h4>
+
+<ul>
+<li>improved item template-update</li>
+<li>added support of text items for functions str, regexp and iregexp</li>
+<li>"Cannot open Json object" message replaced with a better one in agent log</li>
+<li>trailing newline added in the end of exported xml</li>
+<li>when graph shows current time values, ">>" character is shown near end time</li>
+<li>events duration now counts weeks instead of months, small GUI typos fix</li>
+<li>Distributed monitoring: added update of Last check and Last value fields</li>
+<li>historical data is now available for "not supported" items</li>
+<li>added host name of deppended trigger</li>
+<li>default autologout time is set to 900</li>
+<li>improved performance of processing of log and text items</li>
+<li>details box is open by default if any error occured</li>
+<li>the behaviour of the agent's key "vfs.fs.size" improved to be similar to the "df" command</li>
+<li>added entity counts on interfaces</li>
+<li>improved queries in "Graphs" page</li>
+<li>the purpose of the configuration parameter StartAgents precised</li>
+<li>added new default user group "Disabled"</li>
+<li>improved {ESC.HISTORY} macro in recovery notifications</li>
+<li>expanded details box added for triggers copying messages</li>
+<li>added tooltip in "status of ZABBIX" report for number of items and triggers parameter</li>
+<li>allowed processing of non-agent based checks for unreachable hosts</li>
+<li>added Polish locale</li>
+<li>improved performance of the graph related screen due to missing index</li>
+<li>fixed month representation in seconds in most busy triggers report</li>
+<li>fixed bad performance of the string functions - added two database indexes</li>
+<li>fixed Windows agent crash when using incorrect third parameter in proc_info metric</li>
+<li>fixed memory leak while processing proc.num metric under Win2008</li>
+<li>fixed data loss of text values processed by proxy</li>
+<li>fixed problem with lost actions when upgrading database to 1.6.x</li>
+<li>fixed "System status" cell colors with 0 active triggers</li>
+<li>fixed hosts massupdate with "new group" and "use profile"</li>
+<li>fixed problem with adding the graphs on an autodiscovered hosts</li>
+<li>fixed SQL error when try to activate auto-login in profile</li>
+<li>fixed SQL error on login screen when postgre is used, small GUI typos fix</li>
+<li>Distributed monitoring: PosrgeSQL related fixes</li>
+<li>Distributed monitoring: fixed deadlocks</li>
+<li>fixed server memory leak in processing remote commands in actions</li>
+<li>fixed error when try to remove trigger comment</li>
+<li>fixed undefined argument on graph delete</li>
+<li>changed disabled auto-logout indication</li>
+<li>added extension to hosts when importing graph to template</li>
+<li>display correct error message if file import fails</li>
+<li>fixed zabbix server status when frontend and backend are on different servers</li>
+<li>fixed screen clock set to server time showed local time</li>
+<li>fixed min autologout value to 90 seconds</li>
+<li>fixed wrong aggregate graph drawing</li>
+<li>fixed template linkage not working properly</li>
+<li>fixed incorrect processing of net.tcp.listen</li>
+<li>fixed "invalid URL" when use small popup menus like ping etc</li>
+<li>fixed "invalid URL" when add user to user group</li>
+<li>fixed problem with "Too many open files" by agent under Solaris 2.5, 2.6</li>
+<li>fixed displaying "no status update" error for template triggers</li>
+<li>fixed processing of existing data when -n parameter is used for zabbix_server</li>
+<li>fixed "Undefined index error" during frontend installation</li>
+<li>fixed filter in audit filtering only logs</li>
+<li>fixed evaluation of {ITEM.LASTVALUE} if the trigger expression consists of several items</li>
+<li>fixed wrong action count in audit log</li>
+<li>fixed resetting of web graph periods</li>
+<li>fixed possible Windows agent crash when processing eventlog[]</li>
+<li>fixed Wrong URL when add rights to user group</li>
+<li>edited configure.in file to make some error messages more sensible</li>
+<li>corrected some typos in misc/conf/zabbix_server.conf</li>
+<li>corrected some typos in test/env/standalone/conf/template_server.conf</li>
+<li>fixed processing of four-character-long item keys</li>
+<li>trigger description in "Last 20 issues" is link to the URL defined in trigger parameters + minor GUI typos fix</li>
+<li>fixed SNMP-related compilation problem with undefined 'localname' under some platforms</li>
+<li>fixed web graphs start time not changing</li>
+<li>fixed recursion detection in Include directive for config files</li>
+<li>fixed minor GUI text errors</li>
+<li>fixed wrong caption for graph item editing form</li>
+<li>all templates linked to group Templates in default config</li>
+<li>fixed "Invalid URL" error when choose History from history submenu</li>
+<li>fixed "values per second" having too many decimal places</li>
+<li>fixed duplicating entries in hosts groups after import</li>
+<li>improved item graph exporting</li>
+<li>fixed simple/advanced item filter switch</li>
+<li>fixed sql error when filter items by host group</li>
+<li>fixed element validation in sysmap elements</li>
+<li>fixed audit log record for graph update action "added" -> "updated"</li>
+<li>fixed possible server crash when using {TRIGGER.NAME} for notifications</li>
+<li>fixed PostgreSQL errors with out of range string data</li>
+<li>fixed import of triggers with {HOSTNAME} macro</li>
+<li>fixed handling of -c parameter in zabbix_sender. Thanks to Jakov Sosic</li>
+<li>fixed timeout handling for SNMP connect</li>
+<li>fixed memory leak if trigger evaluation fails</li>
+<li>removed "Step" field for recovery messages from Event details</li>
+<li>fixed login while entering any page with HTTP auth enabled</li>
+<li>default number of HTTP pollers was decreased to one</li>
+<li>fixed sql problem with deletion of many hosts</li>
+<li>fixed wrong result of function "nodata" after server restart</li>
+<li>removed net-snmp debug messages from server logs</li>
+<li>fixed support of quotation marks in command in UserParameter's</li>
+<li>fixed deadlocks in dbcache module</li>
+<li>added define for menu caching</li>
+<li>fixed latest data auto-refresh cripples filter viewing issue</li>
+<li>fixed warning zbx_malloc: allocating already allocated memory in json.c</li>
+<li>fixed frontend vulnerabilities</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>Recompile ZABBIX binaries and update front-end PHP files, no database patching needed. See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of agents required, yet recommended.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul class="rn">
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX 1.6 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

@@ -1,0 +1,97 @@
+<p><strong>03 January 2011</strong></p>
+
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.4.7.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains release notes for ZABBIX 1.4.7.</p>
+
+<p>It is highly recommended to upgrade from earlier ZABBIX 1.4.x.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h4>Fixes and minor improvements included into 1.4.7</h4>
+
+<ul>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-812">ZBX-812</a>] fixed Windows agent crash when using incorrect third parameter in proc_info metric</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-809">ZBX-809</a>] fixed memory leak while processing proc.num metric under Win2008</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-708">ZBX-708</a>] DM: fixed possible server crash while synchronizing events between nodes</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-675">ZBX-675</a>] fixed wrong result of function "nodata" after server restart</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-623">ZBX-623</a>] fixed incorrect processing of function abschange() for integers</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-619">ZBX-619</a>] fixed agent crash for system.uptime under Solaris 2.5.1</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-610">ZBX-610</a>] fixed memory leak in external checks</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-604">ZBX-604</a>] fixed compilation problems under AIX 2.5.1</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-602">ZBX-602</a>] fixed possible incorrect trigger evaluation if value sotred as "delta"</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-450">ZBX-450</a>] fixed showing status of items in maps for non english locale</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-432">ZBX-432</a>] set trigger value to unknown if changed item status</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-198">DEV-198</a>] improved displaying of disabled items in the maps</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-430">ZBX-430</a>] improved configuration scripts</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-103">ZBX-103</a>] fixed escaping in sql queries</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-424">ZBX-424</a>] fixed possible server crash while importing XML</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-420">ZBX-420</a>] added support of log files in screens</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-418">ZBX-418</a>] fixed possible server crash while processing macros</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-370">ZBX-370</a>] fixed cpu.c for system.cpu.load[] processing</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-412">ZBX-412</a>] fixed malfunction of triggers based on log[] and eventlog[]</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-195">DEV-195</a>] added support of source ip address</li>
+<li>added Korean locale, thanks to Kodai</li>
+<li>updated Japanese locale thanks to Kodai</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of database schema required for upgrade from earlier 1.4.x.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>CentOS Linux 4.4, Intel</li>
+<li>CentOS Linux 5.0, Intel</li>
+<li>FreeBSD 6.2, Intel</li>
+<li>Solaris 10, Intel</li>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8</li>
+<li>Solaris 9</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX 1.4 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

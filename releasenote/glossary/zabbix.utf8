@@ -1,0 +1,10 @@
+permission	権限
+item		アイテム
+trigger		トリガー
+action		アクション
+application	アプリケーション
+user		ユーザ
+user group	ユーザグループ
+muss update	一括更新
+distributed monitoring	分散モニタリング
+DM	    分散モニタリング 

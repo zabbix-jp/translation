@@ -1,0 +1,115 @@
+<p>This document contains the release notes for ZABBIX version 1.1beta3. The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New</h3>
+
+<h4>New naming schema for ZABBIX agent parameters</h4>
+
+<p>New naming convention has been introduced. For example, check_service[*] renamed to net.tcp.service[service &lt;,ip&gt; &lt;,port&gt;].</p>
+
+<p>Note that not all parameters are taking advantage of new naming convention yet. Windows agent still uses old naming. See ZABBIX Manual for complete list of new parameters.</p>
+
+<h4>Better support of UNIX architectures by ZABBIX agent</h4>
+
+<p>ZABBIX agent, zabbix_agentd, has been improved to support new metrics on UNIX platforms. It also supports new value type, UINT64, for better precision.</p>
+
+<h4>Automatic recovery of unsupported values</h4>
+
+<p>ZABBIX supports automatic periodical change of unsupported parameter to monitored state. The feature can be disabled.</p>
+
+<h4>More flexible parameters for user-defined metrics</h4>
+
+<p>Up to nine parameters can be passed to user-defined metric. For example: UserParameter=wc[*],wc -$2 $1|cut -f1 -d" ". It can be used as wc[/var/log/syslog,w] to get word count in /var/log/syslog.</p>
+
+<h4>Better pre-release testing procedure has been introduced</h4>
+
+<p>ZABBIX development team introduced set of regression tests for ZABBIX GUI. More tests and testing of server and agents will be added soon. Almost all compilation warnings have been eliminated.</p>
+
+<h4>Double sided graphs</h4>
+
+<p>Each metric shown on graph can by linked either to left or right Y axis. Scaling of Y axes is independent.</p>
+
+<h4>Bulk loader</h4>
+
+<p>The loader will simplify management of large number of hosts, metrics and other objects.</p>
+
+<h4>New calculation of MAX value for Y axis</h4>
+
+<p>The maximum will be calculated for displayed values to avoid situations when everything is displayed at very bottom of a graph.</p>
+
+<h4>Improved installation floppy (shell script) for Windows agent</h4>
+
+<p>New BAT script has been created to simplify or automate installation of ZABBIX agent under Windows platforms.</p>
+
+<h4>Configurable refresh rate</h4>
+
+<p>Refresh rate is configurable in user profiles.</p>
+
+<h4>Japanese translation for ZABBIX GUI</h4>
+
+<p>Japanese and other translations have been improved and updated.</p>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>Fixed memory leaks, hangs and other issues of Windows agent.</li>
+<li>Fixed functionality of autoregistration.</li>
+<li>SNMPv3 related fixes.</li>
+<li>Fixed vfs.file.regmatch[*].</li>
+<li>Corrected processing of SNMP Counter64 values.</li>
+<li>Many different fixes for ZABBIX GUI.</li>
+<li>Other fixes.</li>
+</ul>
+
+<h3>What's next</h3>
+
+<p>This release does not include fixes for template-related functionality in ZABBIX GUI. This will be addressed in ZABBIX 1.1beta4 which is scheduled to be released until end of 2005. ZABBIX Development Team is aware of these issues and we are treating them with the highest priority.</p>
+
+<p>ZABBIX 1.1beta4 will be focused on quality and usability of GUI.</p>
+
+<h3>Installation and Upgrade Notes</h3>
+
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide http://www.zabbix.com/manual/v1.1/install.php for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous release, execution of database patches required. See Upgrade Guide http://www.zabbix.com/manual/v1.1/config_upgrading.php for full details on upgrade procedure.</p>
+
+<p>For ZABBIX Agents, UserParameters have to be updated to take advantage of new passing of user-defined parameters if needed.</p>
+	
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms: Ubuntu Linux, AMD64, kernel 2.6.11</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from www.zabbix.com/download.php. The agents are compatible with ZABBIX v1.0 and all releases in 1.1 series.</p>
+
+<h3>Use in production environments</h3>
+
+<p>ZABBIX 1.1beta3 is BETA software, therefore we cannot recommend it for immediate use in production. Although tested throughout our release cycle, this release introduces many changes and does not have the benefit of use in production environments that ZABBIX v1.0 has and therefore should be treated with the same level of caution as a new product.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual http://www.zabbix.com/manual/v1.1/index.php</li>
+<li>ZABBIX Forums (http://www.zabbix.com/forum)</li>
+<li>ZABBIX Support (http://www.zabbix.com/support.php)</li>
+</ul>

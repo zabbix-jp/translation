@@ -1,0 +1,83 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.3.6.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution.</p>
+
+<p>ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. The full license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.3.6. The release supports MySQL, PostgreSQL and SQLite only. Support of Oracle will be restored in the next release.</p>
+
+<p>ZABBIX 1.3.x is currently in a feature freeze. We take the feature freeze seriously and mainly work on fixing actual bugs with few exceptions (escalations). ZABBIX 1.4 is just around the corner!</p>
+
+<p>Do not use this release in production! It is for beta testing only.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New in 1.3.6</h3>
+
+<h4>Misc functionality and fixes</h4>
+
+<ul>
+<li>added export of applications and linkage of value maps</li>
+<li>new default templates</li>
+<li>support of host template actions</li>
+<li>support of actions: linkt to template, unlink, remove host</li>
+<li>fixed compilation of agent under OpenBSD</li>
+<li>support of parameter LogFileSize for server and agent</li>
+<li>fixed configuration file processing for WinXX</li>
+<li>fixed system.uname for WinXX</li>
+<li>updated Spanish translation</li>
+<li>misc fixes for static build</li>
+<li>more strict processing of response codes of all passive checks</li>
+<li>new logic for poller for unreachable hosts</li>
+<li>fixed fatal error in cbutton.inc.php for some platforms</li>
+<li>fixed zabbix_server's option -V</li>
+<li>fixed compilation under Solaris</li>
+<li>added discovery based on data received from ZABBIX and SNMP agents</li>
+<li>other improvements and bug fixes</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide <a href="http://www.zabbix.com/manual/v1.4/install.php">http://www.zabbix.com/manual/v1.4/install.php</a> for full details. See <a href="http://www.zabbix.com/manual/v1.4/install_source_web.php">http://www.zabbix.com/manual/v1.4/install_source_web.php</a> for information about Installation Wizard.</p>
+
+<h4>Upgrade</h4>
+
+<p>Upgrade script for MySQL and PostgreSQL are provided. Please do not upgrade production systems! The release may or may not work on your system. It has been tested on a very limited number of systems.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Windows XP</li>
+<li>Windows XP 64bit</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual <a href="http://www.zabbix.com/manual/v1.1/index.php">http://www.zabbix.com/manual/v1.1/index.php</a></li>
+<li>ZABBIX v1.3 (beta) Manual <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

@@ -1,0 +1,158 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.4.2.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.4.2.</p>
+
+<p>It is strongly recommended to upgrade from ZABIX 1.4 and 1.4.1.</p>
+
+<p>Support of Oracle restored, however it is not well-tested. No Oracle patches for migration from 1.4 exist yet.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>What's New in 1.4.2</h3>
+
+<h4>New templates</h4>
+
+<p>New user contributed templates: Cisco PIX, Cisco PIX 525, APC Battery, Dell PowerConnect, Dell OpenManage, Dell PowerEdge, HP InsightManager.</p>
+
+<h4>Pre-CPU statistics</h4>
+
+<p>Support of per-CPU system.cpu.util and support of system.cpu.num under Linux and Solaris.</p>
+
+<h4>More flexible node configuration</h4>
+
+<p>New parameters, NodeNoEvents and NodeNoHistory, controls if a node should send events and historical data to a master node.</p>
+
+<h4>Improved front-end to show data from multiple nodes</h4>
+
+<p>ZABBIX GUI can optionally display information of a single node or the node and its all child nodes.</p>
+
+<h4>Support of new parameter for count(period,value,operator)</h4>
+
+<p>New parameter, 'count', can be used to filter data processed by this function.</p>
+
+<h4>Non-case sensitive function iregexp()</h4>
+
+<p>It is a non-case sensitive alternative to already existing regexp().</p>
+
+<h4>Fixes and minor improvements</h4>
+
+<ul>
+<li>fixed '{HOSTNAME}' macros in actions</li>
+<li>fixed e-mail sending to the pedantic qmail</li>
+<li>fixed communication between systems with different byte orders</li>
+<li>fixed frontend to accept trigger function time()</li>
+<li>ignore trigger FALSE state if it depends on another trigger</li>
+<li>added automatic resolution of DNS names for auto-discovery</li>
+<li>fixed processing of triggers on delta items</li>
+<li>updated German translation</li>
+<li>changed help string for parameter '-s' of zabbix_sender</li>
+<li>fixed displaying of text data (EOL) in screens</li>
+<li>added missing { and } when displaying trigger expressions</li>
+<li>fixed processing of negative SNMP integers</li>
+<li>fixed processing of MM in format of log timestamps</li>
+<li>added missing index on items_applications.itemid</li>
+<li>fixed processing of SNMP octet strings</li>
+<li>fixed division by zero in ZABBIX server</li>
+<li>fixed upgrade script to correctly process host-template linkage</li>
+<li>fixed synchronisation of delete operation between nodes</li>
+<li>fixed problem with libresolv under Solaris 8</li>
+<li>improved item and trigger filtering</li>
+<li>added dotted drawing type for links of map</li>
+<li>fixed links drawing type of map</li>
+<li>fixed items,graphs,hostgroups deletion</li>
+<li>fixed permisions for maps</li>
+<li>fixed filtering of items by status</li>
+<li>fixed collector for WinXX</li>
+<li>fixed definition of serial columns to allow use of older MySQL</li>
+<li>decreased required version of libcurl</li>
+<li>added timeout handler for http monitoring</li>
+<li>more informative report for configuration script</li>
+<li>changed installation directory to '$sbin'</li>
+<li>fixed "Reset" button for Web screens</li>
+<li>fixed graph items limitation for IE6</li>
+<li>added availability of using spaces for trigger expressions</li>
+<li>improved inheritance of template graphs</li>
+<li>fixed permissions for logfile</li>
+<li>changed syntax of keys for external checks</li>
+<li>changed syntax of keys for aggregate items</li>
+<li>fixed DM configuration exchange in 32-bit environments</li>
+<li>fixed agent library dependencies</li>
+<li>fixed reset button for graph</li>
+<li>fixed item multiple cleaning on mass update</li>
+<li>fixed error 'undefined function delete_service'</li>
+<li>fixed internal loging system</li>
+<li>added non-persistent connection for PostgreSQL to avoid problems with unfinished transactions</li>
+<li>fixed housekeeper to process history_text</li>
+<li>added support of character ':' for item keys</li>
+<li>fixed processing of long data by zabbix_get</li>
+<li>fixed shared memory allocation</li>
+<li>added server-side transactions for PostgreSQL</li>
+<li>fixed housekeeper to run as multiple transations</li>
+<li>added support of NOT IN operator for time periods</li>
+<li>fixed processing of macro {TRIGGER.VALUE} on 32 bit systems</li>
+<li>changed priorities of '|' and '&' in trigger expressions</li>
+<li>fixed no graphs for PostgreSQL</li>
+<li>fixed and improved eventlog monitoring</li>
+<li>improved not supported values processing</li>
+<li>fixed processing of user parameters and remote commands having character '%'</li>
+</ul>
+
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of database schema required for upgrade from 1.4 or 1.4.1.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>CentOS Linux 4.4, Intel</li>
+<li>CentOS Linux 5.0, Intel</li>
+<li>FreeBSD 6.2, Intel</li>
+<li>Solaris 10, Intel</li>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX 1.4 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

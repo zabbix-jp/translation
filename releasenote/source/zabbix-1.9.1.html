@@ -1,0 +1,113 @@
+<p><strong>28 December 2010</strong></p>
+
+<p>Zabbix SIA is proud to announce the availability of Zabbix 1.9.1 (Second Alpha Release of Zabbix 2.0).</p>
+
+<p>Zabbix is an enterprise-class open source distributed monitoring solution. Zabbix is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for Zabbix 1.9.1. Download it from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a>.</p>
+
+<p>This release introduces major features along with numerous improvements.</p>
+
+<p><strong>This release is absolutely not for production. It is a very early Alpha Release!</strong></p>
+
+<p><strong>It is not yet feature complete and does not fully represent expected 2.0 version.</strong></p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>What's New in 1.9.1</h3>
+
+<h4>Multiple network interfaces</h4>
+
+<p>Multiple network interfaces can be assigned to a single host, therefore one host may have several IP addresses with different checks for each IP.</p>
+
+<h4>Better translation framework for WEB interface</h4>
+
+<p>Zabbix interface translations are handled by GNU gettext module.</p>
+
+<h4>Auto-registration with passive checks</h4>
+
+<p>Added support of monitoring auto-registered hosts with passive checks. It is very handy for monitoring of Cloud-like environments.</p>
+
+<h4>Re-design of unknown events and triggers</h4>
+
+<p>Unknown triggers and events will no longer be displayed in Zabbix WEB interface, a special flag will be shown if Zabbix is not confident about status of triggers or events.</p>
+
+<h4>Low level discovery</h4>
+
+<p>Zabbix is able to discover your file systems, network interfaces and SNMP interfaces automatically with no manual work. One template can be used for hosts having different devices.</p>
+
+<h4>Optional graph legends</h4>
+
+<p>Graph legend can be optionally disabled.</p>
+
+<h4>Templated host-level screens</h4>
+
+<p>Templates may contain screens for easy maintenance. The screens are available via Monitoring->Hosts, yet the form is not finished yet.</p>
+
+<h4>Database integrity</h4>
+
+<p>There are significant improvements in the database schema for better consistency and security of configuration and historical data.</p>
+
+<h4>Nanosecond resolution for historical data</h4>
+
+<p>Zabbix supports nanosecond resolution for historical data. If you are migrating from 1.8.x the option will be off by default. It is on for fresh setups.</p>
+
+<h4>Multiple URLs for map elements</h4>
+
+<p>A map element may have multiple links (URLs) to external resources.</p>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/documentation/1.8/manual/installation/">Zabbix Manual</a> for full details.</p>
+
+
+<h4>Upgrade</h4>
+
+<p>Recompile Zabbix binaries and update front-end PHP files. Execute a database patch if migrating from Zabbix 1.8.x. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/installation_and_upgrade">Zabbix Manual</a> for a detailed upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>Zabbix Server</h4>
+
+<p>Zabbix Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 5.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22, PostgreSQL 8.3</li>
+<li>RedHat EL 5.3, Intel, kernel 2.6.18, Oracle 11gR2</li>
+<li>Slackware Linux, x86, kernel 2.6.29.6, MySQL 5.1.x</li>
+</ul>
+</p>
+
+<h4>Zabbix Agents</h4>
+
+<p>Zabbix Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>Zabbix Company provides a full range of professional services. We also provide trouble-free upgrade service for easy migration from earlier versions to Zabbix 1.8.x. Please contact <a href="mailto:sales@zabbix.com">Sales</a> for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/documentation/">Zabbix 1.8 Manual</a></li>
+<li>Zabbix Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>Zabbix Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

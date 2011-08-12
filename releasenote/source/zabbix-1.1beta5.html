@@ -1,0 +1,104 @@
+<p>This document contains the release notes for ZABBIX version 1.1beta5. The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New</h3>
+
+<h4>Templating</h4>
+
+<p>Templating has been fixed. Definition of items, triggers and graphs is propagated to linked hosts.</p>
+
+<h4>New concept of definition of trigger actions</h4>
+
+<p>The new concept allows much more flexible definition of trigger actions in one screen. Finally!</p>
+
+<h4>New item type: Unsigned Integer 64bit</h4>
+
+<p>The new type can be used for storage of integer data, such as SNMP counters, disk spaces, etc. No loss of data precision anymore. Note that the data will be  stored in new table 'history_uint'.</p>
+
+<h4>New trigger function: regexp()</h4>
+
+<p>The function allows to check if a value matches given Posix regular expression. It works for items having type String or Log.</p>
+
+<h4>New macro for actions: {TRIGGER.NAME}</h4>
+
+<p>The macro explodes to trigger name (description). The macro is very useful for action's message and subject. You may want to use it in combination with {STATUS}.</p>
+
+<h4>Calculated minimum Y in graphs</h4>
+
+<p>Minimum value of Y axis will be calculated by default.</p>
+
+<h4>Configurable number of plain text elements for screens</h4>
+
+<p>If not set, 25 plain text values will be displayed.</p>
+
+<h4>Chinese translation for ZABBIX GUI</h4>
+
+<p>German and other translations have been improved and updated.</p>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>Fixed span handling for screens.</li>
+<li>Fixed typo in tr_comments.php.</li>
+<li>Currently unused escalations removed from GUI.</li>
+<li>Fixed processing of simple checks.</li>
+<li>Fixed configuration and making issues.</li>
+<li>Fixed processing of icmpping and icmppingsec.</li>
+<li>Fixed incorrect handling of retrieved values in zabbix_get.</li>
+<li>Fixed processing of Delta.</li>
+<li>Minor fixes for SNMP handling.</li>
+<li>Function 'str' will work for LOG files.</li>
+<li>English translation will be used if cannot find a phrase in local language.</li>
+<li>Misc fixes for ZABBIX GUI.</li>
+<li>Other fixes.</li>
+</ul>
+
+<h3>What's next</h3>
+
+<p>ZABBIX 1.1beta6 will introduce remote execution of commands.</p>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide http://www.zabbix.com/manual/v1.1/install.php for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous release, execution of database patches required. See Upgrade Guide http://www.zabbix.com/manual/v1.1/config_upgrading.php for full details on upgrade procedure.</p>
+
+<p>Pay special attention to actions. Check what actions are defined after applying database upgrade patch.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms: Ubuntu Linux, AMD64, kernel 2.6.11</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from www.zabbix.com/download.php. The agents are compatible with ZABBIX v1.0 and all releases in 1.1 series.</p>
+
+<h3>Use in production environments</h3>
+
+<p>ZABBIX 1.1beta5 is BETA software, therefore we cannot recommend it for immediate use in production. Although tested throughout our release cycle, this release introduces many changes and does not have the benefit of use in production environments that ZABBIX v1.0 has and therefore should be treated with the same level of caution as a new product.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual http://www.zabbix.com/manual/v1.1/index.php</li>
+<li>ZABBIX Forums (http://www.zabbix.com/forum)</li>
+<li>ZABBIX Support (http://www.zabbix.com/support.php)</li>
+</ul>

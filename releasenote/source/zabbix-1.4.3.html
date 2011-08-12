@@ -1,0 +1,150 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.4.3.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.4.3.</p>
+
+<p>It is recommended to upgrade from ZABIX 1.4, 1.4.1 and 1.4.2.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h4>Fixes and minor improvements included into 1.4.3</h4>
+
+<ul>
+<li>[ZBX-218] fixed problem "Unable to add performance counter" on start of win agent</li>
+<li>[ZBX-192] fixed active checks stops after connection loss</li>
+<li>[ZBX-152] fixed inefficient check of user permissions</li>
+<li>[ZBX-189, CVE-2007-6210] fixed super-user permissions of user commands</li>
+<li>[ZBX-183] fixed compilation problem with undefined res_query()</li>
+<li>[ZBX-34] fixed transaction related conflict in DBget_maxid</li>
+<li>[ZBX-181] fixed Activate/Disable items from applications</li>
+<li>[ZBX-176] fixed static compilation of Jabber support</li>
+<li>[ZBX-100] fixed Oracle compilation errors</li>
+<li>[ZBX-159] added support of vm.memory.size[available] under Linux</li>
+<li>[ZBX-172] fixed incorrect SQL caused by character ' in item key</li>
+<li>[ZBX-106] support of 16 processors for system.cpu.util[], other fixes</li>
+<li>[ZBX-133] added more debug information on semaphore related errors</li>
+<li>[ZBX-164] added support of units for values used in notifications</li>
+<li>[ZBX-168] pass DNS or IP address instead of host name to external scripts</li>
+<li>[ZBX-108] fixed change() and abschange() for negative integer values</li>
+<li>[ZBX-114] fixed permissions for history of events</li>
+<li>[ZBX-91] added Portuguese translation</li>
+<li>[ZBX-166] accept SSL peer certificate even if domain name does not match CN</li>
+<li>[ZBX-154] fixed processing of comma in zbx.fs.size[]</li>
+<li>[ZBX-110] all phrases "slideshow" replaced by "slide show"</li>
+<li>[ZBX-160] fixed web.page.get to send \r\n instead of \n</li>
+<li>[ZBX-149] fixed incorrect processing of vm.memory.size key in FreeBSD</li>
+<li>[ZBX-109] added support of vm.memory.size[pfree] Linux, FreeBSD & Win agents</li>
+<li>[ZBX-122] added Hungarian translation</li>
+<li>[ZBX-118] fixed show_popup_menu display problem</li>
+<li>[ZBX-116] fixed typo in data.sql, "interfice"</li>
+<li>[ZBX-130] added refresh of unsupported active checks</li>
+<li>[ZBX-134] fixes for hostid/groupid validation on Node switch</li>
+<li>[ZBX-131] fixed viewing password on install in plain text</li>
+<li>[ZBX-81] fix for item delay calculation problem in graphs</li>
+<li>[DEV-75] Empty command result window</li>
+<li>[DEV-74] Scripts of all nodes are displayed</li>
+<li>[ZBX-107] do not display log related items in the queue</li>
+<li>[DEV-43] support of new macros {ITEM.VALUE}, {ITEM.VALUE1}, etc</li>
+<li>[ZBX-30,ZBX-47] better dependencies</li>
+<li>[ZBX-48] fixed server crash if incorrect syntax of aggregate items is used</li>
+<li>[ZBX-95] fixed patch.sql to work with buggy PHPMyAdmin</li>
+<li>[ZBX-59] removed button "Switch Node"</li>
+<li>[ZBX-19] fixed SMS sending</li>
+<li>[DEV-46] added "save&return" button in acknowledgements</li>
+<li>[DEV-50] improved validation of incoming parameters</li>
+<li>[ZBX-76] added number of members in host groups</li>
+<li>[ZBX-92] fixed overwriting of new information for distributed monitoring</li>
+<li>[ZBX-90] fixed displaying of last line of a log file in the Latest Data and Overview</li>
+<li>[ZBX-88] changed method to GET in all forms which affect displayed info</li>
+<li>[ZBX-57] fixed problem in zbx_tcp_check_security 127.0.0.1 != 127.0.00.1</li>
+<li>[ZBX-67] fixed synchronization of binary data between nodes under PostgresSQL</li>
+<li>[ZBX-77] fixes for refreshing pages in Monitoring</li>
+<li>[ZBX-75] fixed warning in history of events</li>
+<li>[ZBX-68] fixed iframe resize on refresh in Screens</li>
+<li>[ZBX-65] fixed side effect on mass update items, 'application' entries are cleaned from all affected items</li>
+<li>fixed setting trigger status to unknown on trigger update, now only if expression is changed</li>
+<li>fixed problem with Enabling/Disabling actions</li>
+<li>[ZBX-72] fixed occured error after graph refresh</li>
+<li>[ZBX-67] added synchronization of binary data between nodes</li>
+<li>[ZBX-70] fixed even more compilation warnings</li>
+<li>[ZBX-69] eliminated compilation warnings "_GNU_SOURCE redefined"</li>
+<li>added synchronisation of last value and timestamps for distributed monitoring</li>
+<li>[ZBX-1] fixed wrong status of function "nodata" after server restart</li>
+<li>[ZBX-33] fixed problem in table names in data.sql for PostgreSQL</li>
+<li>[ZBX-32] fixed incorrect processing of IP ranges in ip_in_list</li>
+<li>[ZBX-35] fixed processing of PROFILE related macros</li>
+<li>support of macro {ITEM.LASTVALUE} for notifications and trigger names</li>
+<li>fixed SQL statement in SLA processing</li>
+<li>updated Spanish translation</li>
+<li>[ZBX-24] fixed Queue to show status of current node only</li>
+<li>[ZBX-12] fixed calculations in ZABBIX availability report</li>
+<li>[ZBX-11] fixed Free BSD 4.x 64 bit-related issues</li>
+<li>[ZBX-10] added Russian translation</li>
+<li>fixed PostgreSQL error in synchronization of graphs</li>
+<li>minor grammar fixes</li>
+<li>fixed compilation of ZABBIX agent under Mac OS/X</li>
+<li>fixed memory leak when processing non-existant trapper item</li>
+<li>fixed unefficient SQL in browsing of events</li>
+<li>fixed iregexp()</li>
+<li>fixed detection of __VA_ARGS__</li>
+<li>added numeric parameters support for trigger description "$1 $2..$9"</li>
+<li>fixed SQL problem in Configuration->Graphs, all graphs selected</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of database schema required for upgrade from 1.4, 1.4.1 or 1.4.2.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>CentOS Linux 4.4, Intel</li>
+<li>CentOS Linux 5.0, Intel</li>
+<li>FreeBSD 6.2, Intel</li>
+<li>Solaris 10, Intel</li>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX 1.4 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

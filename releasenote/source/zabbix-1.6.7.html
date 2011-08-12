@@ -1,0 +1,115 @@
+<p><strong>Riga, 12 November 2009</strong></p>
+
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.6.7.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>It is recommended to upgrade from previous releases of 1.6.x.</p>
+
+<p>This document contains the release notes for ZABBIX 1.6.7.</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>Important</h3>
+
+<p>It is strongly recommended to upgrade 1.6.6 agents to 1.6.7 if you use active checks. An important problem related to incorrect processing of active checks has been fixed in 1.6.7.</p>
+
+<p>It is recommended to create the following indexes in order to speed up performance of ZABBIX front-end as well as server side (ignore it if the indexes already exist):</p>
+
+<p>
+CREATE UNIQUE INDEX history_log_2 on history_log (itemid,id);<br>
+CREATE UNIQUE INDEX history_text_2 on history_text (itemid,id);<br>
+CREATE INDEX graphs_items_1 on graphs_items (itemid);<br>
+CREATE INDEX graphs_items_2 on graphs_items (graphid);<br>
+CREATE INDEX services_1 on services (triggerid);<br>
+</p>
+
+<h3>What's New in 1.6.7</h3>
+
+<p>No new major features were introduced in this release.</p>
+
+<h4>Other Improvements and Bug Fixes</h4>
+
+<ul>
+<li>[ZBX-1022] fixed syntax in parameter 'continue_pending' in services[] key</li>
+<li>[ZBX-1202] fixed processing of proc_info[] check with 'sum' parameter. Thanks to Kazuo Ito</li>
+<li>[ZBX-1148] fixed flap between available and unavailable for hosts with mixed agent and simple checks</li>
+<li>[ZBX-1051] fixed processing of active checks list on the agent side. Symptom: 'Can't open JSON object' message</li>
+<li>[ZBX-641] fixed oracle OCI-Lob parse</li>
+<li>[ZBX-1078] changed link in server info screen element</li>
+<li>[ZBX-1076] fixed IT services periods</li>
+<li>[ZBX-1019] fixed stacked graph displays 0 value</li>
+<li>[ZBX-1040] fixed error when massupdate triggers with empty dependency</li>
+<li>[ZBX-820] fixed updating downstream item applications when upstream item is updated without changing applications</li>
+<li>[DEV-426] added new command line parameter '-T' for zabbix_sender</li>
+<li>[ZBX-1068] fix typos related to height/high</li>
+<li>[ZBX-948] fixed not working keyboard keys in numericboxes for Opera</li>
+<li>[ZBX-915] fixed pgsql cycling on transaction failure</li>
+<li>[ZBX-985] fixed pgsql return value</li>
+<li>[ZBX-1035] fixed possibility to import graphs to host we don't have permissions</li>
+<li>[ZBX-1062] deny creation of log and eventlog items with non log type of information</li>
+<li>[DEV-137] fix incorrect key syntax error message</li>
+<li>[ZBX-1054] fixed processing of logs and eventlogs which become empty only on the agent side</li>
+<li>[ZBX-1055] fixed DBexecute function result with PostreSQL</li>
+<li>[ZBX-778] added support of $1..$9 macros in the {ITEM.NAME} macro in notifications</li>
+<li>[ZBX-1031] fixed security vulnerability in server, allowing remote unauthenticated users to execute arbitrary SQL queries. Thanks to Nicob</li>
+<li>[ZBX-1032] fixed security vulnerability in processing of net.tcp.listen under FreeBSD and Solaris agents. Thanks to Nicob</li>
+<li>[ZBX-1050] fixed possible windows agent crash while processing big eventlog records</li>
+<li>[ZBX-991] fixed processing of zabbix[queue] internal check</li>
+<li>[ZBX-596] fixed support of IPV6 under Windows 2000</li>
+<li>[ZBX-1027] fixed that item key must be used in each subexpression of trigger expression</li>
+<li>[ZBX-982] fixed message when can't delete application with web items</li>
+<li>[ZBX-861] fixed problem with disappearing nodes in frontend</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>Recompile ZABBIX binaries and update front-end PHP files, no database patching needed. See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of agents required, yet recommended.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX 1.6 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

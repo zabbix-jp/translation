@@ -1,0 +1,131 @@
+<p>This document contains the release notes for ZABBIX version 1.1beta10. The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<p>The release fixes several critical and many other issues and introduces some additional functionality.</p>
+
+<h3>What's New</h3>
+
+<h4>Oracle support.</h4>
+
+<p>This is an experimental feature. So please do not use it for any serious work. The functionality will be finalised in next release.</p>
+
+<h4>Improved performance of ZABBIX with MySQL database.</h4>
+
+<p>Internal MySQL access routines have been rewritten to get rid of performance heavy MySQL calls.</p>
+
+<h4>Better logic for handling of timeout situations.</h4>
+
+<p>ZABBIX 1.1beta9 didn't handle timeout situations correclty. The algorithm has been improved for better flexibility and performance.</p>
+
+<p>New parameters for ZABBIX server: UnreachableDelay, UnreachablePeriod, UnavailableDelay.</p>
+
+<h4>New reports</h4>
+
+<p>New reports: "Most Busy Triggers Top 100", "Notification Report".</p>
+
+<h4>New special unit 'unixtime'</h4>
+
+<p>Item value having this unit will be automatically translated to human readable timestamp.</p>
+
+<h4>Grouping items by applications</h4>
+
+<p>A set of applications can be defined for a host. An item may belong to one or more applications.</p>
+
+<h4>Performance improvements for WEB frontend</h4>
+
+<p>Performance and memory usage of PHP scripts significantly improved.</p>
+
+<h4>Trigger displaying on graphs</h4>
+
+<p>Simple triggers will be displayed on simple graphs and optionally on user-defined graphs.</p>
+
+<h4>Support of working time</h4>
+
+<p>Working time can be configured and displayed on graphs.</p>
+
+<h4>Added selection of item's keys</h4>
+
+<p>This will greatly simplify configuration of items.</p>
+
+<h4>Replaced old naming of items by new naming for win32 agent</h4>
+
+<p>Consult ZABBIX Manual for full details.</p>
+
+<h4>UNIX agent improvements</h4>
+
+<p>Better support of proc.num[], proc.mem[] and Solaris, Tru64, AIX.</p>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>fixed confugration of triggers having logseverity()</li>
+<li>fixed evaluation of simple checks</li>
+<li>fixed 'EventLog' monitoring for Win32 ZABBIX agent</li>
+<li>fixed random Win32 ZABBIX agent crash</li>
+<li>fixed history cleaning for logs</li>
+<li>fixed left axis calculation of graphs</li>
+<li>fixed Win32 ZABBIX agent log monitoring</li>
+<li>fixed evaluation of max,min,count,sum for item having integer values</li>
+<li>fixed new map link adding</li>
+<li>fixed host group adding</li>
+<li>fixed map displaying</li>
+<li>fixed 'No permissions' for 'Latest data','Triggers','Alarms' screens</li>
+<li>fixed permision deletion</li>
+<li>fixed 'get_map_by_sysmapid' function calls</li>
+<li>fixed zabbix_sender for sending values from a file</li>
+<li>integer values will not be treated a sunsupported for items having type float</li>
+<li>fixed server hanging in calculation of aggregate functions</li>
+<li>fixed status changing of triggers when all displayed</li>
+<li>fixed action adding</li>
+<li>Other fixes.</li>
+</ul>
+
+<h3>What's next</h3>
+
+<p>We are looking forward to release ZABBIX 1.1 by 1st of June, 2006. Stay tuned!</p>
+
+<p>Please use ZABBIX Forums to inform ZABBIX Development Team about any issues found in the beta.</p>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide http://www.zabbix.com/manual/v1.1/install.php for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous release, execution of database patches required. See Upgrade Guide http://www.zabbix.com/manual/v1.1/config_upgrading.php for full details on upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms: Ubuntu Linux, AMD64, kernel 2.6.11</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from www.zabbix.com/download.php. The agents are compatible with ZABBIX v1.0 and all releases in 1.1 series.</p>
+
+<h3>Use in production environments</h3>
+
+<p>ZABBIX 1.1beta10 is BETA software, therefore we cannot recommend it for immediate use in production. Although tested throughout our release cycle, this release introduces many changes and does not have the benefit of use in production environments that ZABBIX v1.0 has and therefore should be treated with the same level of caution as a new product.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual http://www.zabbix.com/manual/v1.1/index.php</li>
+<li>ZABBIX Forums (http://www.zabbix.com/forum)</li>
+<li>ZABBIX Support (http://www.zabbix.com/support.php)</li>
+</ul>

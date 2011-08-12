@@ -1,0 +1,87 @@
+<p>This document contains the release notes for ZABBIX version 1.1beta7. The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<p>Early introduction of new templating is the main goal of this release. No feature freeze yet.</p>
+
+<h3>What's New</h3>
+
+<h4>New concept of host templates</h4>
+
+<p>A host can be linked to one template only. Templates can be recursive. For example, Unix->Oracle->Host. The Host will have items, triggers and graphs of both Unix and Oracle.</p>
+
+<h4>Improved housekeeper</h4>
+
+<p>ZABBIX GUI deletes all information (apart of history data) immediately. Housekeeper takes care of sequential removal of trends and historical data. No more status 'deleted' for hosts.</p>
+
+<h4>GUI: improvements.</h4>
+
+<p>Added group operations for actions. Actions can be enabled and disabled. Hostname added to graph names.</p>
+
+<h4>Value mapping.</h4>
+
+<p>Mapping between integer and string value can be configured to have readable information. For example, one may want to configure 0=>"Available", 2=>"Not available" for host statuses. The value mapping is also used in notification messages.</p>
+
+<h4>Support of #N in parameters of trigger functions.</h4>
+
+<p>#N is supported for functions max(), min(), avg(), delta() and sum(). #N means number of recent checks. For example, sum(#10) will return maximum of last ten values.</p>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>Fixed initial update of host statuses.</li>
+<li>Fixed navigation bar for Screens.</li>
+<li>Fixed incorrect groupid error for actions.</li>
+<li>Fixed fixed evaluation of {IPADDRESS}.</li>
+<li>Speed improvement for proc.num of Tru64.</li>
+<li>Other fixes.</li>
+</ul>
+
+<h3>What's next</h3>
+
+<p>Feature freeze will be announced after release of ZABBIX 1.1beta8.</p>
+
+<p>Last call before feature freeze! Please use ZABBIX Forums to inform ZABBIX Development Team about any issues found in the recent betas. Also let us know if you want some missing feature to be implemented.</p>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide http://www.zabbix.com/manual/v1.1/install.php for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous release, execution of database patches required. See Upgrade Guide http://www.zabbix.com/manual/v1.1/config_upgrading.php for full details on upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms: Ubuntu Linux, AMD64, kernel 2.6.11</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from www.zabbix.com/download.php. The agents are compatible with ZABBIX v1.0 and all releases in 1.1 series.</p>
+
+<h3>Use in production environments</h3>
+
+<p>ZABBIX 1.1beta7 is BETA software, therefore we cannot recommend it for immediate use in production. Although tested throughout our release cycle, this release introduces many changes and does not have the benefit of use in production environments that ZABBIX v1.0 has and therefore should be treated with the same level of caution as a new product.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual http://www.zabbix.com/manual/v1.1/index.php</li>
+<li>ZABBIX Forums (http://www.zabbix.com/forum)</li>
+<li>ZABBIX Support (http://www.zabbix.com/support.php)</li>
+</ul>

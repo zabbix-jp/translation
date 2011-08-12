@@ -1,0 +1,140 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.6.2.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>It is highly recommended to upgrade from 1.6 and 1.6.1.</p>
+
+<p>This document contains the release notes for ZABBIX 1.6.2.</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>Important</h3>
+
+<p>Starting from this release ZABBIX sends notification messages to the users having read access to a host, which generated the event only.</p>
+
+<h3>What's New in 1.6.2</h3>
+
+<h4>Better support of SNMP data</h4>
+
+<p>Added support of quoted numbers.</p>
+
+<h4>New supported checks</h4>
+
+<p>Added support of system.swap.size and net.tcp.listen under FreeBSD, system.boottime under Solaris, system.cpu.load under Solaris 2.6, vm.memory.size under AIX 6.x. proc.num and proc.mem are fully supported under Linux, Solaris and AIX.</p>
+
+<h4>Other Improvements and Bug Fixes</h4>
+
+<ul>
+<li>[ZBX-653] fixes for postgresql</li>
+<li>[DEV-137] fixed compilation warnings</li>
+<li>[ZBX-652] improved support of SNMP items</li>
+<li>[DEV-275] changed value processing. Multiplier after delta</li>
+<li>[DEV-274] added overflow check for uint64 for incoming values</li>
+<li>[ZBX-506] fixed duplicate UnavailableDelay in zabbix_server.conf</li>
+<li>[ZBX-428] added internal check zabbix[requiredperformance]</li>
+<li>[ZBX-639] fixed numeric snmp oid for ifOutOctets. Thanks to Alexandr Kovalenko.</li>
+<li>[ZBX-651] fixed possible memory leak in autodiscovery actions</li>
+<li>[ZBX-650] DM: fixed memory leak in synchronization of node configuration</li>
+<li>[ZBX-650] fixed rare race condition in DBimplode_exp</li>
+<li>[ZBX-650] fixed cleanup of open file descriptor</li>
+<li>[ZBX-649] fixed problem with "Too many open files" by agent under Solaris and AIX</li>
+<li>[DEV-276] added support of HTML text in plaintext view in screens</li>
+<li>[ZBX-395] fixed item list for simple graph</li>
+<li>[ZBX-334] added sorting to group list in elements copy form</li>
+<li>[ZBX-509] fixed problem with user rights to hostgroup without any host</li>
+<li>[ZBX-564] added more descriptive message on conflict of templates</li>
+<li>[ZBX-443] removed excess space after detail messages</li>
+<li>[ZBX-526] fixed graphs on screens not getting refreshed issue</li>
+<li>[ZBX-531] fixed plain text line wrapping</li>
+<li>[ZBX-551] updated german language file</li>
+<li>[ZBX-554] added proxy host info in export/import</li>
+<li>[ZBX-638] fixed deleting applications on host remove</li>
+<li>[ZBX-636] removed "Keep trends (in days)" from Item Configuration form if "Type of information" is Character, Log or Text</li>
+<li>[ZBX-608] added sorting to templates column in hosts screen</li>
+<li>[ZBX-635] improved escalations to stop if host, item or trigger is disabled</li>
+<li>[ZBX-632] fixed sql query in map elements configuration form</li>
+<li>[ZBX-631] fixed incorrect incoming string values if using dbcache</li>
+<li>[ZBX-630] improved log files view in BB theme</li>
+<li>[ZBX-629] fixed sql error in popup window</li>
+<li>[DEV-271] fixed graphs out of bounds problem</li>
+<li>[ZBX-628] fixed memory leak in proxy module</li>
+<li>[ZBX-611] fixed undefined variables in installation wizard</li>
+<li>[ZBX-612] fixed possible incorrect value for host</li>
+<li>[ZBX-627] fixed items update</li>
+<li>[ZBX-625] fixed possible incorrect processing of delta for integers if using dbcache</li>
+<li>[DEV-273] added mass update for IPMI fields</li>
+<li>[DEV-272] added support of {HOSTNAME}, {HOST.CONN}... macros for "IPMI IP address"</li>
+<li>[ZBX-623] fixed incorrect processing of function abschange() for integers</li>
+<li>[ZBX-622] fixed broked autocreation of SQLite database</li>
+<li>[ZBX-621] fixed bad performance of the graph related screen due to missing index</li>
+<li>[ZBX-620] fixed jstree error in IT Services</li>
+<li>[ZBX-619] fixed agent crash for system.uptime under Solaris 2.5.1</li>
+<li>[ZBX-618] fixed cast problem with oracle9</li>
+<li>[ZBX-613] fixed possible incorrect evaluating of trigger functions if using dbcache</li>
+<li>[ZBX-610] fixed memory leak in external checks</li>
+<li>[DEV-254] improved server side logging</li>
+<li>[ZBX-602] fixed possible incorrect trigger evaluation if value sotred as "delta"</li>
+<li>[DEV-268] added support of net.if.in/out/total under AIX</li>
+<li>[DEV-268] added support of system.cpu.num/util/load/intr/switches, system.uptime under AIX</li>
+<li>[ZBX-595] improved performance of export screen</li>
+<li>[DEV-270] improved trigger configuration view; error string moved to description column</li>
+<li>[DEV-263] added support of a new map element - simple image</li>
+<li>[DEV-260] support of macro TRIGGER.NSEVERITY</li>
+<li>[DEV-255] added support of #num for function last()</li>
+<li>[ZBX-593] fixed stop escalations if action is disabled</li>
+<li>[ZBX-592] fixed incorrect {TRIGGER.STATUS} value in recovery message</li>
+<li>[ZBX-588] fixed undefined variable in trigger status page</li>
+<li>[ZBX-587] fixed LDAP test functionality</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>Recompile ZABBIX binaries and update front-end PHP files, no database patching needed. See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for a detailed upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX 1.6 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

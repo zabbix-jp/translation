@@ -1,0 +1,99 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.6.4.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>It is highly recommended to upgrade from 1.6, 1.6.1, 1.6.2 and 1.6.3.</p>
+
+<p>This document contains the release notes for ZABBIX 1.6.4.</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>Important</h3>
+
+<p>It is recommended to create the following indexes in order to speed up performance of ZABBIX front-end as well as server side (ignore it if the indexes already exist):</p>
+
+<p>
+CREATE UNIQUE INDEX history_log_2 on history_log (itemid,id);<br>
+CREATE UNIQUE INDEX history_text_2 on history_text (itemid,id);<br>
+CREATE INDEX graphs_items_2 on graphs_items (graphid);
+</p>
+
+<h3>What's New in 1.6.4</h3>
+
+<h4>Support of Quoted SNMP Strings</h4>
+
+<p>It is quite important fix to be mentioned as a new feature here. Now quoted numeric SNMP data can be automatically processed.</p>
+
+<h4>Other Improvements and Bug Fixes</h4>
+
+<ul>
+<li>[ZBX-845] fixed calculation of delayed items for non-local nodes in Queue screen</li>
+<li>[ZBX-842] fixed duplicate triggers in "Last 20 issues" in dashboard</li>
+<li>[DEV-323] removed master nodes from dropdown</li>
+<li>[ZBX-837] removed sid from Zabbix logo link</li>
+<li>[ZBX-589] fixed processing of quoted floating point values</li>
+<li>[ZBX-836] fixed probem with permissions of proxy shared memory</li>
+<li>[ZBX-833] fixed link from maps element to trigger status page</li>
+<li>[ZBX-831] DM: fixed synchronization of trends data</li>
+<li>[DEV-137] DM: improved performance of historical data synchronization</li>
+<li>[ZBX-827] fixed possible bug in actions hints</li>
+<li>[ZBX-826] fixed problem displaying disabled web checks</li>
+<li>[ZBX-825] fixed problem with changing item status in configuration web and items screens</li>
+<li>[ZBX-822] fixed dashboard when logged in as guest</li>
+<li>[ZBX-763] fixed warning message displayed at the bottom when saving graphs without items</li>
+<li>[ZBX-821] fixed dashboard context menu "Latest data" does not show required host</li>
+<li>[ZBX-819] Error in import script</li>
+<li>[ZBX-818] In configuration->items, if selected Host All, items hosts are shown in table</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>Recompile ZABBIX binaries and update front-end PHP files, no database patching needed. See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of agents required, yet recommended.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX 1.6 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

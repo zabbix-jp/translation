@@ -1,0 +1,370 @@
+<p>Zabbix SIA is proud to announce the availability of Zabbix 1.8.3rc1 (Release Candidate).</p>
+
+<p>Zabbix is an enterprise-class open source distributed monitoring solution. Zabbix is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for Zabbix 1.8.3rc1.</p>
+
+<p>This release fixes numerous issues of Zabbix 1.8.x and introduces new interesting features. A nice overview of the new features is at <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3">http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3</a>.</p>
+
+<p><strong>This release is not for production use. It is a Release Candidate!</strong></p>
+
+<p>If you are using Zabbix 1.8 with node-based distributed setup, please run the following SQL patch. It should improve performance of configuration syncing a lot.</p>
+
+<p>
+MySQL:<br>
+DROP INDEX node_cksum_cksum_1 ON node_cksum;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+<br>
+ORACLE:<br>
+DROP INDEX node_cksum_cksum_1;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+<br>
+PostgeSQL:<br>
+DROP INDEX node_cksum_cksum_1;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>What's New in 1.8.3</h3>
+
+<h4>Passive mode for Proxies</h4>
+
+<p>Zabbix Proxy can be configured, so that it will initiate all connections to the Server. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3#passive_zabbix_proxy">details</a>.</p>
+
+<h4>Improved Server and Proxy performance</h4>
+
+<p>Zabbix performance was significantly improved by better memory caching as well as decreased load to the database server. Zabbix server processes requires much less memory. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3#server_performance_improvements">details</a>.</p>
+
+<h4>More options for the Dashboard</h4>
+
+<p>Number of unacknowledged triggers can be optionally displayed in the Dashboard. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3#unacknowledged_trigger_displaying_in_the_dashboard">details</a>.</p>
+
+<h4>Better search</h4>
+
+<p>Global provide suggestions, based on the entered string. Search results became more readable and easy to use. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3#search_improvements">details</a>.</p>
+
+<h4>Front-end improvements</h4>
+
+<p>Maps support ability to mark map elements that have their state changed recently. Now it is also possible to use auto-aligning for icon placement. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3#frontend_changes">details</a> for a preview of other important changes.</p>
+
+<h4>Reworked configuration section</h4>
+
+<p>Access to template is much easier now, it is a separate menu item. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.3#reworked_configuration_section">details</a>.</p>
+
+<h4>Support of sound and visual messages</h4>
+
+<p>Zabbix front-end supports sound and visual messages in all screens. You won't miss any serious issue anymore! It is configurable on per-user level in user profile.</p>
+
+<h4>Complete List of Improvements and Bug Fixes</h4>
+
+<ul>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2731">ZBX-2731</a>] fixed permissions problem with hostgroup names containing '[]'</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2733">ZBX-2733</a>] fixed the timer process so that it does not recalculate extraneous triggers for an item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2729">ZBX-2729</a>] improved host-group and host filter selection</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-465">DEV-465]</a> added messaging system</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2697">ZBX-2697</a>] forbid creation of maintenance without hosts\groups</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2711">ZBX-2711</a>] added links to host profile in dashboard "last 20 issues" host menu</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2719">ZBX-2719</a>] fixed events delay for one minute in frontend</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2720">ZBX-2720</a>] in actions conditions trigger host is now displayed</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2685">ZBX-2685</a>] fixed map elements not always change position when coords are manually set</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2664">ZBX-2664</a>] fixed viewed period and filter status reset in web monitoring</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2683">ZBX-2683</a>] removed dead entries and added some translated strings for the Latvian translation</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2670">ZBX-2682</a>] added Czech translation; thanks to Jakub Kalas</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2670">ZBX-2669</a>] fixed not showing map label when background image is used</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2670">ZBXNEXT-436</a>] added unacknwledged problem display for maps</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2670">ZBX-2561</a>] refactored usergroups api, improved items deletion</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2670">ZBX-2634</a>] fixed instability of Zabbix processes on Solaris due to them crashing in signal handlers</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2670">ZBX-2670</a>] make it clear in the 'configure' help output that full path to odbc_config should be specified</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2666">ZBX-2666</a>] fixed detection of resolv.h and net/if.h</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2657">ZBX-2657</a>] fixed bugs with non closing item select popups in bar reports</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-425">ZBXNEXT-425</a>] added new macros for acknowledged events count</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2642">ZBX-2642</a>] fixed items multiplier field</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2639">ZBX-2639</a>] now when do full clone template, linkage list is cleared</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2598">ZBX-2598</a>] fixed labels with linebreak in maps</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-426">ZBXNEXT-426</a>] added dashboard option to show unack problems</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2555">ZBX-2555</a>] fixed simple checks for FTP, POP, and NNTP protocols so that they close sessions properly</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2553">ZBX-2553</a>] fixed simple checks ignoring server replies</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2612">ZBX-2612</a>] fixed system.stat showing cpu idle and I/O wait time over 100% on AIX</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1324">ZBX-1324</a>] replaced more user visible strings ZABBIX with Zabbix</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2616">ZBX-2616</a>] bundled DejaVu font upgraded from 2.30 to 2.31</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2562">ZBX-2562</a>] improved sessions store</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-424">ZBXNEXT-424</a>] enhanced status of trigger filter</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2599">ZBX-2599</a>] fixed processing of hexadecimal or octal data by proxy</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2597">ZBX-2597</a>] fixed processing of telnet results with long prompts</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2595">ZBX-2595</a>] fixed logformat field showing</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2593">ZBX-2593</a>] fixed possibility to copy item between templates that are linked to same host</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2585">ZBX-2585</a>] removed spaces from charts title & fixed date format for chart4.php</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2592">ZBX-2592</a>] added support of comma character (,) for scripts in action remote commands</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2575">ZBX-2575</a>] removed outdated and undocumented environment variables from alert scripts</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2574">ZBX-2574</a>] improved fixed graph Y axis measurement</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2576">ZBX-2576</a>] small text changes in administration/audit</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1857">ZBX-1857</a>] fixed item form correct processing, removed refreshing when item type is changed</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2528">ZBX-2528</a>] fixed default language loading before using phrases, warning messages removed which were displayed after login</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-343">ZBXNEXT-343</a>] added possibility to unlink and clear templates when mass update hosts templates</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1930">ZBX-1930</a>] all top indents of icon labels now is equal</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2152">ZBX-2152</a>] fixed names of SNMPv3 security levels</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2563">ZBX-2563</a>] fixed warnings in m4/libunixodbc.m4 with newer autotools</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2543">ZBX-2543</a>] fixed password reset when edit user profile and auth type is not internal</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2524">ZBX-2524</a>] fixed deleting media types</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2557">ZBX-2557</a>] fixed incorrect message when add proxy with name that already exist</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2492">ZBX-2492</a>] fixed japanese translation, all sprintf and their placeholders have been removed from phrases from all languages</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2551">ZBX-2551</a>] fixed not shown errors in configuration/triggers</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2552">ZBX-2552</a>] fixed multiple events for triggers with complicated expressions</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2532">ZBX-2532</a>] fixed outdated information in "server info" screen element</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-377">ZBXNEXT-377</a>] added support of passive mode for proxies</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2556">ZBX-2556</a>] added dropdown length limit in frontend</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2548">ZBX-2548</a>] fixed sorting in items popup when adding items to simple graph, disabled dropdown with tooltip showing filtration added as well</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2547">ZBX-2547</a>] fixed errors in installation</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2277">ZBX-2277</a>] fixed menu position on screen</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2339">ZBX-2339</a>] fixed height of row in resource "Plain text" in screens</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2459">ZBX-2459</a>] fixed setting trigger value to unknown on disabling</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2414">ZBX-2414</a>] added PHP session module check as requirement in dashboard and installation</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2526">ZBX-2526</a>] fixed graph refresh problem when referred from screens page</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2525">ZBX-2525</a>] improved actions API code</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2324">ZBX-2324</a>] fixed guest user settings not being stored</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-461">DEV-461</a>] improved map creation/editing by adding align option</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2518">ZBX-2518</a>] fixed new map saving</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2469">ZBX-2469</a>] fixed screen API</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-396">ZBXNEXT-396</a>] added optional parameters 'from' and 'to' to zabbix[queue</a>]</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2511">ZBX-2511</a>] fixed compilation on FreeBSD with IPv6 due to FD_SETSIZE being undefined</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2503">ZBX-2503</a>] fixed server and proxy crash with Oracle in cases DBUser and DBPassword parameters were not specified</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2074">ZBX-2074</a>] fixed wed scenarios showing incorrect speed</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2486">ZBX-2486</a>] fixed syntax error in 1.6 PostgreSQL upgrade script</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2336">ZBX-2336</a>] fixed 'system.hostname' being empty on Windows hosts with names longer than 15 characters</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2251">ZBX-2251</a>] removed error displaying in area of graphics</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1327">ZBX-1327</a>] page is now remembered correctly after performing actions</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1211">ZBX-1211</a>] fixed cell spacing in empty cells</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2372">ZBX-2372</a>] fixed bug with date in local language, now short and long month names shown correctly</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2385">ZBX-2385</a>] added macro {TRIGGER.PROBLEM.EVENTS.PROBLEM.UNACK}</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2040">ZBX-2040</a>] annoying "double check" popups removed from copy to & mass update actions of items and triggers</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2482">ZBX-2482</a>] fixes in chart graphs avg calc</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1477">ZBX-1477</a>] fixed moving screen elements with spans</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-279">ZBXNEXT-279</a>] added links to parent elements for item and trigger form</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2376">ZBX-2376</a>] port parameter to tcp and tcp_perf is now mandatory</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2376">ZBX-2376</a>] added ldap, ldap_perf, ntp, and ntp_perf simple checks</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-808">ZBX-808</a>] renamed service.ntp parameter of net.tcp.service{.perf} to ntp</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2011">ZBX-2011</a>] plain ASCII subjects are no longer base64-encoded, fixes issues with email to SMS gateways</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-319">ZBXNEXT-319</a>] multirow inserts are now used for PostgreSQL 8.2 and higher</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-392">ZBXNEXT-392</a>] our daemons no longer crash after "strace -p"</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-138">ZBXNEXT-138</a>] our daemons can now listen on multiple IPs, see ListenIP configuration parameter</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2031">ZBX-2031</a>] fixed comparison of empty strings with Oracle that led to duplicate rows in dservices</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2409">ZBX-2409</a>] fixed server crash when deleting unreachable hosts in discovery</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-461">DEV-461</a>] changes in GUI configuration menu</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2473">ZBX-2473</a>] fixed timescroll most right position when "now"</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1193">ZBX-1193</a>] improved macros form</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2035">ZBX-2035</a>] fixed host full cloning</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1986">ZBX-1986</a>] fixed empty Y axis if item values are zeros</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2492">ZBX-2492</a>] updated Japanese translation; thanks to Kodai Terashima</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1357">ZBX-1357</a>] update Hungarian translation; thanks to Laszlo Szabo</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2489">ZBX-2489</a>] fixed server crash when receiving data using the old protocol</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2474">ZBX-2474</a>,<a href="https://support.zabbix.com/browse/ZBXNEXT-378">ZBXNEXT-378</a>] fixed page refresh on filter change, now all filters hiding and showing works without refresh</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2488">ZBX-2488</a>] changed filter from Web Monitoring to External Check</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2483">ZBX-2483</a>] fixed showing latest data by filter when clicking from dashboard with GUI option 'Dropdown first entry' -> None</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1529">ZBX-1529</a>] fixed macros expand to nothing in templates</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2461">ZBX-2461</a>] fixed complex bugs with trigger expressions</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1357">ZBX-1357</a>] updated German translation; thanks to Peter Schultz</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2319">ZBX-2319</a>] fixed escaping locales on download</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2460">ZBX-2460</a>] fixed auto adding host group to updated host</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2367">ZBX-2367</a>] improved using DISTINCT rule in queries in API</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2408">ZBX-2408</a>] fixed mute button in status of triggers page</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2477">ZBX-2477</a>] fixed dynamic graphs disappear from screens</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1346">ZBX-1346</a>] clarify some parameter values in the example configuration files</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2471">ZBX-2471</a>] fix location of the space in a translatable string</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-954">ZBX-954</a>] fix Hungarian language name</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2457">ZBX-2457</a>] change 'type' keyword to 'ENGINE' for table creation in MySQL schema</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2466">ZBX-2466</a>] fixed item filter form</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1607">ZBX-1607</a>] now trigger line is visible in all Zabbix themes in all states and severity in corresponding severity colour mixed with opposite color which stored in defines in hex</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2105">ZBX-2105</a>] fixed acknowledging events from dashboard for different nodes</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2441">ZBX-2441</a>] fixed handling of begin/commit/rollback statements with temporarily unavailable SQL server</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2432">ZBX-2432</a>] fixed warning message in templates when template has linked templates</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2325">ZBX-2325</a>] improved groups/hosts selecting for filter dropdowns</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2433">ZBX-2433</a>] fixed time not updated on slides when now is selected</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2452">ZBX-2452</a>] fixed parsing of integer values from SNMP's Hex-STRING</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2313">ZBX-2313</a>] forbid to add graph from templates to screen</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1503">ZBX-1503</a>] added information message after host delete action, about host being deleted</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2418">ZBX-2418</a>] fixed bug with JavaScript URL parser, anchor was recognized as part of file</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-323">ZBXNEXT-323</a>] improved bad performance of the trends for large number of items</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-327">ZBXNEXT-327</a>] more intuitive load balancing of pollers with a single item queue</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-326">ZBXNEXT-326</a>] more efficient synchronization of configuration data</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2153">ZBX-2153</a>] fixed server crash due to unaligned memory access</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2092">ZBX-2092</a>] fixed label line height in maps, now all lines have the same line height</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-377">DEV-377</a>] improved global search</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1510">ZBX-1510</a>] fixed history view bound by minute issue</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2339">ZBX-2339</a>] fixed row height for type of information "text"</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2201">ZBX-2201</a>] improved history page</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2359">ZBX-2359</a>] fixed graph lines for fixed Y axis with items draw functions "All"</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-335">ZBXNEXT-335</a>] links starting with http(s) are now clickable in hosts inventory</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1537">ZBX-1537</a>] fixed multiple displaying of same host, from which were deleted graph, when deleting mass graphs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1263">ZBX-1263</a>] fixed misleading log messages that referenced agent for any kind of unsupported item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-58">ZBXNEXT-58</a>] added zabbix[{history_log,history_text,history_uint,trends_uint}</a>] internal checks</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2446">ZBX-2446</a>] fixed compilation on AIX 5.3 with OS level 5300-05 or earlier</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2027">ZBX-2027</a>] fixed selecting wrong host after cancelling trigger comment</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2253">ZBX-2253</a>] fixed delete confirmation dialogue referring to empty element</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2370">ZBX-2370</a>] fixed duration value in monitoring events for multiple problem triggers</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-507">ZBX-507</a>] made UserParameters work with zabbix_agent(d) -p and -t</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2326">ZBX-2326</a>] fixed XSS vulnerability in triggers page; later independently discovered by VUPEN Security</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2326">ZBX-2326</a>] fixed dynamic chart titles, now all symbols are rendered correctly</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2250">ZBX-2250</a>] value mapping is now applied for {ITEM.LASTVALUE} macro inside triggers description</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1436">ZBX-1436</a>] fixed trigger events display after next steps  monitoring -> triggers -> click on any event time</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1532">ZBX-1532</a>] added screen name to visual screen editing form (when adding screen rows and cols)</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2438">ZBX-2438</a>] fixed configuration of ssh2 on FreeBSD. Thanks to Alex Deiter</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2423">ZBX-2423</a>] added custom colour input for link elements</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2100">ZBX-2100</a>] fixed group with templates but without hosts breaks map editing issue</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1591">ZBX-1591</a>] fixed "advanced icons" for image type map elements</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2379">ZBX-2379</a>] fixed trigger expression editing with trigger builder</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1882">ZBX-1882</a>] fixed selecting items from disabled hosts for graphs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1126">ZBX-1126</a>] fixed large numbers processing for values stored as 'Delta'</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-241">ZBXNEXT-241</a>] extended proxy screen to show proxy vps and item count</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-460">DEV-460</a>] improved host-group and maps icons info in Zabbix maps</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-338">ZBXNEXT-338</a>] added caching of eventids</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1438">ZBX-1438</a>] fixed not deleting data from trends_uint table when deleting an item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2276">ZBX-2276</a>] fixed dashboard discovery status header</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2377">ZBX-2377</a>] fixed converting html special chars in graphs' legend</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2311">ZBX-2311</a>] fixed Host group empty value selection for items filtering</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-313">ZBXNEXT-313</a>] implemented string pool for configuration cache</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2417">ZBX-2417</a>] fixed timeout handling for passive checks on agent side</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1873">ZBX-1873</a>] added slideshow delay multiplier and fixed slides not showing graphs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2282">ZBX-2282</a>] fixed availability updating of IPMI hosts, monitored by proxy</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2412">ZBX-2412</a>] fixed deleting maps with API</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2341">ZBX-2341</a>] fixed cutting 20 bytes instead of 20 symbols in char/log/text item values</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2407">ZBX-2407</a>] fixed repeated message on cookie size limit</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2406">ZBX-2406</a>] removed filter from plaintext history</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2263">ZBX-2263</a>] fixed permission checks in bar reports</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2270">ZBX-2270</a>] fixed item filtering</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2401">ZBX-2401</a>] fixed host name in dynamic graphs in screens</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-325">ZBXNEXT-325</a>] added StartDBSyncers parameter for parallel writing to DB</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1906">ZBX-1906</a>] fixed possibility to add identical checks for discovery</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2384">ZBX-2384</a>] fixed status of triggers elements in screens</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1824">ZBX-1824</a>] fixed parsing map labels containing item references with user macros</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-321">ZBXNEXT-321</a>] decreased number of selects from DB while processing trends data</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1505">ZBX-1505</a>] fixed user macros not resolved in frontend</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1902">ZBX-1902</a>] fixed some possibilities to create incorrect linkage</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2386">ZBX-2386</a>] rows per page limit increased</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2306">ZBX-2306</a>] fixed zoom position</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2306">ZBX-2306</a>] improved starting zoom on edges</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2132">ZBX-2132</a>] added date format constants to locales, changed zbx_date2str function to meet regional formats and date translation</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-311">ZBXNEXT-311</a>] improved speedup dbconfig synchronization</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2360">ZBX-2360</a>] added multiple acknowledging for OK>UNKNOWN>OK and PROBLEM>UNKNOWN>PROBLEM events</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2374">ZBX-2374</a>,<a href="https://support.zabbix.com/browse/ZBX-2633">ZBX-2633</a>] updated Ukrainian translation; thanks to zalex_ua</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2347">ZBX-2347</a>] fixed last 20 issues in event details showing less than 20 issues</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-459">DEV-459</a>] made improvements in discovery page generation</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2148">ZBX-2148</a>] added preview button in graphs form</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2337">ZBX-2337</a>] fixed error when selecting a web item in trigger configuration</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2306">ZBX-2306</a>] fixed links for graphs in screens</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-633">ZBX-633</a>] removed linkage of OpenIPMI library to Agents in "configure" script</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-633">ZBX-633</a>] more debug information in checks_ipmi.c module</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2362">ZBX-2362</a>] fixed processing of logrt[</a>] checks under Windows</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2356">ZBX-2356</a>] fixed error while performing group actions when creating an item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2355">ZBX-2355</a>] fixed error when trying to massupdate trigger severity</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2354">ZBX-2354</a>,<a href="https://support.zabbix.com/browse/ZBX-2635">ZBX-2635</a>,<a href="https://support.zabbix.com/browse/ZBX-2648">ZBX-2648</a>] updated Russian translation; thanks to dotneft and zalex_ua</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2352">ZBX-2352</a>] fixed typo in the default locale</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2312">ZBX-2312</a>] fixed event order in "monitoring triggers" and "last 20 events"</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2264">ZBX-2264</a>] added opportunity to translate class.cuser.php and config.inc.php</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-31">ZBXNEXT-311</a>] improved the speed of dbconfig synchronization</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2378">ZBX-2378</a>] renamed calculated item field 'Expression' to 'Formula', changed trigger option 'Multiple TRUE events' to use 'PROBLEM' instead</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2329">ZBX-2329</a>] fixed screen renaming</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2315">ZBX-2315</a>] fixed multiple issues with JS scrollbar</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2321">ZBX-2321</a>] fixed log items appearing in the wrong order</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-458">DEV-458</a>] added marks on maps if elements trigger changed status recently</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2290">ZBX-2290</a>] added export/import of map images</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2290">ZBX-2290</a>] fixed image update with oracle db</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2317">ZBX-2317</a>] updated French translation; thanks to alixen</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2283">ZBX-2283</a>] fixed incorrect time calculating in slidebar</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2261">ZBX-2261</a>] fixed username hiding in acknowledge comments</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2305">ZBX-2305</a>] fixed actions getting lost in an event-busy environment</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2303">ZBX-2303</a>] fixed GET/POST methods in processing web scenario steps. Thanks to Hannu Ylitalo</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-293">ZBXNEXT-293</a>] processes now provide more information on why they terminate</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2304">ZBX-2304</a>] fixed "no permission" error when screen contains simple graphs with web item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2268">ZBX-2268</a>] denied creation of pie/exploded graphs with more than one sum item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2298">ZBX-2298</a>] added constant to defines to be able configure default Y axis position: left or right</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2174">ZBX-2174</a>] fixed a small memory leak in SNMP checks</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1648">ZBX-1648</a>,<a href="https://support.zabbix.com/browse/ZBX-2300">ZBX-2300</a>] fixed caching of "Database monitor" items. Thanks to Kirill Fateev</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2290">ZBX-2290</a>] fixed screen cells moving</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2301">ZBX-2301</a>] fixed "configure" script with libssh2-1.0.0 library</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2296">ZBX-2296</a>] fixed possible heavy loaded server crash when using internal checks</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2295">ZBX-2295</a>] added additional units to graphs Y axis</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2285">ZBX-2285</a>] fixed sending of active items multiple times</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2266">ZBX-2266</a>] fixed server crash when processing malformed calculated items</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1346">ZBX-1346</a>] use single quotes in example frontend configuration file</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2274">ZBX-2274</a>] fixed trigger expression corruption with trigger wizard</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2273">ZBX-2273</a>] add support of macro {TRIGGER.EVENTS.UNACK} for map labels</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2279">ZBX-2279</a>] fixed error when changing graph name case</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2252">ZBX-2252</a>] fixed server crash and infinite looping in telnet checks</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2275">ZBX-2275</a>] fixed loss of the log-data if Zabbix server is unavailable</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-457">DEV-457</a>] improved dashboard favourite selection</li>
+<li>[<a href="https://support.zabbix.com/browse/DEV-457">DEV-457</a>] improvements in dynamic map link indicators form</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2258">ZBX-2258</a>] fixed applications import</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1357">ZBX-1357</a>,<a href="https://support.zabbix.com/browse/ZBXNEXT-376">ZBXNEXT-376</a>,<a href="https://support.zabbix.com/browse/ZBXNEXT-412">ZBXNEXT-412</a>] update Brazilian Portuguese translation; thanks to edson</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2254">ZBX-2254</a>] added update time for monitoring triggers screen</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1886">ZBX-1886</a>] added js translations</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2245">ZBX-2245</a>] added missing functions in trigger expression builder</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2190">ZBX-2190</a>] fixed trigger expression check for syntax</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2242">ZBX-2242</a>] fixed agent crash on HP-UX when processing logrt[</a>] items</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-288">ZBXNEXT-288</a>] improved server performance by not storing function lastvalue in database</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1753">ZBX-1753</a>] added permission check for trigger sound notifications</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2246">ZBX-2246</a>] added trigger wizard for logrt item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2241">ZBX-2241</a>] fixed graph X axis for big periods</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2241">ZBX-2241</a>] fixed text collide in graphs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2232">ZBX-2232</a>] fixed bug with last event duration time in event details</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2243">ZBX-2243</a>] fixed bug when cannot select template for item filter by host</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2240">ZBX-2240</a>] fixed "undefined index" in monitoring latest data</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-954">ZBX-954</a>] fix minor typos</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+<p>
+See <a href="http://www.zabbix.com/documentation/1.8/manual/installation/">Zabbix Manual</a> for full details.
+</p>
+
+<h4>Upgrade</h4>
+<p>
+Recompile Zabbix binaries and update front-end PHP files. Execute a database patch if migating from Zabbix 1.6.x. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/installation_and_upgrade">Zabbix Manual</a> for a detailed upgrade procedure.
+</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>Zabbix Server</h4>
+<p>
+Zabbix Server has been tested on the following platforms:
+</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 5.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22, PostgreSQL 8.3</li>
+<li>RedHat EL 5.3, Intel, kernel 2.6.18, Oracle 11gR2</li>
+<li>Slackware Linux, x86, kernel 2.6.29.6, MySQL 5.1.x</li>
+</ul>
+
+<h4>Zabbix Agents</h4>
+
+<p>Zabbix Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>Zabbix Company provides a full range of professional services. We also provide trouble-free upgrade service for easy migration from earlier versions to Zabbix 1.8.x. Please contact <a href="mailto:sales@zabbix.com">Sales</a> for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/documentation/">Zabbix 1.8 Manual</a></li>
+<li>Zabbix Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>Zabbix Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

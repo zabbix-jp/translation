@@ -1,0 +1,68 @@
+<p>This document contains the release notes for ZABBIX version 1.1beta4. The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New</h3>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>Fixed processing of UserParameters which are pre/postfixed with spaces</li>
+<li>Fixed processing of SNMP and simple checks</li>
+<li>Fixed compilation with --with-ldap</li>
+<li>SNMP string values to be automatically converted to numeric</li>
+<li>Fixed nodata() processing when used with host 'status'</li>
+<li>Fixed conflict with MySQL headers</li>
+<li>Other fixes.</li>
+</ul>
+
+<h3>What's next</h3>
+
+<p>This release does not include fixes for template-related functionality in ZABBIX GUI. This will be addressed in ZABBIX 1.1beta5 which is scheduled to be released until end of 2005. ZABBIX Development Team is aware of these issues and we are treating them with the highest priority.</p>
+
+<p>ZABBIX 1.1beta5 will be focused on quality and usability of GUI.</p>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide http://www.zabbix.com/manual/v1.1/install.php for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous release, execution of database patches is NOT required. See Upgrade Guide http://www.zabbix.com/manual/v1.1/config_upgrading.php for full details on upgrade procedure.</p>
+
+<p>It is strongly recommended to upgrade if you're using ZABBIX 1.1beta3.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms: Ubuntu Linux, AMD64, kernel 2.6.11</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from www.zabbix.com/download.php. The agents are compatible with ZABBIX v1.0 and all releases in 1.1 series.</p>
+
+<h3>Use in production environments</h3>
+
+<p>ZABBIX 1.1beta4 is BETA software, therefore we cannot recommend it for immediate use in production. Although tested throughout our release cycle, this release does not have the benefit of use in production environments that ZABBIX v1.0 has and therefore should be treated with the same level of caution as a new product.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual http://www.zabbix.com/manual/v1.1/index.php</li>
+<li>ZABBIX Forums (http://www.zabbix.com/forum)</li>
+<li>ZABBIX Support (http://www.zabbix.com/support.php)</li>
+</ul>

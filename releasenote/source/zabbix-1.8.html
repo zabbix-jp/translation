@@ -1,0 +1,272 @@
+<p>Zabbix SIA is proud to announce the availability of Zabbix 1.8, new major version of Zabbix.</p>
+ 
+<p>Zabbix is an enterprise-class open source distributed monitoring solution. Zabbix is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.
+</p>
+ 
+<p>This document contains the release notes for Zabbix 1.8.</p>
+ 
+<p>Zabbix 1.8 was created in collaboration with NTT ComTechnology Corporation(Zabbix Premium Partner), whose support made possible implementation of some major features in this release.</p>
+ 
+<p>We would like to thank other companies and individuals for their active participation in development of Zabbix.</p>
+ 
+<p><strong>We are truly grateful for your support, it really makes the difference!</strong></p>
+ 
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+ 
+<h3>What's New in 1.8</h3>
+ 
+<p>A brief preview of the new functionality with screenshots can be found here: <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new">http://www.zabbix.com/documentation/1.8/manual/about/what_s_new</a></p>
+ 
+<h4>Advanced cache module</h4>
+
+<p>Advanced cache module is introduced to significantly improve performance of Zabbix Server and Proxy operations. Up to 10x better performance increase is expected comparing to 1.6.x releases. The cache module is permanently enabled and drastically decreases load on the back-end database.</p>
+ 
+<h4>Much more efficient polling</h4>
+
+<p>Zabbix latest releases support running of hundreds of pollers. The pollers are very efficient and do not require connections to the database. Data processing parallelism is greatly improved.</p>
+ 
+<h4>GUI improvements</h4>
+
+<p>Zabbix interface has been improved by introducing paging, selection of elements and mass-operations. The interface is tested to support very large number of monitored elements with very low impact on overall system performance. It is optimized for high performance yet easy to use.</p>
+ 
+<p>Efficient filters have been introduced for most of configuration pages.</p>
+ 
+<h4>Support of PHP 5.3</h4>
+
+<p>Zabbix GUI fully supports PHP 5.3. Support for PHP 4.x dropped.</p>
+ 
+<h4>Advanced support of maintenance periods</h4>
+
+<p>Host and group level maintenance periods are supported. Very flexible timing can be defined for each maintenance period.</p>
+ 
+<h4>Added support of bar graphs</h4>
+
+<p>The bar graphs can be used for long-term trend analysis.</p>
+ 
+<h4>Advanced screen editing</h4>
+
+<p>Modification and creation of screens was simplified by adding support of drag-and-drop and new edit options.</p>
+ 
+<h4>Advanced maps</h4>
+
+<p>New drag and drop interface makes creating and editing maps much easier. Now maps support highlighting of map elements depending on severity of problems and host statuses.</p>
+ 
+<h4>Detailed host availability information</h4>
+
+<p>Host availability information is displayed separately for Zabbix Agent, IPMI and SNMP agents.</p>
+ 
+<h4>Support of complex regular expressions</h4>
+
+<p>Regular expression builder helps to create and maintain complex regular expressions used for log monitoring.</p>
+ 
+<h4>Improved auto-discovery</h4>
+
+<p>Added support of network masks for IPv4 and IPv6 protocols. Added new actions: enable/disable device. Added SNMPv3 based discovery checks. Also added support of port number intervals and devices with multiple-IP addresses.</p>
+ 
+<h4>Support of auto-registration</h4>
+
+<p>Hosts with installed Zabbix agents can be automatically added for monitoring.</p>
+ 
+<h4>Support of template, host and global-level macros</h4>
+
+<p>The macros will greatly simplify maintenance of large Zabbix setup with host specific configuration parameters.</p>
+ 
+<h4>Agent-less monitoring based on Telnet and SSH</h4>
+
+<p>Servers and network devices can be monitored using Telnet or secure SSH connections.</p>
+ 
+<h4>Better support of Oracle database</h4>
+
+<p>Zabbix uses high-performance OCI library for Oracle connectivity. No dependency on Sqlora8 library anymore.</p>
+ 
+<h4>Global search function</h4>
+
+<p>Global search allows fast and easy access to hosts, templates and host groups.</p>
+ 
+<h4>Better graphs</h4>
+
+<p>Layout of graphs and navigation was improved for much easier operations and visibility of information.</p>
+ 
+<h4>JSON-RPC based API</h4>
+
+<p>Zabbix API provides easy and very efficient way of remote management and integration with 3rd party tools and services.</p>
+ 
+<h4>Full support of UTF8</h4>
+
+<p>Zabbix fully supports UTF8, which makes it ready for use with multiple languages.</p>
+ 
+<h4>High performance monitoring of index based SNMP items</h4>
+
+<p>Only single connection to SNMP agent is used.</p>
+ 
+<h4>Advanced WEB monitoring</h4>
+
+<p>WEB monitoring module supports basic authentication.</p>
+ 
+<h4>Advanced ICMP based monitoring</h4>
+
+<p>Existing ICMP monitoring was enhanced to support more detailed statistics including number of lost packets and min/max/avg timing.</p>
+ 
+<h4>Advanced DNS monitoring</h4>
+
+<p>Performance and availability of DNS resources can be effectively monitored.</p>
+ 
+<h4>Zabbix command line tool</h4>
+
+<p>See http://www.zabbix.com/forum/showthread.php?t=14315 for more details.</p>
+ 
+<h4>Other Improvements</h4>
+
+<ul>
+<li>[DEV-316] added logging of executed commands on agent side. Parameter LogRemoteCommands</li>
+<li>[DEV-316] implemented displaying of history of remote commands</li>
+<li>[ZBX-1444] added map link macro {host:key.func(param)}</li>
+<li>[DEV-411] added configuration parameters for dbcache module</li>
+<li>[DEV-339] added more internal checks zabbix[wcache,*] and zabbix[rcache,*]</li>
+<li>[DEV-438] added support of suffixes (K,M,G) in configuration parameters</li>
+<li>[ZBX-1357] updated French translation. Thanks to alixen</li>
+<li>[ZBX-790] added protection of using special characters in user parameters of Zabbix Agent</li>
+<li>[ZBX-1382] improved performance in dashboard latest 20 issues</li>
+<li>[ZBX-1328] better naming for mass operations in the list of host groups</li>
+<li>[DEV-137] help link redirected to on-line documentation at www.zabbix.com/documentation/</li>
+<li>[ZBX-1369] make more strings translatable</li>
+<li>[ZBX-1369] make time units translatable in graphs; patch by alixen</li>
+<li>[ZBXNEXT-146] added support of numeric values with plus sign</li>
+<li>[ZBX-1358] make more graph strings translatable; patch by alixen</li>
+<li>[DEV-436] improved display of ZABBIX/SNMP/IPMI agents availability information in hosts configuration screen</li>
+<li>[ZBX-1337] renamed maintenance types for clarity</li>
+<li>[DEV-333,ZBX-1254] fixed queue screen with separated availability of SNMP,IPMI and others items</li>
+<li>[ZBX-1324] replaced user visible string ZABBIX with Zabbix</li>
+<li>[DEV-333] fixed possible server crash while processing remote commands</li>
+<li>[ZBX-998] modified PostgreSQL schema for support of uint64 history values</li>
+<li>[DEV-369] added support of file log rotation, item's "log[]" parameter "file" now has a format of "[path][regexp]"</li>
+<li>[ZBX-1272] server name is now shown in page title too</li>
+<li>[DEV-137] PDF manual replaced by a README file with a link to on-line documentation</li>
+<li>[ZBX-1230] IP address is made a default selection in host details form</li>
+<li>[DEV-434] added support of host availability for proxy hosts</li>
+<li>[DEV-433] added generation events after maintenance period if trigger status changed during this period</li>
+<li>[DEV-137] updated French translation. Thanks to alixen</li>
+<li>[DEV-430] added map labels macro {TRIGGERS.UNACK}</li>
+<li>[DEV-430] added notification macro {TRIGGER.EVENTS.UNACK}</li>
+<li>[ZBX-1015] added support of LVM devices for system.swap.in/out under Linux. Thanks to Takanori Suzuki</li>
+<li>[DEV-429] added support of system.cpu.switches under Linux 2.4/2.6</li>
+<li>[DEV-411] improved performance of trends module</li>
+<li>[DEV-1111] added user action confirmation</li>
+<li>[ZBX-1110] improved History of events statement</li>
+<li>[DEV-339] added internal check zabbix[wcache,*] for cache module</li>
+<li>[DEV-333] added configuration data cache module</li>
+<li>[DEV-423] added filtering of the Windows Event Log by Type, Source and Event ID on the server side</li>
+<li>[DEV-423] added filtering of the Windows Event Log by Type, Source and Event ID on the agent side</li>
+<li>[DEV-9] added support of function macros</li>
+<li>[DEV-422] updated the list of supported checks in the item configuration form</li>
+<li>[DEV-421] added additional parameter `maxlines' to `log[]' and `eventlog[]' checks</li>
+<li>[DEV-137] add AIX initscript for agentd by Faustino Ramos</li>
+<li>[DEV-414] created basic man pages for all Zabbix binaries</li>
+<li>[DEV-137] poller will continue processing of other items after enabling a host</li>
+<li>[DEV-399] added information about monitored hosts to the discovery screen</li>
+<li>[DEV-358] added notification macros {NODE.*[1..9]}</li>
+<li>[DEV-358] added notification macros {ITEM.LOG.*[1..9]}</li>
+<li>[DEV-358] added notification macros {ITEM.VALUE} and {ITEM.VALUE[1..9]}</li>
+<li>[DEV-358] added notification/trigger description macros {ITEM.LASTVALUE[1..9]}</li>
+<li>[DEV-358] added notification macros {HOST.CONN[1..9]} {HOST.DNS[1..9]} {IPADDRESS[1..9]}</li>
+<li>[DEV-358] added notification macros {TRIGGER.KEY[1..9]}</li>
+<li>[DEV-358] added notification/trigger description macros {HOSTNAME[1..9]}</li>
+<li>[DEV-358] added notification macros {ITEM.NAME[1..9]}</li>
+<li>[DEV-358] added notification macros {PROFILE.*[1..9]}</li>
+<li>[DEV-405] added highlighting of selected rows</li>
+<li>[DEV-397] added user name to output of {ESC.HISTORY} macros</li>
+<li>[DEV-397] added notification macros {EVENT.ACK.STATUS} and {EVENT.ACK.HISTORY}</li>
+<li>[DEV-405] Proxies, Nodes moved under "Administration->DM"</li>
+<li>[DEV-405] Items, Triggers, Graphs moved under "Configuration->Hosts"</li>
+<li>[DEV-405] Host Groups, Maintenances moved under "Configuration"</li>
+<li>[DEV-406] added milliseconds to log files of all Zabbix daemon processes</li>
+<li>[DEV-350] cleanup of sample config files, added sample of windows agent config</li>
+<li>[DEV-404] improved web history</li>
+<li>[ZBX-961] fixed history strings saved not by reference</li>
+<li>[DEV-403] added Debug mode for user groups in order to simplify GUI troubleshooting</li>
+<li>[ZBX-773] fixed typo 'attribures'</li>
+<li>[ZBX-974] recompressed most frontend images with pngcrush</li>
+<li>[DEV-400] added necessary link between hosts and groups</li>
+<li>[DEV-398] added hostgroup filter for HostGroup and TemplateLinkage twinboxes</li>
+<li>[DEV-391] Notifications: added new {DISCOVERY.*} macros</li>
+<li>[DEV-317] added new action conditions (node, discovery rule/check, proxy)</li>
+<li>[DEV-320] added macros for windows events logs in notifications</li>
+<li>[DEV-332] added media selection for notifications</li>
+<li>[DEV-385] added Event ID field for eventlogs</li>
+<li>[DEV-382] added support of IPv6 for monitoring of the SNMP devices</li>
+<li>[DEV-328] implemented printing of stopped Zabbix process PID for better troubleshooting</li>
+<li>[DEV-341] rework of events history, as consequences changes in audit screen, some reports and other pages</li>
+<li>[DEV-356] moved dropdown configuration from defines to frontend</li>
+<li>[DEV-355] changed node management interface</li>
+<li>[DEV-341] added hint with previous 20 events in Dashboard's widget "Last 20 issues" on mouse-over</li>
+<li>[DEV-326] admins are allowed to change Medias in user profile</li>
+<li>[DEV-330] extended template trigger dependencies functionality</li>
+<li>[DEV-137] changed the minimal maintenance time from 1 hour to 5 minutes</li>
+<li>[DEV-319] empty fields aren't shown in hosts inventory</li>
+<li>[ZBX-750] added multiple choice for trigger dependencies</li>
+<li>[DEV-313] added User Group configuration window GUI improvements</li>
+<li>[ZBX-646] audit log entries added for screen edit actions</li>
+<li>[ZBX-645] after new installation, filter for audit log is set not to filter anything</li>
+<li>[ZBX-643] fixed no print data for bar reports</li>
+<li>[DEV-231] improved dynamic graph usability in slideshow screen</li>
+<li>[DEV-258] added additional reports based on bar graphs</li>
+<li>[DEV-252] improved audit log of host groups,hosts,items and media types</li>
+<li>[DEV-266] added support of octal and hexadecimal data</li>
+<li>[DEV-253] improved audit log filtering</li>
+<li>[DEV-261] added triggers status to screens</li>
+<li>[DEV-256] improved multiple labels in maps and support of macros</li>
+<li>[DEV-265] added popups with links to "Status of trigger" & "Events history" pages</li>
+<li>[DEV-262] added group filtering for "Trigger info"</li>
+</ul>
+ 
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/documentation/1.8/manual/installation/">Zabbix Manual</a>for full details.</p>
+ 
+<h4>Upgrade</h4>
+
+<p>Recompile Zabbix binaries and update front-end PHP files, executed database patch. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/installation_and_upgrade">Zabbix Manual</a>for a detailed upgrade procedure.</p>
+ 
+<h3>Pre-release testing</h3>
+
+<h4>Zabbix Server</h4>
+
+<p>Zabbix Server has been tested on the following platforms:</p>
+ 
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 5.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22, PostgreSQL 8.3</li>
+<li>RedHat EL 5.3, Intel, kernel 2.6.18, Oracle 11gR2</li>
+</ul>
+
+<h4>Zabbix Agents</h4>
+
+<p>Zabbix Agents have been compiled and tested on the following platforms:</p>
+ 
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+ 
+<h4>Commercial support</h4>
+
+<p>Zabbix Company provides a full range of professional services. We also provide trouble-free upgrade service for easy migration to Zabbix 1.8. Please contact <a href="mailto:sales@zabbix.com">Sales</a>for pricing and more details.</p>
+ 
+<h3>References</h3>
+ 
+<ul>
+<li><a href="http://www.zabbix.com/documentation/">Zabbix 1.8 Manual</a></li>
+<li>Zabbix Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>Zabbix Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>
+

@@ -1,0 +1,114 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.3.3.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution.</p>
+
+<p>ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. The full license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.3.3. The release supports MySQL, PostgreSQL and SQLite only. Support of Oracle will be restored in later releases.</p>
+
+<p>Do not use this release in production! It is for beta testing only.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New in 1.3.3</h3>
+
+<h4> Upgrade patches for easy migration from 1.1.x to 1.4</h4>
+
+<p>These patches are under upgrades/dbpatches/1.3/, for MySQL and PostgreSQL only.</p>
+
+<h4>Scenarios based WEB monitoring</h4>
+
+<p>Performance, availability and integrity of WEB applications can be monitored by ZABBIX.</p>
+
+<h4>Added "Clone" functionality in ZABBIX WEB GUI</h4>
+
+<p>Items, triggers and other elements can be easily duplicated!</p>
+
+<h4>Support of hysteresis</h4>
+
+<p>Different trigger conditions can be defined depending on trigger value.</p>
+
+<h4>Native support of Jabber notifications</h4>
+
+<p>New media type, Jabber, can be used to send messages to Jabber network (Google Talk, other).</p>
+
+<h4>Hostname split into host name and DNS name</h4>
+
+<p>Host name will be used for informational purposes only.</p>
+
+<h4>Better default templates</h4>
+
+<p>Please let us know how we can improve the templates further.</p>
+
+<h4>New command line parameters for zabbix_sender</h4>
+
+<p>See ZABBIX Manual (PDF) for details.</p>
+
+<h4>Database watchdog</h4>
+
+<p>ZABBIX server will not shutdown but notify users and recover nicely if database is not available. MySQL only. Other databases will be supported as well.</p>
+
+<h4>Mass update for items</h4>
+
+<p>Mass updates of items made easy!</p>
+
+<h4>Misc functionality and fixes</h4>
+
+<ul>
+<li>ZABBIX Manual 1.4 release 4</li>
+<li>new macro {TRIGGER.VALUE}</li>
+<li>highlighting for second level menu</li>
+<li>new parameter system.boottime</li>
+<li>data precision is preserved for integer data types</li>
+<li>item key lenght increased to 255 characters</li>
+<li>new server parameter 'StartHTTPPollers'</li>
+<li>fixed compilation issues under FreeBSD and HP-UX</li>
+<li>other improvements and bug fixes</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide <a href="http://www.zabbix.com/manual/v1.4/install.php">http://www.zabbix.com/manual/v1.4/install.php</a> for full details. See <a href="http://www.zabbix.com/manual/v1.4/install_source_web.php">http://www.zabbix.com/manual/v1.4/install_source_web.php</a> for information about Installation Wizard.</p>
+
+<h4>Upgrade</h4>
+
+<p>Upgrade script for MySQL and PostgreSQL are provided. Please do not upgrade production systems! The release may or may not work on your system. It has been tested on a very limited number of systems.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Windows XP</li>
+<li>Windows XP 64bit</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual <a href="http://www.zabbix.com/manual/v1.1/index.php">http://www.zabbix.com/manual/v1.1/index.php</a></li>
+<li>ZABBIX v1.3 (beta) Manual <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

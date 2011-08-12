@@ -1,0 +1,97 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.4.6.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains release notes for ZABBIX 1.4.6.</p>
+
+<p>It is highly recommended to upgrade from earlier ZABBIX 1.4.x.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>Fixes and minor improvements included into 1.4.6</h3>
+
+<ul>
+<li>[ZBX-404] fixed update of item "Download speed for scenario '...'"</li>
+<li>[ZBX-389] added escaping in SQL statement in DBupdate_graph</li>
+<li>[ZBX-286] fixed possible server crash on some platforms</li>
+<li>[ZBX-167] fixed typo in triggers update function</li>
+<li>[ZBX-272] fixed default link to local interface in *BSD for net.if* items</li>
+<li>[ZBX-386] fixed possible agent crash in processing of active checks</li>
+<li>[ZBX-379] added error checking for accept on server side</li>
+<li>[ZBX-365] added support of long process names for proc.num and proc.mem, Linux 2.6</li>
+<li>[ZBX-78] fixed detection of net-snmp libs</li>
+<li>[ZBX-362] added mass template linkage to hosts, mod by sergio.cricca</li>
+<li>[ZBX-361] fixed possible "division by zero" in Monitoring/Triggers screen</li>
+<li>[ZBX-360] fixed possible warning messages under Oracle while updating items</li>
+<li>[ZBX-357] fixed problem with clearing error message for activated items</li>
+<li>[ZBX-339] fixes problem in frontend with clearing history for text items</li>
+<li>[ZBX-44] added timeout handler for processing net.tcp.* items</li>
+<li>[ZBX-356] fixed possible server crash for non *log() items with type 'log'</li>
+<li>[ZBX-354] added support of new parameter sec|#num for str(),regexp() and iregexp()</li>
+<li>[ZBX-351] added support of floating point values w/o zero (.12)</li>
+<li>[ZBX-350] fixed processing in_condition under Oracle</li>
+<li>[ZBX-348] fixed incorrect processing of large integer values for {ITEM.LASTVALUE}</li>
+<li>[ZBX-337] added Oracle upgrade scripts</li>
+<li>[ZBX-301] fixes some typos</li>
+<li>[ZBX-310] fixes for PGSQL</li>
+<li>[ZBX-336] fixed vtext.php</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of database schema required for upgrade from earlier 1.4.x.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>CentOS Linux 4.4, Intel</li>
+<li>CentOS Linux 5.0, Intel</li>
+<li>FreeBSD 6.2, Intel</li>
+<li>Solaris 10, Intel</li>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8</li>
+<li>Solaris 9</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX 1.4 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

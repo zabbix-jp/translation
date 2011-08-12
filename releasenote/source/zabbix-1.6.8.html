@@ -1,0 +1,91 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.6.8.</p> 
+ 
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p> 
+ 
+<p>It is recommended to upgrade from previous releases of 1.6.x.</p> 
+ 
+<p>This document contains the release notes for ZABBIX 1.6.8.</p> 
+ 
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p> 
+ 
+<p>It is recommended to create the following indexes in order to speed up performance of ZABBIX front-end as well as server side (ignore it if the indexes already exist):</p> 
+
+<p> 
+CREATE UNIQUE INDEX history_log_2 on history_log (itemid,id);<br> 
+CREATE UNIQUE INDEX history_text_2 on history_text (itemid,id);<br> 
+CREATE INDEX graphs_items_1 on graphs_items (itemid);<br> 
+CREATE INDEX graphs_items_2 on graphs_items (graphid);<br> 
+CREATE INDEX services_1 on services (triggerid);<br> 
+</p> 
+ 
+<h3>What's New in 1.6.8</h3>
+ 
+<p>No new major features were introduced in this release.</p> 
+ 
+<h4>Other Improvements and Bug Fixes</h4> 
+
+<ul> 
+<li>[ZBX-1408] fixed adding images for postgresql</li> 
+<li>[ZBX-3] remove a comment saying syslog is used until it works</li> 
+<li>[ZBX-1184] fixed support of more than 10 CPU's for system.cpu.util under Linux</li> 
+<li>[ZBX-1365] fixed housekeeper to process trends_uint table</li> 
+<li>[ZBX-1384] fixed memory leak in processing ldap checks</li> 
+<li>[ZBX-1355] fixed possible server crash when receiving invalid data. Thanks to Nicob</li> 
+<li>[ZBX-1031] added more security checks for communication between nodes. Thanks to Nicob</li> 
+<li>[ZBX-1309] fixed input file processing by zabbix_sender (-i option)</li> 
+<li>[ZBX-1284] fixed server crash if using zabbix[queue] check without dbcache</li> 
+<li>[ZBX-1276] fixed import template as template if status tag is after groups tag in xml</li> 
+<li>[ZBX-1150] added refreshing of not supported performance counters</li> 
+</ul> 
+ 
+<h3>Installation and Upgrade Notes</h3>
+ 
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for full details.</p> 
+ 
+<h4>Upgrade</h4>
+
+<p>Recompile ZABBIX binaries and update front-end PHP files, no database patching needed. See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of agents required, yet recommended.</p> 
+ 
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p> 
+ 
+<ul> 
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li> 
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li> 
+</ul> 
+ 
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p> 
+ 
+<ul> 
+<li>AIX 5.2</li> 
+<li>FreeBSD 4.x, 5.x, 6.x</li> 
+<li>HP-UX 10.x, 11.x</li> 
+<li>Linux 2.4.x, 2.6.x</li> 
+<li>Linux CentOS</li> 
+<li>NetBSD 2.0</li> 
+<li>OS/X 10.2</li> 
+<li>Solaris 8, 9, 10</li> 
+<li>Tru64 5.1B</li> 
+<li>Windows XP, 2000, 2003, 2008, Vista</li> 
+</ul> 
+ 
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p> 
+ 
+<h4>Commercial support</h4> 
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p> 
+ 
+<h3>References</h3>
+ 
+<ul> 
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX 1.6 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

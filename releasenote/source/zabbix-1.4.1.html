@@ -1,0 +1,148 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.4.1.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.4.1.</p>
+
+<p>It is strongly recommended to upgrade from ZABIX 1.4.</p>
+
+<p>Support of Oracle restored, however it is not well-tested. No Oracle patches for migration from 1.4 exist yet.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>What's New in 1.4.1</h3>
+
+<h4>Better trigger expressions</h4>
+
+<p>Trigger expressions has been improved to support more formal syntax of arithmetical expressions. Added support of negative numbers.</p>
+
+<h4>Support of negative data</h4>
+
+<p>Added support of negative floating point numbers.</p>
+
+<h4>Better item parameters</h4>
+
+<p>Support of quotes in parameters of items.</p>
+
+<h4>Improvements of poller process</h4>
+
+<p>Poller was enhanced to disable check of item for 4*delay seconds in case of timeout.</p>
+
+<h4>Fixes and minor improvements</h4>
+
+<ul>
+<li>fixed processing of 'service_state[*]'</li>
+<li>fixed PostgreSQL database upgrade script</li>
+<li>added support of non standard PostgreSQL & MySQL ports</li>
+<li>fixed compilation of ZABBIX server under HP-UX</li>
+<li>fixed upgrade of maps without backgrounds</li>
+<li>improved UserParameters for Win32</li>
+<li>fixed location of the manual and added link to support</li>
+<li>check timeouted item only after 4*delay seconds</li>
+<li>fixed several issues in housekeeper</li>
+<li>changed properties of text files in SVN repository</li>
+<li>new release of the Manual</li>
+<li>removed duplicate index of table httptest</li>
+<li>fixes for Oracle and SQLite schemas</li>
+<li>improved main poller loop</li>
+<li>fixed int_in_list() function</li>
+<li>fixed and improved log monitoring</li>
+<li>fixed type of items.valuemapid</li>
+<li>improved Standalone_Template</li>
+<li>fixed PostgreSQL upgrade patch</li>
+<li>added loop protection in selection of slave nodes</li>
+<li>change delimiter for DM data transfers to 0xFF</li>
+<li>better reporting of DM data transfers in log file</li>
+<li>added better error reporting in zbx_malloc()</li>
+<li>fixed transfer of NULL values between nodes</li>
+<li>minor Oracle related fixes for frontend</li>
+<li>fixed reconnection for jabber notifications</li>
+<li>fixed incorrect reporting of SMTP error messages</li>
+<li>filesize[] replaced by vfs.file.size[] in data.sql</li>
+<li>improved reading of configuration files</li>
+<li>fixed Dashed lines for graphs</li>
+<li>fixed host and group remembering on graph monitoring screen </li>
+<li>fixed 'Field [formula] is not double'</li>
+<li>fixed template aplication synchronization</li>
+<li>fixed NOTSUPPORTED status for 'net.if.*' of Solaris</li>
+<li>minor fixes for sqlite mutexes</li>
+<li>added check of memory leaks in zbx_malloc()</li>
+<li>added "PerfCounter" configuration parameter</li>
+<li>cleaned code to avoid '... may be used uninitialized in this function' warnings</li>
+<li>fixed printing of debug info in delete_history()</li>
+<li>fixed incorrect type of icmpInAddrMaskReps in SNMPv1 template</li>
+<li>fixed processing of complex action conditions</li>
+<li>fixed incorrect type of icmpInAddrMaskReps in SNMPv1 template</li>
+<li>fixed crash in processing of active checks on agent side</li>
+<li>minor fix of misc/conf/zabbix_server.conf</li>
+<li>fixed linkage of applications in 1.1.x migration scripts</li>
+<li>fixed permissiong of Admin in 1.1.x migration scripts</li>
+<li>fixed bug in processing of host groups permissions</li>
+<li>minor fix of zabbix_sender command line help</li>
+<li>fixed pinger to process DNS name instead of host name</li>
+<li>fixed possible incorrect memory access in nodewatcher</li>
+<li>fixed processing of cmdline for proc.num and proc.mem</li>
+<li>fixed processing of {IPADDRESS} for hosts monitored by DNS name</li>
+<li>fixed 'count' function for trigger expression</li>
+<li>added support of "[&'%" character for key</li>
+<li>fixed compilation under FreeBSD</li>
+<li>fixed XML export</li>
+<li>improved management of timeline period</li>
+<li>fixed configure with postgreSQL, thanks to "abi"</li>
+<li>fixed errors for services.php</li>
+<li>other improvements and bug fixes</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of database schema required for upgrade from 1.4.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+</p>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX 1.4 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

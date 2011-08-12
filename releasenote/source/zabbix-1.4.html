@@ -1,0 +1,160 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.4.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.4.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>What's New in 1.4</h3>
+
+<h4>Installation Wizard</h4>
+
+<p>Installation Wizard automatically checks pre-requisites, database connectivity and generates a configuration file for WEB front end.</p>
+
+<h4>Distributed monitoring</h4>
+
+<p>ZABBIX distributed monitoring is made for complex environments consisting of different locations. ZABBIX supports monitoring of an unlimited number of nodes. Centralized configuration allows all the nodes to be configured from a single location easily.</p>
+
+<h4>Auto-discovery</h4>
+
+<p>ZABBIX distributed monitoring module allows to deploy ZABBIX systems easily. The discovery supports IP ranges, service checks, agent and SNMP checks for efficient auto-discovery.</p>
+
+<h4>WEB monitoring</h4>
+
+<p>WEB monitoring module enables flexible and easy monitoring of availability and performanceof WEB sites and WEB-based applications. It supports passing of GET and POST variables.</p>
+
+<h4>Support of new database engines</h4>
+
+<p>SQLite support has been implemented. It allows to use ZABBIX in embedded environments.</p>
+
+<h4>WEB interface improvements</h4>
+
+<p>WEB interface speed and usability have been improved greatly.</p>
+
+<h4>New notification methods</h4>
+
+<p>Native support of Jabber messaging has been introduced.</p>
+
+<h4>Many-to-many template linkage</h4>
+
+<p>More flexible host-template linkage saves time and make the configuration of hosts more flexible and straight forward.</p>
+
+<h4>Database watchdog</h4>
+
+<p>ZABBIX server automatically warns the group of users if the database is down and continues normal operations when the database is back.</p>
+
+<h4>XML data import/export</h4>
+
+<p>New XML data import and export functionality is an excellent way of sharing templates, hosts configuration and items/triggers related information.</p>
+
+<h4>Windows Vista Support</h4>
+
+<p>ZABBIX Windows agent supports Windows Vista, both 32 and 64 bit versions.</p>
+
+<h4>More flexible actions</h4>
+
+<p>Multiple operations (notifications, script execution) per action are supported. The choice of action calculation algorithm was introduced.</p>
+
+<h4>Server-side external checks</h4>
+
+<p>The server-side external checks can be used to introduce custom checks executed on ZABBIX server side.</p>
+
+<h4>New user permission schema</h4>
+
+<p>The old user permission schema is no longer supported. It was replaced by a new more efficient, yet simple, schema working on the level of user groups and host groups.</p>
+
+<h4>Hysteresis support</h4>
+
+<p>ZABBIX supports the use of different trigger expressions to go into ON and OFF states.</p>
+
+<h4>Support of slide show</h4>
+
+<p>Several screens can be grouped into a slide show for better presentation.</p>
+
+<h4>ZABBIX server can spread the work load across several servers</h4>
+
+<p>Groups of server side processes (discoverer, poller, HTTP poller, trapper, etc) can be located on different physical servers for better performance and availability.</p>
+
+<h4>Other improvements</h4>
+
+<ul>
+<li>The same code for UNIX and Windows agents</li>
+<li>New communication protocol</li>
+<li>Increased maximum size of background images</li>
+<li>New default templates</li>
+<li>Flexible refresh intervals</li>
+<li>Stacked graphs</li>
+<li>More flexible log rotation</li>
+<li>Support of static linkage</li>
+<li>Colour selection for graphs</li>
+<li>Log filtering on agent side</li>
+<li>Improved configuration script</li>
+<li>ZABBIX sender to read configuration parameter from agent's configuration file</li>
+<li>Support of macros in remote commands</li>
+<li>New configuration parameters</li>
+<li>avg() will support integer type</li>
+<li>An icon can be assigned to hosts having 'unknown' status</li>
+<li>other improvements and bug fixes</li>
+</ul>
+
+<h4>What's no longer supported</h4>
+
+<ul>
+<li>Repeated actions and notifications</li>
+<li>Bulk loader was replaced by XML Data Import/Export</li>
+<li>User permissions on per-element level</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for a detailed upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX 1.4 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

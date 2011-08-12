@@ -1,0 +1,102 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.4.5.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains release notes for ZABBIX 1.4.5.</p>
+
+<p>It is highly recommended to upgrade from earlier ZABBIX 1.4.x.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h4>Fixes and minor improvements included into 1.4.5</h4>
+
+<ul>
+<li>[ZBX-295] fixed processing of null values under Oracle</li>
+<li>[ZBX-294,ZBX-296] Oracle related fixes</li>
+<li>[ZBX-343] fixed possible hang of server trapper process</li>
+<li>[ZBX-341] fixed compilation problem under Tru64/OSF</li>
+<li>[ZBX-338] added png files for images_oracle.sql script</li>
+<li>[ZBX-322] fixed possible incorrect autodiscovery</li>
+<li>[ZBX-315] fixed irregulary stop of server on OpenBSD</li>
+<li>[ZBX-206] fixed case sensitive hosts sorting</li>
+<li>[ZBX-313] fixed problem with sqlite3 semaphore</li>
+<li>[ZBX-292] fixed processing of negative values in availability report</li>
+<li>[ZBX-182] fixed processing of icmpping if dns name cannot be resolved</li>
+<li>improved speed of copying triggers to host</li>
+<li>[ZBX-290] fixed possible server crash if host dns name is unknown</li>
+<li>[ZBX-288] fixed compilation of the agent under Solaris 2.6</li>
+<li>[ZBX-287] fixed compilation under FreeBSD 4.1 with older GCC</li>
+<li>[ZBX-283] fixed SQL statement where INTEGER exceeds allowed range</li>
+<li>[ZBX-277] fixed possible server crash when evaluating functions str(), regexp() and iregexp()</li>
+<li>[ZBX-271] added support of system.boottime[] for OpenBSD & FreeBSD agents</li>
+<li>[ZBX-268] added support of proc.num[], proc.mem[] & system.cpu.num[] for OpenBSD agents</li>
+<li>[ZBX-263] fixed problem with processing of lastlogsize for log[] and eventlog[] items when history is set to 0</li>
+<li>[ZBX-253] fixes problem in frontend with long int values</li>
+<li>[ZBX-250] speed improvement for Triggers when use "{ITEM.VALUE}" macro</li>
+<li>[ZBX-250] fixed 100% CPU on server side after unexpected connection loss</li>
+<li>[ZBX-246] fixed header error in Monitoring->slideshows</li>
+<li>[ZBX-243] speed improvements for processing of eventlog[] for windows agent</li>
+<li>[DEV-92] added support of multiple windows agents, service description</li>
+<li>[ZBX-7] added support of system.cpu.util[] for FreeBSD agents, thanks to 'brick'</li>
+<li>[ZBX-222] fixed problem with slashes</li>
+<li>[ZBX-210] added support of system.cpu.num[] for FreeBSD agents, thanks to 'freak'</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of database schema required for upgrade from earlier 1.4.x.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>CentOS Linux 4.4, Intel</li>
+<li>CentOS Linux 5.0, Intel</li>
+<li>FreeBSD 6.2, Intel</li>
+<li>Solaris 10, Intel</li>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8</li>
+<li>Solaris 9</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.4.pdf">ZABBIX 1.4 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

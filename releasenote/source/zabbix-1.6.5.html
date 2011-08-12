@@ -1,0 +1,151 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.6.5.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>It is recommended to upgrade from previous releases of 1.6.x.</p>
+
+<p>This document contains the release notes for ZABBIX 1.6.5.</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>Important</h3>
+
+<p>It is recommended to create the following indexes in order to speed up performance of ZABBIX front-end as well as server side (ignore it if the indexes already exist):</p>
+
+<p>CREATE UNIQUE INDEX history_log_2 on history_log (itemid,id);<br>
+CREATE UNIQUE INDEX history_text_2 on history_text (itemid,id);<br>
+CREATE INDEX graphs_items_1 on graphs_items (itemid);<br>
+CREATE INDEX graphs_items_2 on graphs_items (graphid);<br>
+CREATE INDEX services_1 on services (triggerid);<br></p>
+
+<h3>What's New in 1.6.5</h3>
+
+<h4>Japanese translation</h4>
+
+<p>Japanese translation was improved.</p>
+
+<h4>Other Improvements and Bug Fixes</h4>
+
+<ul>
+<li>[ZBX-956] fixed js error on map link edit</li>
+<li>[ZBX-955] fixed bold lines in map links</li>
+<li>[ZBX-954] fixed various minor typos and formatting errors</li>
+<li>[ZBX-886] removed duplicate and outdated strings from locales</li>
+<li>[ZBX-952] increased max length of processed text and log data to 64KB</li>
+<li>[ZBX-840] added displaying of text items in the latest data screen</li>
+<li>[ZBX-850] zabbix version removed from locales</li>
+<li>[ZBX-947] fixed various typos and formatting errors in changelog</li>
+<li>[ZBX-945] added comment about min/max values for RefreshActiveChecks param in agent config file</li>
+<li>[ZBX-935] minor fixes for snmptrap.sh. Thanks to Joseph Womack.</li>
+<li>[ZBX-942] fixed error message for server and proxy if cannot bind a port</li>
+<li>[ZBX-940] fixed bug with not initialized array variable</li>
+<li>[ZBX-939] fixed IPC semaphore related issue when starting Zabbix daemons</li>
+<li>[ZBX-938] fixed usage of 'color' in en_gb locale</li>
+<li>[ZBX-937] fixed possible server crash while processing IPMI remote command</li>
+<li>[ZBX-936] fixed saving flexible intervals to items linked to templates</li>
+<li>[ZBX-932] fixed typo in changelog</li>
+<li>[ZBX-931] fixed timeout handling for agent's user parameters</li>
+<li>[ZBX-889] fixed possible bug in media types form</li>
+<li>[ZBX-927] removed default values for text and blob fields in the upgrade script for compatibility with MySQL 5.0</li>
+<li>[ZBX-719] fixed typo in default graph title</li>
+<li>[ZBX-859] fixed typo in server log message</li>
+<li>[ZBX-848] fixed typos in changelog and comments</li>
+<li>[ZBX-926] fixed exporting after preview</li>
+<li>[ZBX-925] fixed verification of IPv6 adresses in frontend</li>
+<li>[ZBX-918, ZBX-919] fixed compilation errors for 'unknown' platforms</li>
+<li>[ZBX-922] fixed selection proper hosts for hosts-groups assign</li>
+<li>[ZBX-559] fixed wrong format of input file in help info of zabbix_sender</li>
+<li>[DEV-381] added printing of SVN revision number to all binaries</li>
+<li>[ZBX-914] fixed SQL error while updating configuration tables on the proxy side</li>
+<li>[ZBX-910] Queue/Details screen now has "Delayed at" column</li>
+<li>[ZBX-910] Queue/Details screen now displays only 500 records</li>
+<li>[ZBX-910] fixed incorrect values for proxy items in the Queue in case of time difference between server and the proxy</li>
+<li>[ZBX-885] removed unused test code from Zabbix agent</li>
+<li>[ZBX-887] fixed typo in "Not accessible resources"</li>
+<li>[DEV-329] fixed server crash if PostgreSQL transaction fails</li>
+<li>[ZBX-902] fixed wrongly updated operation in action in several circumstances</li>
+<li>[ZBX-779] removed PostgreSQL warning message "nonstandard use of ..."</li>
+<li>[ZBX-901] fixed possible bug on trigger creation</li>
+<li>[ZBX-900] fixed adding several user to group with Oracle DB</li>
+<li>[ZBX-894] fixed processing of {HOSTNAME} for trigger name if the trigger expression consists of several items</li>
+<li>[ZBX-894] fixed processing of {ITEM.NAME},{HOSTNAME},{IPADDRESS} and {TRIGGER.KEY} for alerts if the trigger expression consists of several items</li>
+<li>[ZBX-897] fixed user groups rights adding for host groups</li>
+<li>[ZBX-896] improved performance of processing of IT services. Added database index</li>
+<li>[DEV-137] fixed incorrect comment for TrapperTimeout option in zabbix_server.conf</li>
+<li>[ZBX-894] fixed processing of {ITEM.LASTVALUE} for alerts if the trigger expression consists of several items</li>
+<li>[ZBX-893] fixed error creating trigger when in Host dropdown selected All</li>
+<li>[ZBX-888] more supported GSM modems (ignoring AT+CMEE command)</li>
+<li>[ZBX-884] fixed sudden stop of Jabber notifications</li>
+<li>[ZBX-884] added subject field for Jabber notifications</li>
+<li>[ZBX-460] fixed processing `distclean' target of `Makefile' for zabbix_proxy</li>
+<li>[ZBX-882] fixed template linkage form</li>
+<li>[ZBX-879] fixed maximum 30 issues shown in Dashboard system status</li>
+<li>[ZBX-876] removed unused files</li>
+<li>[ZBX-872] fixed group selected in another section of Hosts affects shown proxy members, and proxies shown in Items host dropdown</li>
+<li>[ZBX-874] fixed evaluation of items nextcheck for flexible intervals</li>
+<li>[ZBX-868] fixed incorrect processing of not supported internal checks</li>
+<li>[ZBX-867] added php sockets check to installation wizard</li>
+<li>[ZBX-865] fixed displaying templates without groups in template linkage page</li>
+<li>[ZBX-857] changed queue details timestamp to timestamp defined in locale file</li>
+<li>[ZBX-864] fixed problem when saving screen item without selected item</li>
+<li>[ZBX-856] fixed email sending if tcp packets from smtp server are segmented</li>
+<li>[ZBX-855] fixed processing of eventlogs timestamps on server side</li>
+<li>[ZBX-851] changed sorting of users to alias in popup</li>
+<li>[ZBX-849] fixed permissions problem for users in dashboard</li>
+<li>[ZBX-797] fixed possible manual deletion of web items</li>
+<li>[ZBX-847] fixed error in "Status of ZABBIX" when server is not running</li>
+<li>[ZBX-846] fixed node names instead of group names</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for full details.</p>
+
+
+<h4>Upgrade</h4>
+
+<p>Recompile ZABBIX binaries and update front-end PHP files, no database patching needed. See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for a detailed upgrade procedure. No upgrade of agents required, yet recommended.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX 1.6 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

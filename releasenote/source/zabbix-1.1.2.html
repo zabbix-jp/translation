@@ -1,0 +1,116 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.1.2</p>
+
+<p>ZABBIX is an all-in-one 24x7 monitoring solution without high cost. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. The full license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.1.2. The release does not introduce new functionality, it fixes all known issues of ZABBIX 1.1.1.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New in 1.1.2</h3>
+
+<h4>Support of PostgreSQL</h4>
+
+<p>Currently ZABBIX supports three database engines: MySQL, Oracle, PostgreSQL.</p>
+
+<h4>Better distribution of refresh moments</h4>
+
+<p>Better algorithm of distribution of item next checks is introduced to significantly improve overall performance.</p>
+
+<h4>Native ZABBIX agent for 64bit Windows</h4>
+
+<p>All Windows 64 bit Intel/AMD platforms are supported.</p>
+
+<h4>Misc functionality</h4>
+
+<ul>
+<li>fixed housekeeper: removal of historical and trend data</li>
+<li>added Brazilian Portuguese translation</li>
+<li>added alternative startup scripts for Fedora Linux</li>
+<li>added Zabbix agent for Win64 platforms</li>
+<li>added spec file for ZABBIX agent</li>
+<li>added action email action variable '{TRIGGER.SEVERITY}'</li>
+<li>improved definition of integer and float point types</li>
+<li>improved UserParameter substitution</li>
+<li>disabled exit code handling of UserParameter scripts</li>
+<li>added color selection for trigger severity 'warning' and 'information'</li>
+<li>improved macro variables substitution in message body/subject</li>
+<li>added new value for 'net.tcp.service[*]', 2 - timeout</li>
+<li>added support of 'pfree' and 'pused' for 'vfs.fs.size' of windows</li>
+<li>added support of '<=' for trigger severity of action conditions</li>
+</ul>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>fixed storage and calculation of i64 values</li>
+<li>fixed graph min value calculation</li>
+<li>fixed caption of IT Services Availability Report</li>
+<li>fixed graphs drawing</li>
+<li>fixed incorrect disabling of actions while deleting a trigger</li>
+<li>fixed incorrect number of problems displaying by submaps</li>
+<li>fixed warning in trigger selection popup</li>
+<li>fixed warning in classes.inc.php while displaying graphs</li>
+<li>fixed errors while adding a host to IT service</li>
+<li>fixed windows agent crashing with processing of 'system.cpu.util' key</li>
+<li>fixed Unknown when selecting trigger severity Disaster in action form</li>
+<li>fixed problem with ASN_IPADDRESS SNMP values</li>
+<li>fixed 'system.cpu.util[*]' for Tru64</li>
+<li>fixed problem escaping characters in triggers</li>
+<li>fixed limitation of return value for 'net.if.*'</li>
+<li>fixed limitation of return value for 'vfs.dev.*'</li>
+<li>fixed limitation of return value for 'system.cpu.intr'</li>
+<li>fixed autoregistration in oracle system</li>
+<li>fixed order of displaying log files</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide <a href="http://www.zabbix.com/manual/v1.1/install.php">http://www.zabbix.com/manual/v1.1/install.php</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>In order to upgrade from previous releases, no execution of database patches required. See Upgrade Guide <a href="http://www.zabbix.com/manual/v1.1/config_upgrading.php">http://www.zabbix.com/manual/v1.1/config_upgrading.php</a> for full details on upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>RedHat AS2 Linux, Intel, kernel 2.4.x, Oracle 9.2.0.4</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+<li>Windows XP 64bit</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a>.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual <a href="http://www.zabbix.com/manual/v1.1/index.php">http://www.zabbix.com/manual/v1.1/index.php</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

@@ -1,0 +1,215 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.5.3, fourth release in a series of pre-1.6 betas.</p>
+
+<p>ZABBIX is an enterprise-class open source distributed monitoring solution. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains release notes for ZABBIX 1.5.3.</p>
+
+<p>Do not use this release in production! It is for early beta testing only.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>What's New in 1.5.3 (beta)</h3>
+
+<p>The following functionality is introduced in this release and will be available in stable ZABBIX 1.6.</p>
+
+<h4>New functionality and improvements</h4>
+
+<ul>
+<li>added support of directories for Include in configuration file</li>
+<li>added support of escalations</li>
+<li>added support of macros {EVENT.DATE},{EVENT.TIME},{EVENT.AGE} and {ESC.HISTORY}</li>
+<li>added support of Apache authentication</li>
+<li>improved charts period & start time selection</li>
+<li>added support of perf_counter[path<,period>]</li>
+<li>improved msg functionality in GUI</li>
+<li>added hosts mass update functionality</li>
+<li>added support of Host Template=&lt;template&gt; in actions</li>
+<li>added more supported items in FreeBSD, NetBSD and OpenBSD</li>
+<li>changed greeting message</li>
+<li>added fullscreen icon to monitoring screens</li>
+<li>other bug fixes and minor improvements</li>
+</ul>
+
+<h3>What's New in 1.5.x (beta)</h3>
+
+<p>The following functionality is introduced in 1.5.x releases and will be available in stable ZABBIX 1.6.</p>
+
+<h4>Support of IPv6</h4>
+
+<p>All ZABBIX modules support IPv6.</p>
+
+<h4>Better Distributed Monitoring</h4>
+
+<p>ZABBIX distributed monitoring has been improved for a more efficient Node synchronisation protocol. See also details on ZABBIX Proxy.</p>
+
+<h4>ZABBIX Proxy process</h4>
+
+<p>ZABBIX proxy is a lightweight process, which performs data collection on behalf of ZABBIX Server. The proxies can be used to create distributed centralised monitoring of remote locations all reporting to a central server or one of ZABBIX nodes.</p>
+
+<p>ZABBIX Proxy significantly simplifies deployment and maintenances of large ZABBIX setups in a distributed environment.</p>
+
+<h4>Dashboard</h4>
+
+<p>The Dashboard provides high level personalized details about monitored environment. Now this is a central part of ZABBIX front-end.</p>
+
+<h4>Dynamic screens</h4>
+
+<p>A screen element can be made dynamic. In this case, information displayed in the element will  depend on a host selected by user.</p>
+
+<h4>Nice zoom for graphs</h4>
+
+<p>Zoom period can be selected by mouse for drill-down analysis.</p>
+
+<h4>Database cache module</h4>
+
+<p>Database cache module can be enabled to improve performance of busy ZABBIX servers.</p>
+
+<h4>Pie charts</h4>
+
+<p>Pie charts (both 2D and 3D) are supported.</p>
+
+<h4>Basic management functions</h4>
+
+<p>Traceroute and Ping can be executed from the Status of Triggers screen. More scripts can be added and configured. The scripts are executed on a local ZABBIX server or one of ZABBIX nodes.</p>
+
+<h4>More efficient communication with agents</h4>
+
+<p>ZABBIX Agent supports data buffering, which can be tuned by new configuration parameters, BufferSize and BufferSend. Communication protocol has been improved to support sending of multiple values by one TCP connection.</p>
+
+<h4>More efficient ZABBIX sender</h4>
+
+<p>ZABBIX Sender has been improved to support sending of multiple values by one TCP connection.</p>
+
+<h4>Improved view of trigger statuses</h4>
+
+<p>The screen will display information about triggers and associated events.</p>
+
+<h4>Support of SNMP data having dynamic index</h4>
+
+<p>A new syntax can be used to monitor SNMP data with a dynamic index. See SNMP section for more details.</p>
+
+<h4>Special processing of well known SNMP OIDs</h4>
+
+<p>Simple SNMP OIDs, like ifDescr, ifInOctets, ifInOctets, and other can be used in ZABBIX and will be translated automatically into correct numeric representation by ZABBIX itself.</p>
+
+<h4>Added printable view for all screens</h4>
+
+<p>Any screen can be printed in a nice way by pressing the Print link.</p>
+
+<h4>Disabling of login rights for a group of users</h4>
+
+<p>Whole user group can be configured not to have access to ZABBIX front-end.</p>
+
+<h4>Added support of UTF-8</h4>
+
+<p>ZABBIX front-end is UTF-8 ready. Note that ZABBIX database and ZABBIX server and agent processes are still not ready for correct processing of UTF-8 data.</p>
+
+<h4>Added screen for better management of translations</h4>
+
+<p>The screen can be used to add new translations of ZABBIX front-end.</p>
+
+<h4>Added maintenance mode</h4>
+
+<p>ZABBIX Maintenance mode can be activated to disable ZABBIX front-end.</p>
+
+<h4>Unlimited number of map link styles</h4>
+
+<p>Any number of triggers can be linked to map link. The triggers will define how the link is displayed.</p>
+
+<h4>Database monitoring</h4>
+
+<p>ZABBIX could retrieve data directly from an external database by executing a SQL request.</p>
+
+<h4>Other improvements</h4>
+
+<ul>
+<li>Queue moved into Administration</li>
+<li>Link to Maps, Screens and Graphs moved to the Dashboard</li>
+<li>Option to remember user authorisation</li>
+<li>More efficient communication protocol</li>
+<li>Support of themes for ZABBIX front-end</li>
+<li>User 'guest' can be disabled</li>
+<li>Disabling group of users</li>
+<li>Database down screen</li>
+<li>Duplicated Login removed</li>
+<li>Added sorting for all screens</li>
+<li>Added support of zabbix[proxy,&lt;proxyname&gt;,lastaccess]</li>
+<li>Screen actions moved to Audit, added filter for Audit</li>
+<li>Added autodiscovery by ICMP pings</li>
+<li>Improved icmpping* processing. added "-c3" to fping</li>
+<li>Improved "Events" screen, added "Event Details" screen</li>
+<li>Added transaction functionality to frontend</li>
+<li>Added support of update interval in icmpping* simpe checks</li>
+<li>Increased default max number of log file lines sent per second to 100</li>
+<li>Added protection against brute force login attack</li>
+<li>Added standart sorting to screens</li>
+<li>Added more flexibility to scripts</li>
+<li>Fixed problem with node syncing</li>
+<li>Added Ldap authentication</li>
+<li>Added support network and disk stats under OpenBSD</li>
+<li>Added required server performance info to Status of ZABBIX</li>
+<li>Added time filter in "Availability report"</li>
+<li>Added automatic selection first group and host in WEB monitoring</li>
+<li>Added support of DisablePassive parameter for agent</li>
+<li>Improved support of numeric performance counters for Windows agents</li>
+<li>Numerous bug fixes and minor improvements</li>
+<li>other improvements</li>
+</ul>
+
+<h3>What's not ready yet but expected in 1.5</h3>
+
+<ul>
+<li>Encryption</li>
+<li>Backup/restore of configuration data</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>See <a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX Manual</a> for a detailed upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>Linux 2.6.15 (Ubuntu)</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+</ul>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides a full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/downloads/ZABBIX Manual v1.6.pdf">ZABBIX 1.6 Manual</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

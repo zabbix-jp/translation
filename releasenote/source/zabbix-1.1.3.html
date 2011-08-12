@@ -1,0 +1,120 @@
+<p>ZABBIX SIA is proud to announce the availability of ZABBIX 1.1.3</p>
+
+<p>ZABBIX is an all-in-one 24x7 monitoring solution without high cost. ZABBIX is released under the GPL, thus it is free of charge for both commercial and non-commercial use. The full license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for ZABBIX 1.1.3. The release does not introduce new functionality, it fixes all known issues of ZABBIX 1.1.2.</p>
+
+<p>The following sections describe the release in detail and provide late-breaking or other information that supplements the main documentation.</p>
+
+<h3>What's New in 1.1.3</h3>
+
+<h4>More advanced view of Queue</h4>
+
+<p>The queue has breakdown by item types.</p>
+
+<h4>Swedish and Dutch translation</h4>
+
+<p>Swedish and Dutch translations has been introduced.</p>
+
+<h4>Support of environment variable for alert scripts</h4>
+
+<p>The following environment variables will be passed to alert scripts:</p>
+
+<p>ZABBIX_ALERT_ID, ZABBIX_ACTION_ID, ZABBIX_ALERT_TIME, ZABBIX_ALERT_MEDIATYPEID, ZABBIX_ALERT_STATUS, ZABBIX_ALERT_RETRIES, ZABBIX_ALERT_DELAY</p>
+
+<h4>New macro</h4>
+
+<p>Added support of macro {EVENT.ID} and {TRIGGER.ID}</p>
+
+<h4>Misc functionality</h4>
+
+<ul>
+<li>better processing of units 's', support for units 'uptime'</li>
+<li>do not refresh view of log files</li>
+<li>new algorithm for housekeeping same for all DB engines</li>
+<li>better calculation of next check timestamp for active items</li>
+<li>history stats removed from Status of ZABBIX report</li>
+<li>remove left spaces from script full path</li>
+<li>always draw graphs for items having type "trapper"</li>
+<li>support of system.swap.size[,pfree] and system.swap.size[,pused]</li>
+</ul>
+
+<h4>Fixes</h4>
+
+<ul>
+<li>fixed multipliers fo disk statistics in data.sql</li>
+<li>fixed processing of SNMP HEX and OCTET string values</li>
+<li>fixed system.swap.in[] and system.swap.out[] under Linux 2.4</li>
+<li>fixed occasional LIBSQLORA8-30002: Memory allocation error</li>
+<li>fixed calculation of nodata()</li>
+<li>fixed data.sql to set correct item type UIN64 where required</li>
+<li>fixed data.sql to get rid of incorrect zero multipliers</li>
+<li>fixed problem when adding a graph under PostgreSQL</li>
+<li>fixed calculation of delta(#N)</li>
+<li>fixed situations when latest_alarm() may return wrong value</li>
+<li>fixed Most Busy trigger report for multi-item triggers</li>
+<li>fixed possible security issues raised by debian security audit</li>
+<li>changed all zabbix_log(lev, str) to zabbix_log(lev,"%s", str)</li>
+<li>introduced secure strcat and strcpy: zbx_strlcat, zbx_strlcpy</li>
+<li>fixed perofmance problem in Status of Triggers</li>
+<li>fixed assignment of default listen port for Win agent</li>
+<li>changed return value for 'net.tcp.port[]' of Win agent</li>
+<li>added images for postgres</li>
+<li>fixed reversed icons on maps</li>
+<li>fixed trigger description substitution in action comporation</li>
+<li>fixed trigger description substitution in message subject and body</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See the Installation Guide <a href="http://www.zabbix.com/manual/v1.1/install.php">http://www.zabbix.com/manual/v1.1/install.php</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>You may upgrade from ZABBIX 1.1, 1.1.1, 1.1.2 directly to 1.1.3. It requires recompilation of ZABBIX Server and installation of new front-end only. Optionally you may upgrade your agents.</p>
+
+<p>In order to upgrade from previous releases, no execution of database patches required. See Upgrade Guide <a href="http://www.zabbix.com/manual/v1.1/config_upgrading.php">http://www.zabbix.com/manual/v1.1/config_upgrading.php</a> for full details on upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>ZABBIX Server</h4>
+
+<p>ZABBIX Server has been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 4.x</li>
+<li>RedHat AS2 Linux, Intel, kernel 2.4.x, Oracle 9.2.0.4</li>
+</ul>
+
+<h4>ZABBIX Agents</h4>
+
+<p>ZABBIX Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.11, 5.4</li>
+<li>HP-UX 11.00</li>
+<li>Linux 2.6.11 (Ubuntu)</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 5.9</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP</li>
+<li>Windows XP 64bit</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a>.</p>
+
+<h3>Commercial support</h3>
+
+<p>ZABBIX Company provides full range of professional services. Please contact our <a href="mailto:sales@zabbix.com">sales</a> department for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li>ZABBIX v1.1 Manual <a href="http://www.zabbix.com/manual/v1.1/index.php">http://www.zabbix.com/manual/v1.1/index.php</a></li>
+<li>ZABBIX Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>ZABBIX Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>

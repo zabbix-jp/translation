@@ -1,0 +1,178 @@
+<p><strong>22 July 2011</strong></p>
+
+<p>Zabbix SIA is proud to announce the availability of Zabbix 1.8.6rc1 (First Release Candidate).</p>
+
+<p>Zabbix is an enterprise-class open source distributed monitoring solution. Zabbix is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for Zabbix 1.8.6rc1. Download it from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a>.</p>
+
+<p>This release fixes numerous issues of Zabbix 1.8.x and introduces new interesting features. A nice overview of the new features is at <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.6">http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.6</a>.</p>
+
+<p><strong>This release is not for production use. It is a Release Candidate!</strong></p>
+
+<p>If you are using Zabbix 1.8 with node-based distributed setup, please run the following SQL patch. It should improve performance of configuration syncing a lot.</p>
+
+<p>
+MySQL:<br>
+DROP INDEX node_cksum_1 ON node_cksum;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+<br>
+ORACLE:<br>
+DROP INDEX node_cksum_1;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+<br>
+PostgreSQL:<br>
+DROP INDEX node_cksum_1;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h3>What's New in 1.8.6</h3>
+
+<h4>Strict parsing of configuration files</h4>
+
+<p>Zabbix will compain if there are unsupported attributes in server, proxy or agent configuration files.</p>
+
+<h4>Compatibility with PostgreSQL 9.x</h4>
+
+<p>It is safe to use Zabbix with the latest releases of PostgreSQL.</p>
+
+<h4>Monitoring of LVM devices</h4>
+
+<p>Added performance monitoring of LVM devices.</p>
+
+<h4>Complete List of Bug Fixes and Improvements included into 1.8.6rc1</h4>
+
+<ul>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3968">ZBX-3968</a>] fixed issues with filtering in monitoring->events in Internet Explorer 7</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3469">ZBX-3469</a>] fixed setting UNKNOWN trigger status when agent goes down</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3973">ZBX-3973</a>] added logging of proxy mode (active/passive) at startup</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3902">ZBX-3902</a>] fixed possible zombie states in UNIX, moved watchdog (server) and heartbeats (proxy) to separate processes (main process just waits), added more logging to exiting Windows agent</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3166">ZBX-3166</a>] fixed application updating in Template linking event. Changed linked Template color in application page. Added param NOEMPTY for popup page witch allows hide Empty button in application and item pages</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3565">ZBX-3565</a>] reformating media types in notifications page, adding links to media types</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3784">ZBX-3784</a>] added validation on duplicate discovery rule name</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3733">ZBX-3733</a>] make possible to save Device uniqueness criteria status (discovery rule) in cloning event</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3845">ZBX-3845</a>] check, if this user group is used in the config, if so it cannot be deleted</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3911">ZBX-3911</a>] fixed wrong trigger expression parsing when key parameters contained "("</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3856">ZBX-3856</a>] fixed new group creation from template page</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3840">ZBX-3840</a>] fixed possible path disclosure</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-849">ZBXNEXT-849</a>] added example MySQL UserParameter to monitor database and table size</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3935">ZBX-3935</a>] fixed possible function redeclaration error</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3944">ZBX-3944</a>] added support of multibyte NIC names for the net.if.* checks under Windows</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3947">ZBX-3947</a>] fixed compilation under AIX 5.2 with fileset lower than 5.2.0.40</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3947">ZBX-3947</a>] fixed compilation under AIX 5.2 with enabled IPv6</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3926">ZBX-3426</a>] fixed application unlink and clear when it is linked from template</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1074">ZBX-1074</a>] fixed compilation errors regarding sem_lock and sem_unlock on HP-UX; thanks to Brian Collins</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3877">ZBX-3877</a>] fixed slow Housekeeper for PostgreSQL 7.4+; thanks to Ildefonso Camargo</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-816">ZBXNEXT-816</a>] added support for reloading configuration cache from the command line</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3063">ZBX-3063</a>] added compatibility with PostgreSQL 9+; thanks to Andrey Groshev for patch</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3890">ZBX-3890</a>] added logging of ORACLE warning messages while connecting to the database</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3880">ZBX-3880</a>] fixed repeated processing of log-files through proxy when disabling a host or item</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3420">ZBX-3420</a>] fixed wrong error message being logged in case of DNS resolution errors</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3519">ZBX-3519</a>] fixed unterminated processes when system.run[,wait] times out and added proper output handling for system.run[,nowait] on UNIX</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3768">ZBX-3768</a>] fixed 'uptime' and 's' units as according to the documentation</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3490">ZBX-3490</a>] added support for LVM devices and full path to devices to vfs.dev.read and vfs.dev.write; thanks to Takanori Suzuki</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3862">ZBX-3862</a>] fixed broken popups in frontend in Internet Explorer 7</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3463">ZBX-3463</a>] fixed MaxHousekeeperDelete configuration parameter being ignored for IBM DB2</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3854">ZBX-3854</a>] added saving of state of dynamic/fixed setting for time lines on all pages</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3847">ZBX-3847</a>] fixed item history clearing not deleting data in trends_uint table</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3797">ZBX-3797</a>] fixed processing of vfs.dev.* checks under FreeBSD</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-799">ZBXNEXT-799</a>] added support of SRV records to net.tcp.dns.query[]; thanks to Edward Rudd</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-1029">ZBX-1029</a>] added lookup of Jabber SRV records to Jabber notifications; thanks to Edward Rudd</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-792">ZBXNEXT-792</a>] added type parameter for system.hostname on Windows to support both NetBIOS and host names</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-791">ZBXNEXT-791</a>] added HostnameItem to Agent and Proxy configuration for setting the default Hostname</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3192">ZBX-3192</a>] fixed SNMP index cache to support SNMP target for each entry; thanks to Ilia Sotnikov</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3825">ZBX-3825</a>] fixed errors with single quotes in javascript messages</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBXNEXT-782">ZBXNEXT-782</a>] added support of not-supported items in the history cache</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3072">ZBX-3072</a>] fixed MySQL error when shutting down server</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3105">ZBX-3105</a>] added processing of garbage in configuration files</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2083">ZBX-2083</a>] fixed audit.details field cutting</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3824">ZBX-3824</a>] fixed unnecessary synchronization of "profiles" table in DM setup </li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3821">ZBX-3821</a>] removed warning messages about failed evaluation of trigger expressions</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3826">ZBX-3826</a>] fixed recovering unsupported icmpping* items when a key has been entered incorrectly</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3766">ZBX-3766</a>] fixed "Do" button in item form</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3417">ZBX-3417</a>] removed trailing and leading space from phrase "&lt;all groups&gt;"</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3806">ZBX-3806</a>] fixed HTTP pollers being started on Zabbix proxy</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3808">ZBX-3808</a>] updated Brazilian Portuguese translation; thanks to Murilo Moreira de Oliveira</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3682">ZBX-3682</a>] fixed import of map elements having empty label; thanks to Takanori Suzuki</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3679">ZBX-3679</a>] fixed incorrect "No nodes defined" when screen selection popup has no elements</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3638">ZBX-3638</a>] fixed displaying of vertical text in case of special HTML characters</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3582">ZBX-3582</a>] fixed screen import</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3801">ZBX-3801</a>] added check for duplicate template IDs when creating host through API</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3802">ZBX-3802</a>] fixed error when try to open custom screen from history link</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3794">ZBX-3794</a>] added timeout support to vfs.file.* commands</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3747">ZBX-3747</a>] replaced strcpy() and vsnprintf() calls with safer ones and strerror() with zbx_strerror() which also prints the error code</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3760">ZBX-3760</a>] fixed the CPU collector for processing the non-contiguous CPU IDs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3796">ZBX-3796</a>] select a graph with the same name if it exists when changing host in monitoring -> graphs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3776">ZBX-3776</a>] treat duplicate UserParameter as error</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3728">ZBX-3728</a>] fixed a warning message when removing a user script</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3731">ZBX-3731</a>] fixed possible SQL errors when updating trends</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3772">ZBX-3772</a>] improved performance of the history syncer</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3547">ZBX-3547</a>] Rewrote performance counters and CPU stats collection for Windows</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3677">ZBX-3677</a>] added unit blacklist on the server side</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3746">ZBX-3746</a>] Fixed parsing of trigger expressions containing \\</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3744">ZBX-3744</a>] updated Japanese translation; thanks to Kodai Terashima</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3681">ZBX-3681</a>] fixed API to leave internal PHP encoding in UTF-8</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3353">ZBX-3353</a>] fixed skipping web items in the host "Full clone" operation</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3503">ZBX-3503</a>] fixed "incorrect usage of quotes" error</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3740">ZBX-3740</a>] fixed compilation errors due to undefined SOL_IPV6</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2952">ZBX-2952</a>] added Base64 data line wrapping in Email notifications</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3698">ZBX-3698</a>] fixed error in log wizard when expression had internal parentheses</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-524">ZBX-524</a>] added log messages when syncing a proxy configuration data</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3671">ZBX-3671</a>] fixed ORACLE SQL error when processing of the trigger function count()</li>
+</ul>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/documentation/1.8/manual/installation/">Zabbix Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>Recompile Zabbix binaries and update front-end PHP files. Execute a database patch if migrating from Zabbix 1.6.x. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/installation_and_upgrade">Zabbix Manual</a> for a detailed upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>Zabbix Server</h4>
+
+<p>Zabbix Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 5.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22, PostgreSQL 8.3</li>
+<li>RedHat EL 5.3, Intel, kernel 2.6.18, Oracle 11gR2</li>
+<li>Slackware Linux, x86, kernel 2.6.29.6, MySQL 5.1.x</li>
+</ul>
+
+<h4>Zabbix Agents</h4>
+
+<p>Zabbix Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>Zabbix Company provides a full range of professional services. We also provide trouble-free upgrade service for easy migration from earlier versions to Zabbix 1.8.x. Please contact <a href="mailto:sales@zabbix.com">Sales</a> for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/documentation/">Zabbix 1.8 Manual</a></li>
+<li>Zabbix Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>Zabbix Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>
