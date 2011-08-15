@@ -590,6 +590,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.9.4 (Fifth Alpha Release of Zabbix 2.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093035Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.9.4 (Zabbix 2.0の5番目のアルファリリース)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBXNEXT-612&lt;/a0&gt;] added mapname URL parameter for monitoring-&gt;maps</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T164501Z" changeid="kodai">
@@ -1386,6 +1394,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ヒストリのサブメニューからヒストリを選択した際の「無効なURL」を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enhanced auto-discovery</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093226Z" changeid="kodai">
+        <seg>オートディスカバリの強化</seg>
       </tuv>
     </tu>
     <tu>
@@ -3475,6 +3491,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA" changedate="20110105T105221Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3061&lt;/a0&gt;] スクリーンで「トリガーのステータス」タイプの画面をインポートした際の問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Automatic collection of host profile data</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093212Z" changeid="kodai">
+        <seg>ホストプロファイルデータの自動収集</seg>
       </tuv>
     </tu>
     <tu>
@@ -7896,6 +7920,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remote commands (Agent, IPMI and SSH based) can be configured in a more flexible yet easier way.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093327Z" changeid="kodai">
+        <seg>(エージェント、IPMI、SSHを利用した)リモートコマンドをより簡単かつ柔軟に設定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ZABBIX Proxy process</seg>
       </tuv>
       <tuv lang="JA">
@@ -8388,6 +8420,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[DEV-423] サーバ側でタイプ、ソース、イベントIDによるWindowsイベントログのフィルタリングを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.9.5 (Sixth Alpha Release of Zabbix 2.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093401Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.9.5 (Zabbix 2.0の6番目のアルファリリース)のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9724,6 +9764,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2312&lt;/a0&gt;] 「監視データ - トリガー」と「最新20件のイベント」画面のイベントの表示順を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Support of visible host and template name</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093242Z" changeid="kodai">
+        <seg>ホストとテンプレートの表示名を追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -11688,6 +11736,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In addition to standart host name, visible host name can be set to be displayed everywhere in the front-end.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093310Z" changeid="kodai">
+        <seg>通常のホスト名に加えて、Webインターフェースで表示するために利用できる表示名を設定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBXNEXT-194] added host status widget to dashboard</seg>
       </tuv>
       <tuv lang="JA">
@@ -12280,6 +12336,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Host area functionality for maps</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T113025Z" changeid="kodai">
+        <seg>マップのホスト領域機能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>updated Spanish translation</seg>
       </tuv>
       <tuv lang="JA">
@@ -12372,6 +12436,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1328] ホストグループのリスト画面の一括更新の操作の名称を改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.9.5.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093409Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.9.5のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12584,6 +12656,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.9.4.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093044Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.9.4のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[DEV-43] support of new macros {ITEM.VALUE}, {ITEM.VALUE1}, etc</seg>
       </tuv>
       <tuv lang="JA">
@@ -12692,6 +12772,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2243&lt;/a0&gt;] ホストによってアイテムをフィルタした場合にテンプレートが選択できないバグを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All host group elements can be displayed in a map area.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T113103Z" changeid="kodai">
+        <seg>マップ上の領域にホストグループに所属するすべてのホストを表示することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12992,6 +13080,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additional macros for visible host name are also introduced.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093312Z" changeid="kodai">
+        <seg>表示名を利用するマクロも追加しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dashboard supports filtering based on host groups, trigger severities and host maintenance status.</seg>
       </tuv>
       <tuv lang="JA">
@@ -13068,6 +13164,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T164043Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3413&lt;/a0&gt;] SQLのLIKE文で利用するパラメータのエスケープ処理を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Advanced options for remote commands</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093304Z" changeid="kodai">
+        <seg>リモートコマンドの拡張オプション</seg>
       </tuv>
     </tu>
     <tu>
@@ -16385,6 +16489,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Information about hardware and software details can be automatically retrieved by Zabbix Agent and extended using user-defined parameters.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093219Z" changeid="kodai">
+        <seg>ハードウェアとソフトウェアの詳細情報をエージェントから自動的に収集し、ユーザが定義したパラメータを利用して拡張することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is the last call!</seg>
       </tuv>
       <tuv lang="JA">
@@ -18253,6 +18365,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>トリガー関数time()を許可するようにフロントエンドを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Added discovery based on HTTPS and Telnet checks, discovery configuration form is redesigned.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093234Z" changeid="kodai">
+        <seg>HTTPSとTelnetのチェックによるディスカバリを追加し、ディスカバリ設定フォームを見直しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20521,6 +20641,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Performance improvements</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093418Z" changeid="kodai">
+        <seg>パフォーマンスの改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3135&lt;/a0&gt;] add an example for using standard input in zabbix_sender manpage</seg>
       </tuv>
       <tuv lang="JA">
@@ -20573,6 +20701,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T163940Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3414&lt;/a0&gt;] Webアイテムのトリガー条件式がトリガーウィザード内でエラーとしてマークされていた問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Trigger related data is cached to reduce number of database requests, it improves overall performance of Zabbix Server.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110815T093731Z" changeid="kodai">
+        <seg>データベースのリクエスト数を削減するためにトリガー関連のデータがキャッシュされます。これによりZabbixサーバの全体的なパフォーマンスが向上します。</seg>
       </tuv>
     </tu>
     <tu>
