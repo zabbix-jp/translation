@@ -6327,6 +6327,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Complete List of Bug Fixes and Improvements</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110907T204036Z" changeid="kodai">
+        <seg>すべてのバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>added trigger dependencies in export/import</seg>
       </tuv>
       <tuv lang="JA">
@@ -7364,6 +7372,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1915] 作成/更新時のテンプレート/ホスト名チェックを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1 September 2011</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110907T203943Z" changeid="kodai">
+        <seg>2011年9月1日</seg>
       </tuv>
     </tu>
     <tu>
@@ -15616,6 +15632,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.7.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110907T204015Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.7のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-3430] fixed disappeared hints for &quot;SSH&quot;, &quot;Telnet&quot; and &quot;Database Monitor&quot; item types in item form</seg>
       </tuv>
       <tuv lang="JA" changedate="20110405T102403Z" changeid="kodai">
@@ -20229,6 +20253,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20110316T102142Z" changeid="kodai">
         <seg>Zabbix SIAはZabbix 1.9.2 (Zabbix 2.0の3番目のアルファリリース)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.7.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110907T204004Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.8.7のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
