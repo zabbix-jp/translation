@@ -142,6 +142,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>9 September 2011</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065722Z" changeid="kodai">
+        <seg>2011年9月9日</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-1030&lt;/a0&gt;] fixed security vulnerability in server allowing remote unauthenticated users to execute scripts.</seg>
       </tuv>
       <tuv lang="JA">
@@ -234,6 +242,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2326&lt;/a0&gt;] トリガー画面のXSS脆弱性を修正 (後にVUPEN Securityより広報された問題)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minor improvements could be introduced.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070014Z" changeid="kodai">
+        <seg>小さな改善が行われる可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -854,6 +870,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Complete List of Bug Fixes and Improvements included into 1.8.8</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065640Z" changeid="kodai">
+        <seg>1.8.8に含まれるすべてのバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBXNEXT-782&lt;/a0&gt;] added support of not-supported items in the history cache</seg>
       </tuv>
       <tuv lang="JA" changedate="20110728T143144Z" changeid="kodai">
@@ -1042,6 +1066,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>その他の多数の改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4141&lt;/a0&gt;] fixed possible hang of server/proxy processes after unsuccessful execution of a SQL statement</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065547Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4141&lt;/a0&gt;] SQL文の実行が失敗した場合にサーバ/プロキシプロセスがハングアップする可能性がある問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -2791,6 +2823,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Host profiles were renamed to a more standard &quot;host inventory&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070340Z" changeid="kodai">
+        <seg>ホストプロファイルはより一般的な「ホストインベントリ」に名称変更されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The release fixes several critical and many other issues.</seg>
       </tuv>
       <tuv lang="JA">
@@ -4263,6 +4303,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Support of automatic selection of map icons</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070158Z" changeid="kodai">
+        <seg>マップのアイコンの自動選択</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document contains the release notes for ZABBIX 1.4.3.</seg>
       </tuv>
       <tuv lang="JA">
@@ -4523,6 +4571,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ZABBIX 1.6マニュアル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New SNMP trap monitoring provides high performance way of collecting traps, pre-processors such as SNMPTT could be used as well.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070144Z" changeid="kodai">
+        <seg>新しいSNMPトラップ監視機能によって高性能なトラップ収集を行えるようになりました。SNMPTTなどのプリプロセッサも同様に使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5871,6 +5927,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is almost feature complete but does not fully represent expected 2.0 version.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065946Z" changeid="kodai">
+        <seg>まだすべての機能は実装されておらず、2.0バージョンで予定している機能のすべてが含まれているわけではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>fixed simple/advanced item filter switch</seg>
       </tuv>
       <tuv lang="JA">
@@ -6884,6 +6948,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1357] フランス語訳を更新。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.8rc2 (Second Release Candidate).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065409Z" changeid="kodai">
+        <seg>Zabbix SIAはZABBIX 1.8.8rc2 (2番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7944,6 +8016,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This release introduces major features along with numerous improvements and bug fixes.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065923Z" changeid="kodai">
+        <seg>このリリースは大きな機能追加といくつかの改善、バグフィックスが含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2250&lt;/a0&gt;] value mapping is now applied for {ITEM.LASTVALUE} macro inside triggers description</seg>
       </tuv>
       <tuv lang="JA">
@@ -8644,6 +8724,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[DEV-468] IE利用時のテーマの色を改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List of Bug Fixes included into 1.8.8rc2</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065442Z" changeid="kodai">
+        <seg>1.8.8rc2に含まれるバグフィックスと改善の一覧</seg>
       </tuv>
     </tu>
     <tu>
@@ -10216,6 +10304,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4135&lt;/a0&gt;] fixed item selection in trigger expression editor</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065623Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4135&lt;/a0&gt;] トリガー条件式作成フォームのアイテムの選択を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2406&lt;/a0&gt;] removed filter from plaintext history</seg>
       </tuv>
       <tuv lang="JA">
@@ -11416,6 +11512,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.8rc2.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065416Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.8rc2のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3733&lt;/a0&gt;] make possible to save Device uniqueness criteria status (discovery rule) in cloning event</seg>
       </tuv>
       <tuv lang="JA" changedate="20110729T181702Z" changeid="kodai">
@@ -12164,6 +12268,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ホストの無効化、有効化、削除のパフォーマンスの改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Added direct SNMP trap monitoring</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070044Z" changeid="kodai">
+        <seg>SNMPトラップ監視機能の追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -13336,6 +13448,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.9.6.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065749Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.9.6のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[DEV-92] added support of multiple windows agents, service description</seg>
       </tuv>
       <tuv lang="JA">
@@ -14312,6 +14432,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Maps and map elements could be optionally configured to automaticall select icons depending on element type (for example: host, network device, switch, etc).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070243Z" changeid="kodai">
+        <seg>マップとマップ要素は要素の種別 (ホスト、ネットワーク機器、スイッチ、など) によって自動的にアイコンを選択するよう設定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>fixed SQL error when try to activate auto-login in profile</seg>
       </tuv>
       <tuv lang="JA">
@@ -15156,6 +15284,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1654] 無効なトリガーのマップのアイコンを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is a Beta Release!</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065933Z" changeid="kodai">
+        <seg>ベータリリースです！</seg>
       </tuv>
     </tu>
     <tu>
@@ -18313,6 +18449,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.9.6 (First Beta Release of Zabbix 2.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065741Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.9.6 (Zabbix 2.0の最初のベータリリース)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;DEV-459&lt;/a0&gt;] made improvements in discovery page generation</seg>
       </tuv>
       <tuv lang="JA">
@@ -18573,6 +18717,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>Zabbix 1.8でノード構成の分散監視を利用している場合、以下のSQLパッチを実行してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Host profiles renamed to inventory</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070312Z" changeid="kodai">
+        <seg>ホストプロファイルをインベントリに名称変更</seg>
       </tuv>
     </tu>
     <tu>
