@@ -694,18 +694,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>It is very handy for monitoring of Cloud-like environments.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110106T091746Z" changeid="kodai">
-        <seg>クラウド環境を監視のために非常に便利に使うことができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3070&lt;/a0&gt;] fixed event date format inconsistency</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-3070&lt;/a0&gt;] イベントの日付フォーマットの矛盾を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is very handy for monitoring of Cloud-like environments.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110106T091746Z" changeid="kodai">
+        <seg>クラウド環境を監視のために非常に便利に使うことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1350,18 +1350,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Zabbix server processes requires much less memory.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Zabbixサーバプロセスはより少ないメモリで動作します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3068&lt;/a0&gt;] fixed possible crash of server while processing passive proxies</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-3068&lt;/a0&gt;] パッシブプロキシの処理中にサーバがクラッシュする可能性がある問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix server processes requires much less memory.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Zabbixサーバプロセスはより少ないメモリで動作します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4191,14 +4191,6 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Escalation can be configured in a very flexible way and may include not only notifications but also execution of remote and IPMI commands.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>エスカレーションは非常に柔軟に設定することができ、通知だけでなくリモートコマンドやIPMIコマンドを実行することができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Distributed monitoring: added update of Last check and Last value fields</seg>
       </tuv>
       <tuv lang="JA">
@@ -4211,6 +4203,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>稼働レポートの時間によるフィルタ機能を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Escalation can be configured in a very flexible way and may include not only notifications but also execution of remote and IPMI commands.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>エスカレーションは非常に柔軟に設定することができ、通知だけでなくリモートコマンドやIPMIコマンドを実行することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4303,18 +4303,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Support of automatic selection of map icons</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110920T070158Z" changeid="kodai">
-        <seg>マップのアイコンの自動選択</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>This document contains the release notes for ZABBIX 1.4.3.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>このドキュメントはZABBIX 1.4.3のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Support of automatic selection of map icons</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070158Z" changeid="kodai">
+        <seg>マップのアイコンの自動選択</seg>
       </tuv>
     </tu>
     <tu>
@@ -4575,18 +4575,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>New SNMP trap monitoring provides high performance way of collecting traps, pre-processors such as SNMPTT could be used as well.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110920T070144Z" changeid="kodai">
-        <seg>新しいSNMPトラップ監視機能によって高性能なトラップ収集を行えるようになりました。SNMPTTなどのプリプロセッサも同様に使用できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Note that ZABBIX database and ZABBIX server and agent processes are still not ready for correct processing of UTF-8 data.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ZABBIXデータベースとZABBIXサーバ、エージェントはまだUTF-8のデータを正しく処理することができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New SNMP trap monitoring provides high performance way of collecting traps, pre-processors such as SNMPTT could be used as well.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070144Z" changeid="kodai">
+        <seg>新しいSNMPトラップ監視機能によって高性能なトラップ収集を行えるようになりました。SNMPTTなどのプリプロセッサも同様に使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4871,18 +4871,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>What's New in 1.7.x (alpha)</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ZABBIX 1.7.x (alpha)の変更点</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Option to remember user authorisation</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ユーザ認証を記録するためのオプション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What's New in 1.7.x (alpha)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ZABBIX 1.7.x (alpha)の変更点</seg>
       </tuv>
     </tu>
     <tu>
@@ -6952,18 +6952,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.8rc2 (Second Release Candidate).</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110920T065409Z" changeid="kodai">
-        <seg>Zabbix SIAはZABBIX 1.8.8rc2 (2番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-851] changed sorting of users to alias in popup</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-851] ポップアップのユーザの並び替えをエイリアスを使用するように変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.8rc2 (Second Release Candidate).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065409Z" changeid="kodai">
+        <seg>Zabbix SIAはZABBIX 1.8.8rc2 (2番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7152,18 +7152,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-2572&lt;/a0&gt;] added configuration define for zapcat compatibility mode</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>[&lt;a0&gt;ZBX-2572&lt;/a0&gt;] zapcat互換モード用の設定定義を追加</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3105&lt;/a0&gt;] added processing of garbage in configuration files</seg>
       </tuv>
       <tuv lang="JA" changedate="20110728T143351Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3105&lt;/a0&gt;] 設定ファイルに正しくない設定がある場合の処理を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-2572&lt;/a0&gt;] added configuration define for zapcat compatibility mode</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>[&lt;a0&gt;ZBX-2572&lt;/a0&gt;] zapcat互換モード用の設定定義を追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -7264,18 +7264,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Zabbix interface translations are handled by GNU gettext module.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110106T091515Z" changeid="kodai">
-        <seg>ZabbixのWebインターフェイスの翻訳にGNU gettextモジュールを利用しました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3100&lt;/a0&gt;] fixed messages in popup when no proxies or discovery checks defined</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T162431Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3100&lt;/a0&gt;] プロキシまたはディスカバリチェックが定義されていない場合のポップアップのメッセージを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix interface translations are handled by GNU gettext module.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110106T091515Z" changeid="kodai">
+        <seg>ZabbixのWebインターフェイスの翻訳にGNU gettextモジュールを利用しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8488,18 +8488,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-2184&lt;/a0&gt;] added maintenance info to dashboard latest issues</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>[&lt;a0&gt;ZBX-2184&lt;/a0&gt;] ダッシュボードの「最新の障害」にメンテナンス情報を追加</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3080&lt;/a0&gt;] fixed javascript not cached by browsers</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-3080&lt;/a0&gt;] Javascriptがブラウザにキャッシュされない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-2184&lt;/a0&gt;] added maintenance info to dashboard latest issues</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>[&lt;a0&gt;ZBX-2184&lt;/a0&gt;] ダッシュボードの「最新の障害」にメンテナンス情報を追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -8728,18 +8728,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>List of Bug Fixes included into 1.8.8rc2</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110920T065442Z" changeid="kodai">
-        <seg>1.8.8rc2に含まれるバグフィックスと改善の一覧</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[DEV-310] fixed last value in charts</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[DEV-310] グラフ上の最終値を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List of Bug Fixes included into 1.8.8rc2</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065442Z" changeid="kodai">
+        <seg>1.8.8rc2に含まれるバグフィックスと改善の一覧</seg>
       </tuv>
     </tu>
     <tu>
@@ -9392,14 +9392,6 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>What's New in 1.6.6</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ZABBIX 1.6.6の変更点</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>The triggers will define how the link is displayed.</seg>
       </tuv>
       <tuv lang="JA">
@@ -9408,10 +9400,10 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>What's New in 1.6.7</seg>
+        <seg>What's New in 1.6.6</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>1.6.7の変更点</seg>
+        <seg>ZABBIX 1.6.6の変更点</seg>
       </tuv>
     </tu>
     <tu>
@@ -9420,6 +9412,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>Zabbix APIの一貫性向上</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What's New in 1.6.7</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>1.6.7の変更点</seg>
       </tuv>
     </tu>
     <tu>
@@ -11976,6 +11976,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3072&lt;/a0&gt;] fixed MySQL error when shutting down server</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110728T143217Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3072&lt;/a0&gt;] サーバシャットダウン時のMySQLエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document contains the release notes for Zabbix 1.7.1.</seg>
       </tuv>
       <tuv lang="JA">
@@ -11988,14 +11996,6 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2452&lt;/a0&gt;] SNMPのHex-STRINGの整数値の構文解析の問題を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-3072&lt;/a0&gt;] fixed MySQL error when shutting down server</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110728T143217Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-3072&lt;/a0&gt;] サーバシャットダウン時のMySQLエラーを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -13448,14 +13448,6 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>This document contains the release notes for Zabbix 1.9.6.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110920T065749Z" changeid="kodai">
-        <seg>このドキュメントはZabbix 1.9.6のリリースノートを含みます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[DEV-92] added support of multiple windows agents, service description</seg>
       </tuv>
       <tuv lang="JA">
@@ -13468,6 +13460,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T163814Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3173&lt;/a0&gt;] サーバサイドのJSONパーサが適切に空白を無視するように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.9.6.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T065749Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.9.6のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14432,18 +14432,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Maps and map elements could be optionally configured to automaticall select icons depending on element type (for example: host, network device, switch, etc).</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20110920T070243Z" changeid="kodai">
-        <seg>マップとマップ要素は要素の種別 (ホスト、ネットワーク機器、スイッチ、など) によって自動的にアイコンを選択するよう設定できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>fixed SQL error when try to activate auto-login in profile</seg>
       </tuv>
       <tuv lang="JA">
         <seg>プロファイルで自動ログインを有効化した際のSQLエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maps and map elements could be optionally configured to automaticall select icons depending on element type (for example: host, network device, switch, etc).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110920T070243Z" changeid="kodai">
+        <seg>マップとマップ要素は要素の種別 (ホスト、ネットワーク機器、スイッチ、など) によって自動的にアイコンを選択するよう設定できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15840,18 +15840,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>What's New in 1.5.4 (beta)</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ZABBIX 1.5.4 (beta)の変更点</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Improved View of Trigger Statuses</seg>
       </tuv>
       <tuv lang="JA">
         <seg>トリガー状態の表示を改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What's New in 1.5.4 (beta)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ZABBIX 1.5.4 (beta)の変更点</seg>
       </tuv>
     </tu>
     <tu>
@@ -16048,18 +16048,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>User macros enhanced</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ユーザマクロの改善</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3103&lt;/a0&gt;] updated French translation; thanks to Alixen</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-3103&lt;/a0&gt;] フランス語翻訳を更新; Alexenに感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User macros enhanced</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ユーザマクロの改善</seg>
       </tuv>
     </tu>
     <tu>
@@ -17265,18 +17265,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>What's New in 1.6</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ZABBIX 1.6の変更点</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>SQLite is an excellent choice for running zero-administration ZABBIX nodes on an embedded hardware.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>SQLiteは組込みハードウェアのような機器上でZABBIXを動作させる場合に適しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What's New in 1.6</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ZABBIX 1.6の変更点</seg>
       </tuv>
     </tu>
     <tu>
@@ -19883,8 +19883,8 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       <tuv lang="EN-US">
         <seg>Zabbix JMX monitoring allows native secure remote monitoring of Java applications and popular middlewares such as JBoss, WebSphere and WebLogic.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20110330T052752Z" changeid="kodai">
-        <seg>ZabbixのJMX監視は、JavaアプリケーションやJBoss、WehSphere、WebLogicなどの一般的なミドルウェアのネイティブで安全なリモート監視を行うことができます。</seg>
+      <tuv lang="JA" changedate="20110921T210950Z" changeid="kodai">
+        <seg>ZabbixのJMX監視は、JavaアプリケーションやJBoss、WebSphere、WebLogicなどの一般的なミドルウェアのネイティブで安全なリモート監視を行うことができます。</seg>
       </tuv>
     </tu>
     <tu>
