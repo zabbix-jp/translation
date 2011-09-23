@@ -854,18 +854,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Complete List of Bug Fixes and Improvements included into 1.8.6</seg>
-      </tuv>
-      <tuv xml:lang="JA" changedate="20110801T081604Z" changeid="kodai">
-        <seg>1.8.6に含まれるすべてのバグフィックスと改善の一覧</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>New item check type, external, can be used to enchance functionality of ZABBIX server by writing a custom scripts.</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>アイテムの新しいチェックタイプであるexternalは、カスタムスクリプトを書くことによってZABBIXサーバーの機能を拡張することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Complete List of Bug Fixes and Improvements included into 1.8.6</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20110801T081604Z" changeid="kodai">
+        <seg>1.8.6に含まれるすべてのバグフィックスと改善の一覧</seg>
       </tuv>
     </tu>
     <tu>
@@ -3983,6 +3983,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4157<ept i='0'>&lt;/a0&gt;</ept>] fixed possible truncating of queries while preparing a configuration data for sending to a proxy</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20110923T182013Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4157<ept i='0'>&lt;/a0&gt;</ept>] プロキシに送付するデータの作成中にクエリが途中で切れる可能性がある問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>It is highly recommended to upgrade from 1.6, 1.6.1, 1.6.2 and 1.6.3.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -4931,6 +4939,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2630<ept i='0'>&lt;/a0&gt;</ept>] 前後関係によってはWebインターフェース中の翻訳が異なる文字列になってしまう問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4150<ept i='0'>&lt;/a0&gt;</ept>] fixed processing of quoted function parameters</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20110923T182035Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4150<ept i='0'>&lt;/a0&gt;</ept>] クオートされた関数のパラメータの処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -7056,6 +7072,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-1909<ept i='0'>&lt;/a0&gt;</ept>] fixed keyparser to allow keys like &quot;key,{$USERMACRO}&quot;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20110923T181808Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-1909<ept i='0'>&lt;/a0&gt;</ept>] 「key,{$USERMACRO}」のようなキーを許可するようにパース処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2201<ept i='0'>&lt;/a0&gt;</ept>] improved history page</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -8576,6 +8600,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.8rc3 (Third Release Candidate).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20110923T181630Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.8.8rc3 (3番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-1943<ept i='0'>&lt;/a0&gt;</ept>] fixed refresh time selection in dashboard widgets</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -8724,6 +8756,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[DEV-468] IE利用時のテーマの色を改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>List of Bug Fixes included into 1.8.8rc3</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20110923T181736Z" changeid="kodai">
+        <seg>1.8.8rc3に含まれるバグフィックスの一覧</seg>
       </tuv>
     </tu>
     <tu>
@@ -11404,6 +11444,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110405T101455Z" changeid="kodai">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBXNEXT-448<ept i='0'>&lt;/a0&gt;</ept>] 正規表現で最後のイベントIDとの一致を調べるトリガー関数logeventidを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.8rc3.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20110923T181639Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.8rc3のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15928,18 +15976,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2438<ept i='0'>&lt;/a0&gt;</ept>] fixed configuration of ssh2 on FreeBSD.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2438<ept i='0'>&lt;/a0&gt;</ept>] FreeBSDのssh2設定を修正。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3059<ept i='0'>&lt;/a0&gt;</ept>] different titles for popup menu depending on data type</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3059<ept i='0'>&lt;/a0&gt;</ept>] データ型によってポップアップメニューで異なるタイトルが表示される問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2438<ept i='0'>&lt;/a0&gt;</ept>] fixed configuration of ssh2 on FreeBSD.</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2438<ept i='0'>&lt;/a0&gt;</ept>] FreeBSDのssh2設定を修正。</seg>
       </tuv>
     </tu>
     <tu>
