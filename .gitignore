@@ -2,3 +2,8 @@ releasenote/omegat/*
 releasenote/target/*
 releasenote/tm/*
 releasenote/tm/auto/*
+
+frontend/omegat/*
+frontend/target/*
+frontend/tm/*
+frontend/tm/auto/*
