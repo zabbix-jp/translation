@@ -174,14 +174,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&amp;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&amp;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>'</seg>
       </tuv>
       <tuv lang="JA">
@@ -710,6 +702,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You do not have enough rights for operation.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143927Z" changeid="kodai">
+        <seg>操作に対して十分な権限を有していません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Feb</seg>
       </tuv>
       <tuv lang="JA">
@@ -794,6 +794,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>インストール</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Trigger in template [ %1$s ] has dependency with trigger in template [ %2$s ]</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T141902Z" changeid="kodai">
+        <seg>テンプレート[ %1$s ]のトリガーはテンプレート[ %2$s ]のトリガーと依存関係が設定されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1494,6 +1502,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Boolean</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T082235Z" changeid="kodai">
+        <seg>ブール型</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>OOB IP address</seg>
       </tuv>
       <tuv lang="JA" changedate="20110923T113156Z" changeid="kodai">
@@ -1506,6 +1522,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>不正なディスカバリチェック</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Allowed length is %4$d characters.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143818Z" changeid="kodai">
+        <seg>%4$d文字以内で設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2298,14 +2322,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>設定してください</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>every</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>every</seg>
       </tuv>
     </tu>
     <tu>
@@ -4934,6 +4950,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Too many interfaces provided for proxy &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T141753Z" changeid="kodai">
+        <seg>プロキシ&quot;%s&quot;に設定されたインターフェースが多すぎます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Impossible to filter by inventory field &quot;%s&quot;, which does not exist.</seg>
       </tuv>
       <tuv lang="JA">
@@ -5058,14 +5082,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>%dデバイス</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>AND</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>AND</seg>
       </tuv>
     </tu>
     <tu>
@@ -6030,6 +6046,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Age less than %s</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T082213Z" changeid="kodai">
+        <seg>表示期間 %s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Warning</seg>
       </tuv>
       <tuv lang="JA">
@@ -6630,6 +6654,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No such error &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T091947Z" changeid="kodai">
+        <seg>そのようなエラーはありません&quot;%s&quot;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>contains Multibyte chars</seg>
       </tuv>
       <tuv lang="JA">
@@ -6698,6 +6730,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ユーザのメディアを更新できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Two items (&quot;%1$s&quot; and &quot;%2$s&quot;) cannot populate one host inventory field &quot;%3$s&quot;, this would lead to a conflict.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T142018Z" changeid="kodai">
+        <seg>2つのアイテム(&quot;%1$s&quot;と&quot;%2$s&quot;)から1つのホストのインベントリフィールド&quot;%3$s&quot;を自動的に設定することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7438,6 +7478,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You are not able to choose some of the languages, because locales for them are not installed on the web server.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T104748Z" changeid="kodai">
+        <seg>Webサーバにロケールがインストールされていないため、選択した言語は利用できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Group for discovered hosts</seg>
       </tuv>
       <tuv lang="JA">
@@ -8086,6 +8134,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Choices are: &quot;%2$s&quot; and &quot;%3$s&quot;</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143557Z" changeid="kodai">
+        <seg>&quot;%2$s&quot;または&quot;%3$s&quot;を設定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Week</seg>
       </tuv>
       <tuv lang="JA">
@@ -8538,6 +8594,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>アイテムをコピーできません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot mass update host name</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T135842Z" changeid="kodai">
+        <seg>ホスト名を一括更新できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -9146,14 +9210,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>無効</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Jabber</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Jabber</seg>
       </tuv>
     </tu>
     <tu>
@@ -9902,6 +9958,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is %1$d group with Internal GUI access.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T140500Z" changeid="kodai">
+        <seg>GUIアクセスの権限があるグループが%1$dつあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Export does not contain Zabbix screens</seg>
       </tuv>
       <tuv lang="JA">
@@ -10098,6 +10162,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>IPMI特権レベル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Wrong fields for map link</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T104655Z" changeid="kodai">
+        <seg>マップリンクの設定が正しくありません</seg>
       </tuv>
     </tu>
     <tu>
@@ -10666,6 +10738,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>シナリオの名前</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Value &quot;%1$s&quot; is invalid for parameter &quot;grid_show&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143607Z" changeid="kodai">
+        <seg>パラメータ&quot;grid_show&quot;の値&quot;%1$s&quot;が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11754,6 +11834,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>選択を無効</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Wrong fields for linktrigger</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T104635Z" changeid="kodai">
+        <seg>リンクトリガーの設定が正しくありません</seg>
       </tuv>
     </tu>
     <tu>
@@ -13046,6 +13134,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Transport error.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T141813Z" changeid="kodai">
+        <seg>転送エラー。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Required field &quot;iconid&quot; is missing in icon mapping.</seg>
       </tuv>
       <tuv lang="JA" changedate="20110926T093727Z" changeid="kodai">
@@ -14150,6 +14246,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Value &quot;%1$s&quot; is invalid for parameter &quot;grid_align&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143431Z" changeid="kodai">
+        <seg>パラメータ&quot;grid_align&quot;の値&quot;%1$s&quot;が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other groups</seg>
       </tuv>
       <tuv lang="JA">
@@ -15054,6 +15158,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Value type must be Float for aggregate items.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T104554Z" changeid="kodai">
+        <seg>アグリゲートアイテムのデータ型は浮動小数を選択してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Tools</seg>
       </tuv>
       <tuv lang="JA">
@@ -15226,6 +15338,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ユーザの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are %1$d groups with Internal GUI access.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T140505Z" changeid="kodai">
+        <seg>GUIアクセスの権限があるグループが%1$dつあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16174,6 +16294,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This field is automatically populated by item &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T141722Z" changeid="kodai">
+        <seg>このフィールドはアイテム&quot;%s&quot;によって自動的に設定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Total</seg>
       </tuv>
       <tuv lang="JA">
@@ -16426,6 +16554,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>中央</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Allowed length is 2048 characters.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143832Z" changeid="kodai">
+        <seg>2048文字以内で設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17442,6 +17578,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>選択したホスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>esc_step_from and esc_step_to must be set together.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T144007Z" changeid="kodai">
+        <seg>esc_step_fromとesc_step_toは両方設定する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18526,14 +18670,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>on</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>on</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Not allowed symbols detected before element</seg>
       </tuv>
       <tuv lang="JA">
@@ -19166,6 +19302,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>AUTHENTICATION TO ZABBIX</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T082158Z" changeid="kodai">
+        <seg>Zabbixへの認証</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Delete</seg>
       </tuv>
       <tuv lang="JA">
@@ -19290,6 +19434,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>SQL実行エラー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Choices are: &quot;%2$s&quot;</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143619Z" changeid="kodai">
+        <seg>&quot;%2$s&quot;を設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21390,6 +21542,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Item will not be refreshed.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T091912Z" changeid="kodai">
+        <seg>アイテムは更新されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Send message to user groups</seg>
       </tuv>
       <tuv lang="JA" changedate="20110922T094429Z" changeid="kodai">
@@ -21434,6 +21594,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>第1週</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Value &quot;%1$s&quot; is too long for field &quot;%2$s&quot; - %3$d characters.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20110927T143749Z" changeid="kodai">
+        <seg>フィールド&quot;%2$s&quot;の値&quot;%1$s&quot;が長過ぎます - %3$d文字。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21626,14 +21794,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>障害発生数上位100項目</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>AND / OR</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>AND / OR</seg>
       </tuv>
     </tu>
     <tu>
