@@ -32,8 +32,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to create users.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101043Z" changeid="kodai">
-        <seg>ユーザを作成する権限がありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150526Z" changeid="kodai">
+        <seg>ユーザーを作成する権限がありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -56,8 +56,8 @@
       <tuv xml:lang="EN-US">
         <seg>Duplicate user alias &quot;%s&quot;.</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ名&quot;%s&quot;は重複しています</seg>
+      <tuv xml:lang="JA" changedate="20111114T150832Z" changeid="kodai">
+        <seg>ユーザー名&quot;%s&quot;は重複しています</seg>
       </tuv>
     </tu>
     <tu>
@@ -390,6 +390,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>G</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>G</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Selected actions deleted</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110922T094412Z" changeid="kodai">
@@ -614,14 +622,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>]</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>]</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Can't insert media types</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -736,8 +736,8 @@
       <tuv xml:lang="EN-US">
         <seg>It is not possible to filter by user password</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T091504Z" changeid="kodai">
-        <seg>ユーザのパスワードによるフィルタは行えません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150224Z" changeid="kodai">
+        <seg>ユーザーのパスワードによるフィルタは行えません</seg>
       </tuv>
     </tu>
     <tu>
@@ -818,14 +818,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>インストール</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>w</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>w</seg>
       </tuv>
     </tu>
     <tu>
@@ -1064,8 +1056,8 @@
       <tuv xml:lang="EN-US">
         <seg>User group [%s] is used in configuration for database down messages.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T100441Z" changeid="kodai">
-        <seg>ユーザグループ[%s]はデータベース停止メッセージの設定に利用されています。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150411Z" changeid="kodai">
+        <seg>ユーザーグループ[%s]はデータベース停止メッセージの設定に利用されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1600,8 +1592,8 @@
       <tuv xml:lang="EN-US">
         <seg>Username</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ名</seg>
+      <tuv xml:lang="JA" changedate="20111114T150448Z" changeid="kodai">
+        <seg>ユーザー名</seg>
       </tuv>
     </tu>
     <tu>
@@ -1720,8 +1712,8 @@
       <tuv xml:lang="EN-US">
         <seg>Incorrect user data in</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>間違ったユーザデータ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150210Z" changeid="kodai">
+        <seg>間違ったユーザーデータ</seg>
       </tuv>
     </tu>
     <tu>
@@ -1808,8 +1800,8 @@
       <tuv xml:lang="EN-US">
         <seg>Can't delete user medias</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのメディアを削除できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150018Z" changeid="kodai">
+        <seg>ユーザーのメディアを削除できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -1840,8 +1832,8 @@
       <tuv xml:lang="EN-US">
         <seg>Active</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>アクティブ</seg>
+      <tuv xml:lang="JA" changedate="20111114T151151Z" changeid="kodai">
+        <seg>有効</seg>
       </tuv>
     </tu>
     <tu>
@@ -1920,8 +1912,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Super Admins can create Users</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbix特権管理者のみがユーザを作成できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150728Z" changeid="kodai">
+        <seg>Zabbix特権管理者のみがユーザーを作成できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -2222,6 +2214,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>unknown</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111114T151113Z" changeid="kodai">
+        <seg>不明</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Show items with name like</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110922T094628Z" changeid="kodai">
@@ -2392,8 +2392,8 @@
       <tuv xml:lang="EN-US">
         <seg>User [</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ [</seg>
+      <tuv xml:lang="JA" changedate="20111114T150745Z" changeid="kodai">
+        <seg>ユーザー [</seg>
       </tuv>
     </tu>
     <tu>
@@ -3008,8 +3008,8 @@
       <tuv xml:lang="EN-US">
         <seg>Connected as</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>次のユーザでログイン中</seg>
+      <tuv xml:lang="JA" changedate="20111114T150643Z" changeid="kodai">
+        <seg>次のユーザーでログイン中</seg>
       </tuv>
     </tu>
     <tu>
@@ -3136,8 +3136,8 @@
       <tuv xml:lang="EN-US">
         <seg>IPMI username</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>IPMIユーザ名</seg>
+      <tuv xml:lang="JA" changedate="20111114T150151Z" changeid="kodai">
+        <seg>IPMIユーザー名</seg>
       </tuv>
     </tu>
     <tu>
@@ -3480,8 +3480,8 @@
       <tuv xml:lang="EN-US">
         <seg>Send message to users</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T094435Z" changeid="kodai">
-        <seg>ユーザにメッセージを送信</seg>
+      <tuv xml:lang="JA" changedate="20111114T150322Z" changeid="kodai">
+        <seg>ユーザーにメッセージを送信</seg>
       </tuv>
     </tu>
     <tu>
@@ -3824,8 +3824,8 @@
       <tuv xml:lang="EN-US">
         <seg>Incorrect action operation user group.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T085542Z" changeid="kodai">
-        <seg>実行するアクションのユーザグループの値が正しくありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150154Z" changeid="kodai">
+        <seg>実行するアクションのユーザーグループの値が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3842,6 +3842,14 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>エスカレーションルール</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Generated in %s sec</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>Generated in %s sec</seg>
       </tuv>
     </tu>
     <tu>
@@ -3936,8 +3944,8 @@
       <tuv xml:lang="EN-US">
         <seg>Internal</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbixデータベース内のユーザ情報</seg>
+      <tuv xml:lang="JA" changedate="20111114T150219Z" changeid="kodai">
+        <seg>Zabbixデータベース内のユーザー情報</seg>
       </tuv>
     </tu>
     <tu>
@@ -4048,8 +4056,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Super Admins can update user groups.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T093513Z" changeid="kodai">
-        <seg>Zabbix管理者のみがユーザグループを更新できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150258Z" changeid="kodai">
+        <seg>Zabbix管理者のみがユーザーグループを更新できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -4464,8 +4472,8 @@
       <tuv xml:lang="EN-US">
         <seg>User type</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザの種類</seg>
+      <tuv xml:lang="JA" changedate="20111114T150443Z" changeid="kodai">
+        <seg>ユーザーの種類</seg>
       </tuv>
     </tu>
     <tu>
@@ -4776,8 +4784,8 @@
       <tuv xml:lang="EN-US">
         <seg>User with alias &quot;%s&quot; already exists.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T100548Z" changeid="kodai">
-        <seg>アカウント名&quot;%s&quot;を持つユーザがすでに存在します。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150447Z" changeid="kodai">
+        <seg>アカウント名&quot;%s&quot;を持つユーザーがすでに存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5000,8 +5008,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Super Admins can delete Users</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbix特権管理者のみがユーザを削除できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150731Z" changeid="kodai">
+        <seg>Zabbix特権管理者のみがユーザーを削除できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -5024,8 +5032,8 @@
       <tuv xml:lang="EN-US">
         <seg>User group &quot;%1$s&quot; is used in script &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T100414Z" changeid="kodai">
-        <seg>ユーザグループ&quot;%1$s&quot;はスクリプト&quot;%2$s&quot;に利用されています。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150410Z" changeid="kodai">
+        <seg>ユーザーグループ&quot;%1$s&quot;はスクリプト&quot;%2$s&quot;に利用されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5184,8 +5192,8 @@
       <tuv xml:lang="EN-US">
         <seg>Connected as '%1$s' from '%2$s'</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>'%2$s'からユーザ'%1$s'でログイン</seg>
+      <tuv xml:lang="JA" changedate="20111114T150123Z" changeid="kodai">
+        <seg>'%2$s'からユーザー'%1$s'でログイン</seg>
       </tuv>
     </tu>
     <tu>
@@ -5200,8 +5208,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot rename guest user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ゲストユーザの名前は変更できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150101Z" changeid="kodai">
+        <seg>ゲストユーザーの名前は変更できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -5816,8 +5824,8 @@
       <tuv xml:lang="EN-US">
         <seg>User cannot disable himself</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザは自分自身を無効にできません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150650Z" changeid="kodai">
+        <seg>ユーザーは自分自身を無効にできません</seg>
       </tuv>
     </tu>
     <tu>
@@ -6072,8 +6080,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot add users.</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザを追加できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150035Z" changeid="kodai">
+        <seg>ユーザーを追加できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -6192,8 +6200,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Super Admins can update Users</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbix特権管理者のみがユーザを更新できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150730Z" changeid="kodai">
+        <seg>Zabbix特権管理者のみがユーザーを更新できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -6224,8 +6232,8 @@
       <tuv xml:lang="EN-US">
         <seg>Permissions can be assigned for user groups only.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20111020T070541Z" changeid="kodai">
-        <seg>権限はユーザブループにのみ割り当てることができます。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150314Z" changeid="kodai">
+        <seg>権限はユーザーブループにのみ割り当てることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6400,8 +6408,8 @@
       <tuv xml:lang="EN-US">
         <seg>No authentication user name specified for action operation command &quot;%s&quot;.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110923T111932Z" changeid="kodai">
-        <seg>実行するアクションのコマンド&quot;%s&quot;に認証ユーザ名が設定されていません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150236Z" changeid="kodai">
+        <seg>実行するアクションのコマンド&quot;%s&quot;に認証ユーザー名が設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6520,8 +6528,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Super Admins can delete User Groups.</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>特権管理者のみがユーザグループを削除できます。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150610Z" changeid="kodai">
+        <seg>特権管理者のみがユーザーグループを削除できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6696,8 +6704,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Zabbix Admins can remove user Medias</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbix管理者のみがユーザのメディアを削除できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150305Z" changeid="kodai">
+        <seg>Zabbix管理者のみがユーザーのメディアを削除できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -6768,8 +6776,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot delete %1$s internal user &quot;%2$s&quot;, try disabling that user.</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>%1$sインターナルユーザ&quot;%2$s&quot;を削除できません。ユーザを無効にします。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150051Z" changeid="kodai">
+        <seg>%1$sインターナルユーザー&quot;%2$s&quot;を削除できません。ユーザーを無効にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7032,8 +7040,8 @@
       <tuv xml:lang="EN-US">
         <seg>Can't update user medias</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのメディアを更新できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150030Z" changeid="kodai">
+        <seg>ユーザーのメディアを更新できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -7208,8 +7216,8 @@
       <tuv xml:lang="EN-US">
         <seg>Unblock selected</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>選択したユーザのブロックを解除</seg>
+      <tuv xml:lang="JA" changedate="20111114T150344Z" changeid="kodai">
+        <seg>選択したユーザーのブロックを解除</seg>
       </tuv>
     </tu>
     <tu>
@@ -7360,8 +7368,8 @@
       <tuv xml:lang="EN-US">
         <seg>Users status</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザの状態</seg>
+      <tuv xml:lang="JA" changedate="20111114T150452Z" changeid="kodai">
+        <seg>ユーザーの状態</seg>
       </tuv>
     </tu>
     <tu>
@@ -7432,8 +7440,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot add user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザを追加できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150031Z" changeid="kodai">
+        <seg>ユーザーを追加できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -7512,8 +7520,8 @@
       <tuv xml:lang="EN-US">
         <seg>Delete selected users?</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>選択したユーザを削除しますか？</seg>
+      <tuv xml:lang="JA" changedate="20111114T150142Z" changeid="kodai">
+        <seg>選択したユーザーを削除しますか？</seg>
       </tuv>
     </tu>
     <tu>
@@ -7616,8 +7624,8 @@
       <tuv xml:lang="EN-US">
         <seg>User group [%1$s] is used in script [%2$s].</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザグループ[%1$s]はスクリプト[%2$s]に利用されています。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150612Z" changeid="kodai">
+        <seg>ユーザーグループ[%1$s]はスクリプト[%2$s]に利用されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7832,8 +7840,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to update other users.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101114Z" changeid="kodai">
-        <seg>他のユーザを更新する権限がありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150530Z" changeid="kodai">
+        <seg>他のユーザーを更新する権限がありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7896,8 +7904,8 @@
       <tuv xml:lang="EN-US">
         <seg>User updated</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザを更新しました</seg>
+      <tuv xml:lang="JA" changedate="20111114T150445Z" changeid="kodai">
+        <seg>ユーザーを更新しました</seg>
       </tuv>
     </tu>
     <tu>
@@ -7952,8 +7960,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot unblock users</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのブロックを解除できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150111Z" changeid="kodai">
+        <seg>ユーザーのブロックを解除できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -8240,8 +8248,8 @@
       <tuv xml:lang="EN-US">
         <seg>Wrong fields for user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザの設定項目が誤っています</seg>
+      <tuv xml:lang="JA" changedate="20111114T150740Z" changeid="kodai">
+        <seg>ユーザーの設定項目が誤っています</seg>
       </tuv>
     </tu>
     <tu>
@@ -8272,8 +8280,8 @@
       <tuv xml:lang="EN-US">
         <seg>User cannot delete himself</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザは自分自身を削除できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150655Z" changeid="kodai">
+        <seg>ユーザーは自分自身を削除できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -8360,8 +8368,8 @@
       <tuv xml:lang="EN-US">
         <seg>User is not allowed to delete himself.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T100511Z" changeid="kodai">
-        <seg>自身のユーザアカウントは削除できません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150431Z" changeid="kodai">
+        <seg>自身のユーザーアカウントは削除できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8448,8 +8456,8 @@
       <tuv xml:lang="EN-US">
         <seg>Incorrect user group.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T090658Z" changeid="kodai">
-        <seg>ユーザグループが正しくありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150212Z" changeid="kodai">
+        <seg>ユーザーグループが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8576,16 +8584,16 @@
       <tuv xml:lang="EN-US">
         <seg>User medias</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのメディア</seg>
+      <tuv xml:lang="JA" changedate="20111114T150617Z" changeid="kodai">
+        <seg>ユーザーのメディア</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Create User</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザの作成</seg>
+      <tuv xml:lang="JA" changedate="20111114T150723Z" changeid="kodai">
+        <seg>ユーザーの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -8608,8 +8616,8 @@
       <tuv xml:lang="EN-US">
         <seg>Incorrect user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>不正なユーザ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150624Z" changeid="kodai">
+        <seg>不正なユーザー</seg>
       </tuv>
     </tu>
     <tu>
@@ -8856,8 +8864,8 @@
       <tuv xml:lang="EN-US">
         <seg>Zabbix internal authentication</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110926T095208Z" changeid="kodai">
-        <seg>Zabbix内部データベースのユーザ情報による認証</seg>
+      <tuv xml:lang="JA" changedate="20111114T150603Z" changeid="kodai">
+        <seg>Zabbix内部データベースのユーザー情報による認証</seg>
       </tuv>
     </tu>
     <tu>
@@ -9528,8 +9536,8 @@
       <tuv xml:lang="EN-US">
         <seg>Send to Users</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T094446Z" changeid="kodai">
-        <seg>ユーザに送信</seg>
+      <tuv xml:lang="JA" changedate="20111114T150331Z" changeid="kodai">
+        <seg>ユーザーに送信</seg>
       </tuv>
     </tu>
     <tu>
@@ -9546,6 +9554,14 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>は必須のパラメータです</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>PHP upload max filesize</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>PHP upload max filesize</seg>
       </tuv>
     </tu>
     <tu>
@@ -9728,8 +9744,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot update user.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T083303Z" changeid="kodai">
-        <seg>ユーザを更新できません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150115Z" changeid="kodai">
+        <seg>ユーザーを更新できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9864,8 +9880,8 @@
       <tuv xml:lang="EN-US">
         <seg>It is not possible to search by user password</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T091516Z" changeid="kodai">
-        <seg>ユーザのパスワードによる検索は行えません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150225Z" changeid="kodai">
+        <seg>ユーザーのパスワードによる検索は行えません</seg>
       </tuv>
     </tu>
     <tu>
@@ -10102,6 +10118,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[Wrong value for month: &quot;%s&quot; ]</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111114T151050Z" changeid="kodai">
+        <seg>[月の値が正しくありません: &quot;%s&quot; ]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Acceptable SLA (in %)</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -10112,8 +10136,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot update user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザを更新できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150113Z" changeid="kodai">
+        <seg>ユーザーを更新できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -10336,8 +10360,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot add user.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T082737Z" changeid="kodai">
-        <seg>ユーザを追加できません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150033Z" changeid="kodai">
+        <seg>ユーザーを追加できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10486,6 +10510,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>POP</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>POP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Host count</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -10576,8 +10608,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Super Admins can delete user groups.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T093504Z" changeid="kodai">
-        <seg>Zabbix管理者のみがユーザグループを削除できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150257Z" changeid="kodai">
+        <seg>Zabbix管理者のみがユーザーグループを削除できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -10896,8 +10928,8 @@
       <tuv xml:lang="EN-US">
         <seg>User can't change type for himself</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20111109T135513Z" changeid="kodai">
-        <seg>ユーザは自身のユーザタイプを変更できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150839Z" changeid="kodai">
+        <seg>ユーザーは自身のユーザータイプを変更できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -10960,8 +10992,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Zabbix Admins can add user Medias</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbix管理者のみがユーザのメディアを追加できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150259Z" changeid="kodai">
+        <seg>Zabbix管理者のみがユーザーのメディアを追加できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -11070,18 +11102,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>No maintenance defined</seg>
-      </tuv>
-      <tuv xml:lang="JA" changedate="20111109T134654Z" changeid="kodai">
-        <seg>メンテナンスが設定されていません</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>No rights defined.</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110923T112706Z" changeid="kodai">
         <seg>権限が設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>No maintenance defined</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111109T134654Z" changeid="kodai">
+        <seg>メンテナンスが設定されていません</seg>
       </tuv>
     </tu>
     <tu>
@@ -11152,8 +11184,8 @@
       <tuv xml:lang="EN-US">
         <seg>Not allowed to set password for user &quot;guest&quot;.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110923T113117Z" changeid="kodai">
-        <seg>ゲストユーザはパスワードを設定できません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150246Z" changeid="kodai">
+        <seg>ゲストユーザーはパスワードを設定できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11624,8 +11656,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Super Admins can add user groups.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T093449Z" changeid="kodai">
-        <seg>Zabbix管理者のみがユーザグループを追加できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150254Z" changeid="kodai">
+        <seg>Zabbix管理者のみがユーザーグループを追加できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -11816,8 +11848,8 @@
       <tuv xml:lang="EN-US">
         <seg>User</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150353Z" changeid="kodai">
+        <seg>ユーザー</seg>
       </tuv>
     </tu>
     <tu>
@@ -11936,8 +11968,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to update user media or user media does not exist.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101139Z" changeid="kodai">
-        <seg>ユーザのメディアを更新する権限がないか、ユーザのメディアが存在しません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150539Z" changeid="kodai">
+        <seg>ユーザーのメディアを更新する権限がないか、ユーザーのメディアが存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12112,8 +12144,8 @@
       <tuv xml:lang="EN-US">
         <seg>Users unblocked</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのブロックを解除しました</seg>
+      <tuv xml:lang="JA" changedate="20111114T150457Z" changeid="kodai">
+        <seg>ユーザーのブロックを解除しました</seg>
       </tuv>
     </tu>
     <tu>
@@ -12152,8 +12184,8 @@
       <tuv xml:lang="EN-US">
         <seg>Acknowledge alarm by</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>障害対応コメントユーザ:</seg>
+      <tuv xml:lang="JA" changedate="20111114T145937Z" changeid="kodai">
+        <seg>障害対応コメントユーザー:</seg>
       </tuv>
     </tu>
     <tu>
@@ -12246,6 +12278,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>PHP post max size</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>PHP post max size</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>SERVER</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110926T093959Z" changeid="kodai">
@@ -12288,8 +12328,8 @@
       <tuv xml:lang="EN-US">
         <seg>CONFIGURATION OF USER</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20111020T061040Z" changeid="kodai">
-        <seg>ユーザの設定</seg>
+      <tuv xml:lang="JA" changedate="20111114T145946Z" changeid="kodai">
+        <seg>ユーザーの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -12504,8 +12544,8 @@
       <tuv xml:lang="EN-US">
         <seg>User rights</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザの権限</seg>
+      <tuv xml:lang="JA" changedate="20111114T150645Z" changeid="kodai">
+        <seg>ユーザーの権限</seg>
       </tuv>
     </tu>
     <tu>
@@ -12608,8 +12648,8 @@
       <tuv xml:lang="EN-US">
         <seg>No user groups defined</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザグループが設定されていません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150706Z" changeid="kodai">
+        <seg>ユーザーグループが設定されていません</seg>
       </tuv>
     </tu>
     <tu>
@@ -12832,8 +12872,8 @@
       <tuv xml:lang="EN-US">
         <seg>Connected as '%1$s'</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ'%1$s'でログイン</seg>
+      <tuv xml:lang="JA" changedate="20111114T150121Z" changeid="kodai">
+        <seg>ユーザー'%1$s'でログイン</seg>
       </tuv>
     </tu>
     <tu>
@@ -12904,8 +12944,8 @@
       <tuv xml:lang="EN-US">
         <seg>Zabbix User</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbixユーザ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150557Z" changeid="kodai">
+        <seg>Zabbixユーザー</seg>
       </tuv>
     </tu>
     <tu>
@@ -13064,8 +13104,8 @@
       <tuv xml:lang="EN-US">
         <seg>User does not exist or you have no access to this user.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T085659Z" changeid="kodai">
-        <seg>ユーザが存在しないか、アクセス権がありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150200Z" changeid="kodai">
+        <seg>ユーザーが存在しないか、アクセス権がありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13096,8 +13136,8 @@
       <tuv xml:lang="EN-US">
         <seg>Correct login [%s]</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ[%s]のログイン</seg>
+      <tuv xml:lang="JA" changedate="20111114T150130Z" changeid="kodai">
+        <seg>ユーザー[%s]のログイン</seg>
       </tuv>
     </tu>
     <tu>
@@ -13160,8 +13200,8 @@
       <tuv xml:lang="EN-US">
         <seg>USER GROUPS</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザグループ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150710Z" changeid="kodai">
+        <seg>ユーザーグループ</seg>
       </tuv>
     </tu>
     <tu>
@@ -13312,8 +13352,8 @@
       <tuv xml:lang="EN-US">
         <seg>Users</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150450Z" changeid="kodai">
+        <seg>ユーザー</seg>
       </tuv>
     </tu>
     <tu>
@@ -13664,8 +13704,8 @@
       <tuv xml:lang="EN-US">
         <seg>Users status updated</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのステータスを更新しました</seg>
+      <tuv xml:lang="JA" changedate="20111114T150453Z" changeid="kodai">
+        <seg>ユーザーのステータスを更新しました</seg>
       </tuv>
     </tu>
     <tu>
@@ -13864,8 +13904,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to delete user or user does not exist.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101055Z" changeid="kodai">
-        <seg>アクセス権がないか、ユーザが存在しません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150527Z" changeid="kodai">
+        <seg>アクセス権がないか、ユーザーが存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14304,8 +14344,8 @@
       <tuv xml:lang="EN-US">
         <seg>No users defined.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110923T113027Z" changeid="kodai">
-        <seg>ユーザが設定されていません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150242Z" changeid="kodai">
+        <seg>ユーザーが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14712,8 +14752,8 @@
       <tuv xml:lang="EN-US">
         <seg>User deleted</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザを削除しました</seg>
+      <tuv xml:lang="JA" changedate="20111114T150408Z" changeid="kodai">
+        <seg>ユーザーを削除しました</seg>
       </tuv>
     </tu>
     <tu>
@@ -15350,6 +15390,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>PHP memory limit</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>PHP memory limit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Zabbix internal</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -15462,14 +15510,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>[Y.M.d H:i:s]</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>[Y.M.d H:i:s]</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Debug</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -15530,6 +15570,14 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>SQLパースエラー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[Wrong value for day: &quot;%s&quot; ]</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111114T151041Z" changeid="kodai">
+        <seg>[日の値が正しくありません: &quot;%s&quot; ]</seg>
       </tuv>
     </tu>
     <tu>
@@ -15608,8 +15656,8 @@
       <tuv xml:lang="EN-US">
         <seg>Wrong fields for user &quot;%s&quot;.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T100924Z" changeid="kodai">
-        <seg>ユーザ&quot;%s&quot;の設定が正しくありません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150516Z" changeid="kodai">
+        <seg>ユーザー&quot;%s&quot;の設定が正しくありません</seg>
       </tuv>
     </tu>
     <tu>
@@ -15722,14 +15770,6 @@
       </tuv>
       <tuv xml:lang="JA" changedate="20110922T083809Z" changeid="kodai">
         <seg>&quot;include/defines.inc.php&quot;に設定されている定数ZBX_SCRIPT_BYTES_LIMITの読み込みバイト制限に達しました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>UTF-8</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>UTF-8</seg>
       </tuv>
     </tu>
     <tu>
@@ -15944,16 +15984,8 @@
       <tuv xml:lang="EN-US">
         <seg>Create user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザの作成</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Default escalation period (minimum 60 seconds)</seg>
-      </tuv>
-      <tuv xml:lang="JA" changedate="20111109T133950Z" changeid="kodai">
-        <seg>デフォルトのエスカレーション期間 (最小60秒)</seg>
+      <tuv xml:lang="JA" changedate="20111114T150132Z" changeid="kodai">
+        <seg>ユーザーの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -15962,6 +15994,14 @@
       </tuv>
       <tuv xml:lang="JA" changedate="20110927T140505Z" changeid="kodai">
         <seg>GUIアクセスの権限があるグループが%1$dつあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Default escalation period (minimum 60 seconds)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111109T133950Z" changeid="kodai">
+        <seg>デフォルトのエスカレーション期間 (最小60秒)</seg>
       </tuv>
     </tu>
     <tu>
@@ -15984,8 +16024,8 @@
       <tuv xml:lang="EN-US">
         <seg>User profile</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザプロファイル</seg>
+      <tuv xml:lang="JA" changedate="20111114T150442Z" changeid="kodai">
+        <seg>ユーザープロファイル</seg>
       </tuv>
     </tu>
     <tu>
@@ -16368,8 +16408,8 @@
       <tuv xml:lang="EN-US">
         <seg>User name</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ名</seg>
+      <tuv xml:lang="JA" changedate="20111114T150434Z" changeid="kodai">
+        <seg>ユーザー名</seg>
       </tuv>
     </tu>
     <tu>
@@ -16576,8 +16616,8 @@
       <tuv xml:lang="EN-US">
         <seg>No user groups defined.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110923T113025Z" changeid="kodai">
-        <seg>ユーザグループが設定されていません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150240Z" changeid="kodai">
+        <seg>ユーザーグループが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16808,8 +16848,8 @@
       <tuv xml:lang="EN-US">
         <seg>User &quot;%s&quot; cannot be without user group.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T100352Z" changeid="kodai">
-        <seg>ユーザ&quot;%s&quot;にユーザグループを設定してください。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150834Z" changeid="kodai">
+        <seg>ユーザー&quot;%s&quot;にユーザーグループを設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16928,8 +16968,8 @@
       <tuv xml:lang="EN-US">
         <seg>CONFIGURATION OF USER GROUP</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20111020T061048Z" changeid="kodai">
-        <seg>ユーザグループの設定</seg>
+      <tuv xml:lang="JA" changedate="20111114T145947Z" changeid="kodai">
+        <seg>ユーザーグループの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -17032,8 +17072,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to create user medias.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101039Z" changeid="kodai">
-        <seg>ユーザのメディアを作成する権限がありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150524Z" changeid="kodai">
+        <seg>ユーザーのメディアを作成する権限がありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17098,6 +17138,14 @@
       </tuv>
       <tuv xml:lang="JA" changedate="20110922T094140Z" changeid="kodai">
         <seg>SNMPトラップ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Zabbix server IP or port is not set!</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111114T151022Z" changeid="kodai">
+        <seg>Zabbix serverのIPアドレスまたはポート番号が設定されていません！</seg>
       </tuv>
     </tu>
     <tu>
@@ -17224,8 +17272,8 @@
       <tuv xml:lang="EN-US">
         <seg>Unblock selected users?</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>選択したユーザのブロックを解除しますか？</seg>
+      <tuv xml:lang="JA" changedate="20111114T150347Z" changeid="kodai">
+        <seg>選択したユーザーのブロックを解除しますか？</seg>
       </tuv>
     </tu>
     <tu>
@@ -17240,8 +17288,8 @@
       <tuv xml:lang="EN-US">
         <seg>No users defined</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザが設定されていません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150720Z" changeid="kodai">
+        <seg>ユーザーが設定されていません</seg>
       </tuv>
     </tu>
     <tu>
@@ -17496,8 +17544,8 @@
       <tuv xml:lang="EN-US">
         <seg>User cannot change GUI access for himself</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザは自分自身のGUIアクセスを変更できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150406Z" changeid="kodai">
+        <seg>ユーザーは自分自身のGUIアクセスを変更できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -18136,8 +18184,8 @@
       <tuv xml:lang="EN-US">
         <seg>Logged in as</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T092345Z" changeid="kodai">
-        <seg>次のユーザでログイン</seg>
+      <tuv xml:lang="JA" changedate="20111114T150230Z" changeid="kodai">
+        <seg>次のユーザーでログイン</seg>
       </tuv>
     </tu>
     <tu>
@@ -18208,8 +18256,8 @@
       <tuv xml:lang="EN-US">
         <seg>User cannot change status of himself</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザは自分自身のステータスを変更できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150407Z" changeid="kodai">
+        <seg>ユーザーは自分自身のステータスを変更できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -18920,8 +18968,8 @@
       <tuv xml:lang="EN-US">
         <seg>USERS</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150702Z" changeid="kodai">
+        <seg>ユーザー</seg>
       </tuv>
     </tu>
     <tu>
@@ -19192,8 +19240,8 @@
       <tuv xml:lang="EN-US">
         <seg>CONFIGURATION OF USERS AND USER GROUPS</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザとユーザグループの設定</seg>
+      <tuv xml:lang="JA" changedate="20111114T145956Z" changeid="kodai">
+        <seg>ユーザーとユーザーグループの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -19496,8 +19544,8 @@
       <tuv xml:lang="EN-US">
         <seg>Number of users (online)</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ数 (オンライン)</seg>
+      <tuv xml:lang="JA" changedate="20111114T150250Z" changeid="kodai">
+        <seg>ユーザー数 (オンライン)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19744,8 +19792,8 @@
       <tuv xml:lang="EN-US">
         <seg>USER PROFILE</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザプロファイル</seg>
+      <tuv xml:lang="JA" changedate="20111114T150334Z" changeid="kodai">
+        <seg>ユーザープロファイル</seg>
       </tuv>
     </tu>
     <tu>
@@ -19776,8 +19824,8 @@
       <tuv xml:lang="EN-US">
         <seg>Incorrect action operation user.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T085626Z" changeid="kodai">
-        <seg>実行するアクションのユーザの値が正しくありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150158Z" changeid="kodai">
+        <seg>実行するアクションのユーザーの値が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19840,8 +19888,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to delete users.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101103Z" changeid="kodai">
-        <seg>ユーザを削除する権限がありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150529Z" changeid="kodai">
+        <seg>ユーザーを削除する権限がありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20408,8 +20456,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to update user or user does not exist.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101218Z" changeid="kodai">
-        <seg>ユーザを更新する権限がないか、ユーザが存在しません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150537Z" changeid="kodai">
+        <seg>ユーザーを更新する権限がないか、ユーザーが存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20432,8 +20480,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot update users status</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのステータスを更新できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150119Z" changeid="kodai">
+        <seg>ユーザーのステータスを更新できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -20608,8 +20656,8 @@
       <tuv xml:lang="EN-US">
         <seg>Single user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>シングルユーザ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150631Z" changeid="kodai">
+        <seg>シングルユーザー</seg>
       </tuv>
     </tu>
     <tu>
@@ -20742,6 +20790,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>PHP max execution time</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>PHP max execution time</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Response code for step '%1$s' of scenario '%2$s'</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110926T093940Z" changeid="kodai">
@@ -20808,8 +20864,8 @@
       <tuv xml:lang="EN-US">
         <seg>Send to User groups</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T094443Z" changeid="kodai">
-        <seg>ユーザグループに送信</seg>
+      <tuv xml:lang="JA" changedate="20111114T150328Z" changeid="kodai">
+        <seg>ユーザーグループに送信</seg>
       </tuv>
     </tu>
     <tu>
@@ -20944,8 +21000,8 @@
       <tuv xml:lang="EN-US">
         <seg>User password</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110926T094824Z" changeid="kodai">
-        <seg>ユーザのパスワード</seg>
+      <tuv xml:lang="JA" changedate="20111114T150440Z" changeid="kodai">
+        <seg>ユーザーのパスワード</seg>
       </tuv>
     </tu>
     <tu>
@@ -20984,8 +21040,8 @@
       <tuv xml:lang="EN-US">
         <seg>User groups</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザグループ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150415Z" changeid="kodai">
+        <seg>ユーザーグループ</seg>
       </tuv>
     </tu>
     <tu>
@@ -21304,8 +21360,8 @@
       <tuv xml:lang="EN-US">
         <seg>Wrong fields for user media &quot;%s&quot;.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T100933Z" changeid="kodai">
-        <seg>ユーザのメディア&quot;%s&quot;の設定が正しくありません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150517Z" changeid="kodai">
+        <seg>ユーザーのメディア&quot;%s&quot;の設定が正しくありません</seg>
       </tuv>
     </tu>
     <tu>
@@ -21474,6 +21530,14 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>グラフ[%s]を削除しました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>PHP max input time</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>PHP max input time</seg>
       </tuv>
     </tu>
     <tu>
@@ -21856,8 +21920,8 @@
       <tuv xml:lang="EN-US">
         <seg>Only Zabbix Admins can change user Medias</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T093523Z" changeid="kodai">
-        <seg>Zabbix管理者のみがユーザのメディアを変更できます</seg>
+      <tuv xml:lang="JA" changedate="20111114T150300Z" changeid="kodai">
+        <seg>Zabbix管理者のみがユーザーのメディアを変更できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -21992,8 +22056,8 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions or user media does not exist.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101027Z" changeid="kodai">
-        <seg>アクセス権がないか、ユーザメディアが存在しません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150523Z" changeid="kodai">
+        <seg>アクセス権がないか、ユーザーメディアが存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22328,8 +22392,8 @@
       <tuv xml:lang="EN-US">
         <seg>Send message to user groups</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T094429Z" changeid="kodai">
-        <seg>ユーザグループにメッセージを送信</seg>
+      <tuv xml:lang="JA" changedate="20111114T150318Z" changeid="kodai">
+        <seg>ユーザーグループにメッセージを送信</seg>
       </tuv>
     </tu>
     <tu>
@@ -22480,8 +22544,8 @@
       <tuv xml:lang="EN-US">
         <seg>Users (online)</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザ数 (オンライン)</seg>
+      <tuv xml:lang="JA" changedate="20111114T150451Z" changeid="kodai">
+        <seg>ユーザー数 (オンライン)</seg>
       </tuv>
     </tu>
     <tu>
@@ -22680,16 +22744,16 @@
       <tuv xml:lang="EN-US">
         <seg>You do not have permissions to update user medias.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T101156Z" changeid="kodai">
-        <seg>ユーザのメディアを更新する権限がありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150532Z" changeid="kodai">
+        <seg>ユーザーのメディアを更新する権限がありません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Incorrect parameters for user group.</seg>
       </tuv>
-      <tuv xml:lang="JA" changedate="20110922T090503Z" changeid="kodai">
-        <seg>ユーザグループのパラメータが正しくありません。</seg>
+      <tuv xml:lang="JA" changedate="20111114T150205Z" changeid="kodai">
+        <seg>ユーザーグループのパラメータが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22720,8 +22784,8 @@
       <tuv xml:lang="EN-US">
         <seg>Can't insert user medias</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザのメディアを追加できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150024Z" changeid="kodai">
+        <seg>ユーザーのメディアを追加できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -22784,8 +22848,8 @@
       <tuv xml:lang="EN-US">
         <seg>Zabbix Internal authentication</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>Zabbixデータベース内のユーザ情報による認証</seg>
+      <tuv xml:lang="JA" changedate="20111114T150639Z" changeid="kodai">
+        <seg>Zabbixデータベース内のユーザー情報による認証</seg>
       </tuv>
     </tu>
     <tu>
@@ -23056,8 +23120,8 @@
       <tuv xml:lang="EN-US">
         <seg>User group</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザグループ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150409Z" changeid="kodai">
+        <seg>ユーザーグループ</seg>
       </tuv>
     </tu>
     <tu>
@@ -23104,8 +23168,8 @@
       <tuv xml:lang="EN-US">
         <seg>User added</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザを追加しました</seg>
+      <tuv xml:lang="JA" changedate="20111114T150403Z" changeid="kodai">
+        <seg>ユーザーを追加しました</seg>
       </tuv>
     </tu>
     <tu>
@@ -23176,8 +23240,8 @@
       <tuv xml:lang="EN-US">
         <seg>Cannot delete user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>ユーザを削除できません</seg>
+      <tuv xml:lang="JA" changedate="20111114T150055Z" changeid="kodai">
+        <seg>ユーザーを削除できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -23248,8 +23312,8 @@
       <tuv xml:lang="EN-US">
         <seg>Database user</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>データベースユーザ</seg>
+      <tuv xml:lang="JA" changedate="20111114T150137Z" changeid="kodai">
+        <seg>データベースユーザー</seg>
       </tuv>
     </tu>
     <tu>
@@ -23296,8 +23360,8 @@
       <tuv xml:lang="EN-US">
         <seg>Delete selected user?</seg>
       </tuv>
-      <tuv xml:lang="JA">
-        <seg>選択したユーザを削除しますか？</seg>
+      <tuv xml:lang="JA" changedate="20111114T150141Z" changeid="kodai">
+        <seg>選択したユーザーを削除しますか？</seg>
       </tuv>
     </tu>
     <tu>
