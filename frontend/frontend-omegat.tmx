@@ -622,6 +622,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>]</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Can't insert media types</seg>
       </tuv>
       <tuv lang="JA">
@@ -818,6 +826,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>インストール</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>w</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>w</seg>
       </tuv>
     </tu>
     <tu>
@@ -5306,14 +5322,6 @@
       </tuv>
       <tuv lang="JA" changedate="20110922T095522Z" changeid="kodai">
         <seg>受信したJSONは正しくないJSON-RPCリクエストです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>AND</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>AND</seg>
       </tuv>
     </tu>
     <tu>
@@ -15510,6 +15518,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[Y.M.d H:i:s]</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>[Y.M.d H:i:s]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Debug</seg>
       </tuv>
       <tuv lang="JA">
@@ -15774,6 +15790,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>UTF-8</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>UTF-8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Operation details</seg>
       </tuv>
       <tuv lang="JA" changedate="20111020T070358Z" changeid="kodai">
@@ -16008,8 +16032,8 @@
       <tuv lang="EN-US">
         <seg>Minimum limit on input parse time for PHP scripts is %s (configuration parameter &quot;max_input_time&quot;)</seg>
       </tuv>
-      <tuv lang="JA" changedate="20111020T070243Z" changeid="kodai">
-        <seg>PHPスクリプトの入力パース時間の最小値は%です (&quot;max_input_time&quot;設定パラーメータ)</seg>
+      <tuv lang="JA" changedate="20111121T092739Z" changeid="kodai">
+        <seg>PHPスクリプトの入力パース時間の最小値は%sです (&quot;max_input_time&quot;設定パラーメータ)</seg>
       </tuv>
     </tu>
     <tu>
@@ -22650,14 +22674,6 @@
       </tuv>
       <tuv lang="JA" changedate="20111020T070247Z" changeid="kodai">
         <seg>PHPのpostサイズの最小値は%sです (&quot;post_max_size&quot;設定パラメータ)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>AND / OR</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>AND / OR</seg>
       </tuv>
     </tu>
     <tu>
