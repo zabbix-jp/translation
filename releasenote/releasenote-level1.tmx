@@ -3495,6 +3495,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.9.8 (Third Beta Release of Zabbix 2.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20111130T091541Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.9.7 (Zabbix 2.0の3番目のベータリリース)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-2279] fixed error when changing graph name case</seg>
       </tuv>
       <tuv lang="JA">
@@ -14268,6 +14276,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>1.8.3rc4のバグフィックスのリスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.9.8.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20111130T094300Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.9.8のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
