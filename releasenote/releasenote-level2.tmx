@@ -670,6 +670,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2737<ept i='0'>&lt;/a0&gt;</ept>] fixed various messages at linking templates</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T163342Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2737<ept i='0'>&lt;/a0&gt;</ept>] テンプレートのリンクに関するいくつかのメッセージを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[DEV-137] changed the minimal maintenance time from 1 hour to 5 minutes</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -1686,6 +1694,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2419<ept i='0'>&lt;/a0&gt;</ept>] fixed calculation of SLA if uptime/downtime is specified</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T164000Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2419<ept i='0'>&lt;/a0&gt;</ept>] アップタイム/ダウンタイムが指定された場合のSLAの計算を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-1999<ept i='0'>&lt;/a0&gt;</ept>] fixed bug when cannot create simple check item with macro in parameters</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -1986,6 +2002,14 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>ZABBIX SIAはZABBIX 1.6のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4375<ept i='0'>&lt;/a0&gt;</ept>] updated Russian translation; thanks to Alexey Pustovalov</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090258Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4375<ept i='0'>&lt;/a0&gt;</ept>] ロシア語翻訳を更新; Alexey Pustovalovに感謝</seg>
       </tuv>
     </tu>
     <tu>
@@ -2411,6 +2435,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>キューを管理に移動</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3074<ept i='0'>&lt;/a0&gt;</ept>] moved the 'Status' column in the item list to the right</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085313Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3074<ept i='0'>&lt;/a0&gt;</ept>] アイテムリストの 'ステータス' カラムを右に移動</seg>
       </tuv>
     </tu>
     <tu>
@@ -3935,6 +3967,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2859<ept i='0'>&lt;/a0&gt;</ept>] fixed possibility to successfully delete zero regular expressions</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090012Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2859<ept i='0'>&lt;/a0&gt;</ept>] 正規表現が登録されていない時に削除が実行できてしまう問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBXNEXT-357<ept i='0'>&lt;/a0&gt;</ept>] added support of user macros in parameters field of database item; thanks to Kirill Fateev</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110105T120335Z" changeid="kodai">
@@ -4035,6 +4075,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>ZABBIX SIAはZABBIX 1.6.1のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4288<ept i='0'>&lt;/a0&gt;</ept>] fixed user macros not being deleted when deleting a host</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085848Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4288<ept i='0'>&lt;/a0&gt;</ept>] ホスト削除時にユーザマクロが削除されない問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -5423,6 +5471,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2843<ept i='0'>&lt;/a0&gt;</ept>] made dashboard and slideshow popup menus have dynamic width</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090049Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2843<ept i='0'>&lt;/a0&gt;</ept>] ダッシュボードとスライドショーのポップアップメニューの幅を動的に調整するように変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[ZBX-310] fixes for PGSQL</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -5719,18 +5775,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>New drag and drop interface makes creating and editing maps much easier.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>新しいドラッグアンドドロップのインターフェースはマップの作成と修正がより簡単に行なえるようになりました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2976<ept i='0'>&lt;/a0&gt;</ept>] fixed server crash when processing zabbix[items_unsupported] under DebugLevel=4</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2976<ept i='0'>&lt;/a0&gt;</ept>] DebugLevel=4設定時にzabbix[items_unsupported]の処理中にサーバがクラッシュするのを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>New drag and drop interface makes creating and editing maps much easier.</seg>
+      </tuv>
+      <tuv xml:lang="JA">
+        <seg>新しいドラッグアンドドロップのインターフェースはマップの作成と修正がより簡単に行なえるようになりました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5875,6 +5931,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2325<ept i='0'>&lt;/a0&gt;</ept>] フィルタドロップダウンのグループ/ホストの選択を改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Complete List of Bug Fixes and Improvements included into 1.8.10rc1</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T162824Z" changeid="kodai">
+        <seg>1.8.10rc1に含まれるすべてのバグフィックスと改善の一覧</seg>
       </tuv>
     </tu>
     <tu>
@@ -6195,6 +6259,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110913T074946Z" changeid="kodai">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4059<ept i='0'>&lt;/a0&gt;</ept>] アイテムのパラメータ解析時の潜在的なバッファオーバーフローを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4351<ept i='0'>&lt;/a0&gt;</ept>] updated French translation; thanks to Joseph Bueno</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090355Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4351<ept i='0'>&lt;/a0&gt;</ept>] フランス語翻訳を更新; Joseph Buenoに感謝</seg>
       </tuv>
     </tu>
     <tu>
@@ -6755,6 +6827,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[ZBX-287] FreeBSD上で古いGCCを利用している場合のコンパイルを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3244<ept i='0'>&lt;/a0&gt;</ept>] fixed dropdown changing its style when navigating menu</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085736Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3244<ept i='0'>&lt;/a0&gt;</ept>] ナビゲートメニューのドロップダウンのスタイルを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -7420,6 +7500,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110105T120206Z" changeid="kodai">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3123<ept i='0'>&lt;/a0&gt;</ept>] ITサービスの処理でOracleのSQLエラーが表示される問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.10rc1 (First Release Candidate).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T162745Z" changeid="kodai">
+        <seg>Zabbix SIAはZABBIX 1.8.10rc1 (1番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8280,6 +8368,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4273<ept i='0'>&lt;/a0&gt;</ept>] fixed getting permission error while creating an action</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T163642Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4273<ept i='0'>&lt;/a0&gt;</ept>] アクション作成時のパーミッション取得エラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[ZBX-1762] fixed errors when editing media types</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -8796,6 +8892,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[ZBX-192] コネクションロス後にアクティブチェックが停止する問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4360<ept i='0'>&lt;/a0&gt;</ept>] fixed trapper compilation error on FreeBSD 7.3</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090317Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4360<ept i='0'>&lt;/a0&gt;</ept>] FreeBSD 7.3のトラッパーのコンパイルエラーを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -10160,6 +10264,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4376<ept i='0'>&lt;/a0&gt;</ept>] fixed escaping of strings with PostgreSQL 9.1 or later</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T163819Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4376<ept i='0'>&lt;/a0&gt;</ept>] PostgreSQL 9.1以降の文字列のエスケープ処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2319<ept i='0'>&lt;/a0&gt;</ept>] fixed escaping locales on download</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -10476,6 +10588,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>Sqlora8ライブラリへの依存は無くなりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A nice overview of the new functionality is at <bpt i='0' x='0'>&lt;a0&gt;</bpt>http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.10<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T162812Z" changeid="kodai">
+        <seg>新機能の概要は<bpt i='0' x='0'>&lt;a0&gt;</bpt>http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.10<ept i='0'>&lt;/a0&gt;</ept>から参照することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10948,6 +11068,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110728T140432Z" changeid="kodai">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBXNEXT-816<ept i='0'>&lt;/a0&gt;</ept>] コマンドラインから設定情報のキャッシュ再読み込み機能を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4424<ept i='0'>&lt;/a0&gt;</ept>] fixed handling of a localized content with incorrect utf8 characters</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T082640Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4424<ept i='0'>&lt;/a0&gt;</ept>] 正しくないUTF-8文字列を含むローカライズされたコンテンツの処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -12600,6 +12728,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3104<ept i='0'>&lt;/a0&gt;</ept>] implemented the screen item API</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085324Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3104<ept i='0'>&lt;/a0&gt;</ept>] スクリーンアイテムのAPIを実装</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2914<ept i='0'>&lt;/a0&gt;</ept>] add Ubuntu upstart files; thanks to S. Canchon</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110406T164632Z" changeid="kodai">
@@ -12684,6 +12820,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>HTTP pollerのデフォルト数を1に設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4377<ept i='0'>&lt;/a0&gt;</ept>] fixed error message when checking if libcurl can be linked statically</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T163709Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4377<ept i='0'>&lt;/a0&gt;</ept>] libcurlを静的にリンク可能かチェックする際のエラーメッセージを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -12972,6 +13116,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2040<ept i='0'>&lt;/a0&gt;</ept>] アイテムやトリガーのコピーや一括更新の際に表示される「再確認」用のポップアップを削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3104<ept i='0'>&lt;/a0&gt;</ept>] fixed screen item &quot;Parameter&quot; field validation and some minor screen item bugs</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085408Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3104<ept i='0'>&lt;/a0&gt;</ept>] スクリーンアイテムの「パラメータ」項目のバリデーションといくつかの小さなスクリーンのアイテムのバグを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -14088,6 +14240,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4279<ept i='0'>&lt;/a0&gt;</ept>] added an error message when trying to delete an item, that's being used as a min/max Y axis value for graphs</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090247Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4279<ept i='0'>&lt;/a0&gt;</ept>] グラフのY軸の最小/最大値として使用しているアイテムを削除しようとした時のエラーメッセージを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2995<ept i='0'>&lt;/a0&gt;</ept>] fixed crash in zbx_mem_realloc(), reduced memory usage and memory fragmentation in configuration cache</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -14148,6 +14308,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110801T081525Z" changeid="kodai">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3835<ept i='0'>&lt;/a0&gt;</ept>] リダイレクト内のセキュリティ脆弱性を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4298<ept i='0'>&lt;/a0&gt;</ept>] added deleted data report to a housekeeper on every step</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085428Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4298<ept i='0'>&lt;/a0&gt;</ept>] ハウスキーパー処理のステップごとのデータ削除レポートを追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -15168,6 +15336,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4391<ept i='0'>&lt;/a0&gt;</ept>] fixed suffix support in trigger testing interface</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T163751Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4391<ept i='0'>&lt;/a0&gt;</ept>] トリガーテスト画面のプレフィックスのサポートを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[ZBX-773] fixed typo 'attribures'</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -15480,6 +15656,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4353<ept i='0'>&lt;/a0&gt;</ept>] updated Japanese translation; thanks to Kodai Terashima</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090359Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4353<ept i='0'>&lt;/a0&gt;</ept>] 日本語翻訳を更新; Kodai Terashimaに感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-2543<ept i='0'>&lt;/a0&gt;</ept>] fixed password reset when edit user profile and auth type is not internal</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -15716,6 +15900,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[ZBX-854] アクションのためにテンプレートのトリガーのサポートを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.10rc1.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T162753Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.10rc1のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16701,6 +16893,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>より効率的なZABBIX Sender</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3649<ept i='0'>&lt;/a0&gt;</ept>] fixed &quot;frontends/php/styles/ie_default.css&quot; doesn't exist (for IE6)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085505Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-3649<ept i='0'>&lt;/a0&gt;</ept>] 「frontends/php/styles/ie_default.css」が存在しないというエラーを修正(IE6)</seg>
       </tuv>
     </tu>
     <tu>
@@ -18069,6 +18269,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv xml:lang="JA" changedate="20110420T142633Z" changeid="kodai">
         <seg>1.8.5に含まれるすべてのバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4015<ept i='0'>&lt;/a0&gt;</ept>] fixed multiple XSS issues</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085801Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4015<ept i='0'>&lt;/a0&gt;</ept>] いくつかののXSS問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -20649,6 +20857,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4424<ept i='0'>&lt;/a0&gt;</ept>] fixed handling of a long localized content by history syncer</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111215T162931Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4424<ept i='0'>&lt;/a0&gt;</ept>] history syncerによるローカライズされた長いコンテンツの処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>See <bpt i='0' x='0'>&lt;a0&gt;</bpt>Zabbix Manual<ept i='0'>&lt;/a0&gt;</ept> for a detailed upgrade procedure.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -21461,6 +21677,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>ユーザグループのログイン権限無効設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4235<ept i='0'>&lt;/a0&gt;</ept>] fixed operations with decimal numbers for certain locales</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T085545Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4235<ept i='0'>&lt;/a0&gt;</ept>] 特定の言語の10進数の処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -22949,6 +23173,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>[ZBX-1370] アイテムのコピーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4249<ept i='0'>&lt;/a0&gt;</ept>] fixed trigger wizard when inserting macro multiple times</seg>
+      </tuv>
+      <tuv xml:lang="JA" changedate="20111220T090341Z" changeid="kodai">
+        <seg>[<bpt i='0' x='0'>&lt;a0&gt;</bpt>ZBX-4249<ept i='0'>&lt;/a0&gt;</ept>] 複数回マクロを挿入する際のトリガーウィザードを修正</seg>
       </tuv>
     </tu>
     <tu>
