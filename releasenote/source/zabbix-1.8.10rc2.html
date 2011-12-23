@@ -1,0 +1,150 @@
+<p><strong>22 December 2011</strong></p>
+
+<p>Zabbix Team is proud to announce the availability of Zabbix 1.8.10rc2 (Second Release Candidate).</p>
+
+<p>Zabbix is an enterprise-class open source distributed monitoring solution. Zabbix is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for Zabbix 1.8.10rc2. Download it from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a>.</p>
+
+<p>This release fixes known issues of Zabbix 1.8.x and introduces new minor features. A nice overview of the new functionality is at <a href="http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.10">http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.10</a>.</p>
+
+<p><strong>This release is not for production use. It is a Release Candidate!</strong></p>
+
+<p>If you are using Zabbix 1.8 with node-based distributed setup, please run the following SQL patch. It should improve performance of configuration syncing a lot.</p>
+
+<p>
+MySQL:<br>
+DROP INDEX node_cksum_1 ON node_cksum;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+<br>
+ORACLE:<br>
+DROP INDEX node_cksum_1;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+<br>
+PostgreSQL:<br>
+DROP INDEX node_cksum_1;<br>
+CREATE INDEX node_cksum_1 on node_cksum (nodeid,cksumtype,tablename,recordid);<br>
+</p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<!--
+<h3>What's New in 1.8.9</div>
+
+<p>
+<div class="section_header_rn2">:: Improved performance of trigger evaluation</div>
+</p>
+<p>
+Zabbix Server was improved to calculate certain text and log related trigger expressions much faster without use of database queries.
+</p>
+
+<p>
+<div class="section_header_rn2">:: New option to show items without data</div>
+</p>
+<p>
+Latest data view was enhanced to have an option of viewing those items having to historical data.
+</p>
+
+<p>
+<div class="section_header_rn2">:: Changed API search wildcard</div>
+</p>
+<p>
+API search wildcard was changed from "%" to more traditional "*".
+</p>
+
+<p>
+<div class="section_header_rn2">:: New macro for trigger URL</div>
+</p>
+<p>
+Support of {TRIGGER.ID} macro was added for a trigger URL parameter.
+</p>
+-->
+
+
+<h4>Complete List of Bug Fixes and Improvements included into 1.8.10rc2</h4>
+
+<ul>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2843">ZBX-2843</a>] fixed log trigger creation menu in items list</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4424">ZBX-4424</a>] fixed handling of a long localized content by history syncer</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4424">ZBX-4424</a>] fixed handling of a localized content with incorrect utf8 characters</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2737">ZBX-2737</a>] fixed various messages at linking templates</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4273">ZBX-4273</a>] fixed getting permission error while creating an action</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4377">ZBX-4377</a>] fixed error message when checking if libcurl can be linked statically</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4391">ZBX-4391</a>] fixed suffix support in trigger testing interface</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4376">ZBX-4376</a>] fixed escaping of strings with PostgreSQL 9.1 or later</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2419">ZBX-2419</a>] fixed calculation of SLA if uptime/downtime is specified</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3074">ZBX-3074</a>] moved the 'Status' column in the item list to the right</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3104">ZBX-3104</a>] implemented the screen item API</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3104">ZBX-3104</a>] fixed screen item "Parameter" field validation and some minor screen item bugs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4298">ZBX-4298</a>] added deleted data report to a housekeeper on every step</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3649">ZBX-3649</a>] fixed "frontends/php/styles/ie_default.css" doesn't exist (for IE6)</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4235">ZBX-4235</a>] fixed operations with decimal numbers for certain locales</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-3244">ZBX-3244</a>] fixed dropdown changing its style when navigating menu</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4015">ZBX-4015</a>] fixed multiple XSS issues</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4288">ZBX-4288</a>] fixed user macros not being deleted when deleting a host</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2859">ZBX-2859</a>] fixed possibility to successfully delete zero regular expressions</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-2843">ZBX-2843</a>] made dashboard and slideshow popup menus have dynamic width</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4279">ZBX-4279</a>] added an error message when trying to delete an item, that's being used as a min/max Y axis value for graphs</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4375">ZBX-4375</a>] updated Russian translation; thanks to Alexey Pustovalov</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4360">ZBX-4360</a>] fixed trapper compilation error on FreeBSD 7.3</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4249">ZBX-4249</a>] fixed trigger wizard when inserting macro multiple times</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4351">ZBX-4351</a>] updated French translation; thanks to Joseph Bueno</li>
+<li>[<a href="https://support.zabbix.com/browse/ZBX-4353">ZBX-4353</a>] updated Japanese translation; thanks to Kodai Terashima</li>
+</ul>
+</p>
+
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/documentation/1.8/manual/installation/">Zabbix Manual</a> for full details.</p>
+</p>
+
+<h4>Upgrade</h4>
+
+<p>Recompile Zabbix binaries and update front-end PHP files. Execute a database patch if migrating from Zabbix 1.6.x. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/installation_and_upgrade">Zabbix Manual</a> for a detailed upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>Zabbix Server</h4>
+
+<p>Zabbix Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 5.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22, PostgreSQL 8.3</li>
+<li>RedHat EL 5.3, Intel, kernel 2.6.18, Oracle 11gR2</li>
+<li>Slackware Linux, x86, kernel 2.6.29.6, MySQL 5.1.x</li>
+</ul>
+
+<h4>Zabbix Agents</h4>
+
+<p>Zabbix Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>Zabbix Company provides a full range of professional services. We also provide trouble-free upgrade service for easy migration from earlier versions to Zabbix 1.8.x. Please contact <a href="mailto:sales@zabbix.com">Sales</a> for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/documentation/">Zabbix 1.8 Manual</a></li>
+<li>Zabbix Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>Zabbix Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>
