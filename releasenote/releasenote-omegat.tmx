@@ -326,6 +326,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The new forms has much better look and usability.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093915Z" changeid="kodai">
+        <seg>新しい設定画面は見た目とユーザビリティがより改善されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document contains the release notes for Zabbix 1.8.4rc1.</seg>
       </tuv>
       <tuv lang="JA">
@@ -966,6 +974,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Support of vm.memory.size</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T094011Z" changeid="kodai">
+        <seg>vm.memory.sizeのサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>New supported checks</seg>
       </tuv>
       <tuv lang="JA">
@@ -1070,18 +1086,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>It is recommended to upgrade from previous releases of 1.6.x.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>このリリースはZABBIX 1.6.xの以前のリリースからアップグレードすることを推奨します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2950&lt;/a0&gt;] added popup menus for map elements</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2950&lt;/a0&gt;] マップのアイコンにポップアップメニューを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is recommended to upgrade from previous releases of 1.6.x.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このリリースはZABBIX 1.6.xの以前のリリースからアップグレードすることを推奨します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2102,18 +2118,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>This document contains the release notes for Zabbix 1.8.10.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20111228T131315Z" changeid="kodai">
-        <seg>このドキュメントはZabbix 1.8.10のリリースノートを含みます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-213] added sql patches for graphs_items color field</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-213] graphs_itemsのcolorフィールドのためのいくつかのSQLパッチを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.10.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20111228T131315Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.10のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5583,6 +5599,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Added new option in map configuration which enables macros expanding.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T092734Z" changeid="kodai">
+        <seg>マップ編集画面でマクロ展開を有効にするオプションを追加しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-1269&lt;/a0&gt;] fixed offscreen popups</seg>
       </tuv>
       <tuv lang="JA">
@@ -7928,6 +7952,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Support of disabling media types</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093939Z" changeid="kodai">
+        <seg>メディアタイプの無効機能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2193&lt;/a0&gt;] updated Russian translation; thanks to dotneft</seg>
       </tuv>
       <tuv lang="JA">
@@ -8896,6 +8928,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>New design for all configuration forms</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093817Z" changeid="kodai">
+        <seg>設定画面の新しいデザイン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-357] fixed problem with clearing error message for activated items</seg>
       </tuv>
       <tuv lang="JA">
@@ -8952,18 +8992,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Zabbix Team is proud to announce the availability of Zabbix 1.8.10.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20111228T131306Z" changeid="kodai">
-        <seg>Zabbix SIAはZabbix 1.8.10のリリースをアナウンスすることを光栄に思います。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.8rc3 (Third Release Candidate).</seg>
       </tuv>
       <tuv lang="JA" changedate="20110923T181630Z" changeid="kodai">
         <seg>Zabbix SIAはZabbix 1.8.8rc3 (3番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix Team is proud to announce the availability of Zabbix 1.8.10.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20111228T131306Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.8.10のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12008,6 +12048,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Templates may contain screens for easy maintenance and quick access to a set of performance graphs.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093625Z" changeid="kodai">
+        <seg>テンプレートにスクリーン設定を含めることができ、設定のメンテナンスとホスト用パフォーマンスグラフの一覧画面の表示の容易性が向上します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-218] fixed problem &quot;Unable to add performance counter&quot; on start of win agent</seg>
       </tuv>
       <tuv lang="JA">
@@ -12508,6 +12556,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-133] セマフォに関係するエラーのより詳細なデバッグ情報を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More flexible dependencies</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T094050Z" changeid="kodai">
+        <seg>より柔軟な依存関係</seg>
       </tuv>
     </tu>
     <tu>
@@ -13856,6 +13912,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Dependency from template to host is supported.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T094114Z" changeid="kodai">
+        <seg>テンプレートからホストへの依存関係がサポートされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3457&lt;/a0&gt;] in trigger wizard, use double symbol references past 26 entries</seg>
       </tuv>
       <tuv lang="JA" changedate="20110407T001338Z" changeid="kodai">
@@ -13908,6 +13972,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA" changedate="20110105T110135Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-2577&lt;/a0&gt;] テンプレートのトリガーの更新をリンク先のトリガーに反映する処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Processing of escalations has been improved to work more efficiantly.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093132Z" changeid="kodai">
+        <seg>より効率的に動作するようにエスカレーションの処理を改善しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14260,6 +14332,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T164043Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3413&lt;/a0&gt;] SQLのLIKE文で利用するパラメータのエスケープ処理を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.9.9.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T092409Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.9.9のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15768,6 +15848,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Lost resources could be automatically deleted based on configurable retention period.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093052Z" changeid="kodai">
+        <seg>保持期間の設定に基づいて、データが取得できない場合は自動的に削除することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-822] fixed dashboard when logged in as guest</seg>
       </tuv>
       <tuv lang="JA">
@@ -17057,6 +17145,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Much faster processing of escalations</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093111Z" changeid="kodai">
+        <seg>エスカレーションの処理速度の改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Templated host-level screens</seg>
       </tuv>
       <tuv lang="JA">
@@ -17633,6 +17729,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The item is now supported for various platforms including BSD.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T094042Z" changeid="kodai">
+        <seg>BSDを含む複数のプラットフォームでこのアイテムが利用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[DEV-436] improved display of ZABBIX/SNMP/IPMI agents availability information in hosts configuration screen</seg>
       </tuv>
       <tuv lang="JA">
@@ -17785,6 +17889,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The screens are available via host popup available when clicking on a host.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T093746Z" changeid="kodai">
+        <seg>ホストをクリックしたときのポップアップからスクリーンを表示することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-1498] fixed error when try to create item with custom key &quot;log&quot; and not Log item type</seg>
       </tuv>
       <tuv lang="JA">
@@ -17845,6 +17957,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1638] リンクインジケータにホスト名を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Optional expanding of macros in map editing</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T092659Z" changeid="kodai">
+        <seg>マップ編集画面のマクロ展開オプション</seg>
       </tuv>
     </tu>
     <tu>
@@ -18529,10 +18649,26 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Media types can be optionally disabled.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T094004Z" changeid="kodai">
+        <seg>オプションでメディアタイプを無効にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-886&lt;/a0&gt;] removed duplicate locale string S_ACTIONS_BIG</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-886&lt;/a0&gt;] 重複していた翻訳文字列「S_ACTIONS_BIG」を削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1 February 2012</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T092345Z" changeid="kodai">
+        <seg>2012年2月1日</seg>
       </tuv>
     </tu>
     <tu>
@@ -19357,6 +19493,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-610] 外部チェックのメモリリークを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.9.9 (Fourth Beta Release of Zabbix 2.0.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120203T092359Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.9.9 (Zabbix 2.0の4番目のベータリリース)のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21529,18 +21673,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-2022&lt;/a0&gt;] fixed link colour picker in maps in IE7</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>[&lt;a0&gt;ZBX-2022&lt;/a0&gt;] IE7使用時のマップ内のリンクのカラーパレットの問題を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2951&lt;/a0&gt;] made interval hidden for trapper items</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T162835Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-2951&lt;/a0&gt;] トラッパーアイテムの更新間隔を表示しないように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-2022&lt;/a0&gt;] fixed link colour picker in maps in IE7</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>[&lt;a0&gt;ZBX-2022&lt;/a0&gt;] IE7使用時のマップ内のリンクのカラーパレットの問題を修正</seg>
       </tuv>
     </tu>
     <tu>

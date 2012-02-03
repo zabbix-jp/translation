@@ -1,0 +1,225 @@
+<p><strong>1 February 2012</strong></p>
+
+<p>Zabbix SIA is proud to announce the availability of Zabbix 1.9.9 (Fourth Beta Release of Zabbix 2.0.0).</p>
+
+<p>Zabbix is an enterprise-class open source distributed monitoring solution. Zabbix is released under the GPL, thus it is free of charge for both commercial and non-commercial use. A complete text of the license is available at <a href="http://www.gnu.org/copyleft/gpl.txt">http://www.gnu.org/copyleft/gpl.txt</a>.</p>
+
+<p>This document contains the release notes for Zabbix 1.9.9. Download it from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a>.</p>
+
+<p>This release introduces major features along with numerous improvements and bug fixes.</p>
+
+<p><strong>This release is not for production use. It is a Beta Release!</strong></p>
+
+<p><strong>It is almost feature complete but does not fully represent expected 2.0 version. Minor improvements could be introduced.</strong></p>
+
+<p>The following sections describe the release in details and provide late-breaking or other information that supplements its main documentation.</p>
+
+<h4>Added direct SNMP trap monitoring</h4>
+
+<p>New SNMP trap monitoring provides high performance way of collecting traps, pre-processors such as SNMPTT could be used as well.</p>
+
+<h4>Support of automatic selection of map icons</h4>
+
+<p>Maps and map elements could be optionally configured to automaticall select icons depending on element type (for example: host, network device, switch, etc).</p>
+
+<h4>Optional expanding of macros in map editing</h4>
+
+<p>Added new option in map configuration which enables macros expanding.</p>
+
+<h4>Host profiles renamed to inventory</h4>
+
+<p>Host profiles were renamed to a more standard "host inventory".</p>
+
+<h4>Performance improvements</h4>
+
+<p>Trigger related data is cached to reduce number of database requests, it improves overall performance of Zabbix Server.</p>
+
+<h4>Automatic collection of host profile data</h4>
+
+<p>Information about hardware and software details can be automatically retrieved by Zabbix Agent and extended using user-defined parameters.</p>
+
+<h4>Enhanced auto-discovery</h4>
+
+<p>Added discovery based on HTTPS and Telnet checks, discovery configuration form is redesigned.</p>
+
+<h4>Support of visible host and template name</h4>
+
+<p>In addition to standart host name, visible host name can be set to be displayed everywhere in the front-end. Additional macros for visible host name are also introduced.</p>
+
+<h4>Advanced options for remote commands</h4>
+
+<p>Remote commands (Agent, IPMI and SSH based) can be configured in a more flexible yet easier way.</p>
+
+<h4>Remote JMX monitoring</h4>
+
+<p>Zabbix JMX monitoring allows native secure remote monitoring of Java applications and popular middlewares such as JBoss, WebSphere and WebLogic.</p>
+
+<h4>Boolean data type</h4>
+
+<p>Boolean data type can be used for monitoring of two state metrics and JMX counters having boolean type.</p>
+
+<h4>New set of icons</h4>
+
+<p>New set of map icons is available for creation of great looking maps.</p>
+
+<h4>Support of new macros</h4>
+
+<p>Added support for {IPADDRESS}, {HOST.DNS} and {HOST.CONN} macros in trigger names.</p>
+
+<h4>Unified host profiles</h4>
+
+<p>Normal and extended host profiles merged. Macros for referencing all profile fields introduced.</p>
+
+<h4>Multiple network interfaces</h4>
+
+<p>Multiple network interfaces can be assigned to a single host, therefore one host may have several IP addresses with different checks for each IP.</p>
+
+<h4>Better translation framework for WEB interface</h4>
+
+<p>Zabbix interface translations are handled by GNU gettext module.</p>
+
+<h4>Auto-registration with passive checks</h4>
+
+<p>Added support of monitoring auto-registered hosts with passive checks. It is very handy for monitoring of Cloud-like environments.</p>
+
+<h4>Re-design of unknown events and triggers</h4>
+
+<p>Unknown triggers and events will no longer be displayed in Zabbix WEB interface, a special flag will be shown if Zabbix is not confident about status of triggers or events.</p>
+
+<h4>Low level discovery</h4>
+
+<p>Zabbix is able to discover your file systems, network interfaces and SNMP interfaces automatically with no manual work. One template can be used for hosts having different devices. Lost resources could be automatically deleted based on configurable retention period.</p>
+
+<h4>Much faster processing of escalations</h4>
+
+<p>Processing of escalations has been improved to work more efficiantly.</p>
+
+<h4>Optional graph legends</h4>
+
+<p>Graph legend can be optionally disabled.</p>
+
+<h4>Templated host-level screens</h4>
+
+<p>Templates may contain screens for easy maintenance and quick access to a set of performance graphs. The screens are available via host popup available when clicking on a host.</p>
+
+<h4>Database integrity</h4>
+
+<p>There are significant improvements in the database schema for better consistency and security of configuration and historical data.</p>
+
+<h4>Nanosecond resolution for historical data</h4>
+
+<p>Zabbix supports nanosecond resolution for historical data. If you are migrating from 1.8.x the option will be off by default. It is on for fresh setups.</p>
+
+<h4>Multiple URLs for map elements</h4>
+
+<p>A map element may have multiple links (URLs) to external resources.</p>
+
+<h4>Support of user scripts on Zabbix Agent and IPMI-based commands</h4>
+
+<p>User scripts can be used to execute any command on a monitored host using Zabbix or IPMI agents.</p>
+
+<h4>Custom trigger severities</h4>
+
+<p>Standard trigger severities can be customized to have a different names and colors for displaying in Zabbix front-end.</p>
+
+<h4>New login screen</h4>
+
+<p>The login screen was re-designed to have a better look.</p>
+
+<h4>New design for all configuration forms</h4>
+
+<p>The new forms has much better look and usability.</p>
+
+<h4>Advanced labels setting for maps</h4>
+
+<p>Label formats can be individually configured for different types of map elements on map level.</p>
+
+<h4>Remembering of map grid options</h4>
+
+<p>Zabbix front-end will save grid-options for each map. Map import/export is extended to support new grid-related attributes.</p>
+
+<h4>Automatic filling of DNS name for discovered devices</h4>
+
+<p>Zabbix will automatically fill in DNS names of newly discovered and auto-registered devices.</p>
+
+<h4>Export of events to CSV</h4>
+
+<p>Events visible in Zabbix front-end can be exported to a CSV file with a mouse click.</p>
+
+<h4>Support of SQLite3 for use on server-side</h4>
+
+<p>SQLite3 can be used on Zabbix Server side and works also with Zabbix front-end. Might be useful for embedded environments and low profile hardware.</p>
+
+<h4>Advanced filtering supported by Zabbix API</h4>
+
+<p>Two new options (ALL, ANY) can be used to control filtering on API level.</p>
+
+<h4>Host area functionality for maps</h4>
+
+<p>All host group elements can be displayed in a map area.</p>
+
+<h4>Support of disabling media types</h4>
+
+<p>Media types can be optionally disabled.</p>
+
+<h4>Support of vm.memory.size</h4>
+
+<p>The item is now supported for various platforms including BSD.</p>
+
+<h4>More flexible dependencies</h4>
+
+<p>Dependency from template to host is supported.</p>
+
+<h3>Installation and Upgrade Notes</h3>
+
+<h4>Installation</h4>
+
+<p>See <a href="http://www.zabbix.com/documentation/2.0/manual/installation/install">Zabbix Manual</a> for full details.</p>
+
+<h4>Upgrade</h4>
+
+<p>Recompile Zabbix binaries and update front-end PHP files. Execute a database patch if migrating from Zabbix 1.8.x. See <a href="http://www.zabbix.com/documentation/1.8/manual/about/installation_and_upgrade">Zabbix Manual</a> for a detailed upgrade procedure.</p>
+
+<h3>Pre-release testing</h3>
+
+<h4>Zabbix Server</h4>
+
+<p>Zabbix Server has been tested on the following platforms:</p>
+
+<ul>
+<li>Ubuntu Linux, AMD64, kernel 2.6.11, MySQL 5.x</li>
+<li>Ubuntu Linux, Intel, kernel 2.6.15, MySQL 5.0.22, PostgreSQL 8.3</li>
+<li>RedHat EL 5.3, Intel, kernel 2.6.18, Oracle 11gR2</li>
+<li>Slackware Linux, x86, kernel 2.6.29.6, MySQL 5.1.x</li>
+</ul>
+
+<h4>Zabbix Agents</h4>
+
+<p>Zabbix Agents have been compiled and tested on the following platforms:</p>
+
+<ul>
+<li>AIX 5.2</li>
+<li>FreeBSD 4.x, 5.x, 6.x</li>
+<li>HP-UX 10.x, 11.x</li>
+<li>Linux 2.4.x, 2.6.x</li>
+<li>Linux CentOS</li>
+<li>NetBSD 2.0</li>
+<li>OS/X 10.2</li>
+<li>Solaris 8, 9, 10</li>
+<li>Tru64 5.1B</li>
+<li>Windows XP, 2000, 2003, 2008, Vista</li>
+</ul>
+
+<p>Note that agents are available pre-compiled from <a href="http://www.zabbix.com/download.php">http://www.zabbix.com/download.php</a> for a limited number of versions and platforms.</p>
+
+<h4>Commercial support</h4>
+
+<p>Zabbix Company provides a full range of professional services. We also provide trouble-free upgrade service for easy migration from earlier versions to Zabbix 1.8.x. Please contact <a href="mailto:sales@zabbix.com">Sales</a> for pricing and more details.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.zabbix.com/documentation/">Zabbix 1.8 Manual</a></li>
+<li>Zabbix Forums (<a href="http://www.zabbix.com/forum">http://www.zabbix.com/forum</a>)</li>
+<li>Zabbix Support (<a href="http://www.zabbix.com/support.php">http://www.zabbix.com/support.php</a>)</li>
+</ul>
