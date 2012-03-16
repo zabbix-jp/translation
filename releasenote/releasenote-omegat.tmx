@@ -1758,6 +1758,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>WEB monitoring by proxies</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083451Z" changeid="kodai">
+        <seg>プロキシ経由のWeb監視</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-1999&lt;/a0&gt;] fixed bug when cannot create simple check item with macro in parameters</seg>
       </tuv>
       <tuv lang="JA">
@@ -1974,18 +1982,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4507&lt;/a0&gt;] added possibility to remove a discovered host from &quot;Discovered hosts&quot; group by action</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T211947Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4507&lt;/a0&gt;] 「Discovered hosts」グループから発見されたホストを削除できる機能をアクションに追加</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-1369] make more strings translatable</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1369] より多くの文字を翻訳できるように改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4507&lt;/a0&gt;] added possibility to remove a discovered host from &quot;Discovered hosts&quot; group by action</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T211947Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4507&lt;/a0&gt;] 「Discovered hosts」グループから発見されたホストを削除できる機能をアクションに追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -2030,6 +2038,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>WEB scenarios could be monitored by remote proxies.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083515Z" changeid="kodai">
+        <seg>リモートのプロキシを利用してWebシナリオを監視することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-30,ZBX-47] better dependencies</seg>
       </tuv>
       <tuv lang="JA">
@@ -2046,18 +2062,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4457&lt;/a0&gt;] updated French translation; thanks to Joseph Bueno</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T214242Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4457&lt;/a0&gt;] フランス語翻訳を更新; Joseph Buenoに感謝</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>added synchronisation of last value and timestamps for distributed monitoring</seg>
       </tuv>
       <tuv lang="JA">
         <seg>分散モニタリングに最終値とタイムスタンプの同期機能を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4457&lt;/a0&gt;] updated French translation; thanks to Joseph Bueno</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T214242Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4457&lt;/a0&gt;] フランス語翻訳を更新; Joseph Buenoに感謝</seg>
       </tuv>
     </tu>
     <tu>
@@ -2439,18 +2455,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4694&lt;/a0&gt;] fixed possible SQL errors or server crash while processing trends by history syncer</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T202849Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4694&lt;/a0&gt;] history syncerのトレンド処理中にSQLエラーまたはサーバのクラッシュが発生する可能性がある問題を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-954&lt;/a0&gt;] fix Hungarian language name</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-954&lt;/a0&gt;] ハンガリー語の誤字を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4694&lt;/a0&gt;] fixed possible SQL errors or server crash while processing trends by history syncer</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T202849Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4694&lt;/a0&gt;] history syncerのトレンド処理中にSQLエラーまたはサーバのクラッシュが発生する可能性がある問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -2639,18 +2655,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4073&lt;/a0&gt;] removed unused TrendCacheSize and CacheUpdateFrequency options from proxy</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T212806Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4073&lt;/a0&gt;] 利用されていないTrendCacheSizeとCacheUpdateFrequencyオプションをプロキシから削除</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>fixed &quot;Reset&quot; button for Web screens</seg>
       </tuv>
       <tuv lang="JA">
         <seg>Web画面のリセットボタンを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4073&lt;/a0&gt;] removed unused TrendCacheSize and CacheUpdateFrequency options from proxy</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T212806Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4073&lt;/a0&gt;] 利用されていないTrendCacheSizeとCacheUpdateFrequencyオプションをプロキシから削除</seg>
       </tuv>
     </tu>
     <tu>
@@ -3271,18 +3287,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4447&lt;/a0&gt;] fixed object selection in several forms in IE6 and IE7</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T215203Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4447&lt;/a0&gt;] IE6やIE7利用時のいくつかの画面でのオブジェクト選択を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-898] fixed slow performance of events component on a screen</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-898] スクリーンのイベント構成要素のパフォーマンスの遅さを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4447&lt;/a0&gt;] fixed object selection in several forms in IE6 and IE7</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T215203Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4447&lt;/a0&gt;] IE6やIE7利用時のいくつかの画面でのオブジェクト選択を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -4423,10 +4439,26 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please give it a try in non-production environment and report any issues to our bug tracking system at https://support.zabbix.com</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083120Z" changeid="kodai">
+        <seg>テスト環境で利用して問題があった場合はZabbixバグトラッキングシステム&lt;a0&gt;https://support.zabbix.com&lt;/a0&gt;に問題の報告をお願いします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2217&lt;/a0&gt;] fixed JS error in status of triggers page in IE</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2217&lt;/a0&gt;] IEでトリガーのステータス画面にJSのエラーが表示される問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 2.0.0rc1 (First Release Candidate of 2.0.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083024Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 2.0.0rc1(1番目のRelease Candidate)をアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5463,6 +5495,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It allows monitoring of WEB applications from various geographical locations.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083543Z" changeid="kodai">
+        <seg>これにより様々な場所にあるWebアプリケーションを監視することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-963] removed sid from users map element url</seg>
       </tuv>
       <tuv lang="JA">
@@ -5495,14 +5535,6 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-1609&lt;/a0&gt;] added support for all data types in dynamic indexes in SNMP</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T212345Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-1609&lt;/a0&gt;] SNMPのダイナミックインデックスがすべてのデータの形式に対応</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[DEV-405] Host Groups, Maintenances moved under &quot;Configuration&quot;</seg>
       </tuv>
       <tuv lang="JA">
@@ -5515,6 +5547,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[DEV-260] TRIGGER.NSEVERITYマクロを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-1609&lt;/a0&gt;] added support for all data types in dynamic indexes in SNMP</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T212345Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-1609&lt;/a0&gt;] SNMPのダイナミックインデックスがすべてのデータの形式に対応</seg>
       </tuv>
     </tu>
     <tu>
@@ -6647,18 +6687,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>In this case, the information displayed in the element will depend on the particular host selected by ZABBIX user.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>この場合、要素に表示される情報はユーザによって選択された個々のホストに依存します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2905&lt;/a0&gt;] fixed single trigger name expanding, unknown problem count and duplicate elements count in network maps</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2905&lt;/a0&gt;] ネットワークマップ上で障害が1つのみの時のトリガー名の展開、不明なトリガー数の表示、重複する要素の数の表示を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, the information displayed in the element will depend on the particular host selected by ZABBIX user.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この場合、要素に表示される情報はユーザによって選択された個々のホストに依存します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8416,6 +8456,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A brief overview of new functionality is available in &lt;a0&gt;Zabbix Wiki&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083429Z" changeid="kodai">
+        <seg>新機能の概要は&lt;a0&gt;Zabbix Wiki&lt;/a0&gt;を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2855&lt;/a0&gt;] fixed new line symbol for latest opera browser</seg>
       </tuv>
       <tuv lang="JA">
@@ -8888,18 +8936,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4721&lt;/a0&gt;] fixed handling of \u0000 by JSON parser; thanks to Rick Alm</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T201137Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4721&lt;/a0&gt;] JSONパーサによる\u0000のハンドリング処理を修正; Rick Almに感謝</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>fixed processing of macro {TRIGGER.VALUE} on 32 bit systems</seg>
       </tuv>
       <tuv lang="JA">
         <seg>32ビット環境上の{TRIGGER.VALUE}マクロの処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4721&lt;/a0&gt;] fixed handling of \u0000 by JSON parser; thanks to Rick Alm</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T201137Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4721&lt;/a0&gt;] JSONパーサによる\u0000のハンドリング処理を修正; Rick Almに感謝</seg>
       </tuv>
     </tu>
     <tu>
@@ -9288,14 +9336,6 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4535&lt;/a0&gt;] fixed build with --as-needed linker flag</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T211528Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4535&lt;/a0&gt;] --as-neededのリンクフラグを利用したビルドを修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-864] fixed problem when saving screen item without selected item</seg>
       </tuv>
       <tuv lang="JA">
@@ -9308,6 +9348,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1148] エージェント監視とシンプルチェック監視を混在させた場合にホスト状態が監視中、未監視と切り替わる問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4535&lt;/a0&gt;] fixed build with --as-needed linker flag</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T211528Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4535&lt;/a0&gt;] --as-neededのリンクフラグを利用したビルドを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -10888,6 +10936,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-2904&lt;/a0&gt;] fixed some unknown triggers not shown in status of triggers screen</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>[&lt;a0&gt;ZBX-2904&lt;/a0&gt;] いくつかの不明な状態のトリガーがトリガー画面で表示されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No dependency on Sqlora8 library anymore.</seg>
       </tuv>
       <tuv lang="JA">
@@ -10908,14 +10964,6 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2172&lt;/a0&gt;] 利用できるスクリプトをアルファベット順に並び替えるように修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-2904&lt;/a0&gt;] fixed some unknown triggers not shown in status of triggers screen</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>[&lt;a0&gt;ZBX-2904&lt;/a0&gt;] いくつかの不明な状態のトリガーがトリガー画面で表示されない問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -12976,6 +13024,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is feature complete release but misses new set of templates.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083214Z" changeid="kodai">
+        <seg>新機能はすべて実装されていますが、新しいテンプレートは含まれていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-1876&lt;/a0&gt;] added remarks to configuration files of Zabbix server and proxy about fping6</seg>
       </tuv>
       <tuv lang="JA">
@@ -13904,18 +13960,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-3262&lt;/a0&gt;] fixed warning &quot;no AC_LANG_SOURCE call detected in body&quot; raised during compilation</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T211330Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-3262&lt;/a0&gt;] コンパイル時の警告「no AC_LANG_SOURCE call detected in body」修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[DEV-339] added more internal checks zabbix[wcache,*] and zabbix[rcache,*]</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[DEV-339] インターナルチェック用にzabbix[wcache,*]とabbix[rcache,*]を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3262&lt;/a0&gt;] fixed warning &quot;no AC_LANG_SOURCE call detected in body&quot; raised during compilation</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T211330Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3262&lt;/a0&gt;] コンパイル時の警告「no AC_LANG_SOURCE call detected in body」修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -14728,18 +14784,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4564&lt;/a0&gt;] daemon processes will use default priority, no prioritization on startup</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T211822Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4564&lt;/a0&gt;] スタートアップ時のデーモンプロセスのプライオリティを削除し、デフォルトのプライオリティを利用するように修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-1087] fixed scrollbar blocking on graph zoom in web monitoring</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1087] Web監視のグラフを拡大・縮小した時にスクロールバーを操作できない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4564&lt;/a0&gt;] daemon processes will use default priority, no prioritization on startup</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T211822Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4564&lt;/a0&gt;] スタートアップ時のデーモンプロセスのプライオリティを削除し、デフォルトのプライオリティを利用するように修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -15408,14 +15464,6 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4604&lt;/a0&gt;] added the &quot;change&quot; link for clocks in screen configuration</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T201229Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4604&lt;/a0&gt;] スクリーン設定の時計の設定に「変更」リンクを追加</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-268] added support of proc.num[], proc.mem[] &amp; system.cpu.num[] for OpenBSD agents</seg>
       </tuv>
       <tuv lang="JA">
@@ -15428,6 +15476,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1368] アクションのコンディションの、アップタイム/ダウンタイムの「&lt;=」演算子の評価を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4604&lt;/a0&gt;] added the &quot;change&quot; link for clocks in screen configuration</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T201229Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4604&lt;/a0&gt;] スクリーン設定の時計の設定に「変更」リンクを追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -16984,6 +17040,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The processing was improved so that proxies will report to the server about not supported items.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083959Z" changeid="kodai">
+        <seg>取得不可アイテムの情報をプロキシからサーバに送信するように、プロキシの処理を改善しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Improved View of Trigger Statuses</seg>
       </tuv>
       <tuv lang="JA">
@@ -17269,6 +17333,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1625] ホストの一括更新時に「接続方法」オプションのデフォルト値をIPに設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not supported items are handled nicely by Proxies</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083908Z" changeid="kodai">
+        <seg>プロキシによる取得不可アイテムの処理を改善</seg>
       </tuv>
     </tu>
     <tu>
@@ -18473,18 +18545,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4600&lt;/a0&gt;] fixed trigger dependencies being reset when executing a mass update</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T205129Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4600&lt;/a0&gt;] 一括更新実行時にトリガーの依存性がリセットされる問題を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-1272] server name is now shown in page title too</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1272] ページタイトルにサーバ名も表示するように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4600&lt;/a0&gt;] fixed trigger dependencies being reset when executing a mass update</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T205129Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4600&lt;/a0&gt;] 一括更新実行時にトリガーの依存性がリセットされる問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -19017,18 +19089,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-1298&lt;/a0&gt;] fixed processing of command line arguments more than 2KB in proc.num and proc.mem checks on Linux</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T205426Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-1298&lt;/a0&gt;] Linux上のproc.numとproc.memで2KBを超えるコマンドライン引数の処理を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Media types can be optionally disabled.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120203T094004Z" changeid="kodai">
         <seg>オプションでメディアタイプを無効にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-1298&lt;/a0&gt;] fixed processing of command line arguments more than 2KB in proc.num and proc.mem checks on Linux</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T205426Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-1298&lt;/a0&gt;] Linux上のproc.numとproc.memで2KBを超えるコマンドライン引数の処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -19297,18 +19369,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Installation and Upgrade Notes</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>インストールとアップグレード方法</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Nanosecond resolution for historical data</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ヒストリデータにナノ秒を使用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installation and Upgrade Notes</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>インストールとアップグレード方法</seg>
       </tuv>
     </tu>
     <tu>
@@ -20169,18 +20241,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4650&lt;/a0&gt;] fixed possible server crash while processing trigger expressions</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T205458Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4650&lt;/a0&gt;] トリガー条件式の処理中にサーバがクラッシュする可能性がある問題を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>fixed division by zero in ZABBIX server</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ZABBIXサーバのゼロによる割り算を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4650&lt;/a0&gt;] fixed possible server crash while processing trigger expressions</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T205458Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4650&lt;/a0&gt;] トリガー条件式の処理中にサーバがクラッシュする可能性がある問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -20289,18 +20361,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4683&lt;/a0&gt;] fixed timestamps mismatch while sending history data from proxy</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T203310Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4683&lt;/a0&gt;] プロキシからヒストリデータ送信する際のタイムスタンプの不一致を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-1670] fixed events from slave nodes not shown when all nodes are selected</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1670] すべてのノードが選択されていてもスレーブノードからのイベントが表示されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4683&lt;/a0&gt;] fixed timestamps mismatch while sending history data from proxy</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T203310Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4683&lt;/a0&gt;] プロキシからヒストリデータ送信する際のタイムスタンプの不一致を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -22313,14 +22385,6 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-4718&lt;/a0&gt;] Fixed Graph axis item cloning in host Full Clone</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T200409Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-4718&lt;/a0&gt;] ホストを「すべて複製」したときにグラフの軸のY軸の設定も複製するように修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-1810] fixed adding user media through API</seg>
       </tuv>
       <tuv lang="JA">
@@ -22333,6 +22397,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1759] 障害対応コメントの一括処理やすでにコメント済みになっているイベントの障害対応コメントのバグを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4718&lt;/a0&gt;] Fixed Graph axis item cloning in host Full Clone</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T200409Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4718&lt;/a0&gt;] ホストを「すべて複製」したときにグラフの軸のY軸の設定も複製するように修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -23241,18 +23313,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-3992&lt;/a0&gt;] removed web monitoring items from synchronization of the proxy</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120313T205816Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-3992&lt;/a0&gt;] ウェブ監視のアイテムをプロキシの同期処理から削除</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-1095] fixed &quot;Link to template&quot; operation for discovered hosts</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1095] ディスカバリで発見されたホストの「テンプレートとリンク」処理の修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3992&lt;/a0&gt;] removed web monitoring items from synchronization of the proxy</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120313T205816Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3992&lt;/a0&gt;] ウェブ監視のアイテムをプロキシの同期処理から削除</seg>
       </tuv>
     </tu>
     <tu>
@@ -23469,6 +23541,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>新しい設定パラメータ、BufferSizeとBufferSendによって、ZABBIXエージェントのデータバッファリング機能を有効にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 2.0.0rc1.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083036Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 2.0.0rc1のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23789,6 +23869,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>制限のないマップリンク形式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The new templates will be available in one of release candidates prior to stable Zabbix 2.0.0.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083359Z" changeid="kodai">
+        <seg>新しいテンプレートは、Zabbix 2.0.0の正式リリースまでのリリース候補で利用できるようになります。</seg>
       </tuv>
     </tu>
     <tu>
