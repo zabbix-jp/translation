@@ -1342,6 +1342,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Per-CPU stats under FreeBSD</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150206Z" changeid="kodai">
+        <seg>FreeBSDのCPUごとのステータスを監視可能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBXNEXT-373&lt;/a0&gt;] added support for NTLM authentication to Web monitoring</seg>
       </tuv>
       <tuv lang="JA">
@@ -1982,6 +1990,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.11.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150128Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.11のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[ZBX-1369] make more strings translatable</seg>
       </tuv>
       <tuv lang="JA">
@@ -2038,14 +2054,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>WEB scenarios could be monitored by remote proxies.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120316T083515Z" changeid="kodai">
-        <seg>リモートのプロキシを利用してWebシナリオを監視することができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-30,ZBX-47] better dependencies</seg>
       </tuv>
       <tuv lang="JA">
@@ -2058,6 +2066,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>トリガーの設定されているアイテムではなく、最初のアイテムの軸が利用されていました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>WEB scenarios could be monitored by remote proxies.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083515Z" changeid="kodai">
+        <seg>リモートのプロキシを利用してWebシナリオを監視することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2719,18 +2735,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Escalations and Repeated Notifications</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>エスカレーションと繰り返し通知</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>MySQL only.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>これはMySQLのみ利用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Escalations and Repeated Notifications</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>エスカレーションと繰り返し通知</seg>
       </tuv>
     </tu>
     <tu>
@@ -5495,18 +5511,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>It allows monitoring of WEB applications from various geographical locations.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120316T083543Z" changeid="kodai">
-        <seg>これにより様々な場所にあるWebアプリケーションを監視することができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-963] removed sid from users map element url</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-963] マップの表示要素のURLからsidを削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It allows monitoring of WEB applications from various geographical locations.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083543Z" changeid="kodai">
+        <seg>これにより様々な場所にあるWebアプリケーションを監視することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12656,18 +12672,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-2585&lt;/a0&gt;] removed spaces from charts title &amp; fixed date format for chart4.php</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>[&lt;a0&gt;ZBX-2585&lt;/a0&gt;] cchart4.phpのグラフタイトルから空白を削除し、時刻のフォーマットを修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2862&lt;/a0&gt;] it is now not possible to delete host group or user group used in scripts</seg>
       </tuv>
       <tuv lang="JA" changedate="20110105T031131Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-2862&lt;/a0&gt;] スクリプト設定で使用しているホストグループやユーザグループを削除できないように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-2585&lt;/a0&gt;] removed spaces from charts title &amp; fixed date format for chart4.php</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>[&lt;a0&gt;ZBX-2585&lt;/a0&gt;] cchart4.phpのグラフタイトルから空白を削除し、時刻のフォーマットを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -13412,6 +13428,14 @@ permission）エラーになる問題を修正</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2928&lt;/a0&gt;] 「トリガー情報」画面の不明なトリガー数の誤りを修正し、未分類のトリガーが表示されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What's New in 1.8.11</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150140Z" changeid="kodai">
+        <seg>1.8.11の変更点</seg>
       </tuv>
     </tu>
     <tu>
@@ -15952,6 +15976,14 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Complete List of Bug Fixes and Improvements included into 1.8.11</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150726Z" changeid="kodai">
+        <seg>1.8.11に含まれるすべてのバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>improved item template-update</seg>
       </tuv>
       <tuv lang="JA">
@@ -16112,18 +16144,18 @@ permission）エラーになる問題を修正</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Trigger expressions has been improved to support more formal syntax of arithmetical expressions.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>算術的な条件式により形式的な構文を利用できるようにトリガー条件式を改善しました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Better search</seg>
       </tuv>
       <tuv lang="JA">
         <seg>検索機能の向上</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Trigger expressions has been improved to support more formal syntax of arithmetical expressions.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>算術的な条件式により形式的な構文を利用できるようにトリガー条件式を改善しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17337,18 +17369,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Not supported items are handled nicely by Proxies</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120316T083908Z" changeid="kodai">
-        <seg>プロキシによる取得不可アイテムの処理を改善</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>See &lt;a0&gt;Zabbix Manual&lt;/a0&gt;for full details.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>詳細は&lt;a0&gt;Zabbixマニュアル&lt;/a0&gt;を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not supported items are handled nicely by Proxies</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083908Z" changeid="kodai">
+        <seg>プロキシによる取得不可アイテムの処理を改善</seg>
       </tuv>
     </tu>
     <tu>
@@ -17745,18 +17777,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Try it and please let us know what you think.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>利用して意見をお聞かせください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Fixes and minor improvements included into 1.4.5</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ZABBIX 1.4.5の修正と改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Try it and please let us know what you think.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>利用して意見をお聞かせください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19649,18 +19681,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Queue now displays numbers differently</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>現在のキューの数を異なる表示方法で表示</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2875&lt;/a0&gt;] updated Japanese translation; thanks to Kodai Terashima</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2492&lt;/a0&gt;] 日本語翻訳を更新; Kodai Terashimaに感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Queue now displays numbers differently</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>現在のキューの数を異なる表示方法で表示</seg>
       </tuv>
     </tu>
     <tu>
@@ -20141,6 +20173,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>パッシブモードのプロキシ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Improved SNMP related error messages.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150315Z" changeid="kodai">
+        <seg>SNMPに関するエラーメッセージを改善しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20765,6 +20805,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20110403T134737Z" changeid="kodai">
         <seg>このドキュメントはZabbix 1.8.5rc1のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More useful SNMP error messages</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150302Z" changeid="kodai">
+        <seg>より分かりやすいSNMPエラーメッセージ</seg>
       </tuv>
     </tu>
     <tu>
@@ -21757,6 +21805,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>このパッチはupgrades/dbpatches/1.3/下にあります。MySQL用とPostgreSQL用のみ提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.11.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150121Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.8.11のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23073,6 +23129,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Added support of per-CPU stats for Zabbix Agent under FreeBSD platform.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150245Z" changeid="kodai">
+        <seg>FreeBSDプラットフォームのZabbixエージェントでCPUごとのステータス監視機能を追加しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3479&lt;/a0&gt;] fixed possible hang of agents while processing scripts or net.tcp.service* checks</seg>
       </tuv>
       <tuv lang="JA" changedate="20110405T132752Z" changeid="kodai">
@@ -23873,18 +23937,18 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The new templates will be available in one of release candidates prior to stable Zabbix 2.0.0.</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20120316T083359Z" changeid="kodai">
-        <seg>新しいテンプレートは、Zabbix 2.0.0の正式リリースまでのリリース候補で利用できるようになります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>[ZBX-1062] deny creation of log and eventlog items with non log type of information</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[ZBX-1062] データのタイプにログを指定しない場合にログとイベントログを作成できないように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The new templates will be available in one of release candidates prior to stable Zabbix 2.0.0.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120316T083359Z" changeid="kodai">
+        <seg>新しいテンプレートは、Zabbix 2.0.0の正式リリースまでのリリース候補で利用できるようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24153,6 +24217,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4718&lt;/a0&gt;] fixed Graph axis item cloning in host Full Clone</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120320T150741Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4718&lt;/a0&gt;] ホストを「すべて複製」したときにグラフの軸のY軸の設定も複製するように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2339&lt;/a0&gt;] fixed height of row in resource &quot;Plain text&quot; in screens</seg>
       </tuv>
       <tuv lang="JA">
@@ -24273,6 +24345,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-2882&lt;/a0&gt;] fixed wrong item vfs.file.cksum[/vmlinuz] for some templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20111121T133348Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-2882&lt;/a0&gt;] いくつかのテンプレートでアイテムvfs.file.cksum[/vmlinuz]の誤りを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-2027&lt;/a0&gt;] fixed selecting wrong host after cancelling trigger comment</seg>
       </tuv>
       <tuv lang="JA">
@@ -24285,14 +24365,6 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-2228&lt;/a0&gt;] FreeBSDでLDAPを有効にした際のコンパイルの問題を修正</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>[&lt;a0&gt;ZBX-2882&lt;/a0&gt;] fixed wrong item vfs.file.cksum[/vmlinuz] for some templates</seg>
-      </tuv>
-      <tuv lang="JA" changedate="20111121T133348Z" changeid="kodai">
-        <seg>[&lt;a0&gt;ZBX-2882&lt;/a0&gt;] いくつかのテンプレートでアイテムvfs.file.cksum[/vmlinuz]の誤りを修正</seg>
       </tuv>
     </tu>
     <tu>
