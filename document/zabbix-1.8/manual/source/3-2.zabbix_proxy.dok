@@ -1,0 +1,95 @@
+==== - #2 Zabbix Proxy ====
+
+
+Zabbix proxy is a process which collects performance and availability data from one or more monitored devices and sends the information to a Zabbix server. Zabbix proxy can be started by:
+
+  shell> cd sbin
+  shell> ./zabbix_proxy
+
+Zabbix proxy runs as a daemon process.
+
+Zabbix proxy accepts the following command line parameters:
+
+<code>
+-c --config <file>              absolute path to the configuration file
+-R --runtime-control <option>   perform administrative functions
+-h --help                       give this help
+-V --version                    display version number
+</code>
+
+<note>-R or %%--runtime-control%% option is supported since Zabbix 1.8.6.\\ Runtime control is not supported on OpenBSD and NetBSD.</note>
+
+In order to get more help run:
+
+  shell> zabbix_proxy -h
+
+Example of command line parameters:
+
+  shell> zabbix_proxy -c /usr/local/etc/zabbix_proxy.conf
+  shell> zabbix_proxy --help
+  shell> zabbix_proxy -V
+
+===== Runtime control =====
+
+Runtime control options:
+
+^Option^Description^
+|config_cache_reload|Reload configuration cache. Ignored if cache is being currently loaded.\\ Active Zabbix proxy will connect to the Zabbix server and request configuration data.|
+
+Example of using runtime control to reload the proxy configuration cache:
+
+  shell> zabbix_proxy -c /usr/local/etc/zabbix_proxy.conf -R config_cache_reload
+
+===== Configuration file =====
+
+The configuration file contains parameters for zabbix_proxy. The file must exist and it should have read permissions for user 'zabbix'. Supported parameters:
+
+^Parameter^Mandatory^Range^Default^Description^
+| CacheSize| no | 128K-1G |8M |Size of configuration cache, in bytes.\\ Shared memory size, for storing hosts and items data. |
+| ConfigFrequency| no | 1-604800 |3600 |How often proxy retrieves configuration data from Zabbix Server in seconds.\\ For a proxy in the passive mode this parameter will be ignored. |
+| DBHost| no | |localhost |Database host name.\\ If set to localhost, socket is used for MySQL. |
+| DBName| yes | | |Database name.\\ For SQLite3 path to database file must be provided. DBUser and DBPassword are ignored. |
+| DBPassword| no | | |Database password. Ignored for SQLite.\\ Comment this line if no password is used. |
+| DBSocket| no | |3306 |Path to MySQL socket.\\ Database port when not using local socket. Ignored for SQLite. |
+| DBUser| | | |Database user. Ignored for SQLite. |
+| DataSenderFrequency| no | 1-3600 |1 |Proxy will send collected data to the Server every N seconds. |
+| DebugLevel| no | 0-4 |3 |Specifies debug level\\ 0 - no debug\\ 1 - critical information\\ 2 - error information\\ 3 - warnings\\ 4 - for debugging (produces lots of information) |
+| DisableHousekeeping| no | 0-1 |0 |If set to 1, disables housekeeping. |
+| ExternalScripts| no | |/etc/zabbix/externalscripts |Location of external scripts |
+| Fping6Location| no | |/usr/sbin/fping6 |Location of fping6.\\ Make sure that fping6 binary has root ownership and SUID flag set.\\ Make empty ("Fping6Location=") if your fping utility is capable to process IPv6 addresses. |
+| FpingLocation| no | |/usr/sbin/fping |Location of fping.\\ Make sure that fping binary has root ownership and SUID flag set! |
+| HeartbeatFrequency| no | 0-3600 |60 |Frequency of heartbeat messages in seconds.\\ Used for monitoring availability of Proxy on server side.\\ 0 - heartbeat messages disabled.\\ For a proxy in the passive mode this parameter will be ignored. |
+| HistoryCacheSize| no | 128K-1G |8M |Size of history cache, in bytes.\\ Shared memory size for storing history data. |
+| HistoryTextCacheSize| no | 128K-1G |16M |Size of text history cache, in bytes.\\ Shared memory size for storing character, text or log history data. |
+| Hostname| no | |Set by HostnameItem |Unique Proxy name. Make sure the Proxy name is known to the server!\\ \\ Allowed characters: alphanumeric, '.', ' ', '_' and '-'.\\ Maximum length: 64|
+| HostnameItem| no | |system.hostname |Item used for setting Hostname if it is undefined (this will be run on the proxy similarly as on an agent).\\ Does not support UserParameters, performance counters or aliases, but does support system.run[].\\ \\ Ignored if Hostname is set.\\ \\ **This option is supported in version 1.8.6 and higher.** |
+| HousekeepingFrequency| no | 1-24 |1 |How often Zabbix will perform housekeeping procedure (in hours).\\ Housekeeping is removing unnecessary information from history, alert, and alarms tables.\\ If PostgreSQL is used, suggested value is 24, as it performs VACUUM. |
+| Include| no | | |You may include individual files or all files in a directory in the configuration file. |
+| ListenIP| no | |0.0.0.0 |List of comma delimited IP addresses that the trapper should listen on.\\ Trapper will listen on all network interfaces if this parameter is missing.\\ **Multiple IP addresses are supported in version 1.8.3 and higher.** |
+| ListenPort| no | 1024-32767 |10051 |Listen port for trapper. |
+| LogFileSize| no | 0-1024 |1 |Maximum size of log file in MB.\\ 0 - disable automatic log rotation. |
+| LogFile| no | | |Name of log file.\\ If not set, syslog is used. |
+| LogSlowQueries| no | 0-3600000 |0 |How long a database query may take before being logged (in milliseconds).\\ 0 - don't log slow queries.\\ **This option is supported in version 1.8.2 and higher.** |
+| PidFile| no | |/tmp/zabbix_proxy.pid |Name of PID file. |
+| ProxyLocalBuffer| no | 0-720 |0 |Proxy will keep data locally for N hours.\\ This parameter may be used if local data will be used by third party applications. |
+| ProxyMode| no | 0-1 |0 |Proxy operating mode.\\ 0 - proxy in the active mode\\ 1 - proxy in the passive mode\\ **This option is supported in version 1.8.3 and higher.** |
+| ProxyOfflineBuffer| no | 0-720 |1 |Proxy will keep data for N hours in case if no connectivity with Zabbix Server.\\ Older data will be lost. |
+| SSHKeyLocation| no | | |Location of public keys for SSH checks |
+| ServerPort| no | 1024-32767 |10051 |Port of Zabbix trapper on Zabbix server.\\ For a proxy in the passive mode this parameter will be ignored. |
+| Server| yes | | |IP address (or hostname) of Zabbix server.\\ Active Proxy will get configuration data from the server.\\ For a proxy in the passive mode this parameter will be ignored. |
+| SourceIP| no | | |Source IP address for outgoing connections. |
+| StartDBSyncers| no | 1-100 |4 |Number of pre-forked instances of DB Syncers.\\ The upper limit used to be 64 before version 1.8.5.\\ **This option is supported in version 1.8.3 and higher.** |
+| StartDiscoverers| no | 0-250 |1 |Number of pre-forked instances of discoverers.\\ The upper limit used to be 255 before version 1.8.5. |
+| StartIPMIPollers| no | 0-1000 |0 |Number of pre-forked instances of IPMI pollers.\\ The upper limit used to be 255 before version 1.8.5. |
+| StartPingers| no | 0-1000 |1 |Number of pre-forked instances of ICMP pingers.\\ The upper limit used to be 255 before version 1.8.5. |
+| StartPollersUnreachable| no | 0-1000 |1 |Number of pre-forked instances of pollers for unreachable hosts (including IPMI).\\ The upper limit used to be 255 before version 1.8.5.\\ **This option is missing in version 1.8.3.** |
+| StartPollers| no | 0-1000 |5 |Number of pre-forked instances of pollers.\\ The upper limit used to be 255 before version 1.8.5. |
+| StartTrappers| no | 0-1000 |5 |Number of pre-forked instances of trappers.\\ The upper limit used to be 255 before version 1.8.5. |
+| Timeout| no | 1-30 |3 |Specifies how long we wait for agent, SNMP device or external check (in seconds). |
+| TmpDir| no | |/tmp |Temporary directory. |
+| TrapperTimeout| no | 1-300 |300 |Specifies how many seconds trapper may spend processing new data. |
+| UnavailableDelay| no | 1-3600 |60 |How often host is checked for availability during the unavailability period, in seconds.|
+| UnreachableDelay| no | 1-3600 |15 |How often host is checked for availability during the unreachability period, in seconds.|
+| UnreachablePeriod| no | 1-3600 |45 |After how many seconds of unreachability treat a host as unavailable.|
+
+<note>Starting from version 1.8.6 Zabbix Proxy will not start up if invalid (not following //parameter=value// notation) or unknown parameter entry is present in configuration file.</note>

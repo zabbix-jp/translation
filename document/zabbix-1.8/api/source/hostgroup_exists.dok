@@ -1,0 +1,42 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether host group with given host group name or host group ID exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given host group ID or name|  |
+|**groupid**|//string//|yes |Host group ID|  |
+|**name**|//string//|yes |Host group name|  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+==== Example ====
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"hostgroup.exists",
+"params":{
+    "nodeids": ["1"],
+    "name": "Linux Group"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Host group exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

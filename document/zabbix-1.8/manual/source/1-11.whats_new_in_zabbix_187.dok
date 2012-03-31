@@ -1,0 +1,32 @@
+===== - #11 What's new in Zabbix 1.8.7 =====
+==== - Frontend improvements ====
+
+=== - Improved time picker ===
+
+When dates in the upper right corner of the time scrollbar are clicked, popup appears with a calendar and input fields for time. Previously, it could only be confirmed by clicking on a date, and that also immediately closed it. Thus, to select time and date, one had to enter time first, then click on a date. Zabbix 1.8.7 improves usability of this popup. A button //Done// was added. Clicking on a date now does not close the popup, thus user may choose desired date and time and click on //Done// when satisfied with the selection.
+
+{{:1.8:manual:about:new_calendar.png|}}
+
+Additionally, //Now// button was added that sets the calendar date and time to current moment (but still keeps it open).
+
+Clicking on the date/time string again will close the popup and discard the changes.
+
+=== - Default action conditions ===
+
+When a new action for triggers is created, it now gets two additional conditions automatically:
+
+  * //Trigger value = PROBLEM//
+  * //Maintenance status = not in maintenance//
+
+=== - Updated translations ===
+
+  * Japanese
+  * French
+
+==== - API improvements ====
+
+API flag ''searchWildcardsEnabled'' has been added. If it is set to **1**, database wildcards may be used in search patterns.
+
+==== - Daemon improvements ====
+
+Zabbix server has a capability to notify users in a specific user group in case of database unavailability. Previously, Zabbix server only loaded user information when starting up. Now watchdog process reloads this information every **CacheUpdateFrequency** seconds, which is every 60 seconds by default. This is a separate reloading than general configuration cache updating, thus it is not affected by the [[:1.8/manual/about/what_s_new_1.8.6#configuration_cache_reloading|forced cache reloading]].

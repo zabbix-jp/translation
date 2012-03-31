@@ -1,0 +1,224 @@
+===== - #8 What's new in Zabbix 1.8.4 =====
+
+==== - Frontend improvements ====
+
+=== - Host configuration filter ===
+
+Zabbix 1.8.4 introduces a filter in host configuration. In addition to the group selector, it is now possible to filter hosts on:
+
+  * Name
+  * IP
+  * DNS
+  * Port
+
+{{:1.8:manual:about:host_configuration_filter.png|}}
+
+Name, IP and DNS filter works as a substring, port is an exact match.
+
+=== - More control over rounding ===
+
+Previously, value rounding in Zabbix was pretty much hardcoded. For example, version 1.8.3 displayed 2 decimal places for numbers above 1, and 6 decimal places for numbers below 1. 1.8.4 changes the threshold to 0.01 to reduce clutter, but additionally it provides more control over rounding. In the [[:1.8/manual/config/defines|frontend definition file]], three new parameters can be configured.
+
+  * ZBX_UNITS_ROUNDOFF_THRESHOLD
+
+Threshold value for roundoff constants. Values less than this will be rounded to ZBX_UNITS_ROUNDOFF_LOWER_LIMIT number of digits after comma, greater to ZBX_UNITS_ROUNDOFF_UPPER_LIMIT. Default: 0.01
+
+  * ZBX_UNITS_ROUNDOFF_UPPER_LIMIT 
+
+Number of digits after comma, when value is greater than roundoff threshold. Default: 2
+
+  * ZBX_UNITS_ROUNDOFF_LOWER_LIMIT
+
+Number of digits after comma, when value is less than roundoff threshold. Default: 6
+
+The default value change alone should reduce clutter in graph legend for items like CPU load. A few examples of the added configurability (legend in all the examples is based on the same data)):
+
+|{{:1.8:manual:about:roundoff_0.01-2-6.png|}}|Default roundoff values with 2 decimal places > 0.01 and 6 below|
+|{{:1.8:manual:about:roundoff_0.01-2-2.png|}}|All roundoff limited to two digits|
+|{{:1.8:manual:about:roundoff_0.02-2-6.png|}}|Default roundoff values, but threshold changed to 0.02|
+
+=== - XML validation ===
+
+To catch any issues with XML as early as possible, Zabbix 1.8.4 introduces XML validation before importing it. This currently checks generic things like XML structure and data types, and is only available for screen import. Nevertheless, it should improve data quality, especially for users who generate screen configuration outside Zabbix.
+
+=== - Zapcat compatibility mode ===
+
+Based on user feedback, this version introduces a new parameter that allows to enable Zapcat legacy support. When enabled, [[:1.8/manual/config/defines|parameter ZAPCAT_COMPATIBILITY]] allows to use item key syntax that would otherwise be rejected as invalid. Please note that this is legacy syntax support which will be only available in 1.8 series.
+
+=== - Reversed steps in web monitoring graph legend ===
+
+Built-in web monitoring graphs have had entries reversed in their legend to better match the order in web scenario configuration, so for steps like these:
+
+{{:1.8:manual:about:web_monitoring_steps_config.png|}}
+
+output has changed like this:
+
+|{{:1.8:manual:about:web_monitoring_legend_before.png|}}|{{:1.8:manual:about:web_monitoring_legend_after.png|}}|
+|Before 1.8.4|Since 1.8.4|
+
+=== - Trigger expression helper improvements ===
+
+Two minor improvements are available for the trigger expression helper.
+
+== - Entering function parameter time_shift ==
+
+It is now possible to enter [[:1.8/manual/about/what_s_new_1.8.2#time-shifting_in_triggers|time_shift]] [[:1.8/manual/config/triggers#trigger_functions|trigger function]] parameter in the trigger expression helper.
+
+{{:1.8:manual:about:time_shift_input.png|}}
+
+== - Filtered function dropdown ==
+
+When choosing function to be used in constructed trigger expression, previously all choices were displayed always. Now dropdown list is filtered so that only functions that are valid for the chosen item type are available.
+
+=== - List of all hosts available in hostgroup properties ===
+
+It should be easier to edit hostgroup membership on small Zabbix setups now - the view of other hosts gained ability to list all hosts that don't belong to the currently edited group.
+
+{{:1.8:manual:about:other_hosts.png|}}
+
+=== - Zabbix server details visible in status report ===
+
+In //Reports -> Status of Zabbix// (available also as a dashboard widget for Zabbix superadmins), Zabbix server host and port are now displayed, as configured in the frontend.
+
+{{:1.8:manual:about:server_details.png|}}
+
+=== - Setting server name during the installation ===
+
+The feature introduced in Zabbix 1.8, [[:1.8/manual/about/what_s_new#ability_to_display_server_name|ability to display server name on the frontend]], can now be configured using the frontend configuration wizard.
+
+{{:1.8:manual:about:zabbix_server_name.png?400|}}
+
+=== - Frontend history override parameter ===
+
+A new frontend definition has been added - **ZBX_HISTORY_DATA_UPKEEP**
+
+This parameter allows to override frontend's choices when deciding whether to use history or trends table to display data, specified in days. Possible values:
+  * lower then zero - Zabbix uses the "Keep history" value for each item
+  * equal to zero - Zabbix only uses trend data
+  * greater then zero - Zabbix always uses this value instead of the "Keep history" value
+
+The default behaviour does not change and Zabbix still uses "Keep history" value for each item.\\ This might be useful in setups with partitioned data storage.
+
+=== - Updated translations ===
+
+  * French
+  * Latvian
+  * Russian
+  * Ukrainian
+
+=== - Other frontend improvements ===
+
+  * Improved network map performance.
+  * Improved //Administration -> Notifications// report performance.
+  * Bundled DejaVu font upgraded from 2.31 to 2.32.
+  * Screens can now be referenced on the frontend not only by id, but also by name. Adding GET parameter **screenname** will open the screen with that name, for example: 
+
+   http://zabbix/zabbix/screens.php?screenname=Local%20servers
+
+If both **elementid** (screen id) and **screenname** are specified, **screenname** has higher priority.\\ If **screenname** parameter is used, selected screen won't be saved in user profile - that is, revisiting screen section later will retrieve previously chosen screen, not the one referenced by name.
+
+==== - New and changed supported items ====
+
+  * On Linux, support for net.tcp.listen and net.udp.listen [[:1.8/manual/config/items|items]] has been added.
+  * Network traffic can now be monitored on OpenBSD without being root.
+  * Format of the [[:1.8/manual/config/items#zabbix_agent|sensors key]] has been changed. This item is now supported on Linux 2.4 and OpenBSD.
+ 
+
+==== - Zabbix daemon related improvements ====
+
+=== - Zabbix agent daemon improvements ===
+
+On AIX, supported technology level is printed when executing agent with //%%--version%%// flag. Possible values:
+
+  * Supported technology levels: 5100 
+  * Supported technology levels: 5200 
+  * Supported technology levels: 5300-00,01,02,03,04,05 
+  * Supported technology levels: 5300-06 and above 
+  * Supported technology levels: 6100 and above
+
+=== - Zabbix sender improvements ===
+
+[[:1.8/manual/processes/zabbix_sender|Zabbix sender]] is a command line utility for sending custom data to Zabbix server.
+
+== - Value pooling ==
+
+Utility zabbix_sender has been improved in realtime sending scenarios by gathering multiple values that are passed to it in close succession, and sending them to the server in single connection. Value that is not further apart from previous value than 0.2 seconds can be put in the same stack, but maximum pooling time still is 1 second.
+
+== - Using default hostname ==
+
+It is now possible to use hostname "-" in the input file. This will use the default hostname from the configuration file, thus allowing to send data in always using local hostname instead of hardcoding it.
+
+=== - Zabbix server improvements ===
+
+Zabbix server performance has been improved for trigger functions **last** and **prev** by not retrieving redundant information from the database.
+
+Memory usage has been reduced for web monitoring.
+
+Reduced memory usage and fragmentation for the configuration cache.
+
+Unreachable poller concept has been reintroduced along with resurrection of ''StartPollersUnreachable'' [[:1.8/manual/processes/zabbix_server|Zabbix server configuration parameter]].
+
+Zabbix server by default is not built with libcurl support anymore - it has to be specified explicitly.
+
+== - New and improved macros ==
+
+Support for several new macros has been added in notifications.
+
+  * ''{PROXY.NAME}'' macro is now available in trigger, network discovery and active agent auto-registration notifications
+  * ''{HOSTNAME}'' macro is available in active agent auto-registration notifications
+  * Value mapping is now available for ''{ITEM.VALUE}'' macro in trigger notifications
+
+== - New trigger functions ==
+
+New [[:1.8/manual/config/triggers#trigger_functions|trigger function]] has been added - **strlen**, which returns length of the last value in characters.
+
+== - Improved error messages ==
+
+Error messages in the Zabbix server logfile regarding web monitoring have been improved - now they will also include information about scenario and step that produced the error message.
+
+== - Improved fping handling with source IP specified ==
+
+Utility used by Zabbix to perform ICMP pings, [[http://fping.sourceforge.net/|fping]], is not very actively maintained, thus several features are only available as patchsets. One of those is an ability to specify source IP, which can either be unsupported, or supported with different flags (**-S** or **-I**). If **SourceIP** parameter is specified in [[:1.8/manual/processes/zabbix_server|Zabbix server configuration file]], Zabbix attempts to specify source IP for fping as well. Before 1.8.4, Zabbix server always passed **-S**. If that was not supported, it just failed. Starting with 1.8.4, Zabbix server tries to detect whether **-S** or **-I** is supported. If neither is, fping is called without source IP parameter.
+
+This detection happens by looking at the output of **fping -h**. In Zabbix 1.8.4, each pinger process detects fping capabilities individually when it is started.
+
+==== - Misc improvements ====
+
+[[:1.8/manual/config/user_parameters|User parameters]] in agent daemon files have been split out in several files that are included from the main configuration file. More examples have been added as well.
+
+=== - DB2 support ===
+
+Support for additional database backend - [[http://en.wikipedia.org/wiki/IBM_DB2|IBM DB2]] - has been added.
+
+{{:1.8:manual:about:db2_config.png?300|}}
+
+=== - Extended user macro support ===
+
+[[:1.8/manual/config/macros#user_macros|User macros]] can now be used in these additional locations:
+
+  * SNMP items and discovery
+    * community
+    * OID
+    * security name
+    * auth passphrase
+    * priv passphrase
+  * parameters field of database item
+  * item descriptions and trigger names
+
+=== - NTLM authentication for web monitoring ===
+
+For built-in web monitoring, [[http://en.wikipedia.org/wiki/NTLM|NTLM (Windows NT LAN Manager)]] authentication is now supported.
+
+{{:1.8:manual:about:ntlm_auth.png|}}
+
+=== - Direct support for Ez Texting ===
+
+It is now possible to use Zabbix [[http://www.zabbix.com/partners.php#Technology_Partners|technological partner]] Ez Texting for message sending without custom media types - it can be selected as one of directly supported media types and access details can be provided in Zabbix media definition.
+
+{{:1.8:manual:about:ez_texting.png|}}
+
+=== - Improved problem reporting ===
+
+If Zabbix server is compiled without web monitoring support, but web monitoring is attempted to be used, a helpful message will be visible in the frontend:
+
+{{:1.8:manual:about:webmon_error.png?650|}}

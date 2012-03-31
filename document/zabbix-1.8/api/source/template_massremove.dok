@@ -1,0 +1,46 @@
+===== massRemove() =====
+
+Available since version: **1.8**\\
+Mass remove template linkage, host linkage, macros, host groups
+==== Parameters ====
+multidimensional array with data\\
+
+^Parameter^Type^Optional^Description^Details^
+|**templateids**|//array//|  |Templateids to update | |
+|**templateids_link**|//array//| Yes |Templateids which should be unlinked from templates. | |
+|**hostids**|//array//| Yes  |Hostids which should be unlinked from templates. | |
+|**groupids**|//array//| Yes |Host groupids where templates should be removed. | |
+|**macros**|//array//| Yes |Macros which should be removed from templates.  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Template IDs.|
+|**error**|In case of any errors|
+==== Example ====
+
+Unlink two Hosts from template with **ID** "100100000010001", and remove this template from group with **ID** "100100000000041"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"template.massRemove",
+"params":{
+   "templateids": ["100100000010001"],
+   "groupids": ["100100000000041"],
+   "hostids": ["100100000010092","100100000011197"]
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+
+Templates updated successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "templateids":["100100000010001"]
+},
+"id":2
+}
+</code>

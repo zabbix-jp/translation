@@ -1,0 +1,32 @@
+===== Alert =====
+==== Methods ====
+
+Class containing methods for operations with Alerts.
+^Methods^Description^
+|[[1.8/api/alert/get|get()]] |Get alert details |
+|[[1.8/api/alert/create|create()]] |Create alerts |
+|[[1.8/api/alert/delete|delete()]] |Delete alerts |
+==== Object details ====
+
+The table contains complete list of Alert attributes.
+
+^Parameter^Type^Description^Details^
+|**alertid**|//integer//|Alert ID  | |
+|**actionid**|//integer//|Action ID | |
+|**eventid**|//integer//|Event ID | |
+|**userid**|//integer//|User ID | |
+|**clock**|//integer//|Date |Unix timestamp |
+|**mediatypeid**|//integer//|Madia type ID | |
+|**sendto**|//string//|Address | |
+|**subject**|//string//|Alert subject | |
+|**message**|//string//|Alert message | |
+|**status**|//integer//|Alert status | |
+|**retries**|//integer//|Retries made to send | |
+|**error**|//string//|Error details in case if sending failed | |
+
+==== Common tasks ====
+The table contains list of common alert-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Remove a bunch of alerts | Use method **alert.delete** with array of Alert objects |
+|Retrieve alert details by Alert IDs | Use method **alert.get** with parameter **alertids** |
+|Retrieve alerts details by some period | Use method **alert.get** with parameters **time_from** and **time_till** |

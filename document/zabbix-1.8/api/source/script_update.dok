@@ -1,0 +1,42 @@
+===== update() =====
+Available since version: **1.8**\\
+The method is used to control all script attributes including script applications linkage.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**scriptid**|//string//|  |Script ID. | |
+|**script attribute**|//any//| Yes |New value for a script attribute.  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Script IDs.|
+|**error**|In case of any errors|
+
+==== Example =====
+
+Change command for script, .i.e set its command to '<your command>':
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "method":"script.update",
+   "params":{
+      "scriptid": "100100000010092",
+      "command": "\/bin\/fping -c 10 {HOST.CONN}"
+   },
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated script IDs:
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "result": {
+       "scriptids":["100100000010092"]
+   },
+   "id":2
+  }
+</code>

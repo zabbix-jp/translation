@@ -1,0 +1,45 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether graph with given graph data exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given graph |  |
+|**name**|//string//|No |Graph name |  |
+|**hostid**|//string//|yes |Host ID |  |
+|**host**|//string//|yes |Host name |  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+Check if graph with name "CPU Loads" exists for host "ZABBIX-Server"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"graph.exists",
+"params":{
+	"host": "ZABBIX-Server",
+	"name": "CPU Loads"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Graph exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

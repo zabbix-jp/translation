@@ -1,0 +1,72 @@
+===== Map =====
+==== Methods ====
+Class containing methods for operations with Maps.
+
+^Methods^Description^
+|[[1.8/api/map/get|get()]] |Get map details |
+|[[1.8/api/map/exists|exists()]] |Check if map exists |
+|[[1.8/api/map/create|create()]] |Create maps |
+|[[1.8/api/map/update|update()]] |Update map details |
+|[[1.8/api/map/delete|delete()]] |Delete maps |
+
+==== Object details ====
+The table contains complete list of Map attributes.
+
+=== Map ===
+^Parameter^Type^Description^Details^
+|**sysmapid**|//integer//| Map ID | |
+|**name**|//string//| Name | |
+|**width**|//integer//| Width | |
+|**height**|//integer//| Height | |
+|**backgroundid**|//integer//| Background image ID | |
+|**label_type**|//integer//| Icon label type | Label, Element Name, IP, Status only|
+|**label_location**|//integer//| Icon label location | Top, Bottom, Right, Left |
+|**highlight**|//integer//| Icon highlight  | |
+|**expandproblem**|//integer//| Expanding single problem | |
+|**markelements**|//integer//| Extended icon highlighting in case of status changes | |
+|**show_unack**|//integer//| Unacknowledged problem viewing | All problems, Separate, Only unacknowledged |
+
+=== Map item ===
+^Parameter^Type^Description^Details^
+|**selementid**|//integer//| Map element ID | |
+|**sysmapid**|//integer//| Map ID | |
+|**elementid**|//integer//| Resource ID | |
+|**elementtype**|//integer//| Resource type| 0 - host, 1 - map, 2 - trigger, 3 - host group, 4 - image|
+|**iconid_off**|//integer//| OK status icon ID | |
+|**iconid_on**|//integer//| PROBLEM status icon ID | |
+|**iconid_unknown**|//integer//| UNKNOWN status icon ID | |
+|**iconid_disabled**|//integer//| Disabled status icon ID | |
+|**iconid_maintenance**|//integer//| Maintenance status icon ID | |
+|**label**|//integer//| Description | |
+|**label_location**|//integer//| Description location | |
+|**x**|//integer//| X axis position | |
+|**y**|//integer//| Y axis position | |
+|**url**|//integer//| Page to open on element click | |
+
+=== Map Item Links ===
+^Parameter^Type^Description^Details^
+|**linkid**|//integer//| Map link ID | |
+|**sysmapid**|//integer//| Map ID | |
+|**selementid1**|//integer//| First linked map element ID | |
+|**selementid2**|//integer//| Second linked map element ID | |
+|**drawtype**|//integer//| Link draw type | Line, Bold line, Dot, Dashed line|
+|**color**|//string//| Link default color | Hex presentation |
+|**label**|//string//| Link description | |
+
+=== Map Item Link Status Indicator ===
+^Parameter^Type^Description^Details^
+|**linktriggerid**|//integer//| Map link Indicator ID | |
+|**linkid**|//integer//| Map link ID | |
+|**triggerid**|//integer//| Trigger ID | |
+|**drawtype**|//integer//| Draw type | Line, Bold line, Dot, Dashed line|
+|**color**|//string//| Color | Hex presentation |
+
+
+==== Common tasks ====
+The table contains list of common map-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a map | Use method **map.create** |
+|Add a bunch of new maps | Use method **map.create** with array of Map objects |
+|Remove map by Map IDs| Use method **map.delete** array of Map **IDs**|
+|Retrieve map details by Map IDs | Use method **map.get** with parameter **sysmapids** |
+|Retrieve map details by Map name | Use method **map.get** with parameter **filter**, specify **"name":"<your map>"** |

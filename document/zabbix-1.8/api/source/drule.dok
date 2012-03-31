@@ -1,0 +1,35 @@
+===== DRule =====
+==== Methods ====
+
+Class containing methods for operations with Discovery Rules.
+^Methods^Description^
+|[[1.8/api/drule/get|get()]] |Get discovery rule details |
+|[[1.8/api/drule/exists|exists()]] |Check if discovery rule exists |
+|[[1.8/api/drule/create|create()]] |Create discovery rules |
+|[[1.8/api/drule/update|update()]] |Update discovery rule details |
+|[[1.8/api/drule/delete|delete()]] |Delete discovery rules |
+
+
+==== Object details ====
+
+The table contains complete list of Discovery Rule attributes.
+
+^Parameter^Type^Description^Details^
+|druleid|//integer//|Discovery Rule ID | |
+|proxy_hostid|//integer//|Proxy Host ID.  | |
+|name|//string//|Discovery Rule name. | |
+|iprange|//string//|Ip range. | |
+|delay|//integer//|Delay between checks  | |
+|nextcheck|//integer//|Next check date  | Zabbix internal field|
+|status|//integer//|Status  | |
+|unique_dcheckid|//string//|Unique discovery check ID  | |
+
+
+==== Common tasks ====
+The table contains list of common discovery rule-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a bunch of new discovery rules | Use method **discovery rule.create** with array of Discovery Rule objects |
+|Enable a discovery rule | Use method **drule.update**, set **"status":0** |
+|Disable a discovery rule | Use method **drule.update**, set **"status":1** |
+|Retrieve discovery rule details by Discovery Rule IDs | Use method **drule.get** with parameter **druleids** |
+|Retrieve discovery rule details by Discovery Rule name | Use method **drule.get** with parameter **filter**, specify **"name":"<your discovery rule>"** |

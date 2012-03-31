@@ -1,0 +1,93 @@
+===== create() =====
+This function allows you to create a graph as defined by the **graph data** array.
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**graph data**|//array or object//|  |Array of Graph objects or a single object with additional parameter **gitems**, array of graph item objects|**graphid** shouldn't be specified |
+
+<note tip>See also [[:1.8/api/graphitem|graph item details]].</note>
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Graph IDs. **graphid** are assigned to each Graph object |
+|**error**|In case of any errors|
+==== Example ====
+Create new graph
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"graph.create",
+"params":[{
+	"gitems":[{
+		"itemid":"100100000018469",
+		"drawtype":"0",
+		"sortorder":"0",
+		"color":"999900",
+		"yaxisside":"0",
+		"calc_fnc":"2",
+		"type":"0",
+		"periods_cnt":"5"
+		},{
+		"itemid":"100100000018468",
+		"drawtype":"0",
+		"sortorder":"1",
+		"color":"009900",
+		"yaxisside":"0",
+		"calc_fnc":"2",
+		"type":"0",
+		"periods_cnt":"5"
+		},{
+		"itemid":"100100000018467",
+		"drawtype":"0",
+		"sortorder":"2",
+		"color":"990000",
+		"yaxisside":"0",
+		"calc_fnc":"2",
+		"type":"0",
+		"periods_cnt":"5"
+	}],
+	"name":"CPU Loads",
+	"width":"900",
+	"height":"200",
+	"yaxismin":"0.0000",
+	"yaxismax":"3.0000",
+	"templateid":"0",
+	"show_work_period":"1",
+	"show_triggers":"1",
+	"graphtype":"0",
+	"show_legend":"0",
+	"show_3d":"0",
+	"percent_left":"0.0000",
+	"percent_right":"0.0000",
+	"ymin_type":"0",
+	"ymax_type":"0",
+	"ymin_itemid":"0",
+	"ymax_itemid":"0"
+}],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":2
+}
+</code>
+
+Graph created successfully:
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+	"graphids":["100100000012213"]
+},
+"id":2
+}
+</code>
+
+Graph already exists:
+<code js>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CGraph::create ] Graph already exists [ CPU Loads ] on Host [ ZABBIX-Server ]"
+},
+"id":2
+}
+</code>

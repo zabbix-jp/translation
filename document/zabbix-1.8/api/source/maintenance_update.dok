@@ -1,0 +1,55 @@
+===== update() =====
+This method allows you to update a maintenance as defined by the **maintenance data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**maintenance data**|//array or object//| No |Array of Maintenance objects or a single object|**maintenanceid** must be specified |
+|**groupids**|//array//| No |Host group ids add/remove to/from maintenance | |
+|**hostids**|//array//| No |Host ids add/remove to/from maintenance | |
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Maintenance IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Update maintenance name, remove all hosts and update groups:
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"maintenance.update",
+"params":[{
+	"maintenanceid":"100100000000005",
+	"name":"TEST",
+	"groupids":["100100000010229"],
+	"hostids":[]
+}],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+Maintenance updated successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "maintenanceids": ["100100000000005"]
+},
+"id":3
+}
+</code>
+
+Maintenance already exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CMaintenance::update ] Maintenance [ ZABBIX Servers ] already exists"
+},
+"id":3
+}
+</code>

@@ -1,0 +1,73 @@
+===== massAdd() =====
+Available since version: **1.8**\\
+This method is used to link users or rights with user groups. Available only to super admins.
+
+==== Parameters ====
+Multidimensional array with User groups data\\
+
+^Parameter^Type^Optional^Description^Details^
+|**usrgrpids**|//array//| |User group IDs. | |
+|**userids**|//array//| Yes |User IDs. | Those users will be added to all listed user groups in request. |
+|**rights**|//array//| Yes |Host group rights |Those rights will be added to all listed user groups in request. | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated User group IDs.|
+|**error**|In case of any errors|
+
+==== Example I ====
+Add two users with **ID** "100100000010092", "100100000010086" to user group with **ID** "100100000000013"
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"usergroup.massAdd",
+"params":{ 
+	"usrgrpids": ["100100000000042"],
+	"userids": ["100100000010092",  "100100000010086"],
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+
+User groups updated successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+	"usrgrpids":["100100000000042"]
+},
+"id":2
+}
+</code>
+
+==== Example II ====
+Add read rights on host group with **ID** "100100000010092" and read-write rights on host group with **ID** "100100000010093" to user group with **ID** "100100000000013"
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"usergroup.massAdd",
+"params":{ 
+	"usrgrpids": ["100100000000043"],
+	"rights": [
+		{"permisssion": 2, "id": "100100000010092"},
+		{"permisssion": 3, "id": "100100000010093"}
+	],
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+
+User groups updated successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+	"usrgrpids": ["100100000000043"]
+},
+"id":2
+}
+</code>

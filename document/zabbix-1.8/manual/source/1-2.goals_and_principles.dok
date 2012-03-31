@@ -1,0 +1,15 @@
+==== - #2 Goals and Principles ====
+
+
+=== - Main Goals of Zabbix Development ===
+There are several goals Zabbix is trying to achieve: 
+  * become recognized Open Source monitoring tool
+  * create Zabbix user group, which helps making the software even better
+  * provide high-quality commercial support
+
+=== - Main principles of Zabbix development ===
+  * be user friendly
+  * keep things simple
+  * use as few processing resources as possible
+  * react fast
+  * document every aspect of the software

@@ -1,0 +1,68 @@
+===== - #11 What's new in Zabbix 1.8.9 =====
+
+
+
+==== - Frontend improvements ====
+
+Improved performance for event acknowledging.
+
+=== - Updated translations ===
+
+  * Brazilian Portuguese
+
+==== - Supported PostgreSQL version changes ====
+
+  * Support for PostgreSQL 9.1 was added
+  * PostgreSQL support changed from //7.0.2 and later// to //7.4 and later//.
+
+==== - Zabbix daemon improvements ====
+
+=== - Zabbix server improvements ===
+
+== - Improved log messages ==
+
+Zabbix server log messages about failed checks have been improved. Previously, if a check failed, Zabbix server would log messages, similar to these:
+
+  Zabbix host [monitored host]: first network error, wait for 15 seconds
+  Zabbix host [monitored host]: another network error, wait for 15 seconds
+
+After 3 failures like these, host would be disabled and a message logged:
+
+  Disabling Zabbix host [monitored host]
+
+If a host then became available, a log message would say:
+
+  Enabling Zabbix host [monitored host]
+
+Starting with Zabbix 1.8.9, this has been improved. First, messages now tell which specific item key failed, thus allowing to see whether the problem happens with multiple items or just one:
+
+  Zabbix agent item [proc.num[sshd]] on host [monitored host] failed: another network error, wait for 15 seconds
+  Zabbix agent item [system.cpu.load] on host [monitored host] failed: another network error, wait for 15 seconds
+
+Additionally, for all failures item type is logged as well (in this case, //Zabbix agent//).
+
+If a host is determined to be unavailable and then available, messages are a bit more verbose now and also include check type:
+
+  temporarily disabling Zabbix agent checks on host [monitored host]: host unavailable
+  enabling Zabbix agent checks on host [monitored host]: host became available
+
+And a new message has been introduced if host responds after one or two failures (this was not logged before at all):
+
+  resuming Zabbix agent checks on host [monitored host]: connection restored
+
+These changes should allow for much easier debugging of connectivity or configuration issues - for example, if all problems on a host would be associated with a user parameter, it would most likely be a performance problem with the executed command.
+
+== - Acknowledge synchronisation in distributed mode ==
+
+Starting with Zabbix 1.8.9 acknowledge status will be fully synchronised from child nodes to master node.
+
+== - Performance improvements ==
+
+Zabbix server performance was improved in some edge cases by skipping value updating for disabled or removed items.
+
+== - Waiting for database to appear upon startup ==
+
+Starting with Zabbix 1.8.9, upon startup Zabbix daemons will wait for database to be available. This will help with case when database is started by bootup process before Zabbix daemons, but takes long time to become ready.
+=== - Zabbix agent improvements ===
+
+Zabbix agent daemon performance on AIX was improved by only collecting perfstat data if it is requested.

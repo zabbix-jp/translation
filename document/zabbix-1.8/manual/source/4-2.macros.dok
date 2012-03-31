@@ -1,0 +1,152 @@
+==== 2 Macros ====
+
+
+Zabbix supports number of macros which may be used in various situations. Effective use of macros allows to save time and make Zabbix configuration more transparent.
+=== List of supported macros ===
+
+The table contains complete list of macros supported by Zabbix. //X// means "supported".
+
+|                       Item descriptions|||||||||^  DESCRIPTION  |
+^                                     Trigger names|||||||||▼▼|:::|
+|                            Trigger expressions|||||||^▼▼|:::|:::|
+^                                  Map labels<sup>1</sup>|||||||▼▼|:::|:::|:::|
+|                    Item key's parameters|||||^▼▼|:::|:::|:::|:::|
+^                           GUI Scripts|||||▼▼|:::|:::|:::|:::|:::|
+|    Auto registration notifications|||^▼▼|:::|:::|:::|:::|:::|:::|
+^         Discovery notifications|||▼▼|:::|:::|:::|:::|:::|:::|:::|
+|   Notifications and commands|^▼▼|:::|:::|:::|:::|:::|:::|:::|:::|
+^                   MACRO  |▼▼|:::  |:::  |:::  |:::  |:::  |:::  |:::  |:::  |:::  |
+^             ▼▼           |  1  ^  2  |  3  ^  4  |  5  ^  6  |  7  ^  8  |  9  ^  |
+|{DATE}                         |X|X|X| | | | | | |Current date in yyyy.mm.dd. format.|
+|{DISCOVERY.DEVICE.IPADDRESS}   | |X| | | | | | | |IP address of the discovered device. Available always, does not depend on host being added.|
+|{DISCOVERY.DEVICE.STATUS}      | |X| | | | | | | |Status of the discovered device: can be either UP or DOWN. |
+|{DISCOVERY.DEVICE.UPTIME}      | |X| | | | | | | |Time since the last change of discovery status for a particular device.\\ For example: 1h 29m.\\ For devices with status DOWN, this is the period of their downtime. |
+|{DISCOVERY.RULE.NAME}          | |X| | | | | | | |Name of the discovery rule that discovered the presence or absence of the device or service. |
+|{DISCOVERY.SERVICE.NAME}       | |X| | | | | | | |Name of the service that was discovered.\\ For example: HTTP. |
+|{DISCOVERY.SERVICE.PORT}       | |X| | | | | | | |Port of the service that was discovered.\\ For example: 80. |
+|{DISCOVERY.SERVICE.STATUS}     | |X| | | | | | | |Status of the discovered service: can be either UP or DOWN. |
+|{DISCOVERY.SERVICE.UPTIME}     | |X| | | | | | | |Time since the last change of discovery status for a particular service.\\ For example: 1h 29m.\\ For services with status DOWN, this is the period of their downtime. |
+|{ESC.HISTORY}                  |X| | | | | | | | |Escalation history. Log of previously sent messages. Shows previously sent notifications, on which escalation step they were sent and their status (//sent//, //in progress// or //failed//).|
+|{EVENT.ACK.HISTORY}            |X| | | | | | | | | |
+|{EVENT.ACK.STATUS}             |X| | | | | | | | | |
+|{EVENT.AGE}                    |X|X|X| | | | | | |Age of the event. Useful in escalated messages.|
+|{EVENT.DATE}                   |X|X|X| | | | | | |Date of the event.|
+|{EVENT.ID}                     |X|X|X| | | | | | |Numeric event ID which triggered this action.|
+|{EVENT.TIME}                   |X|X|X| | | | | | |Time of the event.|
+|{HOSTNAME<1-9>}                |X| |X| |X|X| |X| |Host name of the Nth item of the trigger which caused a notification. Supported in auto registration notifications since 1.8.4.|
+|{HOST.CONN<1-9>}               |X| | |X|X|X| | | |IP and host DNS name depending on host settings.|
+|{HOST.DNS<1-9>}                |X| | |X|X|X| | | |Host DNS name.|
+^                               |  1  ^  2  |  3  ^  4  |  5  ^  6  |  7  ^  8  |  9  ^  |
+|{IPADDRESS<1-9>}               |X| | |X|X|X| | | |IP address of the Nth item of the trigger which caused a notification.|
+|{ITEM.ID<1-9>}                 |X| | | | | | | | |Numeric ID of the Nth item of the trigger which caused a notification. Supported since 1.8.12.|
+|{ITEM.LASTVALUE<1-9>}          |X| | | | | | |X| |The latest value of the Nth item of the trigger expression which caused a notification. Supported from Zabbix 1.4.3. It is alias to {{HOSTNAME}:{TRIGGER.KEY}.last(0)}|
+|{ITEM.LOG.AGE<1-9>}            |X| | | | | | | | | |
+|{ITEM.LOG.DATE<1-9>}           |X| | | | | | | | | |
+|{ITEM.LOG.EVENTID<1-9>}        |X| | | | | | | | | |
+|{ITEM.LOG.NSEVERITY<1-9>}      |X| | | | | | | | | |
+|{ITEM.LOG.SEVERITY<1-9>}       |X| | | | | | | | | |
+|{ITEM.LOG.SOURCE<1-9>}         |X| | | | | | | | | |
+|{ITEM.LOG.TIME<1-9>}           |X| | | | | | | | | |
+|{ITEM.NAME<1-9>}               |X| | | | | | | | |Name of the Nth item of the trigger which caused a notification.|
+|{ITEM.VALUE<1-9>}              |X| | | | | | |X| |The latest value of Nth item of the trigger expression if used for displaying triggers.\\ Historical (when event happened) value of Nth item of the trigger expression if used for displaying events and notifications. Supported from Zabbix 1.4.3.|
+|{NODE.ID<1-9>}                 |X|X|X| | | | | | | |
+|{NODE.NAME<1-9>}               |X|X|X| | | | | | | |
+^                               |  1  ^  2  |  3  ^  4  |  5  ^  6  |  7  ^  8  |  9  ^  |
+|{PROFILE.CONTACT<1-9>}         |X| | | | | | | | |Contact from host profile.|
+|{PROFILE.DEVICETYPE<1-9>}      |X| | | | | | | | |Device type from of host profile.|
+|{PROFILE.HARDWARE<1-9>}        |X| | | | | | | | |Hardware from host profile.|
+|{PROFILE.LOCATION<1-9>}        |X| | | | | | | | |Location from host profile.|
+|{PROFILE.MACADDRESS<1-9>}      |X| | | | | | | | |Mac Address from host profile.|
+|{PROFILE.NAME<1-9>}            |X| | | | | | | | |Name from host profile.|
+|{PROFILE.NOTES<1-9>}           |X| | | | | | | | |Notes from host profile.|
+|{PROFILE.OS<1-9>}              |X| | | | | | | | |OS from host profile.|
+|{PROFILE.SERIALNO<1-9>}        |X| | | | | | | | |Serial No from host profile.|
+|{PROFILE.SOFTWARE<1-9>}        |X| | | | | | | | |Software from host profile.|
+|{PROFILE.TAG<1-9>}             |X| | | | | | | | |Tag from host profile.|
+|{PROXY.NAME<1-9>}              |X|X|X| | | | | | |Proxy name of the Nth item of the trigger which caused a notification. Supported since 1.8.4.|
+|{TIME}                         |X|X|X| | | | | | |Current time in hh:mm.ss.|
+|{TRIGGER.COMMENT}              |X| | | | | | | | |Trigger comment.|
+|{TRIGGER.EVENTS.UNACK}         |X| | | | |X| | | |Number of unacknowledged events for a map element in maps, or for the trigger which generated current event in notifications. Supported in map element labels since 1.8.3.|
+|{TRIGGER.EVENTS.PROBLEM.UNACK} |X| | | | |X| | | |Number of unacknowledged PROBLEM events for all triggers disregarding their state. Supported since 1.8.3.|
+|{TRIGGER.PROBLEM.EVENTS.PROBLEM.UNACK}  | | | | | |X| | | |Number of unacknowledged PROBLEM events for triggers in PROBLEM state. Supported since 1.8.3.|
+|{TRIGGER.EVENTS.ACK}           |X| | | | |X| | | |Number of acknowledged events for a map element in maps, or for the trigger which generated current event in notifications. Supported since 1.8.3.|
+|{TRIGGER.EVENTS.PROBLEM.ACK}   |X| | | | |X| | | |Number of acknowledged PROBLEM events for all triggers disregarding their state. Supported since 1.8.3.|
+|{TRIGGER.PROBLEM.EVENTS.PROBLEM.ACK}    | | | | | |X| | | |Number of acknowledged PROBLEM events for triggers in PROBLEM state. Supported since 1.8.3.|
+^                               |  1  ^  2  |  3  ^  4  |  5  ^  6  |  7  ^  8  |  9  ^  |
+|{TRIGGER.EXPRESSION}           |X| | | | | | | | |Trigger expression. Supported since 1.8.12.|
+|{TRIGGER.ID}                   |X| | | | | | | | |Numeric trigger ID which triggered this action.|
+|{TRIGGER.KEY<1-9>}             |X| | | | | | | | |Key of the Nth item of the trigger which caused a notification.|
+|{TRIGGER.NAME}                 |X| | | | | | | | |Name (description) of the trigger.|
+|{TRIGGER.NSEVERITY}            |X| | | | | | | | |Numerical trigger severity. Possible values: 0 - Not classified, 1 - Information, 2 - Warning, 3 - Average, 4 - High, 5  - Disaster. Supported starting from Zabbix 1.6.2.|
+|{TRIGGER.SEVERITY}             |X| | | | | | | | |Trigger severity. Possible values: Not classified, Information, Warning, Average, High, Disaster, Unknown|
+|{TRIGGER.STATUS}               |X| | | | | | | | |Trigger state. Can be either PROBLEM or OK. **{STATUS} is deprecated.**|
+|{TRIGGER.URL}                  |X| | | | | | | | |Trigger URL.|
+|{TRIGGER.VALUE}                |X| | | | | |X| | |Current trigger value: 0 - trigger is in OK state, 1 – trigger is in PROBLEM state, 2 – trigger UNKNOWN. This macro can also be used in trigger expressions.|
+|{TRIGGERS.UNACK}               | | | | | |X| | | |Number of unacknowledged triggers for a map element, disregarding trigger state. Trigger is considered to be unacknowledged if at least one of its PROBLEM events is unacknowledged.|
+|{TRIGGERS.PROBLEM.UNACK}       | | | | | |X| | | |Number of unacknowledged PROBLEM triggers for a map element. Trigger is considered to be unacknowledged if at least one of its PROBLEM events is unacknowledged. Supported since 1.8.3.|
+|{TRIGGERS.ACK}                 | | | | | |X| | | |Number of acknowledged triggers for a map element, disregarding trigger state. Trigger is considered to be acknowledged if all of it's PROBLEM events are acknowledged. Supported since 1.8.3.|
+|{TRIGGERS.PROBLEM.ACK}         | | | | | |X| | | |Number of acknowledged PROBLEM triggers for a map element. Trigger is considered to be acknowledged if all of it's PROBLEM events are acknowledged. Supported since 1.8.3.|
+|{host:key.func(param)}         |X| | | | |X<sup>2</sup>|X| | |Simple macros as used in [[:1.8/manual/config/triggers|trigger expressions]].|
+|{$MACRO}                       | | | | |X| |X|X|X|[[#user_macros|User macros]]. Supported in trigger names and item descriptions since 1.8.4.|
+^                               |  1  ^  2  |  3  ^  4  |  5  ^  6  |  7  ^  8  |  9  ^  |
+
+<note>
+[1] Macros for map labels are supported since 1.8.\\ 
+[2] Only functions **last**, **avg**, **max** and **min** with seconds as arguments are supported in map labels.
+</note>
+
+Macro {TRIGGER.ID} is supported in trigger URL since Zabbix 1.8.8.
+=== User macros ===
+
+For a greater flexibility, Zabbix supports user macros, which can be defined on global, template and host level. These macros have a special syntax: **{$MACRO}**. The macros can be used in item keys and trigger expressions. Since Zabbix version 1.8.4 user macros can also be used in item descriptions and trigger names.
+
+The following characters are allowed in the macro names: **A-Z** , **0-9** , **_** , **.**
+
+Zabbix substitutes macros according to the following precedence:
+
+  - host macros (checked first)
+  - macros defined for first level templates of the host (i.e., templates linked directly to the host), sorted by template ID
+  - macros defined for second level templates of the host, sorted by template ID
+  - macros defined for third level templates of the host, sorted by template ID
+  - ...
+  - global macros (checked last)
+
+In other words, if a macro does not exist for a host, Zabbix will try to find it in host templates of increasing depth. If still not found, a global macro will be used, if exists.
+
+If Zabbix is unable to find a macro, the macro will not be substituted.
+
+To define user macros, go to the corresponding locations in the frontend:
+  * for global macros, visit //Administration -> General -> Macros//
+  * for host and template macros, open host or template properties and look for the //Macros// block on the right hand side
+
+<note tip>If a user macro is used in items or triggers in a template, it is suggested to add that macro to the template even if it is defined on a global level. That way, exporting the template to XML and importing it in another system will still allow it to work as expected.</note>
+
+**Most common use cases of global and host macros:**
+
+  - taking advantage of templates with host specific attributes: passwords, port numbers, file names, regular expressions, etc
+  - global macros for global one-click configuration changes and fine tuning
+
+== Example 1 ==
+
+Use of host macro in item "Status of SSH daemon" key:
+
+**ssh,{$SSH_PORT}**
+== Example 2 ==
+
+Use of host macro in trigger "CPU load is too high":
+
+**{ca_001:system.cpu.load[,avg1].last(0)}>{$MAX_CPULOAD}**
+
+Such a trigger would be created on the template, not edited in individual hosts.
+
+<note tip>If you want to use amount of values as the function parameter (for example, **max(#3)**), include hash mark in the macro like this: SOME_PERIOD => #3</note>
+
+== Example 3 ==
+
+Use of two macros in trigger "CPU load is too high":
+
+**{ca_001:system.cpu.load[,avg1].min({$CPULOAD_PERIOD})}>{$MAX_CPULOAD}**
+
+Note that a macro can be used as a parameter of trigger function, in this example function **min()**.
+
+<note tip>User macros are supported in SNMP OID field since Zabbix 1.8.4.</note>

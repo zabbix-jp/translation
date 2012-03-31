@@ -1,0 +1,122 @@
+===== create() =====
+This function allows you to create a action as defined by the **action data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**action data**|//array or object//|  |Array of Action objects with additional paramters **operations** and **conditions** |**actionid** shouldn't be specified |
+|**action conditions data**|//array or object//|  | array of action conditions objects| |
+|**action operations data**|//array or object//|  | array of action operations objects| |
+
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Action IDs. **actionid** are assigned to each Action object |
+|**error**|In case of any errors|
+
+==== Example ====
+Create new action
+<code>
+{
+"jsonrpc":"2.0",
+"method":"action.create",
+"params":[{
+	"name":"ZABBIX ACTION",
+	"eventsource":"0",
+	"evaltype":"0",
+	"status":"1",
+	"esc_period":"3600",
+	"def_shortdata":"{TRIGGER.NAME}: {STATUS}",
+	"def_longdata":"{TRIGGER.NAME}: {STATUS}",
+	"recovery_msg":"0",
+	"r_shortdata":"{TRIGGER.NAME}: {STATUS}",
+	"r_longdata":"{TRIGGER.NAME}: {STATUS}",
+	"conditions":[{
+		"conditiontype":"3",
+		"operator":"2",
+		"value":"TEST"
+	},{
+		"conditiontype":"1",
+		"operator":"1",
+		"value":"100100000010096"
+	}],
+	"operations":[{
+		"operationtype":"0",
+		"object":"0",
+		"objectid":"100100000000017",
+		"shortdata":"{TRIGGER.NAME}: {STATUS}",
+		"longdata":"{TRIGGER.NAME}: {STATUS}",
+		"esc_period":"0",
+		"esc_step_from":"1",
+		"esc_step_to":"1",
+		"default_msg":"1",
+		"evaltype":"0",
+		"opconditions":[],
+		"opmediatypes":[]
+	},{
+		"operationtype":"0",
+		"object":"0",
+		"objectid":"100100000000001",
+		"shortdata":"{TRIGGER.NAME}: {STATUS}",
+		"longdata":"{TRIGGER.NAME}: {STATUS}",
+		"esc_period":"0",
+		"esc_step_from":"2",
+		"esc_step_to":"3",
+		"default_msg":"1",
+		"evaltype":"0",
+		"opconditions":[],
+		"opmediatypes":[{
+			"mediatypeid":"100100000000001"
+		}]
+	},{
+		"operationtype":"0",
+		"object":"0",
+		"objectid":"100100000000003",
+		"shortdata":"{TRIGGER.NAME}: {STATUS}",
+		"longdata":"{TRIGGER.NAME}: {STATUS}",
+		"esc_period":"0",
+		"esc_step_from":"3",
+		"esc_step_to":"4",
+		"default_msg":"1",
+		"evaltype":"0",
+		"opconditions":[{
+			"conditiontype":"14",
+			"operator":"0",
+			"value":"0"
+		},{
+			"conditiontype":"14",
+			"operator":"0",
+			"value":"1"
+		}],
+		"opmediatypes":[{
+			"mediatypeid":"100100000000001"
+		}]
+	}]
+}],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":2
+}
+</code>
+
+Action created successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+	"actionids":["100100000012213"]
+},
+"id":2
+}
+</code>
+
+Action already exists:
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CAction::create ] Action [ ZABBIX Server ] already exists"
+},
+"id":2
+}
+</code>

@@ -1,0 +1,70 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve usermacro details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL,
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|Host Group IDs | |
+|**hostids**|//array//|Host IDs | |
+|**templateids**|//array//|Template IDs | |
+|**hostmacroids**|//array//|Host Usermacro IDs | |
+|**globalmacroids**|//array//|Host Usermacro IDs | |
+|**globalmacro**|//integer//|Search only global macros | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by usermacro fields| |
+|**pattern**|//string//|Return usermacros by given pattern  | |
+|**startPattern**|//integer//|Search given pattern only in start of the field  | |
+|**excludePattern**|//integer//|Exclude	from result, usermacros by given pattern  | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_groups**|//string//|Select host groups | Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select hosts | Values: shorten, refer, extend|
+|**select_templates**|//string//|Select templates | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count usermacros, returned number of found usermacros | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by usermacro field |Values: usermacroid,usermacro,status,dns,ip |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of usermacro objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Usermacro objects.|
+|**error**|In case of any errors|
+
+==== Example ====
+Get host usermacros details by usermacro name "{$AAA}" in specified host groups **ID** "100100000000011","100100000000099","100100000010034":
+<code js>
+{
+"jsonrpc": "2.0",
+"method": "usermacro.get",
+"params": {
+	"groupids": ["100100000000011","100100000000099","100100000010034"],
+	"filter": {"macro": "{$AAA}"},
+	"output": "extend"
+},
+"auth": "6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id": 2
+}
+</code>
+Retrieved host usermacro details:
+
+<code js>
+{
+"jsonrpc": "2.0",
+"result": [{
+	"groups": [
+		{"groupid": "100100000000011"}
+	],
+	"hosts": [
+		{"hostid": "100100000010077"}
+	],
+	"hostmacroid": "100100000000005",
+	"hostid": "100100000010077",
+	"macro": "{$AAA}",
+	"value": "aaaa"
+}],
+"id": 2
+}
+</code>

@@ -1,0 +1,28 @@
+===== Application =====
+==== Methods ====
+
+Class containing methods for operations with Applications.
+^Methods^Description^
+|[[1.8/api/application/get|get()]] |Get application details |
+|[[1.8/api/application/exists|exists()]] |Check if application exists |
+|[[1.8/api/application/create|create()]] |Create applications |
+|[[1.8/api/application/update|update()]] |Update application details |
+|[[1.8/api/application/delete|delete()]] |Delete applications |
+==== Object details ====
+
+The table contains complete list of Application attributes.
+
+^Parameter^Type^Description^Details^
+|applicationid|//int//|Application ID  | |
+|hostid|//int//|Host ID | |
+|name|//string//|Application description | |
+|templateid|//int//|Parent application ID | |
+==== Common tasks ====
+The table contains list of common application-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add an application | Use method **application.create** |
+|Add a bunch of new applications | Use method **application.create** with array of Application objects |
+|Rename an application | Use method **application.update**, set **"name":1"<new name>"** |
+|Delete an application | Use method **application.delete** |
+|Retrieve application details by Application IDs | Use method **application.get** with parameter **applicationids** |
+|Retrieve applications details by Application name | Use method **application.get** with parameter **filter**, specify **"name": ["<your application1>", "<your application2>"]** |

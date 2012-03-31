@@ -1,0 +1,10 @@
+===== Usermedia =====
+
+^Property^Type^Description^Details^
+|**mediaid**  |id  |Unique media ID| | 
+|**userid**  |id  |User ID| | 
+|**mediatypeid**  |id  |Media type ID  | | 
+|**sendto**  |varchar  |Address to send alert to. Depends on media type.| |
+|**active**  |integer  |Status of the media:|0 – enabled\\ 1 – disabled|
+|**severity**  |integer  |The media will be active for these severities only. |0 – Not classified (1)\\  1 – Information (2)\\ 2 – Warning (4)\\ 3 – Average (8)\\ 4 – High (16)\\ 5 – Disaster (32)|
+|**period**  |varchar  |List of time periods the media is active. For example: 1-7,00:00-23:59| |

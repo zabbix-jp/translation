@@ -1,0 +1,22 @@
+===== - #13 What's new in Zabbix 1.8.11 =====
+
+==== - Frontend improvements ====
+
+Global script error messages now suggest possible causes of the problem.
+
+=== - Updated translations ===
+
+  * Brazilian Portuguese
+  * French
+  * Japanese
+
+==== - Daemon improvements ====
+
+  * Added support for individual CPU statistics in **system.cpu.util** item on FreeBSD
+  * Support for all data types in SNMP dynamic indexes has been added
+  * Added possibility to remove a discovered host from "Discovered hosts" group by action
+  * Previously, Zabbix daemons used a hardcoded priority of 5. Starting with 1.8.11, default or user specified priority is used without any overrides on the Zabbix side
+  * Unused options TrendCacheSize and CacheUpdateFrequency have been removed from Zabbix proxies
+  * Error messages for missing SNMP instances are now more user friendly
+  * Unneeded information like user history for nodes and web monitoring items for proxies is not synchronised to them anymore
+  * Command line arguments that exceed 2KB are now supported in **proc.num** and **proc.mem** checks on Linux

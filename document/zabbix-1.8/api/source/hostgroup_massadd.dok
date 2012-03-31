@@ -1,0 +1,47 @@
+===== massAdd() =====
+Available since version: **1.8**\\
+
+==== Parameters ====
+Multidimensional array with Host groups data\\
+
+^Parameter^Type^Optional^Description^Details^
+|**groups**|//array//| |Host group to update. | |
+|**hosts**|//array//| Yes |Host objects that should be added to host groups. | |
+|**templates**|//array//| Yes |Template objects that should be added to host groups. | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Host group IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Add two hosts with **ID** "100100000010092", "100100000010086" to two host groups with **ID** "100100000000042", "100100000000013"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"hostgroup.massAdd",
+"params":{ 
+	"groups": [
+	  {"groupid": "100100000000042"},
+	  {"groupid": "100100000000013"}
+	],
+	"hosts": [ 
+		{"hostid": "100100000010092"},
+		{"hostid": "100100000010086"}
+	]
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+Host groups updated successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+	"groupids":["100100000000042","100100000000013"]
+},
+"id":2
+}
+</code>

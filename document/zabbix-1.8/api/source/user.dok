@@ -1,0 +1,60 @@
+===== User =====
+==== Methods ====
+Class containing methods for operations with Users. Only super admins have access to all users. 
+
+^Methods^Description^
+|[[1.8/api/user/get|get()]] |Get user details |
+|[[1.8/api/user/create|create()]] |Create users |
+|[[1.8/api/user/update|update()]] |Update user details |
+|[[1.8/api/user/updateProfile|updateProfile()]] |Update user profile |
+|[[1.8/api/user/delete|delete()]] |Delete users |
+|[[1.8/api/user/addMedia|addMedia()]] |Add user media |
+|[[1.8/api/user/updateMedia|updateMedia()]] |Update user medias |
+|[[1.8/api/user/deleteMedia|deleteMedia()]] |Remove user medias |
+|[[1.8/api/user/authenticate|authenticate()]] |Authenticate |
+|[[1.8/api/user/login|login()]] |Login |
+|[[1.8/api/user/logout|logout()]] |Logout |
+
+==== Object details ====
+=== User ===
+
+The table contains complete list of User attributes.
+
+^Parameter^Type^Description^Details^
+|**userid**|//integer//|User ID | |
+|**alias**|//string//|Login | |
+|**name**|//string//|Name | |
+|**surname**|//string//|Surname | |
+|**passwd**|//string//|Password | md5 |
+|**url**|//string//|Url to open after user login | |
+|**autologin**|//integer//|Auto login | |
+|**autologout**|//integer//|Auto logout | In seconds, 0 - disabled |
+|**lang**|//string//|Locale | |
+|**refresh**|//integer//|Page refresh period | |
+|**type**|//integer//|User type | |
+|**theme**|//string//|Theme | |
+|**attempt_failed**|//integer//|Number of failed login attempts | |
+|**attempt_ip**|//string//|Last used IP to login | |
+|**attempt_clock**|//integer//|Last login attempt date | |
+|**rows_per_page**|//integer//|Rows per page to show | |
+	
+=== User Media ===
+The table contains complete list of User media attributes.
+
+^Parameter^Type^Description^Details^
+|**mediaid**|//integer//|User media ID | |
+|**userid**|//integer//|User ID | |
+|**mediatypeid**|//integer//|User media type ID | |
+|**sendto**|//string//|Where to send | |	
+|**active**|//integer//|Enabled or disabled this media | |
+|**severity**|//integer//|Trigger severity | bit arithmetics |
+|**period**|//string//|User media period | |
+
+==== Common tasks ====
+The table contains list of common user-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a user | Use method **user.create** |
+|Add a bunch of new users | Use method **user.create** with array of User objects |
+|Rename user | Use method **user.update**, set **"name":"<new name>"** |
+|Retrieve user details by User IDs | Use method **user.get** with parameter **userids** |
+|Retrieve user details by User alias | Use method **user.get** with parameter **filter**, specify **"alias":"<user alias>"** |

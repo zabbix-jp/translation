@@ -1,0 +1,84 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve application details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|HostGroup IDs | |
+|**hostids**|//array//|Host IDs | |
+|**templateids**|//array//|Template IDs | |
+|**itemids**|//array//|Item IDs | |
+|**applicationids**|//array//|Application IDs | |
+|**inherited**|//integer//|Inherited from templates |"0" - not inherited, "1" - inherited |
+|**templated**|//integer//|Templated applications |"0" - belongs to hosts, "1" - belongs to templates |
+|**monitored**|//integer//|Monitored applications |Checks application and host status |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by application fields| |
+|**search**|//array//|Return applications by given application fields pattern | |
+|**startSearch**|//integer//|Search given pattern only in start of the fields  | |
+|**excludeSearch**|//integer//|Exclude from result applications by given pattern | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**expandData**|//string//|Output additional fields | Adds host name to output objects |
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select hosts | Values: shorten, refer, extend|
+|**select_items**|//string//|Select items | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count hosts, returned number of found hosts | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by host field |Values: applicationid,description,key_,delay,history,trends,type,status |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of host objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Application objects.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+Get applications details by application name pattern "file" and limit output to 2 applications, expand data:
+<code>
+{
+"jsonrpc":"2.0",
+"method":"application.get",
+"params":{
+	"search": {"name": "file"},
+	"output": "extend",
+	"expandData": 1,
+	"limit": 2
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved applications details:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":[
+	{
+		"hosts":[{
+			"hostid":"100100000010097"
+		}],
+		"applicationid":"100100000000572",
+		"name":"Filesystem",
+		"templateid":"100100000000005",
+		"host":"192.168.3.1"
+	},
+	{
+		"hosts":[{
+			"hostid":"100100000010097"
+		}],
+		"applicationid":"100100000000575",
+		"name":"Log files",
+		"templateid":"100100000000011",
+		"host":"192.168.3.1"
+	}
+],
+"id":2
+}
+</code>

@@ -1,0 +1,46 @@
+===== updateMedia() =====
+Available since version: **1.8**\\
+
+==== Parameters ====
+Multidimensional array with Users data and User Medias data\\
+
+^Parameter^Type^Optional^Description^Details^
+|**users**|//array//|  |User objects to update | |
+|**medias**|//array//| Yes |Medias objects which should be updated (removed / added).  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated User IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Add two user medias, all current remove for user with **ID** "100100000010092"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"user.updateMedia",
+"params":{ 
+"users": [
+  { "userid": "100100000010092" }
+],
+"medias": [
+  {"mediatypeid": "100100000000001", "sendto": "zabbix@test.com", "active": "2", "severity": "56", "period": "5-7,09:00-17:00;"},
+  {"mediatypeid": "100100000000002", "sendto": "zabbix@test.com", "active": "2", "severity": "63", "period": "1-5,07:00-19:00;"}
+]
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+
+Users medias updated successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "userids":["100100000010092"]
+},
+"id":2
+}
+</code>

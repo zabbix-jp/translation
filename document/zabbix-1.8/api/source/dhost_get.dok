@@ -1,0 +1,88 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve discovery host details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**druleids**|//array//|Discovery rule IDs | |
+|**dhostids**|//array//|Discovery host IDs | |
+|**dserviceids**|//array//|Discovery service IDs | |
+|**groupids**|//array//|Host group IDs | |
+|**hostids**|//array//|Host IDs | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by discovery host fields| |
+|**search**|//array//|Return discovery hosts by any given discovery host object field pattern  | |
+|**startSearch**|//integer//|Search discovery hosts field pattern only in start of the field  | |
+|**excludeSearch**|//integer//|Exclude from result, discovery hosts by given field pattern  | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**selectDRules**|//string//|Select discovery ruless | Values: shorten, refer, extend|
+|**selectDChecks**|//string//|Select discovery checks | Values: shorten, refer, extend|
+|**selectDServices**|//string//|Select discovery services | Values: shorten, refer, extend|
+|**selectGroups**|//string//|Select groups | Values: shorten, refer, extend|
+|**selectHosts**|//string//|Select hosts | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count discovery hosts, returned number of found discovery hosts | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by discovery host field |Values: dhostid |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of discovery host objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Discovery host objects.|
+|**error**|In case of any errors|
+
+==== Example ====
+Get discovery hosts details by discovery rule ID:
+<code>
+{
+"jsonrpc":"2.0",
+"method":"dhost.get",
+"params":{
+	"druleids": ["100100000000003"],
+	"output": "extend",
+	"limit": 3
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+Retrieved discovery host details:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":[{
+	"drules":[{
+		"druleid":"100100000000003"
+	}],
+	"dhostid":"100100000000002",
+	"druleid":"100100000000003",
+	"status":"0",
+	"lastup":"1245250108",
+	"lastdown":"0"
+},{
+	"drules":[{
+		"druleid":"100100000000003"
+	}],
+	"dhostid":"100100000000003",
+	"druleid":"100100000000003",
+	"status":"0",
+	"lastup":"1245250130",
+	"lastdown":"0"
+},{
+	"drules":[{
+		"druleid":"100100000000003"
+	}],
+	"dhostid":"100100000000004",
+	"druleid":"100100000000003",
+	"status":"0",
+	"lastup":"1245250131",
+	"lastdown":"0"
+}],
+"id":2
+}
+</code>

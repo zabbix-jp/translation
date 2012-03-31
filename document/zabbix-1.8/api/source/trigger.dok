@@ -1,0 +1,74 @@
+===== Trigger =====
+
+==== Methods ====
+
+Class containing methods for operations with Triggers.
+^Methods^Description^
+|[[1.8/api/trigger/get|get()]] |Get trigger details |
+|[[1.8/api/trigger/exists|exists()]] |Check if trigger exists |
+|[[1.8/api/trigger/create|create()]] |Create triggers |
+|[[1.8/api/trigger/update|update()]] |Update trigger details |
+|[[1.8/api/trigger/delete|delete()]] |Delete triggers |
+|[[1.8/api/trigger/addDependencies|addDependencies()]] |Delete triggers |
+|[[1.8/api/trigger/deleteDependencies|deleteDependencies()]] |Delete triggers |
+
+==== Object details ====
+
+The table contains complete list of Trigger attributes.
+
+^Parameter^Type^Description^Details^
+|triggerid|//integer//|Trigger **ID** | |
+|description|//string//|Trigger name | |
+|expression|//string//|Expression | |
+|url|//string//|Referenced URL | |
+|status|//integer//|Status | |
+|value|//integer//|State | |
+|priority|//integer//|Severity | |
+|lastchange|//integer//|Time of last state change | |
+|dep_level|//integer//|Dependency level | |
+|comments|//integer//|Description | |
+|error|//integer//|Error | |
+|templateid|//integer//|Parent trigger **ID** | |
+|type|//integer//|Event generation | |
+
+==== Field values ====
+
+=== Status ===
+
+^Value^Type^
+|0|Trigger is active|
+|1|Trigger is disabled|
+
+=== Value ===
+
+^Value^Type^
+|0    |OK|
+|1    |PROBLEM|
+|2    |UNKNOWN|
+
+=== Priority ===
+
+^Value^Type^
+|0|Not classified|
+|1|Information|
+|2|Warning|
+|3|Average|
+|4|High|
+|5|Disaster|
+
+=== Type ===
+
+^Value^Type^
+|0|Normal event generation|
+|1|Generate multiple PROBLEM events|
+
+==== Common tasks ====
+The table contains list of common trigger-related tasks and possible implementation using Zabbix API
+
+^Task^HOWTO^
+|Add an trigger | Use method **trigger.create** |
+|Add a bunch of new triggers | Use method **trigger.create** with array of Trigger objects |
+|Enable an trigger | Use method **trigger.update**, set **"status":0** |
+|Disable an trigger | Use method **trigger.update**, set **"status":1** |
+|Retrieve trigger details by Trigger IDs | Use method **trigger.get** with parameter **triggerids** |
+|Retrieve triggers details by Host name | Use method **trigger.get** with parameter **filter**, specify **"host": ["<your host1>"]** |

@@ -1,0 +1,31 @@
+===== Script =====
+==== Methods ====
+
+Class containing methods for operations with Scripts.
+^Methods^Description^
+|[[1.8/api/script/get|get()]] |Get script details |
+|[[1.8/api/script/execute|execute()]] |Check if script exists |
+|[[1.8/api/script/create|create()]] |Create scripts |
+|[[1.8/api/script/update|update()]] |Update script details |
+|[[1.8/api/script/delete|delete()]] |Delete scripts |
+
+==== Object details ====
+
+The table contains complete list of Script attributes.
+
+^Parameter^Type^Description^Details^
+|scriptid|//int//|Script ID  | |
+|name|//string//|Script description | |
+|command|//string//|Command to execute | |
+|host_access|//integer//|Needed host access for script execution | |
+|usrgrpid|//integer//|User group ID | |
+|groupid|//integer//|Host group ID | |
+
+
+==== Common tasks ====
+The table contains list of common script-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add an script | Use method **script.create** |
+|Add a bunch of new scripts | Use method **script.create** with array of Script objects |
+|Retrieve script details by Script IDs | Use method **script.get** with parameter **scriptids** |
+|Retrieve scripts details by Host name | Use method **script.get** with parameter **filter**, specify **"name": ["<your script>"]** |

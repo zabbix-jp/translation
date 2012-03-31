@@ -1,0 +1,113 @@
+===== get() =====
+Available since version: **1.8**\\
+This method allows you to retrieve graph details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|HostGroup IDs | |
+|**templateids**|//array//|Template IDs | |
+|**hostids**|//array//|Host IDs | |
+|**graphids**|//array//|Graph IDs | |
+|**itemids**|//array//|Item IDs | |
+|**type**|//integer//|Graph type | |
+|**inherited**|//integer//|Inherited from templates |"0" - not inherited, "1" - inherited |
+|**templated**|//integer//|Templated items |"0" - belongs to hosts, "1" - belongs to templates |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by graph fields| |
+|**search**|//array//|Return graphs by any given object field pattern  | |
+|**startSearch**|//integer//|Search graphs field pattern only in start of the field  | |
+|**excludeSearch**|//integer//|Exclude from result, graphs by given field pattern  | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_groups**|//string//|Select host groups | Values: shorten, refer, extend|
+|**select_templates**|//string//|Select host templates| Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select hosts | Values: shorten, refer, extend|
+|**select_items**|//string//|Select host items | Values: shorten, refer, extend|
+|**select_graph_items**|//string//|Select graph items | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count graphs, returned number of found graphs | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by graph field |Values: graphid, name |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of graph objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Graph objects.|
+|**error**|In case of any errors|
+==== Example ====
+
+Get graphs details for graphs containing "CPU" in their names for host "ZABBIX-Server" and limit output to two graphs:
+<code>
+{
+   "jsonrpc":"2.0",
+   "method":"graph.get",
+   "params":{
+      "output":"extend",
+      "search":{
+         "name":"CPU"
+      },
+      "filter":{
+         "host":[
+            "Zabbix-server"
+         ]
+      },
+      "limit":2
+   },
+   "auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+   "id":2
+}
+</code>
+
+Retrieved graph details:
+
+<code>
+{
+   "jsonrpc":"2.0",
+   "result":[
+      {
+         "graphid":"100100000000589",
+         "name":"CPU Loads 2",
+         "width":"900",
+         "height":"400",
+         "yaxismin":"0.0000",
+         "yaxismax":"100.0000",
+         "templateid":"0",
+         "show_work_period":"1",
+         "show_triggers":"0",
+         "graphtype":"0",
+         "show_legend":"0",
+         "show_3d":"0",
+         "percent_left":"0.0000",
+         "percent_right":"0.0000",
+         "ymin_type":"0",
+         "ymax_type":"0",
+         "ymin_itemid":"0",
+         "ymax_itemid":"0"
+      },
+      {
+         "graphid":"100100000006093",
+         "name":"CPU Loads",
+         "width":"900",
+         "height":"400",
+         "yaxismin":"0.0000",
+         "yaxismax":"100.0000",
+         "templateid":"0",
+         "show_work_period":"1",
+         "show_triggers":"0",
+         "graphtype":"0",
+         "show_legend":"0",
+         "show_3d":"0",
+         "percent_left":"0.0000",
+         "percent_right":"0.0000",
+         "ymin_type":"0",
+         "ymax_type":"1",
+         "ymin_itemid":"0",
+         "ymax_itemid":"0"
+      }
+   ],
+   "id":2
+}
+</code>

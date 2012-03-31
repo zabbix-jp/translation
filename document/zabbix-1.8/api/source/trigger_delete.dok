@@ -1,0 +1,49 @@
+===== delete() =====
+Available since version: **1.8**\\
+This function allows you to delete information about one or several triggers. All trigger-related information will be removed including events, map elements, IT services, action conditions dependencies.
+
+==== Parameters ====
+Array of Item IDs
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of deleted Host IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Delete triggers by trigger **ID**
+<code>
+{
+"jsonrpc":"2.0",
+"method":"trigger.delete",
+"params":["107824",  "107825"],
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Triggers deleted successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "triggerids": ["107824", "107825"]
+},
+"id":2
+}
+</code>
+
+Triggers does not exist:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32500,
+      "message":"Application error.",
+      "data":"[ CTrigger::delete ] Trigger does not exist"
+},
+"id":2
+}
+</code>

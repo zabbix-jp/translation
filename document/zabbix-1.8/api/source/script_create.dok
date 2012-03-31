@@ -1,0 +1,53 @@
+===== create() =====
+This function allows you to create a script as defined by the **script data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**script data**|//array or object//|  |Array of Script objects or a single object|**scriptid** shouldn't be specified |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Script IDs. **scriptid** are assigned to each Script object |
+|**error**|In case of any errors|
+
+==== Example ====
+Create new script for all hosts and host groups:
+<code>
+{
+"jsonrpc":"2.0",
+"method":"script.create",
+"params":{
+	"name":"Ping",
+	"command":"\/bin\/ping -c 3 {HOST.CONN}",
+	"host_access":"2",
+	"usrgrpid":"0",
+	"groupid":"0"
+},
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":2
+}
+</code>
+
+Script created successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "scriptids": ["100100000214797"]
+},
+"id":2
+}
+</code>
+
+Script already exists:
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CScript::create ] Cannot create Script"
+},
+"id":2
+}
+</code>

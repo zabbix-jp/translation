@@ -1,0 +1,145 @@
+==== - #3 Installation and Upgrade Notes ====
+
+=== - Installation ===
+
+See the [[:1.8/manual/installation/installation_from_source]] section for full details.
+
+=== - Version compatibility ===
+Older agents from Zabbix 1.0, Zabbix 1.1.x, Zabbix 1.4.x and Zabbix 1.6.x can be used with Zabbix 1.8. It does not require any configuration changes on agent side.
+
+<note warning>Older Zabbix proxies of version 1.6.x can't be used with Zabbix 1.8, they should be upgraded.</note>
+=== - Important notes ===
+== - For version 1.8 ==
+
+  * All hosts now are required to belong to at least one group.
+  * CPU index for **system.cpu.util** key on Linux now starts with 0.
+  * Key **vfs.fs.size** returns data in bytes for all operating systems now.
+  * Key **vfs.fs.size** now takes into account reserved diskspace for root user.
+  * Comment at the end of a configuration file line is not allowed anymore (this worked for numeric parameters only before).
+
+== - For version 1.8.3 ==
+
+  * Parameter **service.ntp** for item keys **net.tcp.service** and **net.tcp.service.perf** renamed to **ntp**. Old syntax is still supported.
+  * Trying to run IPv6-enabled daemon on a system without IPv6 support fail:
+
+  Listener failed with error: socket() for [[(null)]:10051] failed with error 97: Address family not supported by protocol.
+
+== - For version 1.8.5 ==
+
+  * The method of external command invocation for Zabbix daemons has been changed to allow terminating runaway processes. Instead of using standard //popen// method as before, Zabbix now explicitly calls **/bin/sh** to execute desired command.
+
+  * Trying to run a Zabbix daemon, compiled on Linux kernel 2.6.27 or later on a system with kernel 2.6.26 or older will fail:<code>socket() for [[-]:10050] failed with error 22: Invalid argument</code>
+
+== - For version 1.8.6 ==
+
+  * Zabbix daemons now refuse to start up if configuration file contains incorrect parameters. If old parameters have accumulated in the configuration files, this will result in inoperable daemons after the upgrade until the parameters are fixed.
+
+== - For version 1.8.8 ==
+
+  * In some cases hosts and proxies with identical name might have appeared in the Zabbix database. Starting with 1.8.8, Zabbix server will shut down if it detects such a situation.
+
+== - For version 1.8.9 ==
+
+The shutdown upon detection of duplicate hosts, introduced in 1.8.8, has been removed.
+=== - System requirement changes ===
+
+Additional or increased system requirements:
+
+  * Support for PHP 4 dropped.
+  * Maximal PHP memory size should be at least 128MB (option **memory_limit**).
+  * Maximal PHP POST size should be at least 16MB (option **post_max_size**).
+
+Also see requirement changes for versions [[:1.8/manual/about/what_s_new_1.8.2#frontend_requirement_changes|1.8.2]], [[:1.8/manual/about/what_s_new_1.8.3#requirement_changes|1.8.3]] and [[:1.8/manual/about/what_s_new_1.8.9#supported_postgresql_version_changes|1.8.9]].
+
+=== - Known problems ===
+
+<note warning>Zabbix frontend in 1.8 does not work with SQLite backend. Please, use one of the other supported databases.</note>
+== - For version 1.8 ==
+
+  * PHP mbstring check may fail with PHP < 5.2 in Zabbix 1.8. To avoid this issue, copy **zabbix.conf.php.example** file to **zabbix.conf.php** and modify parameters, including database access parameters.
+  * For IPMI support you need a recent OpenIPMI version - 2.0.14 and later is known to work.
+  * Sorting in frontend is not performed for entities with positional variables (like item names with $1 etc).
+  * XML export includes SNMP and other information for all items.
+  * Hostnames with spaces do not work when sending data from a file with **[[:1.8/manual/processes/zabbix_sender|zabbix_sender]]** (fixed in 1.8.2).
+  * Uploading of images for network maps may fail if database is not configured properly. Make sure database, tables and fields are set to UTF-8 encoding.
+  * Precompiled binaries (agent, sender, get) might not work on 64bit systems with glibc versions older than 2.5. Common symptom is failing to start with the error message: //Floating point exception//. Use older versions, or compile from the scratch on the target system.
+
+== - For version 1.8.2 ==
+
+Because of frontend changes, some installations might see incorrect older data appear in frontend. These include:
+
+  * Incorrect trigger appearing, with name **<nowiki>**ERROR**</nowiki>**, usually in Monitoring -> Triggers section, when showing all hosts from all groups. This trigger can be deleted by clicking on it, choosing **Configuration of triggers**, then clicking on **Delete** in the trigger editing form and confirming the deletion.
+
+<note important>You might have to remove //groupid=&hostid=&// part from the URL when attempting to delete the trigger.</note>
+
+  * Depending on the installation time of your Zabbix server, default graphs might have incorrect configuration. This only affects you if those graphs are being used. Opening such a graph usually will swap working time and trigger showing with percentile values. If that is the case, simply fixing and saving the graph will solve the problem.
+
+=== - Upgrade procedure ===
+The following steps have to be performed for successful upgrade from Zabbix 1.6.x to 1.8.
+The whole upgrade procedure may take several hours depending on size of Zabbix database.
+== - Stop Zabbix server ==
+Stop Zabbix server to make sure that no new data is inserted into database.
+== - Backup existing Zabbix database ==
+This is very important step. Make sure that you have backup of your database. It will help if upgrade procedure fails (lack of disk space, power off, any unexpected problem).
+== - Backup configuration files, PHP files and Zabbix binaries ==
+Make a backup copy of Zabbix binaries, configuration files and PHP files.
+== - Install new server binaries ==
+You may use pre-compiled binaries or [[:1.8/manual/installation/installation_from_source|compile your own]].
+
+== - Review Server configuration parameters ==
+Some parameters of zabbix_server.conf were changed in 1.8, new parameters added. You may want to review them.
+
+  * Configuration option **StartDBSyncers** [[:1.8/manual/about/what_s_new#added_configuration_data_cache_module|has been removed]] from Zabbix server and proxy configuration files.
+
+== - Upgrade database ==
+
+<note important>Database upgrade is a required step when upgrading from one major Zabbix version to another, such as from 1.6 to 1.8. It is not required for minor upgrades, such as from 1.8.x to 1.8.x, unless specifically stated so in the release notes of the version.</note>
+
+Before running upgrade scripts drop the following indexes:
+
+**MySQL**
+  alter table dhosts drop index dhosts_1;
+  alter table dservices drop index dservices_1;
+  alter table httptest drop index httptest_2;
+  alter table httptest drop index httptest_3;
+  alter table history_log drop index history_log_2;
+  alter table history_text drop index history_text_2;
+  alter table actions drop index actions_1;
+  alter table escalations drop index escalations_2;
+  alter table graphs_items drop index graphs_items_1;
+  alter table graphs_items drop index graphs_items_2;
+  alter table services drop index services_1; 
+
+**Oracle or PostgreSQL**
+  drop index dhosts_1;
+  drop index dservices_1;
+  drop index httptest_2;
+  drop index httptest_3;
+  drop index history_log_2;
+  drop index history_text_2;
+  drop index actions_1;
+  drop index escalations_2;
+  drop index graphs_items_1;
+  drop index graphs_items_2;
+  drop index services_1; 
+
+**Ignore any warning messages about non-existent indexes!**
+
+Database upgrade scripts are located in directory upgrades/dbpatches/1.8/<db engine>:
+
+  * MySQL: upgrades/dbpatches/1.8/mysql/patch.sql
+  * Oracle: upgrades/dbpatches/1.8/oracle/patch.sql
+  * PostgreSQL: upgrades/dbpatches/1.8/postgresql/patch.sql
+
+Database upgrade should take around 10-15 minutes, for PostgreSQL it may take several hours or more because of conversion of existing historical data. It is recommended to test the upgrade procedure in a non-production environment.
+
+<note important>If you are converting the database to UTF-8, it can take many hours.</note>
+
+Make sure that you have enough permissions (create table, drop table, create index, drop index). Also make sure that you have enough free disk space. 
+
+These scripts are for upgrade from Zabbix 1.6.x to 1.8 only! For upgrade from earlier versions use also upgrade scripts from Zabbix 1.6.x.
+
+== - Install new Zabbix GUI ==
+Follow [[:1.8/manual/installation/installation_from_source#zabbix_web_interface|installation instructions]].
+== - Start new Zabbix binaries ==
+Start new binaries. Check log files to see if the binaries have started successfully.

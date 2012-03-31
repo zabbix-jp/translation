@@ -1,0 +1,53 @@
+===== create() =====
+This function allows you to create a item as defined by the **item data** array.
+
+==== Parameters ====
+^Parameter    ^Type               ^Optional^Description^Details^
+|**item data**|//array or object//|        |Array of item objects or a single object|**itemid** shouldn't be specified |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created item IDs. **itemid** are assigned to each item object |
+|**error** |In case of any errors|
+
+==== Example ====
+Create new item for host with host **ID** "100100000010048"
+
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"item.create",
+"params":{
+      "description": "Free disk space on $1",
+      "key_": "vfs.fs.size[/home/aly/,free]",
+      "hostid": "100100000010048",
+      "applications": ["100100000000001", "100100000000002"]
+},
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":2
+}
+</code>
+
+Item created successfully:
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+   "itemids": ["100100000214797"]
+},
+"id":2
+}
+</code>
+
+Item already exists:
+<code js>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CItem::create ] Cannot create Item"
+},
+"id":2
+}
+</code>

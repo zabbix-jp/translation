@@ -1,0 +1,41 @@
+===== Usermacro =====
+==== Methods ====
+
+Class containing methods for operations with Usermacros.
+^Methods^Description^
+|[[1.8/api/usermacro/get|get()]] |Get usermacro details |
+|[[1.8/api/usermacro/createGlobal|createGlobal()]] |Create global usermacros |
+|[[1.8/api/usermacro/updateGlobal|updateGlobal()]] |Update global usermacros details |
+|[[1.8/api/usermacro/deleteGlobal|deleteGlobal()]] |Delete global usermacros |
+|[[1.8/api/usermacro/deleteHostMacro|deleteHostMacro()]] |Delete host usermacros |
+|[[1.8/api/usermacro/massAdd|massAdd()]] |Add usermacros to hosts or templates |
+|[[1.8/api/usermacro/massUpdate|massUpdate()]] |Update usermacros for hosts or templates |
+|[[1.8/api/usermacro/massRemove|massRemove()]] |Remove usermacros from hosts or templates |
+
+
+==== Object details ====
+
+=== Host Macro ===
+The table contains complete list of Usermacro attributes.
+
+^Parameter^Type^Description^Details^
+|hostmacroid|//integer//|Host macro ID | |
+|hostid|//integer//|Host ID | |
+|macro|//string//|Name |Name is unique per single host |
+|value|//string//|Value | |
+
+=== Global Macro ===
+The table contains complete list of Global Usermacro attributes.
+
+^Parameter^Type^Description^Details^
+|hostmacroid|//integer//|Host macro ID | |
+|macro|//string//|Macro  |Name is unique for global usermacros |
+|value|//string//|Value  | |
+
+==== Common tasks ====
+The table contains list of common usermacro-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a usermacro | Use method **usermacro.massAdd**, set hostids and macro objects |
+|Add a global usermacro | Use method **usermacro.createGlobal** |
+|Retrieve usermacro details by Usermacro IDs | Use method **usermacro.get** with parameter **usermacroids** |
+|Retrieve usermacro details by Usermacro name | Use method **usermacro.get** with parameter **filter**, specify **"macro":"<your usermacro>"** |

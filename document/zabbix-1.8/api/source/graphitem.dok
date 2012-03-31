@@ -1,0 +1,28 @@
+===== Graphitem =====
+==== Methods ====
+
+Class containing methods for operations with Graphitems.
+^Methods^Description^
+|[[1.8/api/graphitem/get|get()]] |Get graphitem details |
+
+==== Object details ====
+
+The table contains complete list of Graphitem attributes.
+
+^Parameter^Type^Description^Details^
+|gitemid|//integer//|Graphitem ID | |
+|graphid|//integer//|Graph ID | |
+|itemid|//integer//|Item ID | |
+|drawtype|//integer//|Draw type |Line(0), filled region(1), bold line(2), dot(3), dashed(4), gradient(5) |
+|sortorder|//integer//|Position in legend | |
+|color|//string//|Draw color |Hex RGB |
+|yaxisside|//integer//|Graph axis side | Left Y axis, Right Y axis|
+|calc_fnc|//integer//|Graph item data selection function |min(1), max(4), avg(2), all(7) |
+|type|//integer//|Graph item type |Simple, Agregated |
+|periods_cnt|//integer//|Aggregated periods count | |
+
+
+==== Common tasks ====
+The table contains list of common graphitem-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Get a graphitem | Use method **graphitem.get** |

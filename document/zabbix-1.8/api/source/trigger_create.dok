@@ -1,0 +1,50 @@
+===== create() =====
+This function allows you to create a trigger as defined by the **trigger data** array.
+
+==== Parameters ====
+^Parameter       ^Type               ^Optional^Description^Details^
+|**trigger data**|//array or object//|        |Array of Trigger objects or a single object|**triggerid** shouldn't be specified |
+
+====Returns====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of created Trigger IDs. **triggerid** are assigned to each Trigger object |
+|**error** |In case of any errors|
+==== Example ====
+Create new trigger for host "ZABBIX-Server" and enable it
+<code js>
+{
+"jsonrpc": "2.0",
+"method": "trigger.create",
+"params": [{
+	"description": "TEST_MACRO",
+	"expression": "{ZABBIX-Server:vfs.fs.inode[/,{$MACRO}].max(\"{$MACRO2}\")}={$MACRO3}",
+	"status": 0
+}],
+"auth": "038e1d7b1735c6a5436ee9eae095879e",
+"id": 2
+}
+</code>
+
+Trigger created successfully:
+<code js>
+{
+"jsonrpc": "2.0",
+"result": {
+   "triggerids": ["100100000214797"]
+},
+"id": 2
+}
+</code>
+
+Trigger already exists:
+<code js>
+{
+"jsonrpc": "2.0",
+"error": {
+      "code": -32602,
+      "message": "Invalid params.",
+      "data": "[ CTrigger::create ] Cannot create Trigger"
+},
+"id": 2
+}
+</code>

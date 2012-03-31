@@ -1,0 +1,35 @@
+===== Mediatype =====
+==== Methods ====
+
+Class containing methods for operations with Media types.
+^Methods^Description^
+|[[1.8/api/mediatype/get|get()]] |Get media type details |
+|[[1.8/api/mediatype/create|create()]] |Create media types |
+|[[1.8/api/mediatype/update|update()]] |Update media type details |
+|[[1.8/api/mediatype/delete|delete()]] |Delete media types |
+
+
+==== Object details ====
+=== Media_type ===
+The table contains complete list of Media types attributes.
+
+^Parameter^Type^Description^Details^
+|**mediatypeid**|//integer//| Media type ID| |
+|**description**|//string//| Name | |
+|**type**|//integer//| Media type | 0 - Email, 1 - External script, 2 - SMS, 3 - Jabber, 100 - EzTexting |
+|**smtp_server**|//string//| SMTP server name | |
+|**smtp_helo**|//string//| HELO value for SMTP server | |
+|**smtp_email**|//string//| Email address of Zabbix server | |
+|**exec_path**|//string//| Name of external script | |
+|**gsm_modem**|//string//| Serial device name of GSM modem | |
+|**username**|//string//| User name | Jabber user name used by Zabbix server |
+|**passwd**|//string//| User password | Jabber password used by Zabbix server |
+
+==== Common tasks ====
+The table contains list of common user-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a media type | Use method **mediatype.create** |
+|Add a bunch of new media types | Use method **mediatype.create** with array of User group objects |
+|Update media type | Use method **mediatype.update** with media type IDs |
+|Retrieve media type details by Group IDs | Use method **mediatype.get** with parameter **mediatypeids** |
+|Retrieve media type details by User group name | Use method **mediatype.get** with parameter **filter**, specify **"description":"<your mediatype>"** |

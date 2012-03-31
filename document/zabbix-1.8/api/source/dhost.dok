@@ -1,0 +1,25 @@
+===== DHost =====
+==== Methods ====
+
+Class containing methods for operations with Discovered Hosts.
+^Methods^Description^
+|[[1.8/api/dhost/get|get()]] |Get discovery host details |
+|[[1.8/api/dhost/delete|delete()]] |Delete discovery hosts |
+
+
+==== Object details ====
+
+The table contains complete list of Discovery Host attributes.
+
+^Parameter^Type^Description^Details^
+|**dhostid**|//integer//|Discovery Host ID | |
+|**druleid**|//integer//|Discovery Rule ID | |
+|**status**|//integer//|Host Status  | |
+|**lastup**|//integer//|Last UP state date | Unix timestamp |
+|**lastdown**|//integer//|Last DOWN state date  | Unix timestamp |
+
+
+==== Common tasks ====
+The table contains list of common discovery host-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Retrieve discovery host details by Discovery Rule IDs | Use method **dhost.get** with parameter **dhostids** |

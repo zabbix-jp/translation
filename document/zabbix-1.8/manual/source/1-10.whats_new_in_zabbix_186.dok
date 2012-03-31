@@ -1,0 +1,45 @@
+===== - #10 What's new in Zabbix 1.8.6 =====
+
+
+
+==== - Frontend improvements ====
+
+  * When switching from one host to another while having a custom graph open, Zabbix will try to select a graph with the same name on the target host.
+  * Previously, graph mode //dynamic// or //fixed// was reset back to //fixed// whenever the page was reloaded. Starting with Zabbix 1.8.6, this mode is saved for each location (graphs, screens etc) individually.
+=== - Updated translations ===
+
+  * Japanese
+
+==== - Zabbix daemon improvements ====
+
+  * Zabbix proxy now logs a message when it receives the configuration data from the server.
+  * All Zabbix daemons now refuse to start up if configuration file contains unrecognised parameters. This should help to discover incorrectly spelt parameters.
+  * Improved Zabbix server performance when gathering text data.
+  * Improved Zabbix server performance when processing unsupported items. Previously, information about unsupported parameters was stored directly in the database bypassing write cache. Starting with 1.8.6, it uses write cache, thus reducing database load. [[:1.8/manual/config/items#internal_checks|Internal item]] **zabbix[wcache,...]** has been extended to monitor amount of //not supported// values in the cache.
+  * It is now possible to customise automatic host name setting on the Zabbix agent and proxy daemons. Previously, it always returned [[:1.8/manual/config/items#zabbix_agent|system.hostname]] contents. A new configuration parameter, [[:1.8/manual/processes/zabbix_agentd|HostnameItem]], allows to set another item that will be used if configuration parameter Hostname is not set. If both HostnameItem and Hostname are set, Hostname takes precedence.
+  * For Jabber/XMPP notifications, server now supports SRV record lookup.
+  * Improved housekeeper performance on PostgreSQL.
+  * Warnings while connecting to Oracle database are now logged.
+  * Zabbix agents and proxies now log their hostname in the log file when starting up. Additionally, Zabbix proxies log whether they are operating in the passive or active mode.
+=== - Configuration cache reloading ===
+
+Zabbix server and proxy daemons now have an ability to reload in-memory configuration cache upon request. This can be done by passing parameter **-R** or **%%--runtime-control%%** and a runtime control option. Currently only one runtime option is supported - **config_cache_reload**.
+
+Additional benefit when using active Zabbix proxies is that active proxy will request configuration from the Zabbix server upon receiving this request.
+
+When a daemon receives such a request, it also logs it in the logfile. If the request is sent while configuration cache is being updated, it is ignored (but log file entry about signal received is still added).
+==== - Item changes ====
+
+  * Item **vfs.file.md5sum[]** previously was limited to files less than 64MB. This limit has been removed in 1.8.6 and item is only limited by the time it takes to compute the checksum.
+  * Item **system.hostname[]** on Windows now has an additional parameter to choose between NetBIOS and host name.
+  * Items **vfs.dev.read** and **vfs.dev.write** have gained support for LVM. Additionally, in previous versions of Zabbix only relative device name could be used (like //sda//). Now **/dev/** prefix may also optionally be used. A few examples of supported syntax:
+    * vfs.dev.read[mapper/VolGroup01-LogVol00,sectors]
+    * vfs.dev.read[VolGroup01/LogVol00,sectors]
+    * vfs.dev.read[/dev/sda,operations]
+    * vfs.dev.read[sdb,operations]
+  * Items **net.tcp.dns.query** gained support for SRV records.
+  * **%%net.if.*%%** checks under Windows now support multibyte NIC names.
+
+==== - General changes ====
+
+Support for PostgreSQL 9+ was added.

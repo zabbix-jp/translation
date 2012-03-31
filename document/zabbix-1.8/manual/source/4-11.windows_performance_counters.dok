@@ -1,0 +1,50 @@
+==== 11 Windows performance counters ====
+Windows performance counter can be effectively monitored using perf_counter[].
+
+For example:
+  perf_counter["Processor(0)\Interrupts/sec"]
+or
+  perf_counter["Processor(0)\Interrupts/sec", 10]
+
+In order to get full list of performance counter available for monitoring you may run:
+  typeperf -qx
+Unfortunately, depending on local settings naming of the performance counters can be different on different Windows servers. This introduces certain problem when creating a template for monitoring number of Windows machines having different locales.
+
+Every performance counter can be translated into numeric form, which is unique and exactly the same regardless of language settings.
+
+Run **regedit**, then find //HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib\009//.
+The registry entry contains information like:
+  1
+  1847
+  2
+  System
+  4
+  Memory
+  6
+  % Processor Time
+  10
+  File Read Operations/sec
+  12
+  File Write Operations/sec
+  14
+  File Control Operations/sec
+  16
+  File Read Bytes/sec
+  18
+  File Write Bytes/sec
+  ....
+So, in order to translate string name of a performance counter into numeric form,
+find corresponding numbers for each part of the performance counter, like:
+  System -> 2
+  % Processor Time -> 6
+  \System\% Processor Time
+Then use these numbers to create a numeric format:
+  \2\6
+
+=== - Simple user parameters ===
+In order to define a new parameter for monitoring, one line has to be added to configuration file of Zabbix agent and the agent must be restarted.
+For example:
+     PerfCounter=UserPerfCounter1,"\Memory\Page Reads/sec",30
+     or
+     PerfCounter=UserPerfCounter2,"\4\24",30
+Then it is possible to use "UserPerfCounter1" and "UserPerfCounter2" as usual item checks in the frontend or elsewhere, simalar to UserParameter.

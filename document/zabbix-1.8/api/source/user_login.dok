@@ -1,0 +1,37 @@
+===== login() =====
+Available since version: **1.8**\\
+This function allows you to login to ZABBIX based on accepted parameters. This method mainly used for login from scripts with retrieving only authentication token. 
+All parameters are mandatory.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**user**|//string//| User login name | |
+|**password**|//string//| User login password | |
+
+====Returns====
+^Parameter^Description^
+|**result**| Operation successful. Result will contain authentication string.|
+|**error**|In case of any errors|
+
+==== Example ====
+Login in to ZABBIX by user alias "Admin" and password "zabbix":
+<code>
+{
+"jsonrpc":"2.0",
+"method":"user.login",
+"params":{
+	"user": "Admin",
+	"password":"zabbix"
+},
+"id":1
+}
+</code>
+
+Retrieved user authentication token:
+<code>
+{
+"jsonrpc":"2.0",
+"result":"a9a1f569d10d6339f23c4d122a7f5c46",
+"id":1
+}
+</code>

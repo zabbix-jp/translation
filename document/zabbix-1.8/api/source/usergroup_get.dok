@@ -1,0 +1,85 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve user group details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**usrgrpids**|//array//|UserGroup IDs | |
+|**userids**|//array//|User IDs | |
+|**status**|//boolean//| | |
+|**with_gui_access**|//boolean//|  | |
+|**with_api_access**|//boolean//|  | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by user group fields| |
+|**pattern**|//string//|Return hosts by given pattern  | |
+|**startPattern**|//integer//|Search given pattern only in start of the field  | |
+|**excludePattern**|//integer//|Exclude	from result, hosts by given pattern  | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**select_users**|//integer//|Select contained users  | |
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count user groups | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by user group field |Values: usrgrpid, name |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|Max number of user group objects to return | |
+
+====Returns====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of User group objects. |
+|**error**|In case of any errors |
+
+==== Example ====
+
+Get details for user groups with names "Debug group","Zabbix administrators", and select users **ID** in those groups :
+<code>
+{
+"jsonrpc":"2.0",
+"method":"usergroup.get",
+"params":{
+	"filter":{"name":["Debug group","Zabbix administrators"]},
+	"select_users":"refer",
+	"output":"extend"
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved details for user groups with names "Debug group","Zabbix administrators" :
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":[
+{
+	"users":[
+		{"userid":"100100000000005"}
+	],
+	"usrgrpid":"100100000000007",
+	"name":"Zabbix administrators",
+	"gui_access":"0",
+	"users_status":"0",
+	"api_access":"0",
+	"debug_mode":"0"
+},
+{
+	"users":[
+		{"userid":"100100000000005"},
+		{"userid":"100100000000001"},
+		{"userid":"100100000000003"},
+		{"userid":"100100000000004"},
+		{"userid":"100100000000018"}
+	],
+	"usrgrpid":"100100000000022",
+	"name":"Debug group",
+	"gui_access":"0",
+	"users_status":"0",
+	"api_access":"0",
+	"debug_mode":"1"
+}],
+"id":2
+}
+</code>

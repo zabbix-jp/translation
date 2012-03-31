@@ -1,0 +1,49 @@
+===== delete() =====
+Available since version: **1.8**\\
+This function allows you to delete information about one or several scripts. All script-related information will be removed including triggers, empty graphs, child scripts, historical data.
+
+==== Parameters ====
+Array of Script IDs
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of deleted Script IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Delete scripts by script **ID**
+<code>
+{
+"jsonrpc":"2.0",
+"method":"script.delete",
+"params":["107824",  "107825"],
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Scripts deleted successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "scriptids": ["107824", "107825"]
+},
+"id":2
+}
+</code>
+
+Scripts does not exist:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32500,
+      "message":"Application error.",
+      "data":"[ CScript::delete ] Script does not exist"
+},
+"id":2
+}
+</code>

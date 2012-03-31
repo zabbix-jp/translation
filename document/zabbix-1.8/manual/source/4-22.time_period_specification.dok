@@ -1,0 +1,29 @@
+==== 22 Time period specification ====
+
+=== - The format ===
+
+Time period has the following format:
+  d-d,hh:mm-hh:mm
+
+You can specify more than one time period using a semicolon (;) separator:
+  d-d,hh:mm-hh:mm;d-d,hh:mm-hh:mm...
+
+=== - Description ===
+
+^  Format  ^  Description  ^
+|**d**   |Day of week: 1 - Monday, 2 - Tuesday ,... , 7 - Sunday  |
+|**hh**  |Hours: 00-24    |
+|**mm**  |Minutes: 00-59  |
+
+<note important>The upper bound of time period specification is not included. E. g. if you specify 09:00-18:00 the last second included in the time period will be 17:59:59. This is true starting from version 1.8.7 for everything except [[1.8:manual:web_interface:administration#general|Working time]] which has always worked this way.</note>
+
+=== - Default ===
+
+Empty time specification equals to 01-07,00:00-24:00
+
+=== - Examples ===
+
+Working hours. Monday - Friday from 9:00 till 18:00:
+  1-5,09:00-18:00
+Working hours plus weekend. Monday - Friday from 9:00 till 18:00 and Saturday, Sunday from 10:00 till 16:00:
+  1-5,09:00-18:00;6-7,10:00-16:00

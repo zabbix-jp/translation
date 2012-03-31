@@ -1,0 +1,43 @@
+===== Maintenance =====
+==== Methods ====
+
+Class containing methods for operations with Maintenances.
+^Methods^Description^
+|[[1.8/api/maintenance/get|get()]] |Get maintenance details |
+|[[1.8/api/maintenance/exists|exists()]] |Check if maintenance exists |
+|[[1.8/api/maintenance/create|create()]] |Create maintenances |
+|[[1.8/api/maintenance/update|update()]] |Update maintenance details |
+|[[1.8/api/maintenance/delete|delete()]] |Delete maintenances |
+
+
+==== Object details ====
+
+The table contains complete list of Maintenance attributes.
+=== Maintenance ===
+^Parameter^Type^Description^Details^
+|maintenanceid|//integer//|Maintenance ID | |
+|name|//string//|Name. | |
+|maintenance_type|//integer//|Type.  |0: With data collection\\ 1: No data collection|
+|description|//string//|Description.  | |
+|active_since|//integer//|Activation date.  |Unix timestamp |
+|active_till|//integer//|Deactivation date.  |Unix timestamp |
+|timeperiods|//array of timeperiod objects//|Timeperiods | |
+
+=== Timeperiod ===
+^Parameter^Type^Description^Details^
+|timeperiod_type|//integer//|Type defines what fields are used and how values of those fields are processed.\\ Required fields by timeperiod type:\\ 0 - start_date, period;\\ 2 - start_time, period, every;\\ 3 - start_time, period, every, dayofweek;\\ 4 - start_time, period, every, dayofweek, month, day; |0: Onetime\\ 2: Daily\\ 3: Weekly\\ 4: Monthly|
+|every|//integer//|Depends on type:\\ 2 - every Nth day (if every=2 timeperiod is triggered every second day);\\ 3 - every Nth week\\ 4 - is used when field **day** is 0 and then means every Nth week of month (1 - 5)| |
+|month|//integer//|Number, got by converting binary number, where each bit represents one month (Dec is first bit, Jan is last bit) to decimal number.\\ For example if you need maintenance on March and April, binary representation is '000000001100' and decimal is 12.| |
+|dayofweek|//integer//|Used for type 3 and for type 4 when **day** is 0.\\ Number with week days calculated in same way as **month**. (Sun is first bit, Mon is last bit) | |
+|day|//integer//|If equal to 0 then field **every** and **dayofweek** are used, otherwise represents number of day on which timeperiod is triggered. | |
+|start_time|//integer//|Period start time in seconds | |
+|period|//integer//|Period length in seconds | |
+|start_date|//integer//|Period start date as Unix timestamp | |
+==== Common tasks ====
+The table contains list of common maintenance-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a maintenance | Use method **maintenance.create** |
+|Add a bunch of new maintenances | Use method **maintenance.create** with array of Maintenance objects |
+|Rename a maintenance | Use method **maintenance.update**, set **"name":"<new name>"** |
+|Retrieve maintenance details by Maintenance IDs | Use method **maintenance.get** with parameter **maintenanceids** |
+|Retrieve maintenance details by Maintenance name | Use method **maintenance.get** with parameter **filter**, specify **"name":"<your maintenance>"** |

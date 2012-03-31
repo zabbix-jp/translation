@@ -1,0 +1,18 @@
+==== - #3 Email settings ====
+
+
+Initially, Zabbix has several predefined notification delivery methods (media types). Email is one of those. Email configuration can be found under Menu -> Administration -> Media types. 
+
+{{:1.8:manual:quickstart:media_types.png?600|}}
+
+Click on //Email// in the list of pre-defined media types.
+
+{{:1.8:manual:quickstart:media_type_email.png|}}
+
+Set correct SMTP server, SMTP helo and SMTP email values. Press **Save** when ready.
+
+<note tip>//SMTP email// is used as the **From** address for outgoing e-mails.</note>
+
+{{:1.8:manual:quickstart:media_type_updated.png?600|}}
+
+Now you have media type "Email" defined. A media type must be linked with users, otherwise it will not be used.

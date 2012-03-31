@@ -1,0 +1,61 @@
+===== massUpdate() =====
+Available since version: **1.8**\\
+==== Parameters ====
+multidimensional array with Hosts data\\
+
+^Parameter         ^Type      ^Optional^Description^Details^
+|**hosts**         |//array// |        |Host objects to update | |
+|**host**          |//string//|        |Host name. | |
+|**groupids**      |//array// |        |Host group IDs to add host to. | |
+|**port**          |//int//   | Yes    |Port.  | |
+|**status**        |//int//   | Yes    |Host Status.  | |
+|**useip**         |//int//   | Yes    |Use IP.  | |
+|**dns**           |//string//| Yes    |DNS.  | |
+|**ip**            |//string//| Yes    |IP.  | |
+|**proxy_hostid**  |//int//   | Yes    |Proxy Host ID.  | |
+|**useipmi**       |//int//   | Yes    |Use IPMI.  | |
+|**ipmi_ip**       |//string//| Yes    |IPMI IP.  | |
+|**ipmi_port**     |//int//   | Yes    |IPMI port.  | |
+|**ipmi_authtype** |//int//   | Yes    |IPMI authentication type.  | |
+|**ipmi_privilege**|//int//   | Yes    |IPMI privilege.  | |
+|**ipmi_username** |//string//| Yes    |IPMI username.  | |
+|**ipmi_password** |//string//| Yes    |IPMI password.  | |
+
+==== Returns =====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of updated host IDs.|
+|**error** |In case of any errors|
+==== Example ====
+
+Enable two hosts and switch to monitoring by IP addresses:
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"host.massUpdate",
+"params":{
+    "hosts":[
+         {
+            "hostid": "69665"
+         },
+         {
+            "hostid": "69666"
+         }
+      ],
+      "status":0,
+      "useip":1
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+Hosts updated successfully:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+   "hostids":["69665","69666"]
+},
+"id":2
+}
+</code>

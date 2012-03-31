@@ -1,0 +1,85 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve item details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|HostGroup IDs | |
+|**hostids**|//array//|Host IDs | |
+|**templateids**|//array//|Template IDs | |
+|**proxyids**|//array//|Proxy IDs | |
+|**itemids**|//array//|Item IDs | |
+|**graphids**|//array//|Graph IDs | |
+|**triggerids**|//array//|Trigger IDs | |
+|**applicationids**|//array//|Application IDs | |
+|**webitems**|//integer//|Search **also** in web items | |
+|**inherited**|//integer//|Inherited from templates |"0" - not inherited, "1" - inherited |
+|**templated**|//integer//|Templated items |"0" - belongs to hosts, "1" - belongs to templates |
+|**monitored**|//integer//|Monitored items |Checks item and host status |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by item fields| |
+|**group**|//string//|Optional filter by host group name | |
+|**host**|//string//|Optional filter by host name | |
+|**application**|//string//|Optional filter by application name | |
+|**belongs**|//string//|Optional filter by host fields| |
+|**with_triggers**|//integer//|Items with triggers| |
+|**search**|//string//|Return items by given item fields pattern | |
+|**startSearch**|//integer//|Search given patterns only in start of the field  | |
+|**excludeSearch**|//integer//|Exclude	from result items by given patterns | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select hosts| Values: shorten, refer, extend|
+|**select_triggers**|//string//|Select item triggers| Values: shorten, refer, extend|
+|**select_graphs**|//string//|Select item graphs| Values: shorten, refer, extend|
+|**select_applications**|//string//|Select item applications| Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count hosts, returned number of found hosts | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by item field |Values: itemid,description,key_,delay,history,trends,type,status |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Item objects.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+Get items details by item description pattern "Apache" and limit output to 10 items, return only **item** IDS:
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"item.get",
+"params":{
+	"output":"shorten",
+	"search": {"description": "apache"},
+	"limit": 10
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved items details:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"result":[
+	{"itemid":"100100000010048"},
+	{"itemid":"100100000010137"},
+	{"itemid":"100100000017431"},
+	{"itemid":"100100000017533"},
+	{"itemid":"100100000017635"},
+	{"itemid":"100100000017737"},
+	{"itemid":"100100000017839"},
+	{"itemid":"100100000017941"},
+	{"itemid":"100100000018043"},
+	{"itemid":"100100000018145"}
+],
+"id":2
+}
+</code>

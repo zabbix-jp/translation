@@ -1,0 +1,48 @@
+===== massUpdate() =====
+Available since version: **1.8**\\
+This method is used to link users or rights with user groups. Available only to super admins.
+
+==== Parameters ====
+Multidimensional array with User groups data\\
+
+^Parameter^Type^Optional^Description^Details^
+|**usrgrpids**|//array//| |User group IDs. | |
+|**userids**|//array//| Yes |User IDs. | New users will be added, missed removed for listed user groups in request. |
+|**rights**|//array//| Yes |Host group rights |New rights will be added, existed updated, missed removed for listed user groups in request. | |
+|**user group attribute**|//any//| Yes |New value for a user group attribute.  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated User group IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Update rights on host groups with **ID** "100100000010092", "100100000010093" for user group with **ID** "100100000000013" and rename user group to "Renamed"
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"usergroup.massUpdate",
+"params":{ 
+	"usrgrpids": ["100100000000043"],
+	"rights": [
+		{"permisssion": 3, "id": "100100000010092"},
+		{"permisssion": 2, "id": "100100000010093"}
+	],
+	"name": "Renamed"
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+
+User groups updated successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+	"usrgrpids": ["100100000000043"]
+},
+"id":2
+}
+</code>

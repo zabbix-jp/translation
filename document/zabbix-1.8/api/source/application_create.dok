@@ -1,0 +1,50 @@
+===== create() =====
+This function allows you to create a application as defined by the **application data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**application data**|//array or object//|  |Array of Application objects or a single object|**applicationid** shouldn't be specified |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Application IDs. **applicationid** are assigned to each Application object |
+|**error**|In case of any errors|
+
+==== Example ====
+Create new application for host with Host **ID** "100100000010048"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"application.create",
+"params":[{
+      "name": "SNMP Items",
+      "hostid": "100100000010048",
+}],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":2
+}
+</code>
+
+Application created successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "applicationids": ["100100000214797"]
+},
+"id":2
+}
+</code>
+
+Application already exists:
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CApplication::create ] Cannot create Application"
+},
+"id":2
+}
+</code>

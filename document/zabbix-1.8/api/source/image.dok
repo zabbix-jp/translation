@@ -1,0 +1,27 @@
+===== Image =====
+==== Methods ====
+
+Class containing methods for operations with Images.
+^Methods^Description^
+|[[1.8/api/image/get|get()]] |Get image details |
+|[[1.8/api/image/exists|exists()]] |Check if image exists |
+|[[1.8/api/image/create|create()]] |Create images |
+|[[1.8/api/image/update|update()]] |Update image details |
+|[[1.8/api/image/delete|delete()]] |Delete images |
+==== Object details ====
+
+The table contains complete list of Image attributes.
+
+^Parameter^Type^Description^Details^
+|imageid|//int//|Image ID  | |
+|imagetype|//int//|Type | |
+|name|//string//|Image description | |
+|image|//string//|Image binary data | Sent as base64 encoded string |
+
+==== Common tasks ====
+The table contains list of common image-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add an image | Use method **image.create** |
+|Add a bunch of new images | Use method **image.create** with array of Image objects |
+|Retrieve image details by Image IDs | Use method **image.get** with parameter **imageids** |
+|Retrieve images details by Image name | Use method **image.get** with parameter **filter**, specify **"name": ["<your image>"]** |

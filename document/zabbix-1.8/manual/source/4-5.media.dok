@@ -1,0 +1,40 @@
+==== 5 Media ====
+
+
+A medium is a delivery channel for Zabbix alerts. None, one or more media types can be assigned to user.
+
+=== Email ===
+
+Email notification.
+
+=== Jabber ===
+
+Notifications using Jabber messaging.
+
+When sending notifications, Zabbix tries to look up a Jabber SRV record first, and if that fails, it uses an address record for that domain. Among Jabber SRV records, the one with the highest priority and maximum weight is chosen. If it fails, other records are not tried.
+
+Looking up Jabber SRV records is supported since Zabbix 1.8.6. Prior to that Zabbix only tried an address record.
+=== Script ===
+
+Custom media scripts are executed from the path defined in the [[1.8:manual:processes:zabbix_server|Zabbix server configuration file]] variable **AlertScriptPath**. The script has three command line variables passed to it:
+
+  * Recipient
+  * Subject
+  * Message
+
+Environment variables are not preserved or created for the script, so they should be handled explicitly.
+
+=== GSM Modem ===
+
+Zabbix supports sending of SMS messages using Serial GSM Modem connected to Zabbix Server's serial port.
+
+Make sure that:
+
+  * Speed of a serial device (normally /dev/ttyS0 under Linux) matches GSM Modem. Zabbix does not set speed of the serial link. It uses default settings.
+  * The serial device has read/write access for user zabbix. Run commans ls –l /dev/ttyS0 to see current permission of the serial device.
+  * GSM Modem has PIN entered and it preserves it after power reset. Alternatively you may disable PIN on the SIM card. PIN can be entered by issuing command AT+CPIN="NNNN" (NNNN is your PIN number, the quotes must present) in a terminal software, such as Unix minicom or Windows HyperTerminal.
+
+Zabbix has been tested with the following GSM modems:
+
+  * Siemens MC35
+  * Teltonika ModemCOM/G10

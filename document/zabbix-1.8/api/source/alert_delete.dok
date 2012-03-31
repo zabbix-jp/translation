@@ -1,0 +1,49 @@
+===== delete() =====
+Available since version: **1.8**\\
+This function allows you to delete information about one or several alerts. All alert-related information will be removed including triggers, empty graphs, child alerts, historical data.
+
+==== Parameters ====
+Array of Alert IDs
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of deleted Alert IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Delete alerts by alert **ID**
+<code>
+{
+"jsonrpc":"2.0",
+"method":"alert.delete",
+"params":["107824",  "107825"],
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Alerts deleted successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "alertids": ["107824", "107825"]
+},
+"id":2
+}
+</code>
+
+Alerts does not exist:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32500,
+      "message":"Application error.",
+      "data":"[ CAlert::delete ] Alert does not exist"
+},
+"id":2
+}
+</code>

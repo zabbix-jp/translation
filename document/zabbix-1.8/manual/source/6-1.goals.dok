@@ -1,0 +1,13 @@
+==== - #1 Goals ====
+
+Zabbix Import/Export functionality is created to make possible effective exchange of various configuration entities.
+
+Data is exported in XML format which is easy to read and modify.
+
+Use cases:
+  * Sharing of templates or network maps
+Zabbix users may share configuration parameters.
+  * Integration with third-party tools
+Universal XML format makes integration and data import/export possible with third party tools and applications.
+
+<note tip>Exporting and importing network maps is supported since Zabbix version 1.8.2.</note>

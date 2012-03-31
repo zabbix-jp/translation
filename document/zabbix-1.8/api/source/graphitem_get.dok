@@ -1,0 +1,79 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve graph details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**graphids**|//array//|Graph IDs | |
+|**itemids**|//array//|Item IDs | |
+|**type**|//integer//|Graph item type | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**expandData**|//string//|Adds additional fields to result | Values: shorten, refer, extend|
+|**select_graphs**|//string//|Select graphs | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count graphs, returned number of found graphs | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by graph field |Values: graphid,graph,status,dns,ip |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of graph objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of graph objects.|
+|**error**|In case of any errors|
+==== Example ====
+
+Get graph items details by graph ID:
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"graphitem.get",
+"params":{
+	"graphids": ["100100000012214"],
+	"output": "extend"
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved graph item details:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"result":
+[{
+	"graphs":[{
+		"graphid":"100100000012214"
+	}],
+	"gitemid":"100100000025237",
+	"graphid":"100100000012214",
+	"itemid":"100100000018506",
+	"drawtype":"0",
+	"sortorder":"0",
+	"color":"009900",
+	"yaxisside":"1",
+	"calc_fnc":"2",
+	"type":"0",
+	"periods_cnt":"5"
+},{
+	"graphs":[{
+		"graphid":"100100000012214"
+	}],
+	"gitemid":"100100000025240",
+	"graphid":"100100000012214",
+	"itemid":"100100000018529",
+	"drawtype":"0",
+	"sortorder":"6",
+	"color":"660066",
+	"yaxisside":"1",
+	"calc_fnc":"2",
+	"type":"0",
+	"periods_cnt":"5"
+}],
+"id":2
+}
+</code>

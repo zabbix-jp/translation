@@ -1,0 +1,50 @@
+===== delete() =====
+Available since version: **1.8**\\
+This function allows you to delete information about one or several maps. Map items and links will be removed.
+
+==== Parameters ====
+Array of Map IDs
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of deleted Map IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Delete maps by map **ID**
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"map.delete",
+"params":["107824",  "107825"],
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Maps deleted successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "sysmapids": ["107824", "107825"]
+},
+"id":2
+}
+</code>
+
+Maps does not exist:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32500,
+      "message":"Application error.",
+      "data":"[ CMap::delete ] Map does not exist"
+},
+"id":2
+}
+</code>

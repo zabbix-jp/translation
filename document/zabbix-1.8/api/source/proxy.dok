@@ -1,0 +1,28 @@
+===== Proxy =====
+==== Methods ====
+
+Class containing methods for operations with Proxys.
+^Methods^Description^
+|[[1.8/api/proxy/get|get()]] |Get proxy details |
+|[[1.8/api/proxy/create|create()]] |Create proxys |
+|[[1.8/api/proxy/delete|delete()]] |Delete proxys |
+
+
+==== Object details ====
+
+The table contains complete list of Proxy attributes.
+
+^Parameter^Type^Description^Details^
+|proxyid|//integer//|Proxy ID | |
+|host|//string//|Proxy name. | |
+|status|//integer//|Proxy Status.  | |
+
+==== Common tasks ====
+The table contains list of common proxy-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a proxy | Use method **proxy.create** |
+|Add a bunch of new proxys | Use method **proxy.create** with array of Proxy objects |
+|Enable a proxy | Use method **proxy.update**, set **"status":5** |
+|Disable a proxy | Use method **proxy.update**, set **"status":6** |
+|Retrieve proxy details by Proxy IDs | Use method **proxy.get** with parameter **proxyids** |
+|Retrieve proxy details by Proxy name | Use method **proxy.get** with parameter **filter**, specify **"host":"<your proxy>"** |

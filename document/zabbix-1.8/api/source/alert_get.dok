@@ -1,0 +1,73 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve alert details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|HostGroup IDs | |
+|**hostids**|//array//|Host IDs | |
+|**alertids**|//array//|Alert IDs | |
+|**triggerids**|//array//|Trigger IDs | |
+|**eventids**|//array//|Event IDs | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by alert fields| |
+|**time_from**|//integer//|Search alerts from given date | Unix timestamp|
+|**time_till**|//integer//|Search alerts till given date | Unix timestamp|
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select hosts| Values: shorten, refer, extend|
+|**select_mediatypes**|//string//|Select mediatypes| Values: shorten, refer, extend|
+|**select_users**|//string//|Select users| Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count hosts, returned number of found hosts | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by host field |Values: alertid,clock,eventid,status |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of host objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Alert objects.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+Get alerts details by trigger **IDs** and limit output to 10 alerts, return only **alert** IDS:
+<code>
+{
+"jsonrpc":"2.0",
+"method":"alert.get",
+"params":{
+	"output":"shorten",
+	"triggerids": ["100100000010137", "100100000010138"],
+	"time_from": 1285077093,
+	"time_till": 1285107165,
+	"limit": 10
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved alerts details:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":[
+	{"alertid":"100100000010048"},
+	{"alertid":"100100000010137"},
+	{"alertid":"100100000017431"},
+	{"alertid":"100100000017533"},
+	{"alertid":"100100000017635"},
+	{"alertid":"100100000017737"},
+	{"alertid":"100100000017839"},
+	{"alertid":"100100000017941"},
+	{"alertid":"100100000018043"},
+	{"alertid":"100100000018145"}
+],
+"id":2
+}
+</code>

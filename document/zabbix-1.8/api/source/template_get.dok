@@ -1,0 +1,112 @@
+===== get() =====
+
+Available since version: **1.8**\\
+This function allows you to retrieve template details based on filtering options.
+All paramters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|TemplateGroup IDs | |
+|**templateids**|//array//|Template IDs | |
+|**parentTemplateids**|//array//|Parent template IDs | |
+|**hostids**|//array//|Host IDs | |
+|**itemids**|//array//|Item IDs | |
+|**triggerids**|//array//|Trigger IDs | |
+|**graphids**|//array//|Graph IDs | |
+|**proxyids**|//array//|Proxy IDs | |
+|**maintenanceids**|//array//|Maintenance IDs | |
+|**with_items**|//integer//|only with items | |
+|**with_triggers**|//integer//|only with triggers | |
+|**with_graphs**|//integer//|only with graphs | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by template fields| |
+|**search**|//array//|Return templates by any given host object field pattern  | |
+|**startSearch**|//integer//|Search templates field pattern only in start of the field  | |
+|**excludeSearch**|//integer//|Exclude from result, templates by given field pattern  | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_groups**|//string//|Select template groups| Values: shorten, refer, extend|
+|**selectParentTemplates**|//string//|Select parent templates of current template | Values: shorten, refer, extend|
+|**select_templates**|//string//|Select child templates of current template | Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select linked hosts | Values: shorten, refer, extend|
+|**select_items**|//string//|Select template items | Values: shorten, refer, extend|
+|**select_triggers**|//string//|Select template triggers | Values: shorten, refer, extend|
+|**select_graphs**|//string//|Select template graphs | Values: shorten, refer, extend|
+|**select_applications**|//string//|Select template applications | Values: shorten, refer, extend|
+|**select_macros**|//string//|Select template macros | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count templates, returned number of found templates | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by template field |Values: templateid,template,status,dns,ip |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of template objects to return | |
+
+====Returns====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Template objects.|
+|**error**|In case of any errors|
+==== Example ====
+
+Get templates details by template name "Template Linux":
+<code>
+{
+"jsonrpc":"2.0",
+"method":"template.get",
+"params":{
+	"output":"extend",
+	"filter":{
+		"host":"Template_Linux"
+		}
+	},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved template details:
+<code>
+{
+"jsonrpc":"2.0",
+"result":[
+{
+	"templateid":"100100000010001",
+	"hostid":"100100000010001",
+	"proxy_hostid":"0",
+	"host":"Template_Linux",
+	"dns":"",
+	"useip":"0",
+	"ip":"",
+	"port":"10050",
+	"status":"3",
+	"disable_until":"0",
+	"error":"",
+	"available":"0",
+	"errors_from":"0",
+	"lastaccess":"0",
+	"inbytes":"0",
+	"outbytes":"0",
+	"useipmi":"0",
+	"ipmi_port":"623",
+	"ipmi_authtype":"0",
+	"ipmi_privilege":"2",
+	"ipmi_username":"",
+	"ipmi_password":"",
+	"ipmi_disable_until":"0",
+	"ipmi_available":"0",
+	"snmp_disable_until":"0",
+	"snmp_available":"0",
+	"maintenanceid":"0",
+	"maintenance_status":"0",
+	"maintenance_type":"0",
+	"maintenance_from":"0",
+	"ipmi_ip":"127.0.0.1",
+	"ipmi_errors_from":"0",
+	"snmp_errors_from":"0",
+	"ipmi_error":"",
+	"snmp_error":""
+}
+],
+"id":2
+}
+</code>

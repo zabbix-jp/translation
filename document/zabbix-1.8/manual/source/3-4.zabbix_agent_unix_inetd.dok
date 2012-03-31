@@ -1,0 +1,14 @@
+==== - #4 Zabbix Agent (UNIX, Inetd version) ====
+
+
+The file contains configuration parameters for zabbix_agent. The file must exist and it should have read permissions for user 'zabbix'. Supported parameters:
+
+^Parameter^Mandatory^Default value^Description^
+| Alias| no | |Sets an alias for parameter. It can be useful to substitute long and complex parameter name with a smaller and simpler one. \\ \\ Starting from version 1.8.6 Zabbix Agent will terminate in case incorrectly formatted Alias entry or duplicate Alias key is present in configuration file.|
+| Include| no | |You may include individual files or all files in a directory in the configuration file. |
+|Server| yes |-|Comma-delimited list of IP addresses of ZABBIX Servers or Proxies. Connections from other IP addresses will be rejected.|
+|Timeout| no |3|Do not spend more than Timeout seconds on getting requested value (1-255). The agent does not kill timeouted User Parameters processes!|
+| UnsafeUserParameters| no |0 |Allow all characters to be passed in arguments to user-defined parameters |
+| UserParameter| no | |User-defined parameter to monitor. There can be several user-defined parameters.\\ Format: UserParameter=<key>,<shell command>\\ Note that shell command must not return empty string or EOL only.\\ Example: UserParameter=system.test,who%%|%%wc -l \\ \\ Starting from version 1.8.6 Zabbix Agent will terminate in case incorrectly formatted UserParameter entry or duplicate UserParameter key is present in configuration file.|
+
+<note>Starting from version 1.8.6 Zabbix Agent will terminate if invalid (not following //parameter=value// notation) or unknown parameter entry is present in configuration file.</note>

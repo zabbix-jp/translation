@@ -1,0 +1,71 @@
+===== get() =====
+Available since version: **1.8**\\
+This method allows you to retrieve maintenance details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|HostGroup IDs | |
+|**hostids**|//array//|Host IDs | |
+|**maintenanceids**|//array//|Maintenance IDs | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by maintenance fields| |
+|**pattern**|//string//|Return maintenances by given pattern  | |
+|**startPattern**|//integer//|Search given pattern only in start of the field  | |
+|**excludePattern**|//integer//|Exclude	from result, maintenances by given pattern  | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_groups**|//string//|Select host groups | Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select hosts | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count maintenances, returned number of found maintenances | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by maintenance field |Values: maintenanceid, name |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of maintenance objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Maintenance objects.|
+|**error**|In case of any errors|
+==== Example ====
+
+Get maintenances details by maintenance name pattern "Server" and limit output to two maintenances:
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"maintenance.get",
+"params":{
+	"pattern": "server",
+	"output": "extend",
+	"select_hosts": "refer",
+	"select_groups": "refer",
+	"limit": 2
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved maintenance details:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"result":[{
+	"groups":[],
+	"hosts":[{
+		"hostid":"100100000010229",
+		"maintenanceid":"100100000000005"
+	}],
+	"maintenanceid":"100100000000005",
+	"name":"Zabbix server maintenance",
+	"maintenance_type":"0",
+	"description":"",
+	"active_since":"1276163035",
+	"active_till":"1307698980"
+}],
+"id":2
+}
+</code>

@@ -1,0 +1,23 @@
+===== 4 Configuration =====
+
+{{page>1.8/manual/config/actions}}
+{{page>1.8/manual/config/macros}}
+{{page>1.8/manual/config/applications}}
+{{page>1.8/manual/config/graphs}}
+{{page>1.8/manual/config/medias}}
+{{page>1.8/manual/config/host_templates}}
+{{page>1.8/manual/config/host_groups}}
+{{page>1.8/manual/config/host_and_trigger_dependencies}}
+{{page>1.8/manual/config/items}}
+{{page>1.8/manual/config/user_parameters}}
+{{page>1.8/manual/config/1.8/manual/config/windows_performance_counters}}
+{{page>1.8/manual/config/triggers}}
+{{page>1.8/manual/config/screens_and_slide_shows}}
+{{page>1.8/manual/config/it_services}}
+{{page>1.8/manual/config/user_permissions}}
+{{page>1.8/manual/config/the_queue}}
+{{page>1.8/manual/config/utilities}}
+{{page>1.8/manual/config/regexps}}
+{{page>1.8/manual/config/defines}}
+{{page>1.8/manual/config/suffixes}}
+{{page>1.8/manual/config/time_period}}

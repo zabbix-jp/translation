@@ -1,0 +1,47 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether trigger with given trigger data exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given item |  |
+|**description**|//string//|No |Trigger description |  |
+|**expression**|//string//|No |Trigger expression |  |
+|**hostid**|//string//|yes |Host ID |  |
+|**host**|//string//|yes |Host name |  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+==== Example ====
+
+Check if trigger with description "APC: System UPS Load" and expression "{TEST_hp3000:vfs.file.cksum[c:\config.sys].last(0)}=0" exists
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"trigger.exists",
+"params":{
+	"host":"ZABBIX-Server",
+	"description":"Apache is not running on {HOSTNAME}",
+	"expression":"{ZABBIX-Server:proc_cnt[httpd].last(0)}<1"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Trigger exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

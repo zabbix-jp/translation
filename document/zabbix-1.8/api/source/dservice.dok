@@ -1,0 +1,30 @@
+===== DService =====
+==== Methods ====
+
+Class containing methods for operations with Discovered Services.
+^Methods^Description^
+|[[1.8/api/dservice/get|get()]] |Get discovery service details |
+
+
+==== Object details ====
+
+The table contains complete list of Discovery Service attributes.
+
+^Parameter^Type^Description^Details^
+|**dserviceid**|//integer//|Discovery Service ID | |
+|**dhostid**|//integer//|Discovery Host ID | |
+|**dcheckid**|//integer//|Discovery Check ID | |
+|**type**|//integer//|Service type  | |
+|**key_**|//string//| ZABBIX Agent key | |
+|**port**|//integer//|Port | |
+|**value**|//integer//|Value | |
+|**status**|//integer//|Status | |
+|**lastup**|//integer//|Last date of UP state | |
+|**lastdown**|//integer//|Last date of DOWN state | |
+|**ip**|//string//|Discovered host IP | |
+
+
+==== Common tasks ====
+The table contains list of common discovery service-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Retrieve discovery service details by Discovery Rule IDs | Use method **dservice.get** with parameter **dserviceids** |

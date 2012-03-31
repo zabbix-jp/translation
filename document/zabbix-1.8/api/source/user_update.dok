@@ -1,0 +1,42 @@
+===== update() =====
+Available since version: **1.8**\\
+The method is used to control all user attributes including user group linkage. The method is available only to super admins.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**userid**|//string//|  |User ID. | |
+|**user attribute**|//any//| Yes |New value for a user attribute.  | |
+|**usrgrps**|//any//| Yes |New list of user groups.  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated User IDs.|
+|**error**|In case of any errors|
+
+==== Example =====
+Rename user, .i.e set its name to 'New user name':
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "method":"user.update",
+   "params":{
+      "userid": "100100000010092",
+      "name": "New user name"
+   },
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated user IDs:
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "result": {
+       "userids":["100100000010092"]
+   },
+   "id":2
+  }
+</code>

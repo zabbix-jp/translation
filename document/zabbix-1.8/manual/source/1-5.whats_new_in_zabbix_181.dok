@@ -1,0 +1,60 @@
+===== - #5 What's new in Zabbix 1.8.1 =====
+
+==== - Calculated items ====
+
+Zabbix 1.8.1 adds support for a new item type - [[:1.8/manual/config/items#calculated_items|calculated items]]. These allow to reuse data from other items, making all kinds of calculations in the process.
+==== - New and changed items ====
+
+  * added support of **system.stat[]** under AIX;
+  * added support of **net.if.*** under Windows;
+  * added support of **net.if.list** on Windows;
+  * added support of **kernel.maxproc[]** under Linux 2.6;
+  * added possibility to exclude some services from the result of Windows key **services[]**.
+
+==== - Frontend improvements ====
+=== - Single problem handling in maps ===
+
+There's now an option for each map, controlling single problem displaying. If it is marked, previous behaviour is used - single problem has trigger name displayed. If it is disabled, single problem is listed as "1 Problem"
+
+{{:1.8:manual:about:expand_single_problem.png|}}
+
+And this is the effect it has on maps:
+
+|  {{:1.8:manual:about:map_before.png|}}  |  {{:1.8:manual:about:map_after.png|}}  |
+|  Expanding of the problem enabled  |  Expanding of the problem disabled  |
+
+=== - Read-only hosts better represented ===
+
+Hosts that user does not have write permissions to (but has read permissions) are disabled in hostgroup properties and can not be operated by the user. Previously these hosts were not visible at all.
+
+{{:1.8:manual:about:hostgroup_properties.png|}}
+=== - Host status widget in dashboard ===
+
+A new widget has been added to dashboard - host status. It shows host groups and how many hosts in each group have at least one problem. For those that have, field is coloured according to the trigger with highest severity.
+
+{{:1.8:manual:about:host_status.png|}}
+=== - Changes to Zabbix status reporting ===
+
+As of version 1.8.1, "Status of Zabbix" dashboard widget and report is only available to users of Zabbix Superadmin type. Additionally, this report/widget shows any PHP installation or configuration problems found.
+
+{{:1.8:manual:about:new_status_of_zabbix.png?600|}}
+=== - Item colouring in trigger editing ===
+
+Trigger editing now colours items according to their status - green for enabled, red for disabled and grey for unsupported. This simple change should make identifying any problems with triggers much easier.
+
+{{:1.8:manual:about:coloured_item_statuses.png|}}
+
+=== - Unacknowledged event filter ===
+
+New filter option added for Monitoring -> Triggers view - "Show triggers with unacknowledged events". This option hides triggers that have all their events acknowledged.
+=== - Updated translations ===
+
+Translations for the following languages have been updated:
+
+  * Russian;
+  * Japanese;
+  * French.
+==== - Other changes ====
+
+  * Database index fixed, improving node synchronisation a lot. See [[http://www.zabbix.com/rn1.8.1.php|release notes]] for upgrade instruction. Fixed index is used by default in new installations.
+  * API version changed to 1.1.

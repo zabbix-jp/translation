@@ -1,0 +1,49 @@
+===== create() =====
+This function allows you to create a user group as defined by the **user group data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**usergroup data**|//array or object//|  |Array of User group objects or a single object|**usrgrpid** shouldn't be specified |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created User group IDs. **usrgrpid** are assigned to each User group object |
+|**error**|In case of any errors|
+==== Example ====
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"usergroup.create",
+"params":[
+   {"name":"Debug Group"}
+],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+User group created successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "usrgrpids": ["107819"]
+},
+"id":3
+}
+</code>
+
+User group already exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CUserGroup::create ] User group [ Debug Group ] already exists"
+},
+"id":3
+}
+</code>

@@ -1,0 +1,63 @@
+===== create() =====
+This method allows you to create a host as defined by the **host data** array.
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**host data**|//array or object//| No |Array of Host objects or a single object|**hostid** shouldn't be specified |
+|**groups**|//array//| No |HostGroup Objects add Host to. | |
+|**templates**|//array//| No |Templates Objects link Host to. | |
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Host IDs. **hostid** are assigned to each Host object |
+|**error**|In case of any errors|
+==== Example ====
+
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"host.create",
+"params":{
+      "host":"Linux001",
+      "ip":"192.168.3.1",
+      "port":10050,
+      "useip":1,
+      "groups":[
+         {
+            "groupid":50
+         }
+      ],
+      "templates":[
+         {
+            "templateid":20045
+         }
+      ]
+   },
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+Host added successfully:
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+   "hostids": ["107819"]
+},
+"id":3
+}
+</code>
+
+Host already exists:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CHost::create ] Host [ Linux001 ] already exists"
+},
+"id":3
+}
+</code>

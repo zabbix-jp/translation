@@ -7,3 +7,13 @@ frontend/omegat/*
 frontend/target/*
 frontend/tm/*
 frontend/tm/auto/*
+
+document/zabbix-1.8/api/omegat/*
+document/zabbix-1.8/api/target/*
+document/zabbix-1.8/api/tm/*
+document/zabbix-1.8/api/auto/*
+
+document/zabbix-1.8/manual/omegat/*
+document/zabbix-1.8/manual/target/*
+document/zabbix-1.8/manual/tm/*
+document/zabbix-1.8/manual/auto/*

@@ -1,0 +1,42 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether template with given template name or template ID exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given template ID or template name|  |
+|**hostid**|//string//|yes |Template ID|  |
+|**host**|//string//|yes |Template name|  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+==== Example ====
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"template.exists",
+"params":{
+   "nodeids": ["1"],
+   "host": "Template Linux"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Template exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

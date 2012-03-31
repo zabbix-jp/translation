@@ -1,0 +1,31 @@
+===== Hostgroup =====
+==== Methods ====
+
+Class containing methods for operations with Hosts.
+^Methods^Description^
+|[[1.8/api/hostgroup/get|get()]] |Get host group details |
+|[[1.8/api/hostgroup/exists|exists()]] |Check if host group exists |
+|[[1.8/api/hostgroup/create|create()]] |Create host groups |
+|[[1.8/api/hostgroup/update|update()]] |Update host group details |
+|[[1.8/api/hostgroup/delete|delete()]] |Delete host groups |
+|[[1.8/api/hostgroup/massAdd|massAdd()]] |Mass add templates, hosts to host groups |
+|[[1.8/api/hostgroup/massUpdate|massUpdate()]] |Mass update host group details, update list of templates, hosts |
+|[[1.8/api/hostgroup/massRemove|massRemove()]] |Mass remove templates, hosts |
+
+
+==== Object details ====
+
+The table contains complete list of Host attributes.
+
+^Parameter^Type^Description^Details^
+|groupid|//int//|Host ID | |
+|name|//string//|Host name. | |
+|internal|//integer//|HostGroup status, if equal to 1 - host group can't be deleted. | |
+
+==== Common tasks ====
+The table contains list of common host-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a host group | Use method **hostgroup.create** |
+|Add a bunch of new host groups | Use method **hostgroup.create** with array of Host group objects |
+|Retrieve host group details by Group IDs | Use method **hostgroup.get** with parameter **groupids** |
+|Retrieve host group details by Host group name | Use method **hostgroup.get** with parameter **filter**, specify **"name":"<your hostgroup>"** |

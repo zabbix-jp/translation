@@ -1,0 +1,43 @@
+===== update() =====
+
+Available since version: **1.8**\\
+The method is used to control user group attributes. 
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**user group attribute**|//any//| Yes |New value for a user group attribute.  | |
+
+==== Returns =====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated User group IDs.|
+|**error**|In case of any errors|
+==== Example =====
+
+Rename user group:
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "method":"usergroup.update",
+   "params":[
+		{"usrgrpid": "100100000000042", "name": "Rename 1"},
+		{"usrgrpid": "100100000000013", "name": "Rename 2"}
+	],
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated user IDs:
+
+<code>
+  {
+    "jsonrpc":"2.0",
+    "result": {
+	"usrgrpids":["100100000000042","100100000000013"]
+    },
+    "id":2
+  }
+</code>

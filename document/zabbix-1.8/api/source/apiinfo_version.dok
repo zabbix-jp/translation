@@ -1,0 +1,35 @@
+===== version() =====
+Available since version: **1.8.1**\\
+Get Zabbix API version. 
+
+==== Parameters ====
+This method does not accept any parameters.
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain API version string.|
+|**error**|In case of any errors|
+
+
+==== Example ====
+
+Get Zabbix API version:
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"apiinfo.version",
+"params":[],
+"auth":"a6e895b98fde40f4f7badf112fd983bf",
+"id":2
+}
+</code>
+Retrieved API version:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"result":"1.3",
+"id":2
+}
+</code>
+

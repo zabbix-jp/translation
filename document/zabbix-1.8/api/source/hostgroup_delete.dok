@@ -1,0 +1,63 @@
+===== delete() =====
+Available since version: **1.8**\\
+This function allows you to delete information about one or several host groups. 
+
+Host group can't be deleted:
+  - contained hosts are linked to single(deleted) host group, hosts must be linked to at least one host group;
+  - host group is used to link discovered hosts to it (Administration->General->Other);
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**groups**|//array//|  |Array of Host Group objects|  |
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of deleted Host Group IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"hostgroup.delete",
+"params":[
+      {
+         "groupid":107824
+      },
+      {
+         "groupid":107825
+      }
+],
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Host Groups deleted successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "groupids": ["107824", "107825"]
+},
+"id":2
+}
+</code>
+
+Host Group does not exist:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32500,
+      "message":"Application error.",
+      "data":"[ CHostgroup::delete ] Host group does not exist"
+},
+"id":2
+}
+</code>

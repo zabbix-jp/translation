@@ -1,0 +1,45 @@
+===== addDependencies() =====
+This function allows you to create trigger dependencies.
+
+==== Parameters ====
+Array of hashes 
+^Parameter^Type^Optional^Description^Details^
+|**triggerid**|//integer//|Child trigger **ID** | |
+|**dependsOnTriggerid**|//integer//|Parent trigger **ID** | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Trigger IDs. |
+|**error**|In case of any errors|
+
+==== Example ====
+Add dependencies to trigger with trigger **ID** "100100000064544", so it would depend on triggers with trigger **ID** "100100000064537" and "100100000064538"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"trigger.addDependencies",
+"params":[
+	{
+		"triggerid": "100100000064544",
+		"dependsOnTriggerid": "100100000064537"
+	},
+	{
+		"triggerid": "100100000064544",
+		"dependsOnTriggerid": "100100000064538"
+	}	
+],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":2
+}
+</code>
+
+Trigger updated successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "triggerids": ["100100000064544"]
+},
+"id":2
+}
+</code>

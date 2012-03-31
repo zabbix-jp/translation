@@ -1,0 +1,58 @@
+===== update() =====
+Available since version: **1.8**\\
+The method is used to control all action attributes including action conditions and operations.
+
+==== Parameters ====
+^Parameter                 ^Type               ^Optional^Description^Details^
+|**actionid**              |//string//         |        |Action ID. | |
+|**action attribute**      |//any//            | Yes    |New value for an action attribute.  | |
+|**action conditions data**|//array or object//|        | array of action conditions objects| |
+|**action operations data**|//array or object//|        | array of action operations objects| |
+
+
+==== Returns =====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of updated action IDs.|
+|**error** |In case of any errors|
+
+==== Example =====
+
+Set action name to "New Name":
+
+<code js>
+  {
+   "jsonrpc": "2.0",
+   "method": "action.update",
+   "params": {
+      "actionid": "100100000010092",
+      "name": "New Name"
+   },
+   "auth": "700ca65537074ec963db7efabda78259",
+   "id": 2
+  }
+</code>
+
+Retrieved updated action IDs:
+
+<code js>
+  {
+   "jsonrpc": "2.0",
+   "result": {
+       "actionids": ["100100000010092"]
+   },
+   "id": 2
+  }
+</code>
+
+==== Example #2=====
+
+Disable action:
+
+<code js>
+{
+ "actionid": "1",
+ "status": "0",
+} 
+</code>
+
+Parameter "status" serves for setting status of your action.

@@ -1,0 +1,55 @@
+===== createGlobal() =====
+This method allows you to create a globalmacro as defined by the **globalmacro data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**globalmacro data**|//array or object//| No |Array of Globalmacro objects or a single object|**globalmacroid** shouldn't be specified |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Globalmacro IDs. **globalmacroid** are assigned to each Globalmacro object |
+|**error**|In case of any errors|
+==== Example ====
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"usermacro.createGlobal",
+"params":[
+	{
+		"macro":"{$MACRO1}",
+		"value":"192.168.0.1"
+	},
+	{
+		"macro":"{$MACRO2}",
+		"value":"192.168.0.2"
+	}
+],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+Globalmacro added successfully:
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+   "globalmacroids": ["107819", "107820"]
+},
+"id":3
+}
+</code>
+
+Globalmacro already exists:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CGlobalmacro::create ] Macro [ {$MACRO1} ] already exists"
+},
+"id":3
+}
+</code>

@@ -1,0 +1,67 @@
+===== massUpdate() =====
+Available since version: **1.8**\\
+
+==== Parameters ====
+Multidimensional array with usermacros data\\
+
+^Parameter^Type^Optional^Description^Details^
+|**macros**|//array//| |Usermacros to update. | |
+|**hosts**|//array//| Yes |Host objects where usermacros should be updated. | |
+|**templates**|//array//| Yes |Template objects where usermacros should be updated. | |
+NOTE: one of the **hosts** or **templates** is required.
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated host/template usermacro IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+Update two usermacros on two hosts with **IDs** "10092", "10086" and on two templates with **IDs** "10052", "10053":
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"usermacro.massUpdate",
+"params":{ 
+    "macros": [
+        {"macro": "{$MACRO1}", "value": "MACRO1"},
+        {"macro": "{$MACRO2}", "value": "MACRO2"}
+    ],
+    "hosts": [ 
+        {"hostid": "10092"},
+        {"hostid": "10086"}
+    ],
+    "templates": [
+        {"templateid": "10052"},
+        {"templateid": "10053"}
+    ]
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+
+Host and template usermacros updated successfully:
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+    "hostmacroids":["42","43","44","45","46","47","48","49"]
+},
+"id":2
+}
+</code>
+NOTE: host and/or template usermacros will be listed together in the "hostmacroids" array.
+
+Error when some host or template does not exist:
+<code js>
+{
+"jsonrpc":"2.0",
+"error":{
+    "code":-32500,
+    "message":"Application error.",
+    "data":"[ CUserMacro::massUpdate ] You do not have permission to perform this operation"
+},
+"id":2
+}
+</code>

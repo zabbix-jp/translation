@@ -1,0 +1,32 @@
+===== Template =====
+
+Class containing methods for operations with Templates
+
+==== Methods ====
+
+Class containing methods for operations with Templates.
+^Methods^Description^
+|[[1.8/api/template/get|get()]] |Get template details |
+|[[1.8/api/template/exists|exists()]] |Check if template exists |
+|[[1.8/api/template/create|create()]] |Create templates |
+|[[1.8/api/template/update|update()]] |Update template details |
+|[[1.8/api/template/delete|delete()]] |Delete templates |
+|[[1.8/api/template/massAdd|massAdd()]] |Mass add template linkage, hosts, macros, host groups |
+|[[1.8/api/template/massUpdate|massUpdate()]] |Mass update template details, link templates, hosts, add host groups |
+|[[1.8/api/template/massRemove|massRemove()]] |Mass remove template linkage, hosts, macros, host groups |
+==== Object details ====
+
+The table contains complete list of Template attributes.
+
+^Parameter^Type^Description^Details^
+|templateid|//int//|Template ID | |
+|host|//string//|Template name. | |
+|groupids|//array//|HostGroup IDs add Template to. | |
+
+==== Common tasks ====
+The table contains list of common template-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a template | Use method **template.create** |
+|Add a bunch of new templates | Use method **template.create** with array of Template objects |
+|Link template to hosts | Use method **template.massAdd** with parameters **templates**, **hosts** |
+|Unlink template from hosts | Use method **template.massRemove** with parameters **templates**, **hosts**  |

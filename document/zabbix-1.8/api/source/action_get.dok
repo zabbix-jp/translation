@@ -1,0 +1,136 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve Action details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+
+==== Parameters ====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|Group IDs | |
+|**hostids**|//array//|Host IDs | |
+|**triggerids**|//array//|Trigger IDs | |
+|**actionids**|//array//|Action IDs | |
+|**mediatypeids**|//array//|Media type IDs | |
+|**userids**|//array//|User IDs | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**filter**|//array//|Optional filter by action fields| |
+|**search**|//array//|Return actions by any given action object field pattern  | |
+|**startSearch**|//integer//|Search actions field pattern only in start of the field  | |
+|**excludeSearch**|//integer//|Exclude from result, actions by given field pattern  | |
+|**searchWildcardsEnabled**|//integer//|Search pattern in whole field using wildcards | 1 - enable, 0 - disable|
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_conditions**|//string//|Select action conditions | Values: shorten, refer, extend|
+|**select_operations**|//string//|Select action operations | Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count actions, returned number of found actions | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by Action field |Values: actionid, name |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//integer//|max number of Action objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Action objects.|
+|**error**|In case of any errors|
+==== Example ====
+Get actions details by Action name "zabbix", with action elements and links:
+<code>
+{
+"jsonrpc":"2.0",
+"method":"Action.get",
+"params":{
+	"filter": {"name": "ZABBIX Action"},
+	"select_operations": "extend",
+	"select_conditions": "extend",
+	"output": "extend"
+},
+"auth":"6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id":2
+}
+</code>
+
+Retrieved Action details:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":[{
+	"actionid":"100100000000013",
+	"name":"ZABBIX Action",
+	"eventsource":"0",
+	"evaltype":"0",
+	"status":"1",
+	"esc_period":"3600",
+	"def_shortdata":"{TRIGGER.NAME}: {STATUS}",
+	"def_longdata":"{TRIGGER.NAME}: {STATUS}",
+	"recovery_msg":"0",
+	"r_shortdata":"{TRIGGER.NAME}: {STATUS}",
+	"r_longdata":"{TRIGGER.NAME}: {STATUS}",
+	"conditions":[{
+		"conditionid":"100100000000097",
+		"actionid":"100100000000013",
+		"conditiontype":"3",
+		"operator":"2",
+		"value":"Server"
+	},{
+		"conditionid":"100100000000098",
+		"actionid":"100100000000013",
+		"conditiontype":"1",
+		"operator":"1",
+		"value":"100100000010096"
+	}],
+	"operations":[{
+		"operationid":"100100000000082",
+		"actionid":"100100000000013",
+		"operationtype":"0",
+		"object":"0",
+		"objectid":"100100000000001",
+		"shortdata":"{TRIGGER.NAME}: {STATUS}",
+		"longdata":"{TRIGGER.NAME}: {STATUS}",
+		"esc_period":"0",
+		"esc_step_from":"1",
+		"esc_step_to":"3",
+		"default_msg":"1",
+		"evaltype":"0",
+		"opconditions":[],
+		"opmediatypes":[{
+			"opmediatypeid":"100100000000004",
+			"operationid":"100100000000082",
+			"mediatypeid":"100100000000001"
+		}]
+		},{
+		"operationid":"100100000000083",
+		"actionid":"100100000000013",
+		"operationtype":"0",
+		"object":"0",
+		"objectid":"100100000000003",
+		"shortdata":"{TRIGGER.NAME}: {STATUS}",
+		"longdata":"{TRIGGER.NAME}: {STATUS}",
+		"esc_period":"0",
+		"esc_step_from":"3",
+		"esc_step_to":"4",
+		"default_msg":"1",
+		"evaltype":"0",
+		"opconditions":[{
+			"opconditionid":"100100000000001",
+			"operationid":"100100000000083",
+			"conditiontype":"14",
+			"operator":"0",
+			"value":"0"
+		},{
+			"opconditionid":"100100000000002",
+			"operationid":"100100000000083",
+			"conditiontype":"14",
+			"operator":"0",
+			"value":"1"
+		}],
+		"opmediatypes":[{
+			"opmediatypeid":"100100000000005",
+			"operationid":"100100000000083",
+			"mediatypeid":"100100000000001"
+		}]
+	}]
+}]
+ ,
+"id":2
+}
+</code>

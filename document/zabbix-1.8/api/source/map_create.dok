@@ -1,0 +1,73 @@
+===== create() =====
+This function allows you to create a map as defined by the **map data** array.
+
+==== Parameters ====
+^Parameter   ^Type               ^Optional^Description^Details^
+|**map data**|//array or object//|        |Array of Map objects or a single object with additional paramter **selements**, array of map item objects|**sysmapid** shouldn't be specified |
+
+
+====Returns====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of created Map IDs. **sysmapid** is assigned to each Map object |
+|**error** |In case of any errors|
+
+==== Example ====
+Create new map
+<code js>
+{
+"jsonrpc": "2.0",
+"method": "map.create",
+"params": [{
+	"selements": [{
+		"elementid": "0",
+		"elementtype": "4",
+		"iconid_off": "100100000000036",
+		"iconid_on": "0",
+		"iconid_unknown": "0",
+		"label": "New element",
+		"label_location": "0",
+		"x": "200",
+		"y": "100",
+		"url": "",
+		"iconid_disabled": "0",
+		"iconid_maintenance": "0"
+	}],
+	"name": "ZABBIX-Map",
+	"width": "800",
+	"height": "600",
+	"backgroundid": "0",
+	"label_type": "0",
+	"label_location": "0",
+	"highlight": 0,
+	"expandproblem": 0,
+	"markelements": 0,
+	"show_unack": 0
+}],
+"auth": "038e1d7b1735c6a5436ee9eae095879e",
+"id": 2
+}
+</code>
+
+Map created successfully:
+<code js>
+{
+"jsonrpc": "2.0",
+"result": {
+	"sysmapids": ["100100000012213"]
+},
+"id": 2
+}
+</code>
+
+Map already exists:
+<code js>
+{
+"jsonrpc": "2.0",
+"error": {
+      "code": -32602,
+      "message": "Invalid params.",
+      "data": "[ CMap::create ] Map [ ZABBIX-Map ] already exists"
+},
+"id": 2
+}
+</code>

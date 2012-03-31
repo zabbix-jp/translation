@@ -1,0 +1,38 @@
+===== 3 Zabbix Processes =====
+
+==== - Logging ====
+
+For logging configuration of Zabbix daemons "LogFile" configuration parameter is used. If this parameter is left empty (LogFile=), syslog logging facilities are used. 
+All Zabbix daemons on Unix-like platforms log their messages from "Daemon" environment.
+The mapping between Zabbix logging levels and syslog levels is as follows:
+
+^Zabbix log level^syslog log level^Comments^
+|0 - empty \\ (LOG_LEVEL_EMPTY)  | syslog is not used.  | All messages are skipped. |
+|1 - critical information \\ (LOG_LEVEL_CRIT)  |critical conditions \\ (LOG_CRIT)  | |
+|2 - error information \\ (LOG_LEVEL_ERR)  |error conditions \\ (LOG_ERR)  | |
+|3 - warnings \\ (LOG_LEVEL_WARNING)  |warning conditions \\ (LOG_WARNING)  | |
+|4 - for debugging \\ (LOG_LEVEL_DEBUG)  |debug-level messages \\ (LOG_DEBUG)  | |
+
+For syslog configuration consult the corresponding literature.
+
+\\
+
+Zabbix agent under Windows uses Event Log if "LogFile" configuration parameter is provided empty.
+Mapping between Zabbix log levels (messages of corresponding type) and Windows Event Log entries type
+is provided below:
+
+^Zabbix log level^Windows Event Log entry type^Comments^
+|0 - empty \\ (LOG_LEVEL_EMPTY) | Event Log is not used. | All messages are skipped. |
+|1 - critical information \\ (LOG_LEVEL_CRIT) \\ 2 - error information \\ (LOG_LEVEL_ERR) |EVENTLOG_ERROR_TYPE  |Error  |
+|3 - warnings \\ (LOG_LEVEL_WARNING)  |EVENTLOG_WARNING_TYPE  |Warning  |
+|4 - for debugging \\ (LOG_LEVEL_DEBUG)  |EVENTLOG_INFORMATION_TYPE  |Information  |
+
+==== - Individual processes ====
+
+{{page>1.8/manual/processes/zabbix_server}}
+{{page>1.8/manual/processes/zabbix_proxy}}
+{{page>1.8/manual/processes/zabbix_agentd}}
+{{page>1.8/manual/processes/zabbix_agent}}
+{{page>1.8/manual/processes/zabbix_agentd_win}}
+{{page>1.8/manual/processes/zabbix_sender}}
+{{page>1.8/manual/processes/zabbix_get}}

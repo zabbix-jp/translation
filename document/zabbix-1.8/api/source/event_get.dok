@@ -1,0 +1,143 @@
+===== get() =====
+Available since version: **1.8**\\
+This function allows you to retrieve event details based on filtering options.
+All parameters are optional. If parameter is set in query this otion counted as ON, except if parameter is equal to NULL.
+====Parameters====
+^Parameter^Type^Description^Details^
+|**nodeids**|//array//|Node IDs | |
+|**groupids**|//array//|Host group IDs | |
+|**hostids**|//array//|Host IDs | |
+|**triggerids**|//array//|Trigger IDs | |
+|**eventids**|//array//|Event IDs | |
+|**editable**|//integer//|only with read-write permission. Ignored for SuperAdmins | |
+|**object**|//integer//|Event object | |
+|**value**|//integer//|Event status | |
+|**source**|//integer//|Event source | |
+|**acknowledged**|//integer//|Acknowledged events | |
+|**hideUnknown**|//integer//|Hide unknown events | |
+|**time_from**|//integer//|Events since specified date |Unix timestamp |
+|**time_till**|//integer//|Events till specified date |Unix timestamp |
+|**output**|//string//|Output options | Values: shorten, refer, extend|
+|**select_hosts**|//string//|Select hosts| Values: shorten, refer, extend|
+|**select_triggers**|//string//|Select event triggers| Values: shorten, refer, extend|
+|**countOutput**|//integer//|Count hosts, returned number of found hosts | |
+|**groupOutput**|//integer//|Group result by passed IDs | |
+|**preservekeys**|//integer//|Return hash instead of array |Keys of hash are object IDs |
+|**sortfield**|//string//|Sort by host field |Values: eventid,clock |
+|**sortorder**|//string//|Sort order | Values: ASC, DESC|
+|**limit**|//int//|max number of host objects to return | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of Event objects.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+Get last 10 events for specified period:
+<code js>
+{
+"jsonrpc": "2.0",
+"method": "event.get",
+"params": {
+	"time_from": "1284910040",
+	"time_till": "1284991200",
+	"output": "extend",
+	"sortfield": "clock",
+	"sortorder": "desc",
+	"limit": 10
+},
+"auth": "6f38cddc44cfbb6c1bd186f9a220b5a0",
+"id": 2
+}
+</code>
+
+Retrieved events details:
+
+<code js>
+{
+"jsonrpc": "2.0",
+"result": [{
+	"eventid": "100100000884382",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064507",
+	"clock": "1284910089",
+	"value": "1",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884383",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064661",
+	"clock": "1284910089",
+	"value": "1",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884385",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064661",
+	"clock": "1284910118",
+	"value": "0",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884384",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064507",
+	"clock": "1284910119",
+	"value": "0",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884386",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064661",
+	"clock": "1284910176",
+	"value": "1",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884387",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064661",
+	"clock": "1284910206",
+	"value": "0",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884388",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064661",
+	"clock": "1284910326",
+	"value": "1",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884389",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064509",
+	"clock": "1284910351",
+	"value": "1",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884390",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000064546",
+	"clock": "1284910351",
+	"value": "1",
+	"acknowledged": "0"
+},{
+	"eventid": "100100000884391",
+	"source": "0",
+	"object": "0",
+	"objectid": "100100000012788",
+	"clock": "1284910353",
+	"value": "1",
+	"acknowledged": "0"
+}],
+"id": 2
+}
+</code>

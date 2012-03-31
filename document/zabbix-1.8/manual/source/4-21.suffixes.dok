@@ -1,0 +1,36 @@
+==== 21 Suffixes ====
+
+It is possible to simplify Zabbix trigger expressions or item keys by using suffixes.
+
+=== - Standard multipliers ===
+
+The following table summarises available standard multipliers in Zabbix frontend and server:
+
+^ ^Till_1.8.2^Additional in 1.8.2^
+^Server|K (Kilo)\\ M (Mega)\\ G (Giga)|T (Tera)|
+^Frontend|K (Kilo)\\ M (Mega)\\ G (Giga)\\ T (Tera)|P (Peta)\\ E (Exa)\\ Z (Zetta)\\ Y (Yotta)|
+
+=== - Time-related multipliers ===
+
+Since Zabbix version 1.8.2 the following time-related multipliers are available:
+
+  * **s** - seconds; when used, works the same as raw value; 
+  * **m** - minutes; 
+  * **h** - hours; 
+  * **d** - days 
+  * **w** - weeks. 
+
+These are supported in trigger expression constants and function parameters, as well as in the [[:1.8/manual/config/items#internal_checks|internal item]] **zabbix[queue,<from>,<to>]** parameters.
+=== - Examples ===
+
+These multipliers allow to write expressions that are easier to understand and maintain, for example the following expressions: 
+
+  {host:zabbix[proxy,zabbix_proxy,lastaccess]}>120
+  {host:system.uptime[].last(0)}<86400
+  {host:system.cpu.load.avg(600)}<10
+
+could be changed to: 
+
+  {host:zabbix[proxy,zabbix_proxy,lastaccess]}>2m
+  {host:system.uptime.last(0)}<1d
+  {host:system.cpu.load.avg(10m)}<10

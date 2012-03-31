@@ -1,0 +1,239 @@
+==== - #6 Using Zabbix appliance ====
+
+As an alternative to setting up manually or reusing existing server for Zabbix, users may download Zabbix appliance.
+
+To get started, boot the appliance and point your browser at the IP it has received over DHCP.
+
+|{{:1.8:manual:installation:zabbix_appliance_boot.png?500|}}|
+|Booting Zabbix appliance|
+
+Zabbix appliance versions are based upon the following OpenSUSE versions: 
+^Zabbix appliance version^OpenSUSE version^
+|1.8.2|11.2|
+|1.8.3|:::|
+|1.8.4|11.3|
+|1.8.5|:::|
+|1.8.6|:::|
+|1.8.7|11.4|
+|1.8.8|:::|
+|1.8.9|:::|
+
+It is available in the following formats:
+
+  * vmdk (VMWare/Virtualbox);
+  * OVF (Open Virtualisation Format);
+  * CD iso;
+  * HDD/flash image;
+  * [[http://blog.susestudio.com/2010/10/new-preload-iso-build-format.html|Preload ISO]];
+  * Xen guest.
+
+It has Zabbix server configured and running on MySQL, as well as frontend available.
+
+The appliance has been built using [[http://susestudio.com|SUSE Studio]].
+
+=== - Changes to SUSE configuration ===
+
+There are some changed applied to the base OpenSUSE configuration.
+
+== - MySQL configuration changes ==
+
+  * Binary log is disabled;
+  * InnoDB is configured to store data for each table in a separate file.
+== - Using a static IP address ==
+
+By default the appliance uses DHCP to obtain IP address. To specify a static IP address:
+
+  * Log in as root user;
+  * Open file ///etc/sysconfig/network/ifcfg-eth0// in your favourite editor;
+  * Set **BOOTPROTO** variable to **static**;
+  * Set **IPADDR**, **NETMASK** and any other parameters as required for your network;
+  * Create file ///etc/sysconfig/network/routes//. For the default route, use **default 192.168.1.1 - -** (replacing with your gateway address). 
+  * Run the command **rcnetwork restart**.
+
+To configure DNS, add nameserver entries in ///etc/resolv.conf//, specifying each nameserver on its own line: **nameserver 192.168.1.2**.
+
+Alternatively, just use **yast** configuration utility to update network settings.
+
+== - Other changes ==
+
+  * Network is configured to use DHCP to obtain IP address;
+  * Utility **fping** is set to have permissions 4710 and is owned by group **zabbix** - suid and only alowed to be used by zabbix group;
+  * ntpd configured to synchronise to the public pool servers;
+  * Various basic utilities have been added that could make working with Zabbix and monitoring in general easier.
+
+=== - Zabbix configuration ===
+
+Appliance Zabbix setup has the following passwords and other configuration changes:
+
+== - Passwords ==
+
+System:
+  * root:zabbix
+  * zabbix:zabbix
+
+Database:
+  * root:zabbix
+  * zabbix:zabbix
+
+Zabbix frontend:
+  * admin:zabbix
+
+<note important>If you change frontend password, do not forget to update password setting web monitoring (//Configuration -> WEB//).</note>
+
+To change the database user password it has to be changed in the following locations:
+  * MySQL;
+  * zabbix_server.conf;
+  * zabbix.conf.php.
+== - File locations ==
+
+  * Configuration files are placed in **/etc/zabbix**.
+  * Zabbix logfiles are placed in **/var/log/zabbix**.
+  * Zabbix frontend is placed in **/usr/share/zabbix**.
+  * Home directory for user **zabbix** is **/var/lib/zabbix**.
+== - Changes to Zabbix configuration ==
+
+  * Some items and triggers in the default Linux template are disabled (mostly those who did not correspond to appliance setup);
+  * Server name for Zabbix frontend set to "Zabbix 1.8 Appliance";
+  * Frontend timezone is set to Europe/Riga, Zabbix home (this can be modified in **/etc/php5/apache2/php.ini**);
+  * Disabled triggers and web scenarios are shown by default to reduce confusion.
+
+== - Preserving configuration ==
+
+If you are running live CD version of the appliance or for some other reason can't have persistent storage, you can create a backup of whole database, including all configuration and gathered data.
+
+To create the backup, run:
+
+  mysqldump zabbix | bzip2 -9 > dbdump.bz2
+
+Now you can transfer file **dbdump.bz2** to another machine.
+
+To restore from the backup, transfer it to the appliance and execute:
+
+  bzcat dbdump.bz2 | mysql zabbix
+
+<note important>Make sure that Zabbix server is stopped while performing the restore.</note>
+
+=== - Frontend access ===
+
+Access to frontend by default is allowed from:
+  * 127.0.0.1
+  * 192.168.0.0/16
+  * 10.0.0.0/8
+  * ::1
+
+Root (/) is redirected to /zabbix on the webserver, thus frontend can be accessed both as //http:%%//%%<host>// and //http:%%//%%<host>/zabbix//.
+
+This can be customised in **/etc/apache2/conf.d/zabbix.conf**. You have to restart webserver after modifying this file. To do so, log in using SSH as **root** user and execute:
+
+  service apache2 restart
+
+=== - Firewall ===
+
+By default, only two ports are open - 22 (SSH) and 80 (HTTP). To open additional ports - for example, Zabbix server and agent ports - modify iptables rules with **SuSEfirewall2** utility:
+
+  SuSEfirewall2 open EXT TCP zabbix-trapper zabbix-agent
+
+Then reload the firewall rules:
+
+  SuSEfirewall2 stop
+  SuSEfirewall2 start
+
+=== - Monitoring capabilities ===
+
+Zabbix server is compiled with support for the following:
+
+  * SNMP;
+  * IPMI;
+  * Web monitoring;
+  * SSH2;
+  * IPv6.
+
+In the provided configuration Zabbix server itself is monitored with the help of locally installed agent for some base parameters, additionally Zabbix frontend is monitored as well using web monitoring.
+
+|{{:1.8:manual:installation:appliance_web_monitoring.png?500|}}|
+|Zabbix appliance monitoring own web frontend|
+
+<note tip>Note that web frontend monitoring logs in - this can add lots of entries to the audit log.</note>
+=== - Naming, init and other scripts ===
+
+Zabbix daemons have their names changed from standard with underscore to dash to conform to SUSE guidelines. They are called:
+  * zabbix-agentd
+  * zabbix-server
+
+In a similar fashion, configuration files are:
+  * /etc/zabbix/zabbix-server.conf
+  * /etc/zabbix/zabbix-agentd.conf
+
+Appropriate init scripts are provided. To control Zabbix server, use any of these:
+  service zabbix-server status
+  rczabbix-server status
+  /etc/init.d/zabbix-server status
+
+Replace **server** with **agentd** for Zabbix agent daemon.
+
+== - Scheduled scripts ==
+
+There is a scheduled script, run from the crontab every 10 minutes that restarts Zabbix server if it is not running, **/var/lib/zabbix/bin**. It logs timestamped problems and starting attempts at **/var/log/zabbix/server_problems.log**. This script is available since Zabbix Appliance version 1.8.3.
+
+<note important>Make sure to disable this crontab entry if stopping of Zabbix server is desired.</note>
+
+== - Increasing available diskspace ==
+
+<note warning>Create a backup of all data before attempting any of the steps.</note>
+
+Available diskspace on the appliance might not be sufficient. In that case it is possible to expand the disk. To do so, first expand the block device in your virtualisation environment, then follow these steps.
+
+Start //fdisk// to change the partition size. As //root//, execute:
+
+  fdisk /dev/sda
+
+This will start //fdisk// on disk //sda//. Next, switch to sectors by issuing:
+
+  u
+
+<note important>Don't disable DOS compatibility mode by entering **c**. Proceeding with it disabled will damage the partition.</note>
+
+Then delete the existing partition and create new one with desired size. In majority of cases you will accept the available maximum, which will expand the filesystem to whatever size you made available for the virtual disk. To do so, enter the following sequence in fdisk prompt:
+
+  d
+  n
+  p
+  1
+  (accept default 63)
+  (accept default max)
+
+If you wish to leave some space for additional partitions (swap etc), you can enter another value for //last sector//. When done, save the changes by issuing:
+
+  w
+
+Reboot the virtual machine (as the partition we modified is in use currently). After reboot, filesystem resizing can take place.
+
+  resize2fs /dev/sda1
+
+That's it, filesystem should be grown to the partition size now.
+=== - Format-specific notes ===
+== - Xen ==
+
+To use images in Xen server, run:
+
+  xm create -c file-with-suffix.xenconfig
+
+See the following pages for more information on using Xen images:
+
+  * http://en.opensuse.org/openSUSE:How_to_use_downloaded_SUSE_Studio_appliances#Using_Xen_guests
+  * http://old-en.opensuse.org/SUSE_Studio_Xen_Howtos
+
+To use Xen images with Citrix Xenserver you might need to convert images with XenConvert utility, available from Citrix website.
+
+== - VMWare ==
+
+The images in //vmdk// format are usable directly in VMWare Player, Server and Workstation products. For use in ESX, ESXi and vSphere they must be converted using [[http://www.vmware.com/products/converter/|VMWare converter]].
+== - HDD/flash image (raw) ==
+
+See http://en.opensuse.org/openSUSE:SUSE_Studio_Disc_Image_Howtos for more information on disk images.
+
+=== - Known issues ===
+
+== - For appliance 1.8.8 ==
+
+Zabbix appliance 1.8.8 reports itself as being based on 1.8.7 in the boot messages. This is incorrect, actual appliance contains Zabbix 1.8.8.

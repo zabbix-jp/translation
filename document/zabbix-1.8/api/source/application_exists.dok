@@ -1,0 +1,44 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether application with given application data exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given application |  |
+|**name**|//string//|No |Application name |  |
+|**hostid**|//string//|yes |Host ID |  |
+|**host**|//string//|yes |Host name |  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+
+==== Example ====
+Check if application with name "OS" exists for host "Windows-Server"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"application.exists",
+"params":{
+	"host": "Windows-Server",
+	"name": "OS"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Application exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

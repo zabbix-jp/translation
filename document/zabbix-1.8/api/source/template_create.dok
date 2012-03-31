@@ -1,0 +1,63 @@
+===== create() =====
+
+This function allows you to create a template as defined by the **template data** array.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**template data**|//array or object//|  |Array of Template objects or a single object|**templateid** shouldn't be specified |
+
+====Returns====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Template IDs. **templateid** are assigned to each Template object |
+|**error**|In case of any errors|
+
+==== Example ====
+
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"template.create",
+"params":{
+   "host":"Template Linux 2",
+    "groups":[
+         {
+            "groupid":"100100000000001"
+         }
+    ],
+    "templates":[
+         {
+            "templateid":"100100000010001"
+         }
+    ]
+},
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+Template added successfully:
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+   "templateids":["100100000014794"]
+},
+"id":3
+}
+</code>
+
+Template already exists:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CTemplate::create ] Template [ Template Linux 2 ] already exists"
+},
+"id":3
+}
+</code>

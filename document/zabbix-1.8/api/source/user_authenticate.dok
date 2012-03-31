@@ -1,0 +1,5 @@
+===== authenticate() =====
+Available since version: **1.8**\\
+
+
+<note important>Note: This method is obsolete. Use method **[[:1.8/api/user/login|user.login]]** instead.</note>

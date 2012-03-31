@@ -1,0 +1,65 @@
+==== - #3 Zabbix Agent (UNIX, Standalone daemon) ====
+
+Zabbix UNIX agent daemon runs on a host being monitored. The agent provides host's performance and availability information for Zabbix Server. Zabbix agent processes items of type 'Zabbix agent' or 'Zabbix agent (active)'.
+
+Zabbix agent can be started by executing:
+
+  shell> cd sbin
+  shell> ./zabbix_agentd
+
+Zabbix agent runs as a daemon process.
+
+Zabbix agent accepts the following command line parameters:
+
+<code>
+  -c --config <file>   specify configuration file, default is /etc/zabbix/zabbix_agentd.conf
+  -h --help            give this help
+  -V --version         display version number
+  -p --print           print known items and exit
+  -t --test <item key> test specified item and exit
+</code>
+
+In order to get this help run:
+
+  shell> zabbix_agentd -h
+
+Example of command line parameters:
+
+  shell> zabbix_agentd -c /usr/local/etc/zabbix_agentd.conf
+  shell> zabbix_agentd --help
+  shell> zabbix_agentd --print
+  shell> zabbix_agentd -t "system.cpu.load[all,avg1]"
+
+===== Configuration file =====
+
+The configuration file contains configuration parameters for zabbix_agentd. The file must exist and it should have read permissions for user 'zabbix'. Supported parameters:
+
+^Parameter^Mandatory^Range^Default^Description^
+| Alias| no | | |Sets an alias for parameter. It can be useful to substitute long and complex parameter name with a smaller and simpler one.\\ \\ Starting from version 1.8.6 Zabbix Agent will not start up in case incorrectly formatted Alias entry or duplicate Alias key is present in configuration file.|
+| AllowRoot| no | |0 |Allow the agent to run as 'root'. If disabled and the agent is started by 'root', the agent will try to switch to user 'zabbix' instead. Has no effect if started under a regular user.\\ 0 - do not allow\\ 1 - allow|
+| BufferSend| no | 1-3600 |5 |Do not keep data longer than N seconds in buffer. |
+| BufferSize| no | 2-65535 |100 |Maximum number of values in a memory buffer. The agent will send\\ all collected data to Zabbix Server or Proxy if the buffer is full. |
+| DebugLevel| no | 0-4 |3 |Specifies debug level\\ 0 - no debug\\ 1 - critical information\\ 2 - error information\\ 3 - warnings\\ 4 - for debugging (produces lots of information) |
+| DisableActive| no | |0 |Disable active checks. The agent will work in passive mode listening for server. |
+| DisablePassive| no | |0 |Disable passive checks. The agent will not listen on any TCP port.\\ Only active checks will be processed.\\ 0 - do not disable\\ 1 - disable |
+| EnableRemoteCommands| no | |0 |Whether remote commands from Zabbix server are allowed.\\ 0 - not allowed\\ 1 - allowed |
+| Hostname| no | |Set by HostnameItem |Unique host name.\\ Required for active checks and must match host name as configured on the server.\\ \\ Allowed characters: alphanumeric, '.', ' ', '_' and '-'.\\ Maximum length: 64|
+| HostnameItem| no | |system.hostname |Item used for setting Hostname if it is undefined.\\ Does not support UserParameters, performance counters or aliases, but does support system.run[] regardless of EnableRemoteCommands value.\\ \\ Ignored if Hostname is set.\\ \\ **This option is supported in version 1.8.6 and higher.** |
+| Include| no | | |You may include individual files or all files in a directory in the configuration file. |
+| ListenIP| no | |0.0.0.0 |List of comma delimited IP addresses that the agent should listen on.\\ **Multiple IP addresses are supported in version 1.8.3 and higher.** |
+| ListenPort| no | 1024-32767 |10050 |Agent will listen on this port for connections from the server. |
+| LogFileSize| no | 0-1024 |1 |Maximum size of log file in MB.\\ 0 - disable automatic log rotation. |
+| LogFile| no | | |Name of log file.\\ If not set, syslog is used. |
+| LogRemoteCommands| no | |0 |Enable logging of executed shell commands as warnings.\\ 0 - disabled\\ 1 - enabled |
+| MaxLinesPerSecond| no | 1-1000 |100 |Maximum number of new lines the agent will send per second to Zabbix server\\ or proxy processing 'log' and 'eventlog' active checks.\\ The provided value will be overridden by the parameter 'maxlines',\\ provided in 'log' or 'eventlog' item key. |
+| PidFile| no | |/tmp/zabbix_agentd.pid |Name of PID file. |
+| RefreshActiveChecks| no | 60-3600 |120 |How often list of active checks is refreshed, in seconds. |
+| ServerPort| no | |10051 |Server port for retrieving list of and  sending active checks. |
+| Server| yes | | |List of comma delimited IP addresses (or hostnames) of Zabbix servers.\\ No spaces allowed. First entry is used for receiving list of and sending active checks.\\ Note that hostnames must resolve hostname->IP address and IP address->hostname. |
+| SourceIP| no | | |Source IP address for outgoing connections. |
+| StartAgents| no | 1-100 |3 |Number of pre-forked instances of zabbix_agentd that process passive checks.\\ The upper limit used to be 16 before version 1.8.5. |
+| Timeout| no | 1-30 |3 |Spend no more than Timeout seconds on processing |
+| UnsafeUserParameters| no | 0,1 |0 |Allow all characters to be passed in arguments to user-defined parameters. Supported since Zabbix 1.8.2.|
+| UserParameter| no | | |User-defined parameter to monitor. There can be several user-defined parameters.\\ Format: UserParameter=<key>,<shell command>\\ Note that shell command must not return empty string or EOL only.\\ Example: UserParameter=system.test,who%%|%%wc -l \\ \\ Starting from version 1.8.6 Zabbix Agent will not start up in case incorrectly formatted UserParameter entry or duplicate UserParameter key is present in configuration file.|
+
+<note>Starting from version 1.8.6 Zabbix agent daemon will not start up if invalid (not following //parameter=value// notation) or unknown parameter entry is present in configuration file.</note>

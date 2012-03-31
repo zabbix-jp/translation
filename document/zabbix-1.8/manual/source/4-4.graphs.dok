@@ -1,0 +1,12 @@
+==== 4 Graphs ====
+
+Custom (user defined) graphs allow the creation of complex graphs.
+
+These graphs, once configured, can be easily accessed via Monitoring->Graphs.
+
+Configuration of custom graphs can be accessed by navigating to Configuration->Templates or Configuration->Hosts and clicking on //Graphs// link for corresponding template or host.
+
+<note>When creating a new graph, first item can be added from any template or host. Then, depending on the choice, further items can be added : 
+
+1. if the first item was from a template, only from that template;\\ 
+2. if the first item was from any host, from any host (but not from templates anymore)</note>

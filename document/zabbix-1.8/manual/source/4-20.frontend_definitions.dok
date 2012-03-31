@@ -1,0 +1,70 @@
+==== 20 Frontend definitions ====
+
+While many things in the frontend can be configured using the frontend itself, some customisations are currently only possible by editing a definitions file. Located in the frontend directory, this file is **include/defines.inc.php**. Parameters in this file that could be of interest to users:
+
+  * TRIGGER_FALSE_PERIOD
+
+For how long to show triggers in OK state after their state changed from PROBLEM, in seconds.
+
+Default: 1800
+
+  * TRIGGER_BLINK_PERIOD
+
+For how long a trigger should blink after its state changed, in seconds.
+
+Default: 1800
+
+  * ZBX_PERIOD_DEFAULT
+
+Default graph period, in seconds. One hour by default.
+
+  * ZBX_MIN_PERIOD
+
+Minimum graph period, in seconds. One hour by default.
+
+  * ZBX_MAX_PERIOD
+
+Maximum graph period, in seconds. Two years by default since 1.6.7, one year before that.
+
+  * GRAPH_YAXIS_SIDE_DEFAULT
+
+Default location of Y axis in simple graphs and default value for drop down box when adding items to custom graphs. Possible values: 0 - left, 1 - right.
+
+Default: 0
+
+  * ZBX_UNITS_ROUNDOFF_THRESHOLD
+
+Threshold value for roundoff constants. Values less than it will be rounded to ZBX_UNITS_ROUNDOFF_LOWER_LIMIT number of digits after comma, greater to ZBX_UNITS_ROUNDOFF_UPPER_LIMIT.
+
+Default: 0.01
+
+  * ZBX_UNITS_ROUNDOFF_UPPER_LIMIT
+
+Number of digits after comma, when value is greater than roundoff threshold
+
+Default: 2
+
+  * ZBX_UNITS_ROUNDOFF_LOWER_LIMIT
+
+Number of digits after comma, when value is less than roundoff threshold
+
+Default: 6
+
+  * ZBX_HISTORY_DATA_UPKEEP (available since 1.8.4)
+
+Number of days, which will reflect on frontend choice when deciding which history or trends table to process for selected period on data graphing.
+When this define is: 
+    * less than zero - zabbix takes item values for selected graph period configured in item "keep in history" field to make calculations;
+    * equal to zero - zabbix takes item values only from trends;
+    * greater then zero - zabbix overwrites item "keep in history" configured value with this define;
+This define could be useful for partitioned history data storage.
+
+Default: -1
+
+  * ZAPCAT_COMPATIBILITY
+
+Enables support for [[http://www.kjkoster.org/zapcat/|Zapcat Zabbix Java JMX bridge]] item keys syntax
+
+Default: false
+
+<note warning>ZAPCAT_COMPATIBILITY is only available for 1.8.4.</note>

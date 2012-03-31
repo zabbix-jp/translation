@@ -1,0 +1,93 @@
+===== Example API session =====
+
+An example Zabbix API session might look like this. See [[:1.8/api/getting_started|Zabbix API introduction]] for more details.
+
+Query:
+<code js>
+{
+    "jsonrpc": "2.0",
+    "method": "user.authenticate",
+    "params": {
+        "user": "Admin",
+        "password": "zabbix"
+    },
+    "auth": null,
+    "id": 0
+}
+</code>
+
+Response:
+
+<code js>
+{
+    "jsonrpc": "2.0",
+    "result": "13f28ca608a4b12c83a32d749229da71",
+    "id": 0
+}
+</code>
+
+Query:
+
+<code js>
+{
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "params": {
+        "output": "extend"
+    },
+    "auth": "13f28ca608a4b12c83a32d749229da71",
+    "id": 2
+}
+</code>
+
+Response:
+
+<code js>
+{
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "maintenances": [
+                {
+                    "maintenanceid": "0"
+                }
+            ],
+            "hostid": "10017",
+            "proxy_hostid": "0",
+            "host": "Zabbix server",
+            "dns": "",
+            "useip": "1",
+            "ip": "127.0.0.1",
+            "port": "10050",
+            "status": "0",
+            "disable_until": "0",
+            "error": "",
+            "available": "1",
+            "errors_from": "0",
+            "lastaccess": "0",
+            "inbytes": "0",
+            "outbytes": "0",
+            "useipmi": "0",
+            "ipmi_port": "623",
+            "ipmi_authtype": "0",
+            "ipmi_privilege": "2",
+            "ipmi_username": "",
+            "ipmi_password": "",
+            "ipmi_disable_until": "0",
+            "ipmi_available": "0",
+            "snmp_disable_until": "0",
+            "snmp_available": "0",
+            "maintenanceid": "0",
+            "maintenance_status": "0",
+            "maintenance_type": "0",
+            "maintenance_from": "0",
+            "ipmi_ip": "",
+            "ipmi_errors_from": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "snmp_error": ""
+        }
+    ],
+    "id": 2
+}
+</code>

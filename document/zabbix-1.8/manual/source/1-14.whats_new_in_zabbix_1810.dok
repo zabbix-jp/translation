@@ -1,0 +1,13 @@
+===== - #12 What's new in Zabbix 1.8.10 =====
+
+==== - Frontend improvements ====
+
+=== - Updated translations ===
+
+  * French
+  * Japanese
+  * Russian
+
+==== - Server improvements ====
+
+Zabbix server housekeeper process previously only logged the amount of values that were removed from history and trends. Starting with Zabbix 1.8.10 it also logs the amount of values removed for deleted items, events, alerts and sessions.

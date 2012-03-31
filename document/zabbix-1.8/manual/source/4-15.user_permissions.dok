@@ -1,0 +1,21 @@
+==== 15 User permissions ====
+All Zabbix users access the Zabbix application through the Web-based front end. Each Zabbix user is assigned a unique login name and a password. All user passwords are encrypted and stored on the Zabbix database. Users can not use their user id and password to log directly into the UNIX server unless they have also been set up accordingly to UNIX. Communication between the Web Server and the user's browser can be protected using SSL.
+
+Access permissions on screen within the menu may be set for each user. By default, no permissions are granted on a screen when user is registered to the Zabbix.
+
+Note that a user is automatically disconnected after 30 minutes of inactivity.
+
+=== - Overview ===
+Zabbix has a flexible user permission schema which can be efficiently used to manage user permission within one Zabbix installation or in a distributed environment.
+
+Permissions are granted to user groups on a host group level.
+
+Zabbix supports several types of users. The type controls what administrative functions a user has permission to.
+
+=== - User types ===
+User types are used to define access to administrative functions and to specify default permissions.
+
+^User type^Description^
+|**Zabbix User**|The user has access to Monitoring menu. The user has no access to any resources by default. Permissions to host groups must be explicitly assigned.|
+|**Zabbix Admin**|The user has access to Monitoring and Configuration. The user has no access to any host groups by default. Permissions to host groups must be explicitly given.|
+|**Zabbix Super Admin**|The user has access to everything: Monitoring, Configuration and Administration. The user has Read-Write access to all host groups. Permissions cannot be revoked by denying access to specific host groups.|

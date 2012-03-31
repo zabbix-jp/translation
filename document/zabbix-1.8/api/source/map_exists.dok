@@ -1,0 +1,39 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether map with given map data exists.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given map |  |
+|**sysmapid**|//string//|Yes |Map ID |  |
+|**name**|//string//|Yes |Name |  |
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+
+==== Example ====
+Check if map with name "ZABBIX" exists
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"map.exists",
+"params":{
+	"name": "ZABBIX"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Map exists:
+
+<code js>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

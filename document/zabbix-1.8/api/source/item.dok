@@ -1,0 +1,119 @@
+===== Item =====
+==== Methods ====
+
+Class containing methods for operations with Items.
+^Methods^Description^
+|[[1.8/api/item/get|get()]] |Get item details |
+|[[1.8/api/item/exists|exists()]] |Check if item exists |
+|[[1.8/api/item/create|create()]] |Create items |
+|[[1.8/api/item/update|update()]] |Update item details |
+|[[1.8/api/item/delete|delete()]] |Delete items |
+==== Object details ====
+
+The table contains complete list of Item attributes.
+
+^Parameter^Type^Description^Details^
+|itemid|//int//|Item ID  | |
+|type|//int//|Type | |
+|snmp_community|//string//|SNMP Community name | |
+|snmp_oid|//string//|SNMP OID | |
+|snmp_port|//int//|SNMP port | |
+|hostid|//int//|Host ID | |
+|description|//string//|Item description | |
+|key_|//string//|Item key | |
+|delay|//int//|Check interval | |
+|history|//int//|How long to keep item history (days) | |
+|trends|//int//|How long to keep item trends (days) | |
+|lastvalue|//string//|Last value | |
+|lastclock|//int//|Last check | |
+|prevvalue|//string//|Previous value | |
+|status|//int//|Item status | |
+|value_type|//int//|Value type | |
+|trapper_hosts|//string//| | |
+|units|//string//|Value units | |
+|multiplier|//int//|Value multiplier | |
+|delta|//int//|Store values as delta | |
+|prevorgvalue|//string//| | |
+|snmpv3_securityname|//string//|SNMPv3 security name | |
+|snmpv3_securitylevel|//int//|SNMPv3 security level | |
+|snmpv3_authpassphrase|//string//|SNMPv3 authentication phrase | |
+|snmpv3_privpassphrase|//string//|SNMPv3 private phrase | |
+|formula|//string//| | |
+|error|//string//| Item check error| |
+|lastlogsize|//int//|Last log size | |
+|logtimefmt|//string//|Log time format | |
+|templateid|//int//|Parent item ID | |
+|valuemapid|//int//|Value map ID | |
+|delay_flex|//string//|Flexible delay | |
+|params|//string//| | |
+|ipmi_sensor|//string//| IPMI sensor| |
+|data_type|//int//| | |
+|authtype|//int//| | |
+|username|//string//| | |
+|password|//string//| | |
+|publickey|//string//| | |
+|privatekey|//string//| | |
+|mtime|//int//|Micro time | |
+
+==== Field values ====
+
+=== Type ===
+
+^Value^Type^
+|0    |Zabbix agent|
+|1    |SNMPv1|
+|2    |Trapper|
+|3    |Simple check|
+|4    |SNMPv2|
+|5    |Internal|
+|6    |SNMPv3|
+|7    |Active check|
+|8    |Aggregate|
+|9    |HTTP test (web monitoring scenario step)|
+|10   |External|
+|11   |Database monitor|
+|12   |IPMI|
+|13   |SSH|
+|14   |telnet|
+|15   |Calculated|
+
+=== Status ===
+
+^Value^Type^
+|0    |active|
+|1    |disabled|
+|3    |not supported|
+
+=== Value type ===
+
+^Value^Type^
+|0    |Numeric (float)|
+|1    |Character|
+|2    |Log|
+|3    |Numeric (unsigned)|
+|4    |Text|
+
+=== Data type ===
+
+^Value^Type^
+|0    |Decimal|
+|1    |Octal|
+|2    |Hexadecimal|
+
+
+=== Delta ===
+
+^Value^Status^
+|0    |As is|
+|1    |Delta (speed per second)|
+|2    |Delta (simple change)|
+
+==== Common tasks ====
+The table contains list of common item-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add an item | Use method **item.create** |
+|Add a bunch of new items | Use method **item.create** with array of Item objects |
+|Enable an item | Use method **item.update**, set **"status":0** |
+|Disable an item | Use method **item.update**, set **"status":1** |
+|Retrieve item details by Item IDs | Use method **item.get** with parameter **itemids** |
+|Retrieve items details by Host name | Use method **item.get** with parameter **filter**, specify **"host": ["<your host1>"]** |

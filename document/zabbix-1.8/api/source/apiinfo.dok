@@ -1,0 +1,14 @@
+===== APIInfo =====
+
+Class contains methods for getting information about Zabbix and Zabbix API.
+
+==== Methods ====
+
+^Methods^Description^
+|[[1.8/api/apiinfo/version|version()]] |Get Zabbix API version |
+
+==== Common tasks ====
+The table contains list of common apiinfo-related tasks and possible implementation using Zabbix API
+
+^Task^HOWTO^
+|Get API version | Use method **apiinfo.version** |

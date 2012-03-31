@@ -1,0 +1,45 @@
+===== Host =====
+==== Methods ====
+
+Class containing methods for operations with Hosts.
+^Methods^Description^
+|[[1.8/api/host/get|get()]] |Get host details |
+|[[1.8/api/host/exists|exists()]] |Check if host exists |
+|[[1.8/api/host/create|create()]] |Create hosts |
+|[[1.8/api/host/update|update()]] |Update host details |
+|[[1.8/api/host/delete|delete()]] |Delete hosts |
+|[[1.8/api/host/massAdd|massAdd()]] |Mass add template linkage, macros, host groups |
+|[[1.8/api/host/massUpdate|massUpdate()]] |Mass update host details, link templates, add host groups |
+|[[1.8/api/host/massRemove|massRemove()]] |Mass remove template linkage, macros, host groups |
+
+
+==== Object details ====
+
+The table contains complete list of Host attributes.
+
+^Parameter^Type^Description^Details^
+|hostid|//int//|Host ID | |
+|host|//string//|Host name. | |
+|port|//int//|Port number.  | |
+|status|//int//|Host Status.  | |
+|useip|//int//|Use IP.  | |
+|dns|//string//|DNS.  | |
+|ip|//string//|IP.  | |
+|proxy_hostid|//int//|Proxy Host ID.  | |
+|useipmi|//int//|Use IPMI.  | |
+|ipmi_ip|//string//|IPMAI IP.  | |
+|ipmi_port|//int//|IPMI port.  | |
+|ipmi_authtype|//int//|IPMI authentication type.  | |
+|ipmi_privilege|//int//|IPMI privilege.  | |
+|ipmi_username|//string//|IPMI username.  | |
+|ipmi_password|//string//|IPMI password.  | |
+
+==== Common tasks ====
+The table contains list of common host-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a host | Use method **host.create** |
+|Add a bunch of new hosts | Use method **host.create** with array of Host objects |
+|Enable a host | Use method **host.update**, set **"status":0** |
+|Disable a host | Use method **host.update**, set **"status":1** |
+|Retrieve host details by Host IDs | Use method **host.get** with parameter **hostids** |
+|Retrieve host details by Host name | Use method **host.get** with parameter **filter**, specify **"host":"<your host>"** |

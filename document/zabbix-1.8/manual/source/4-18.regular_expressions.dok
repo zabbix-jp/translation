@@ -1,0 +1,12 @@
+==== 18 Regular expressions ====
+
+
+Complex regular expressions can be created and tested in the Zabbix frontend by going to Administration -> General -> [[:1.8/manual/web_interface/administration#regular_expressions|Regular expressions]].
+
+=== - Using regular expressions ===
+
+After a regular expression has been created, it can be used everywhere regular expressions are supported by referring to it's name, prefixed with **@**, for example, //@mycustomregexp//.
+
+=== - Regular expression types ===
+
+All regular expressions in Zabbix, whether created with the advanced editor, or entered manually, support [[http://en.wikipedia.org/wiki/Regular_expression#POSIX_Extended_Regular_Expressions|POSIX extended regular expressions]].

@@ -1,0 +1,10 @@
+==== 3 Applications ====
+
+
+Application is a set of host items. For example, application 'MySQL Server' may contain all items which are related to the MySQL server: availability of MySQL, disk space, processor load, transactions per second, number of slow queries, etc.
+
+An item may be linked with one or more applications.
+
+Applications are used in Zabbix front-end to group items.
+
+<note important>Currently a host cannot be linked to different templates having same application.</note>

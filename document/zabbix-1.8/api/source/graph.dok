@@ -1,0 +1,51 @@
+===== Graph =====
+==== Methods ====
+
+Class containing methods for operations with Graphs.
+^Methods^Description^
+|[[1.8/api/graph/get|get()]] |Get graph details |
+|[[1.8/api/graph/exists|exists()]] |Check if graph exists |
+|[[1.8/api/graph/create|create()]] |Create graphs |
+|[[1.8/api/graph/update|update()]] |Update graph details |
+|[[1.8/api/graph/delete|delete()]] |Delete graphs |
+==== Object details ====
+
+The table contains complete list of Graph attributes.
+
+^Parameter^Type^Description^Details^
+|graphid|//integer//|Graph ID | |
+|name|//string//|Graph name. | |
+|width|//integer//|Width.  | |
+|height|//integer//|Height.  | |
+|yaxismin|//integer//|Y axis min value.  | |
+|yaxismax|//integer//|Y axis max value.  | |
+|templateid|//integer//|Parent graph **ID**.  | |
+|show_work_period|//integer//|Show work period.  | |
+|show_triggers|//integer//|Show items triggers if possible  | |
+|graphtype|//integer//|Chart or Pie.  | |
+|show_legend|//integer//|Show legend for pie graphs.  | |
+|show_3d|//integer//|Show pie graph in 3D view.  | |
+|percent_left|//float//|Show percentile line (left).  | |
+|percent_right|//float//|Show percentile line (right).  | |
+|ymin_type|//integer//|Y axis min limitation type.  |Calculated, user defined, by item value. |
+|ymax_type|//integer//|Y axis max limitation type.  |Calculated, user defined, by item value. |
+|ymin_itemid|//integer//|Y axis min limitation by Item **ID**.  | |
+|ymax_itemid|//integer//|Y axis max limitation by Item **ID**.  | |
+
+==== Field values ====
+
+=== Y axis min/max type ===
+
+^Value^Type^
+|0    |Calculated|
+|1    |Fixed|
+|2    |By item value|
+
+==== Common tasks ====
+The table contains list of common graph-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a graph | Use method **graph.create** |
+|Add a bunch of new graphs | Use method **graph.create** with array of Graph objects |
+|Remove graph by Graph IDs| Use method **graph.delete** array of Graph **IDs**|
+|Retrieve graph details by Graph IDs | Use method **graph.get** with parameter **graphids** |
+|Retrieve graph details by Graph name | Use method **graph.get** with parameter **filter**, specify **"name":"<your graph>"** |

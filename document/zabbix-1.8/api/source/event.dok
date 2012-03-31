@@ -1,0 +1,52 @@
+===== Event =====
+==== Methods ====
+
+Class containing methods for operations with Events.
+^Methods^Description^
+|[[1.8/api/event/get|get()]] |Get event details |
+|[[1.8/api/event/acknowledge|acknowledge()]] |Acknowledge events |
+|[[1.8/api/event/delete|delete()]] |Delete events |
+
+==== Object details ====
+The table contains complete list of Event attributes.
+
+^Parameter^Type^Description^Details^
+|**eventid**|//integer//|Event ID  | |
+|**source**|//integer//| Event generation source| |
+|**object**|//integer//| Event relation object| |
+|**objectid**|//integer//| Related object ID| |
+|**clock**|//integer//| Time of generated event| |
+|**value**|//integer//| Status| |
+|**acknowledged**|//integer//| Flag indicating event ack| |
+
+==== Field values ====
+
+=== Source ===
+
+^Value^Type             ^
+|0    |Triggers         |
+|1    |Network discovery|
+=== Value ===
+
+== For triggers ==
+
+^Value^Type   ^
+|0    |OK     |
+|1    |PROBLEM|
+|2    |UNKNOWN|
+
+== For network discovery ==
+
+^Value^Type      ^
+|0    |UP        |
+|1    |DOWN      |
+|2    |Discovered|
+|3    |Lost      |
+
+==== Common tasks ====
+The table contains list of common event-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Acknowledge an event | Use method **event.acknowledge** with array of Event objects |
+|Remove events | Use method **event.delete** with array of Event **IDs** |
+|Retrieve event details by Event IDs | Use method **event.get** with parameter **eventids** |
+|Retrieve events details by Trigger IDs | Use method **event.get** with parameter **triggerids** |

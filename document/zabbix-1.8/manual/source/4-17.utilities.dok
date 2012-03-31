@@ -1,0 +1,20 @@
+==== 17 Utilities ====
+
+
+=== - Start-up scripts ===
+The scripts are used to automatically start/stop Zabbix processes during system's start-up/shutdown.
+
+The scripts are located under directory misc/init.d.
+
+=== - snmptrap.sh ===
+
+The script is used to receive SNMP traps. The script must be used in combination with snmptrapd, which is part of package net-snmp.
+
+Configuration guide:
+  * Install snmptrapd (part of net-snmp or ucd-snmp)
+  * Edit snmptrapd.conf.\\ Add this line: 
+  traphandle default /bin/bash /home/zabbix/bin/snmptrap.sh 
+  * Copy misc/snmptrap/snmptrap.sh to ~zabbix/bin
+  * Edit snmptrap.sh to configure some basic parameters
+  * Add special host and trapper (type "string") item to Zabbix. See snmptrap.sh for the item's key.
+  * Run snmptrapd

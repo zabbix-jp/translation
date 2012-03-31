@@ -1,0 +1,46 @@
+===== Screen =====
+==== Methods ====
+
+Class containing methods for operations with Screens.
+^Methods^Description^
+|[[1.8/api/screen/get|get()]] |Get screen details |
+|[[1.8/api/screen/exists|exists()]] |Check if screen exists |
+|[[1.8/api/screen/create|create()]] |Create screens |
+|[[1.8/api/screen/update|update()]] |Update screen details |
+|[[1.8/api/screen/delete|delete()]] |Delete screens |
+==== Object details ====
+
+The table contains complete list of Screen attributes.
+=== screen ===
+^Parameter^Type^Description^Details^
+|**screenid**|//integer//|Screen ID | |
+|**name**|//integer//| Name | |
+|**hsize**|//integer//| Horizontal size | |
+|**vsize**|//integer//| Vertical size | |
+
+=== screenitem ===
+^Parameter^Type^Description^Details^
+|**screenid**|//integer//|  | | 
+|**resourcetype**|//integer//| Screen item type | |
+|**x**|//integer//| X position | |
+|**y**|//integer//| Y position | |
+|**resourceid**|//integer//| Depends on screen item type | |
+|**width**|//integer//| Width | |
+|**height**|//integer//| Height | |
+|**colspan**|//integer//| Column span | |
+|**rowspan**|//integer//| Row span | |
+|**elements**|//integer//| Number of displayed lines | |
+|**valign**|//integer//| Vertical align | |
+|**halign**|//integer//| Horizontal align | |
+|**style**|//integer//| Depends on screen item type | |
+|**url**|//integer//| Opens URL on click | |
+|**dynamic**|//integer//| Dynamic screen items | |
+
+==== Common tasks ====
+The table contains list of common screen-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a screen | Use method **screen.create** |
+|Add a bunch of new screens | Use method **screen.create** with array of Screen objects |
+|Remove screen by Screen IDs| Use method **screen.delete** array of Screen **IDs**|
+|Retrieve screen details by Screen IDs | Use method **screen.get** with parameter **screenids** |
+|Retrieve screen details by Screen name | Use method **screen.get** with parameter **filter**, specify **"name":"<your screen>"** |

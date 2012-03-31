@@ -1,0 +1,92 @@
+===== - #9 What's new in Zabbix 1.8.5 =====
+==== - Frontend improvements ====
+
+=== - Network map improvements ===
+
+Network maps can now be referenced on the frontend not only by id, but also by name, just like [[:1.8/manual/about/what_s_new_1.8.4#other_frontend_improvements|screens in 1.8.4]]. Adding GET parameter **mapname** will open the screen with that name, for example: 
+
+  http://zabbix/zabbix/maps.php?mapname=Drag%20and%20drop%20map
+
+If both **sysmapid** (network map ID) and **mapname** are specified, **mapname** has higher priority.
+
+If **mapname** parameter is used, selected network map won't be saved in user profile - that is, revisiting map section later will retrieve previously chosen map, not the one referenced by name.
+
+=== - Removed Zapcat compatibility switch ===
+
+[[:1.8/manual/about/what_s_new_1.8.4#zapcat_compatibility_mode|Zapcat compatibility switch]], added in 1.8.4, has been removed. Instead, expression parser has been reworked to accept Zapcat syntax by default.
+
+=== - Reordered configuration menu ===
+
+Sequence of configuration menu entries //Discovery// and //IT services// was changed to match the one in monitoring section.
+
+=== - Added translations ===
+
+  * Slovak
+
+=== - Updated translations ===
+
+  * Brazilian Portuguese
+  * Latvian
+  * Japanese
+  * Russian
+  * Ukrainian
+
+==== - Zabbix daemon improvements ====
+
+=== - Zabbix agent improvements ===
+
+== - Improved performance ==
+
+Zabbix agent performance has been improved, especially on systems with many cores.
+
+== - Unified internal process startup messages ==
+
+Zabbix agent now prints internal process types upon startup just like the server does. Example Zabbix agent daemon startup log:
+
+   943:20110224:111750.848 agent #0 started [collector]
+   943:20110224:111750.848 agent #1 started [listener]
+   943:20110224:111750.850 agent #2 started [listener]
+   943:20110224:111750.851 agent #3 started [listener]
+   943:20110224:111750.851 agent #4 started [active checks]
+
+=== - New items supported ===
+
+[[:1.8/manual/config/items#internal_checks|New internal item]] was added to monitor Zabbix process state. Item **zabbix[process,<type>,<mode>,<state>]** allows to monitor busy or idle percentage of different Zabbix server processes over the last minute.
+
+{{:1.8:manual:about:busy_data_gathering_processes.png|}}
+
+It is now possible to determine how much each of Zabbix server internal processes spent in a busy state. This should help with evaluating performance, estimating how many poller processes to use and other Zabbix finetuning tasks.
+
+=== - Process limits changed ===
+
+Zabbix daemon internal process limits have been changed. These changes affect Zabbix server and proxy daemons.
+
+^Option^Previous limit^New limit^
+|StartDBSyncers|64|100|
+|StartDiscoverers|255|250|
+|StartHTTPPollers|255|1000|
+|StartIPMIPollers|255|1000|
+|StartPingers|255|1000|
+|StartPollersUnreachable|255|1000|
+|StartPollers|255|1000|
+|StartProxyPollers|255|250|
+|StartTrappers|255|1000|
+
+For Zabbix agent daemon, maximum value of **StartAgents** has been increased from 16 to 100.
+
+=== - Listening on IPv6 and IPv4 ===
+
+Support for listening on all IPv4 and IPv6 addresses at the same time has been added.
+
+=== - Global regular expression support with proxies ===
+
+Global (user definable) regular expression support has been added for use with Zabbix proxies.
+==== - Misc improvements ====
+
+Added Ubuntu upstart configuration files.
+
+=== - New trigger functions ===
+
+Several new [[:1.8/manual/config/triggers#trigger_functions|trigger function]] have been added.
+  * **dayofmonth** returns current date
+  * **logeventid** checks whether Event ID of the last log entry matches a regular expression

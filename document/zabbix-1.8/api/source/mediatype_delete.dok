@@ -1,0 +1,49 @@
+===== delete() =====
+Available since version: **1.8**\\
+This function allows you to delete information about one or several mediatypes. All mediatype-related information will be removed including triggers, empty graphs, child mediatypes, historical data.
+
+==== Parameters ====
+Array of Mediatype IDs
+
+==== Returns ====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of deleted Mediatype IDs.|
+|**error** |In case of any errors|
+
+==== Example ====
+Delete mediatypes by mediatype **ID**
+<code js>
+{
+"jsonrpc": "2.0",
+"method": "mediatype.delete",
+"params": ["107824", "107825"],
+"auth": "3a57200802b24cda67c4e4010b50c065",
+"id": 2
+}
+</code>
+  
+Mediatypes deleted successfully:
+
+<code js>
+{
+"jsonrpc": "2.0",
+"result": {
+   "mediatypeids": ["107824", "107825"]
+},
+"id": 2
+}
+</code>
+
+Mediatypes do not exist:
+
+<code js>
+{
+"jsonrpc": "2.0",
+"error": {
+      "code": -32500,
+      "message": "Application error.",
+      "data": "[ CMediatype::delete ] Mediatype does not exist"
+},
+"id": 2
+}
+</code>

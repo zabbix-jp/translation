@@ -1,0 +1,43 @@
+===== update() =====
+Available since version: **1.8**\\
+The method is used to control all screen attributes including screen screens.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**screenid**|//string//|  |Screen ID. | |
+|**screen attribute**|//any//| Yes |New value for a screen attribute.  | |
+|**screenitems**|//any//| Yes |New screen item list.  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Screen IDs.|
+|**error**|In case of any errors|
+
+==== Example =====
+
+Set screen name to "New Name":
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "method":"screen.update",
+   "params":{
+      "screenid": "100100000010092",
+      "name": "New Name"
+   },
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated screen IDs:
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "result": {
+       "screenids":["100100000010092"]
+   },
+   "id":2
+  }
+</code>

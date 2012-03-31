@@ -1,0 +1,23 @@
+==== 8 Host and trigger dependencies ====
+
+
+Zabbix does not support host dependencies. Host dependencies can be defined using more flexible option, i.e. trigger dependencies.
+
+**How it works?**
+
+A trigger may have list of one or more triggers it depends on. It means that the trigger will still change its status regardless of state of the triggers in the list, yet the trigger won't generate notifications and actions in case if one of the trigger in the list has state PROBLEM.
+
+=== Example 1 ===
+Host dependency
+
+Suppose you have two hosts: a router and a server. The server is behind the router. So, we want to receive only one notification if the route is down:
+
+//"The router is down"//
+
+instead of:
+
+//"The router is down" and "The host is down"//
+
+In order to achieve this, we create a trigger dependency:
+  "The host is down" depends on "The router is down"
+In case if both the server and the router is down, Zabbix will not execute actions for trigger "The host is down".

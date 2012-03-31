@@ -1,0 +1,340 @@
+==== - #6 Screen export and import ====
+
+<note tip>Screen export and import is available since Zabbix version 1.8.2.</note>
+
+Screen export and import controls can be found under Configuration → Screens menu, where all configured screens are displayed.
+
+=== - Screen exporting ===
+
+In left bottom corner a selection box is available with two options: "Export selected" and "Delete selected".
+
+{{:1.8:manual:xml_export_import:screen_export.png|}}
+
+To export screens:
+  - Mark checkboxes next to screens you wish to export;
+  - Select "Export selected" if it's not selected already;
+  - Press button "Go";
+  - Select file where Zabbix should store XML data with exported screens.
+
+=== - Screen importing ===
+
+Importing screens is as easy as exporting them. On the top right corner near "Create Screen" button, you will find new button - "Import Screen".
+
+{{:1.8:manual:xml_export_import:screen_import_button.png|}}
+
+To import screens:
+
+  - Press "Import Screen" button. File selection along with options to control import is shown;
+  - Click the button to select XML file containing exported Zabbix screens;
+  - Check box under "Update existing" if you need to update (overwrite) existing screens;
+  - Check box under "Add missing" if you need to create new screen if it's missing;
+  - Press import to send needed data to the Zabbix frontend;
+  - Wait till page reloads. It can take some time if you have lots of screens to import or lots their elements. Zabbix frontend will inform you about import success or failure. Click on "Details" link in the left upper corner to see more detailed information about what has been done by import, or why it failed to import.
+
+|{{:1.8:manual:xml_export_import:screen_import.png|}}|
+|Screen import form|
+
+=== - Exported data ===
+
+Only screen structure is exported. That includes all screen settings are and all screen elements along with their configuration.
+
+=== - Not exported data ===
+
+Anything included in the screen itself (like a host, hostgroup or any other data) is not exported.
+
+When importing a screen, if any of the referenced elements is missing, import will fail, for example, with:
+
+  Cannot find trigger "child_node5: ZBXHost:DOUBLE CHECK" used in exported screen "Link Screen"
+
+=== - XML format - screen definition ===
+
+Screen export consists of screen definition itself and any additional elements.
+
+  <screens>
+    <screen>
+      <name>Screen name</name>
+      <hsize>1</hsize>
+      <vsize>2</vsize>
+      <screenitems>
+        <screenitem></screenitem>
+        ...
+        <screenitem></screenitem>
+      </screenitems>
+    </screen>
+  </screens>
+
+  * **name** - screen name;
+  * **hsize** - rows;
+  * **vsize** - columns;
+  * **screenitem** - individual screen items, described below.
+=== - XML format - screen elements ===
+
+Available screen elements and their IDs.
+
+^Resource type^Description^
+|0|[[#Graph]]|
+|1|[[#Simple graph]]|
+|2|[[#Map]]|
+|3|[[#Plain text]]|
+|4|[[#Hosts info]]|
+|5|[[#Triggers info]]|
+|6|[[#Server info]]|
+|7|[[#Clock]]|
+|8|[[#Screen]]|
+|9|[[#Triggers overview]]|
+|10|[[#Data overview]]|
+|11|[[#URL]]|
+|12|[[#History of actions]]|
+|13|[[#History of events]]|
+|14|[[#Status of hostgroup triggers]]|
+|15|[[#System status]]|
+|16|[[#Status of host triggers]]|
+=== - XML format - available element tags ===
+
+**Bold text** - mandatory tag for all elements;\\ 
+Normal text - tag available for all elements;\\ 
+//Italic text// - tag optionally available for some elements (see below for details).
+
+  * **<resourcetype>** - identifies element type, as per the table above;
+  * //<resourceid>// - identifies resource, if applicable; depends of resource type;
+  * //<width>// - element's width in pixels, if applicable;
+  * //<height>// - element's height in pixels, if applicable;
+  * **<x>** - element location on screen table by X axis (cell of the upper left corner);
+  * **<y>** - element location on screen table by Y axis (cell of the upper left corner);
+  * <colspan> - if higher than 1, sets count of columns to merge (to the right);
+  * <rowspan> - if higher than 1, sets count of rows to merge (down);
+  * //<elements>// - amount of rows to show, if applicable;
+  * <valign> - vertical align: **0** - middle, **1** - top, **2** - bottom;
+  * <halign> - horizontal align: **0** - centre, **1** - left, **2** - right;
+  * //<style>// - meaning depends on resource type;
+  * //<dynamic>// - allows to apply the element to different hostgroups and/or hosts, if applicable.
+
+If <resourceid> refers to an object by name, it can have subtags. If data is exported from a distributed setup installation, node will always be identified by name:
+  <node>Zabbix node</node>
+
+For example, [[#Simple graph]] **<resourceid>** entry from a non-distributed setup would look like this:
+  <resourceid>
+    <host>Zabbix server</host>
+    <key_>system.cpu.load</key_>
+  </resourceid>
+
+In a distributed setup, it becomes:
+  <resourceid>
+    <node>Zabbix node</node>
+    <host>Zabbix server</host>
+    <key_>system.cpu.load</key_>
+  </resourceid>
+
+Individual object references are listed at each element.
+
+=== - XML format - individual screen element details, A-Z ===
+
+Each individual element must have mandatory tags from the previous section and may have tags that are available for all elements. If there are additional tags available for the specific element, they are listed here.
+== - Clock ==
+
+Resource type 7. Additional tags:
+
+  * <width>;
+  * <height>;
+  * <style> - Local time (0), Server time (1).
+== - Data overview ==
+
+Resource type 10. Additional tags:
+
+  * <resourceid> - Host group (by name);
+  * <width>;
+  * <height>.
+
+Available //<resourceid>// contents:
+  <name>Linux servers</name>
+
+== - Graph ==
+
+Resource type 0. Additional tags:
+
+  * <resourceid> - Graph (by name);
+  * <dynamic>.
+
+Available //<resourceid>// contents:
+  <host>Zabbix host</host>
+  <name>Graph name</name>
+
+== - History of actions ==
+
+Resource type 12. Additional tags:
+
+  * <elements> - amount of rows to show.
+
+== - History of events ==
+
+Resource type 13. Additional tags:
+
+  * <elements> - amount of rows to show.
+== - Hosts info ==
+
+Resource type 4. Additional tags:
+
+  * <resourceid> - Host group (by name).
+
+Available //<resourceid>// contents:
+  <name>Linux servers</name>
+
+== - Map ==
+
+Resource type 2. Additional tags:
+
+  * <resourceid> - Zabbix map (by name).
+
+Available //<resourceid>// contents:
+  <name>City map</name>
+== - Plain text ==
+
+Resource type 3. Additional tags:
+
+  * <resourceid> - Item (by key);
+  * <elements> - number of rows to show;
+  * <style> - if set, HTML code will rendered for in item data that contains strings;
+  * <dynamic>.
+
+Available //<resourceid>// contents:
+  <host>Zabbix server</host>
+  <key_>system.cpu.load</key_>
+
+== - Screen ==
+
+Resource type 8. Additional tags:
+
+  * <resourceid> - Screen (by name);
+
+Available //<resourceid>// contents:
+  <name>Application servers screen</name>
+
+== - Server info ==
+
+Resource type 6. No additional tags available.
+== - Simple graph ==
+
+Resource type 1. Additional tags:
+
+  * <resourceid> - Item (by key);
+  * <dynamic>.
+
+Available //<resourceid>// contents:
+  <host>Zabbix server</host>
+  <key_>system.cpu.load</key_>
+
+== - Status of host triggers ==
+
+Resource type 16. Additional tags:
+
+  * <resourceid> - Host (by name);
+  * <elements> - number of rows to show.
+
+Available //<resourceid>// contents:
+  <host>aleksei_host</host>
+== - Status of hostgroup triggers ==
+
+Resource type 14. Additional tags:
+
+  * <resourceid> - Host group (by name);
+  * <elements> - number of rows to show.
+
+Available //<resourceid>// contents:
+
+  <name>aaa</name>
+
+== - System status ==
+
+Resource type 15. No additional tags available.
+
+== - Triggers info ==
+
+Resource type 5. Additional tags:
+
+  * <resourceid> - Host group (by name);
+
+Available //<resourceid>// contents:
+
+  <name>aaa</name>
+
+== - Triggers overview ==
+
+Resource type 9. Additional tags:
+
+  * <resourceid> - Host group (by name);
+
+Available //<resourceid>// contents:
+
+  <name>aaa</name>
+== - URL ==
+
+Resource type 11. Additional tags:
+
+  * <url> - fully qualified or relative URL.
+=== - XML export example ===
+
+The following is a simple screen (2x2), exported to XML. It contains one custom graph in upper left cell (spanning two columns), one simple graph in the lower left cell and trigger status element, filtered for a hostgroup, in the lower right cell. Notice the encoding of **&** as **&amp;**.
+
+  <?xml version="1.0" encoding="UTF-8"?>
+  <screens>
+    <screen>
+      <name>Excellent screen</name>
+      <hsize>2</hsize>
+      <vsize>2</vsize>
+      <screenitems>
+        <screenitem>
+          <resourcetype>0</resourcetype>
+          <resourceid>
+            <host>Zabbix server</host>
+            <name>CPU Load &amp; traffic</name>
+          </resourceid>
+          <width>1000</width>
+          <height>100</height>
+          <x>0</x>
+          <y>0</y>
+          <colspan>2</colspan>
+          <rowspan>0</rowspan>
+          <elements>0</elements>
+          <valign>0</valign>
+          <halign>0</halign>
+          <style>0</style>
+          <dynamic>0</dynamic>
+        </screenitem>
+        <screenitem>
+          <resourcetype>1</resourcetype>
+          <resourceid>
+            <host>Zabbix server</host>
+            <key_>zabbix[uptime]</key_>
+          </resourceid>
+          <width>500</width>
+          <height>90</height>
+          <x>0</x>
+          <y>1</y>
+          <colspan>0</colspan>
+          <rowspan>0</rowspan>
+          <elements>0</elements>
+          <valign>0</valign>
+          <halign>0</halign>
+          <style>0</style>
+          <dynamic>0</dynamic>
+        </screenitem>
+        <screenitem>
+          <resourcetype>14</resourcetype>
+          <resourceid>
+            <name>Linux servers</name>
+          </resourceid>
+          <width>500</width>
+          <height>100</height>
+          <x>1</x>
+          <y>1</y>
+          <colspan>0</colspan>
+          <rowspan>0</rowspan>
+          <elements>25</elements>
+          <valign>0</valign>
+          <halign>0</halign>
+          <style>0</style>
+          <dynamic>0</dynamic>
+        </screenitem>
+      </screenitems>
+    </screen>
+  </screens>

@@ -1,0 +1,9 @@
+===== Zabbix API =====
+
+Zabbix API provides programmable interface to Zabbix for mass manipulations, 3rd party software integration and other purposes.
+
+Currently Zabbix API specification is in draft state. All objects marked as 'draft' are experimental and should be used with a great care. We do not guarantee compatibility with future releases.
+
+Object specifications without the 'draft' mark are stable and can be used for production purposes.
+
+See [[http://www.zabbix.com/wiki/doc/api|Zabbix wiki]] for community provided solutions around the API.

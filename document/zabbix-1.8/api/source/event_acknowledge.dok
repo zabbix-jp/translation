@@ -1,0 +1,42 @@
+===== acknowledge() =====
+Available since version: **1.8**\\
+The method is used to control all event attributes including event applications linkage.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**eventids**|//string//| No |Array of event IDs. | |
+|**message**|//any//| Yes |Acknowledge message. | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of acknowledged Event IDs.|
+|**error**|In case of any errors|
+
+==== Example =====
+
+Enable event, .i.e set its status to '0':
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "method":"event.acknowledge",
+   "params":{
+      "eventids": ["100100000010092", "100100000010094"],
+      "message": "Problem resolved"
+   },
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved acknowledged event IDs:
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "result": {
+       "eventids":["100100000010092", "100100000010094"]
+   },
+   "id":2
+  }
+</code>

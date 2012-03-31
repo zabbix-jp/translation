@@ -1,0 +1,40 @@
+===== deleteMedia() =====
+Available since version: **1.8**\\
+
+==== Parameters ====
+Array with Media data, media **ID** must be specified\\
+
+^Parameter^Type^Optional^Description^Details^
+|**medias**|//array//| Yes |Medias objects which should be deleted (removed / added).  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of deleted User IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Remove two user medias from user with **ID** "100100000010092"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"user.deleteMedia",
+"params":[
+  {"mediaid": "100100000000011"},
+  {"mediaid": "100100000000012"}
+],
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+
+Users medias deleteed successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "mediaids":["100100000000011", "100100000000012"]
+},
+"id":2
+}
+</code>

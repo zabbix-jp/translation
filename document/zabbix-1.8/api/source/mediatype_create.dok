@@ -1,0 +1,68 @@
+===== create() =====
+This function allows you to create a mediatype as defined by the **mediatype data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**mediatype data**|//array or object//|  |Array of Mediatype objects or a single object|**mediatypeid** shouldn't be specified |
+
+====Returns====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of created Mediatype IDs. **mediatypeid** are assigned to each Mediatype object |
+|**error** |In case of any errors|
+
+==== Example ====
+Create two new mediatypes:
+<code js>
+{
+"jsonrpc": "2.0",
+"method": "mediatype.create",
+"params": [{
+	"type": "0",
+	"description": "Root Email",
+	"smtp_server": "rootmail@domain.com",
+	"smtp_helo": "domain.com",
+	"smtp_email": "domain@domain.com",
+	"exec_path": "",
+	"gsm_modem": "",
+	"username": "",
+	"passwd": ""
+},
+{
+	"type": "2",
+	"description": "SMS",
+	"smtp_server": "",
+	"smtp_helo": "",
+	"smtp_email": "",
+	"exec_path": "",
+	"gsm_modem": "\/dev\/ttyS0",
+	"username": "",
+	"passwd": ""
+}],
+"auth": "038e1d7b1735c6a5436ee9eae095879e",
+"id": 2
+}
+</code>
+
+Mediatype created successfully:
+<code js>
+{
+"jsonrpc": "2.0",
+"result": {
+   "mediatypeids": ["100100000214797", "100100000214798"]
+},
+"id": 2
+}
+</code>
+
+Mediatype already exists:
+<code js>
+{
+"jsonrpc": "2.0",
+"error": {
+      "code": -32602,
+      "message": "Invalid params.",
+      "data": "[ CMediatype::create ] Cannot create Mediatype"
+},
+"id": 2
+}
+</code>

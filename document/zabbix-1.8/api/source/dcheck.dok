@@ -1,0 +1,29 @@
+===== DCheck =====
+==== Methods ====
+
+Class containing methods for operations with Discovered Checks.
+^Methods^Description^
+|[[1.8/api/dcheck/get|get()]] |Get discovery check details |
+
+
+==== Object details ====
+
+The table contains complete list of Discovery Check attributes.
+
+^Parameter^Type^Description^Details^
+|**dcheckid**|//integer//|Discovery Check ID | |
+|**druleid**|//integer//|Discovery Rule ID | |
+|**type**|//integer//|Check type  | |
+|**key_**|//string//| ZABBIX Agent key | |
+|**ports**|//string//|Port | Separated by comma |
+|**snmp_community**|//string//|SNMP community| |
+|**snmpv3_securityname**|//string//|SNMP | |
+|**snmpv3_securitylevel**|//integer//|SNMP security level| |
+|**snmpv3_authpassphrase**|//string//|SNMP authentication phrase | |
+|**snmpv3_privpassphrase**|//string//|SNMP Private phrase| |
+
+
+==== Common tasks ====
+The table contains list of common discovery check-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Retrieve discovery check details by Discovery Rule IDs | Use method **dcheck.get** with parameter **dcheckids** |

@@ -1,0 +1,31 @@
+==== - #3 Components ====
+
+=== - Zabbix Components ===
+
+Zabbix consists of several major software components, the responsibilities of which are outlined below.
+
+=== - Zabbix Server ===
+
+This is the centre of the Zabbix software. The Server can remotely check networked services (such as web servers and mail servers) using simple service checks, but it is also the central component to which the Agents will report availability and integrity information and statistics. The Server is the central repository in which all configuration, statistical and operational data are stored, and it is the entity in the Zabbix software that will actively alert administrators when problems arise in any of the monitored systems.
+
+Zabbix can also perform agent-less monitoring and also monitor network devices using SNMP agents.
+
+=== - Zabbix Proxy ===
+
+The Proxy is an optional part of Zabbix deployment. The Proxy collects performance and availability data on behalf of Zabbix Server. All collected data is buffered locally and transferred to Zabbix Server the Proxy belongs to.
+
+Zabbix Proxy is an ideal solution for a centralized monitoring of remote locations, branches, networks having no local administrators.
+
+Zabbix Proxies can also be used to distribute load of a single Zabbix Server. In this case, only Proxies collect data thus making processing on the Server less CPU and disk I/O hungry.
+
+=== - Zabbix Agent ===
+
+In order to actively monitor local resources and applications (such as harddrives, memory, processor statistics etc.) on networked systems, those systems must run the Zabbix Agent. The Agent will gather operational information from the system on which it is running, and report these data to the Zabbix for further processing. In case of failures (such as a harddisk running full, or a crashed service process), the Zabbix Server can actively alert the administrators of the particular machine that reported the failure.
+
+The Zabbix Agents are extremely efficient because of use of native system calls for gathering statistical information.
+
+=== - The WEB Interface ===
+
+In order to allow easy access to the monitoring data and the configuration of Zabbix from anywhere and from any platform, the Web-based Interface is provided. The Interface is a part of the Zabbix Server, and is usually (but not necessarily) run on the same physical machine as the one running the Zabbix Server.
+
+<note>Zabbix front-end must run on the same physical machine if SQLite is used.</note>

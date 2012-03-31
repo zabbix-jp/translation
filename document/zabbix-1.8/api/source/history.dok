@@ -1,0 +1,23 @@
+===== History =====
+==== Methods ====
+
+Class containing methods for operations with History.
+^Methods^Description^
+|[[1.8/api/history/get|get()]] |Get history details |
+|[[1.8/api/history/delete|delete()]] |Delete items history |
+
+==== Object details ====
+The table contains complete list of History attributes.
+
+^Parameter^Type^Description^Details^
+|**id**|//integer//|History ID | Not all history tables got this field|
+|**itemid**|//integer//|Item ID | |
+|**clock**|//integer//|Unix timestamp. | |
+|**value**|//integer//|Item value.  | |
+
+
+==== Common tasks ====
+The table contains list of common history-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Get some item history | Use method **history.get** |
+|Delete items history | Use method **history.delete** with array of item **IDs** |

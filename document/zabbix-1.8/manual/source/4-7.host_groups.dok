@@ -1,0 +1,10 @@
+==== 7 Host groups ====
+
+
+Host group may have zero, one or more hosts.
+
+Host group attributes:
+
+^Parameter     ^Description^
+|**Group name**|Unique host group name. The name must be unique within a Zabbix node.|
+|**Hosts**     |List of hosts of this group.  |

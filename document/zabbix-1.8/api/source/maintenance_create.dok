@@ -1,0 +1,149 @@
+===== create() =====
+This method allows you to create a maintenance as defined by the **maintenance data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**maintenance data**|//array or object//| No |Array of Maintenance objects or a single object|**maintenanceid** shouldn't be specified |
+|**groupids**|//array//|No |Host group ids | |
+|**hostids**|//array//|No |Host ids | |
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Maintenance IDs. **maintenanceid** are assigned to each Maintenance object |
+|**error**|In case of any errors|
+==== Examples ====
+=== simple create ===
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"maintenance.create",
+"params":[{
+	"groupids":[],
+	"hostids":["100100000010229"],
+	"name":"ZABBIX Servers",
+	"maintenance_type":"0",
+	"description":"",
+	"active_since":"1276163035",
+	"active_till":"1307698980"
+}],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+Maintenance added successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "maintenanceids": ["100100000000005"]
+},
+"id":3
+}
+</code>
+
+Maintenance already exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CMaintenance::create ] Maintenance [ ZABBIX Servers ] already exists"
+},
+"id":3
+}
+</code>
+
+=== create maintenance with onetime period ===
+<code>
+{
+    "groupids": [
+        14
+    ],
+    "name": "T1",
+    "maintenance_type": 0,
+    "description": "",
+    "active_since": "1276163035",
+    "active_till": "1307698980",
+    "timeperiods": [
+        {
+            "timeperiod_type": 0,
+            "start_date": "1307689239",
+            "period": 7200
+        }
+    ]
+}
+</code>
+
+=== create maintenance with daily period (at 11:00 every five days for 6 hours 2 minutes) ===
+<code>
+{
+    "groupids": [
+        14
+    ],
+    "name": "T2",
+    "maintenance_type": 0,
+    "description": "",
+    "active_since": "1276163035",
+    "active_till": "1307698980",
+    "timeperiods": [
+        {
+            "timeperiod_type": 2,
+            "start_time": 39600,
+            "period": 21720,
+            "every": 5
+        }
+    ]
+}
+</code>
+
+=== create maintenance with weekly period (at 11:00 on Monday and Tuesday of every second week for 6 hours 2 minutes) ===
+<code>
+{
+    "groupids": [
+        14
+    ],
+    "name": "T3",
+    "maintenance_type": 0,
+    "description": "",
+    "active_since": "1276163035",
+    "active_till": "1307698980",
+    "timeperiods": [
+        {
+            "timeperiod_type": 3,
+            "start_time": 39600,
+            "period": 21720,
+            "every": 2,
+            "dayofweek": 3
+        }
+    ]
+}
+</code>
+
+=== create maintenance with monthly period (at 10:00 on every second week Monday and Wednesday of every January and March for 2 hours) ===
+<code>
+{
+    "groupids": [
+        14
+    ],
+    "name": "T4",
+    "maintenance_type": 0,
+    "description": "",
+    "active_since": "1276163035",
+    "active_till": "1307698980",
+    "timeperiods": [
+        {
+            "timeperiod_type": 4,
+            "start_time": 36000,
+            "period": 7200,
+            "every": 2,
+            "dayofweek": 5,
+            "month": 5,
+            "day": 0
+        }
+    ]
+}
+</code>

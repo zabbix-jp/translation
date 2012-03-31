@@ -1,0 +1,44 @@
+===== update() =====
+Available since version: **1.8**\\
+The method is used to control all graph attributes including graph graphs.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**graphid**|//string//|  |Graph ID. | |
+|**graph attribute**|//any//| Yes |New value for a graph attribute.  | |
+|**gitems**|//any//| Yes |New graph item list.  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Graph IDs.|
+|**error**|In case of any errors|
+
+==== Example =====
+
+Set graph y axis max value to '100':
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "method":"graph.update",
+   "params":{
+      "graphid": "100100000010092",
+      "ymax_type": 1,
+      "yaxismax": 100
+   },
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated graph IDs:
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "result": {
+       "graphids":["100100000010092"]
+   },
+   "id":2
+  }
+</code>

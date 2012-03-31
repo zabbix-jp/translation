@@ -1,0 +1,257 @@
+==== - #5 Map export and import ====
+
+<note tip>Map export and import is available since Zabbix version 1.8.2.</note>
+
+Map export and import controls can be found under Configuration -> Maps menu, where all configured maps are displayed.
+
+=== - Map exporting ===
+
+In left bottom corner a selection box is available with two options: "Export selected" and "Delete selected". To export maps:
+
+  - Mark boxes next to maps you wish to export;
+  - Select "Export selected" if it's not selected already;
+  - Press button "Go";
+  - Select file where Zabbix should store XML data with exported maps.
+
+{{:1.8:manual:xml_export_import:map_export.png|}}
+=== - Map importing ===
+Importing maps is as easy as exporting them. On the top right corner near "Create Map" button, you will find new button - "Import Map".
+
+{{:1.8:manual:xml_export_import:map_import.png|}}
+
+To import maps:
+
+  - Press "Import Map" button. You will get to a screen similar to what you see when importing hosts in Configuration-> Export/Import (Import) menu;
+  - Press on "Choose file" button to select XML file containing exported Zabbix maps;
+  - Check box under "Update existing" if you need to update (overwrite) existing maps;
+  - Check box under "Add missing" if you need to create a new map if it's missing;
+  - Press import to send needed data to Zabbix frontend;
+  - Wait till page reloads. It can take some time  if you have lots of maps to import or lots of hosts, triggers etc. Zabbix frontend will inform you about import success or failure.
+
+|{{:1.8:manual:xml_export_import:map_import_dialogue.png|}}|{{:1.8:manual:xml_export_import:map_import_superadmin.png|}}|
+|Map import dialogue|Map import dialogue for Zabbix super admin, showing image importing options (available since version 1.8.3)|
+
+Click on "Details" link on the left hand side to see more information about what was done by import, or why it failed to import.
+
+=== - What is exported? ===
+
+Only map structure is exported. That means all map settings are exported, all contained elements with their settings are exported, so are the map links and map link status indicators.
+
+=== - What is not exported? ===
+
+Any maps, hostgroups, hosts, triggers, images or any others elements related to the exported map are not exported. Thus if at least one of the elements map refers to is missing, import will fail.
+
+For example, if map refers to a specific trigger on a specific node, but this trigger has been deleted in the meantime, import would fail with an error message:
+  Cannot find trigger "our_node5:Zabbix server:Disk is full" used in exported map "Small map".
+
+=== - Export format ===
+
+An example empty map export with background image from a distributed setup node:
+
+<code xml>
+ <sysmap>
+   <selements>
+   </selements>
+   <links>
+   </links>
+   <name>TEST</name>
+   <width>800</width>
+   <height>600</height>
+   <backgroundid>
+     <node>aly_trunk</node>
+     <name>Map BG</name>
+   </backgroundid>
+   <label_type>2</label_type>
+   <label_location>0</label_location>
+   <highlight>1</highlight>
+   <expandproblem>1</expandproblem>
+ </sysmap>
+</code>
+== - Map elements ==
+
+Let's take XML excerpt of some Zabbix map element as an example:
+
+<code>
+     <selement>
+       <selementid>100100000000372</selementid>
+       <elementid>
+         <node>noden1</node>
+         <host>LocalHost</host>
+         <description>DOUBLE</description>
+         <expression>{TimeHost:system.localtime[local].last(0)}=0 &amp; {TimeHost:system.localtime[local].last(0)}=2</expression>
+       </elementid>
+       <elementtype>2</elementtype>
+       <iconid_off>
+         <node>noden1</node>
+         <name>Hub</name>
+       </iconid_off>
+       <label>New Element</label>
+       <label_location>-1</label_location>
+       <x>231</x>
+       <y>122</y>
+     </selement>
+</code>
+
+  * **<selement>** is the opening tag for an element (shorthand of "System map element");
+  * **<selementid>** is a unique element id, used for map link references;
+  * **<elementid>** refers to the actual Zabbix entity that is represented on the map (map/hostgroup/host etc.;
+  * **<node>** tag will be present if the exported map comes from a distributed setup, skipped otherwise;
+  * **<elementtype>** describes what [[map_export_import#element_types_and_storage|type of element]] info is stored in **<elementid>** node;
+
+<note tip>When importing an XML, **selementid** values don't have to match any values in the existing dataset - they are only used to determine map link connections.</note>
+== - Element types and storage ==
+
+**elementtype** tag in map export can be one of the following:
+
+^Value^Type^
+|0|Host|
+|1|Map|
+|2|Trigger|
+|3|Host group|
+|4|Image|
+
+  * **Host reference**
+
+//DM (distributed monitoring) setup//
+         <node>noden1</node>
+         <host>LocalHost</host>
+//Single server setup//
+         <host>LocalHost</host>
+
+Hosts are referred to by host name.
+
+  * **Map reference**
+//DM setup//
+         <node>noden1</node>
+         <name>Local map</name>
+//Single server setup//
+         <name>Local map</name>
+
+Maps are referred to by map name.
+
+  * **Trigger reference**
+Triggers are described in a more complex way:
+
+//DM setup//
+         <node>noden1</node>
+         <host>LocalHost</host>
+         <description>Lack of free memory on server {HOSTNAME}</description>
+         <expression>{LocalHost:vm.memory.size[free].last(0)}&lt;10000</expression>
+//Single server setup//
+         <host>LocalHost</host>
+         <description>Lack of free memory on server {HOSTNAME}</description>
+         <expression>{LocalHost:vm.memory.size[free].last(0)}&lt;10000</expression>
+
+Trigger is referred to by host name, trigger description and trigger expression.
+
+  * **Host group reference**
+//DM setup//
+         <node>noden1</node>
+         <name>Local Host Group</name>
+//Single server setup//
+         <name>Local Host Group</name>
+
+Host groups are referred to by host group name.
+
+  * **Image reference**
+<note tip>For images <elementid> node can be skipped.</note>
+
+Nodes **<iconid_off>**, **<iconid_on>**, **<iconid_unknown>**, **<iconid_maintenance>** and **<iconid_disabled>** describes what icons should be used for the map element according to its status.
+
+For default icon, **<iconid_off>** is used.
+
+Inside icon block, image itself is specified:
+//DM setup//
+         <node>noden1</node>
+         <name>Local Image</name>
+//Single server setup//
+         <name>Local Image</name>
+
+To use default icon for any state, node for that state should be skipped in the **<selement>** block.
+
+== - Element labels ==
+
+  * **<label>** describes map elements labels. Macros can be used in labels.
+  * **<label_location>** is used for positioning element's label:
+
+^Value^Type^
+|-1|use map default|
+|0|bottom|
+|1|left|
+|2|right|
+|3|top|
+
+== - Element positioning ==
+
+**<x>** and **<y>** nodes are used for positioning element on the map by x and y coordinates.
+== - Map links ==
+
+Example:
+<code>
+     <link>
+       <selementid1>100100000000399</selementid1>
+       <selementid2>100100000000402</selementid2>
+       <drawtype>0</drawtype>
+       <color>00AA00</color>
+       <linktriggers>
+       </linktriggers>
+     </link>
+</code>
+
+  * **<selemetid1>** and **<selementid2>** nodes are used to specify map elements that link connects.
+  * **<drawtype>** defines default link style:
+
+^Value^Style^
+|0|line|
+|2|bold line|
+|3|dot|
+|4|dashed line|
+
+  * **<color>** specifies what the default link colour is;
+  * **<linktriggers>** contains information about link status indicators.
+
+Example:
+<code>
+         <linktrigger>
+           <triggerid>
+             <node>aly_trunk</node>
+             <host>Symmetra PX40 Clone2</host>
+             <description>APC: Input Current (PHASE L3)</description>
+             <expression>{Symmetra PX40 Clone2:upsPhaseInputCurrent.L3.last(0)}&lt;15 | {Symmetra PX40 Clone2:upsPhaseInputCurrent.L3.last(0)}&gt;18</expression>
+           </triggerid>
+           <drawtype>0</drawtype>
+           <color>0</color>
+         </linktrigger>
+</code>
+
+  * **<triggerid>** describes trigger used for indicating link status. Linked trigger referenced the same as map element trigger;
+  * **<drawtype>** and **<color>** are used to indicate how link should be drawn on the map if this trigger has the highest severity from all the active triggers that are attached to this link.
+
+== - Images ==
+
+<note>Image import/export is supported since Zabbix version 1.8.3.</note>
+
+It is possible to export and import used images alongside maps. If exported map is using any images, they are stored in the resulting XML file. An example of how an exported image might look like:
+
+  <images>
+    <image>
+      <name>Server (small)</name>
+      <imagetype>1</imagetype>
+      <encodedImage>iVBORw0KGgoAA...ErkJggg==</encodedImage>
+    </image>
+  </images>
+
+<note warning>Value for the <encodedImage> tag is truncated in the above example.</note>
+
+Used tags:
+  * <images> -  root element for images
+  * <image> - individual image element
+  * <name> - image name, unique
+  * <imagetype> - image type, where 1 => icon, 2 => background
+  * <encodedImage> - base64 encoded image
+
+When importing, missing images can be added and existing images can be overwritten by marking appropriate checkboxes. Image importing is only available to users of Zabbix Super Admin type.
+
+<note warning>Warning: if replacing an existing image, it will affect all maps that are using this image.</note>
+
+It is possible to import images only by unchecking both map checkboxes.

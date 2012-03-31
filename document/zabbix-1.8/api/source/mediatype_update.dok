@@ -1,0 +1,42 @@
+===== update() =====
+Available since version: **1.8**\\
+The method is used to control all mediatype attributes including mediatype applications linkage.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**mediatypeid**|//string//|  |Mediatype ID. | |
+|**mediatype attribute**|//any//| Yes |New value for a mediatype attribute.  | |
+
+==== Returns =====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of updated Mediatype IDs.|
+|**error** |In case of any errors|
+
+==== Example =====
+
+Change SMTP server for mediatype:
+
+<code js>
+  {
+   "jsonrpc": "2.0",
+   "method": "mediatype.update",
+   "params": [{
+      "mediatypeid": "100100000010092",
+      "smtp_server": "usdomain@usdomain.org"
+   }],
+   "auth": "700ca65537074ec963db7efabda78259",
+   "id": 2
+  }
+</code>
+
+Retrieved updated mediatype IDs:
+
+<code js>
+  {
+   "jsonrpc": "2.0",
+   "result": {
+       "mediatypeids": ["100100000010092"]
+   },
+   "id": 2
+  }
+</code>

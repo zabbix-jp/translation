@@ -1,0 +1,33 @@
+==== - #2 Add user ====
+
+After initial installation, Zabbix has only two users defined. User "Admin" is a Zabbix superuser, which has full permissions. User "guest" is a special default user. If a user does not log in, the user will be accessing Zabbix with "guest" permissions. By default, "guest" has no permissions on Zabbix objects.
+
+{{:1.8:manual:quickstart:userlist.png?600|}}
+
+To add a new user, navigate to Administration -> Users and switch to //Users// in the dropdown, then click "Create User".
+
+In the new user form, make sure to add your user to one of the existing groups, for example **Network administrators**.
+
+{{:1.8:manual:quickstart:new_user.png|}}
+
+By default, new users have no media (notification methods) defined. To create one, click //Add// in the **Media** section. 
+
+{{:1.8:manual:quickstart:add_media.png|}}
+
+In this popup, enter an e-mail address for the user. You can specify a time period when the medium will be active (see [[1.8:manual:config:time_period|Time period specification]] page for description of the format), by default a medium is always active. You can also customise severities for which the medium will be active, but leave all of them enabled for now. Click //Add//, then click //Save// in the user properties. The new user appears in the userlist.
+
+{{:1.8:manual:quickstart:userlist2.png?600|}}
+
+By default, a new user has no permissions. To grant the user rights, click on the group in **Groups** column. This opens the group properties form. This user will have read-only access to Linux servers group, so click on //Add// below the **Read only** listbox.
+
+{{:1.8:manual:quickstart:add_permissions.png|}}
+
+In this popup, mark the checkbox next to **Linux servers**, then click //Select//.
+
+{{:1.8:manual:quickstart:group_properties.png?600|}}
+
+In the user group properties form, click //Save//.
+
+<note tip>In Zabbix, all access rights are assigned to user groups.</note>
+
+Done! You may try to log in using credentials of the new user.

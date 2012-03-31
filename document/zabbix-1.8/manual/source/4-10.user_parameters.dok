@@ -1,0 +1,76 @@
+==== 10 User Parameters ====
+
+Functionality of Zabbix agents can be enhanced by defining user parameters (**UserParameter** configuration parameter) in agent's configuration file. Once user parameters are defined, they can be accessed in the same way as any other agent items by using the key, specified in the parameter definition.
+
+User parameters are commands executed by Zabbix agent. **/bin/sh** is used as a command line interpreter under UNIX operating systems.
+
+See a [[:1.8:manual:tutorials:extending_agent|step-by-step tutorial]] on making use of user parameters.
+
+=== - Simple user parameters ===
+In order to define a new parameter for monitoring, one line has to be added to configuration file of Zabbix agent and the agent must be restarted.
+
+User parameter has the following syntax:
+  UserParameter=key,command
+
+^Parameter^Description^
+|**Key**|Unique item key.|
+|**Command**|Command to be executed to evaluate value of the Key.|
+
+== Example 1 ==
+Simple command
+
+  UserParameter=ping,echo 1
+
+The agent will always return '1' for item with key 'ping'.
+
+== Example 2 ==
+More complex example
+
+  UserParameter=mysql.ping,mysqladmin -uroot ping | grep -c alive
+
+The agent will return '1', if MySQL server is alive, '0' - otherwise.
+=== - Flexible user parameters ===
+Flexible user parameters can be used for more control and flexibility.
+
+For flexible user parameters,
+
+  UserParameter=key[*],command
+
+^Parameter^Description^
+|**Key**|Unique item key. The [*] defines that this key accepts parameters.|
+|**Command**|Command to be executed to evaluate value of the Key.\\ Zabbix parses content of [] and substitutes $1,...,$9 in the command.\\ $0 will be substituted by the original command (prior to expansion of $0,...,$9) to be run.|
+
+<note tip>To use positional references unaltered, specify double dollar sign - for example, awk '{print $$2}'.</note>
+
+<note important>Unless [[1.8/manual/processes/zabbix_agentd|UnsafeUserParameters]] agent daemon configuration option is enabled, it is not allowed to pass flexible parameters containing these symbols: \ ' " ` * ? [ ] { } ~ $ ! & ; ( ) < > | # @  </note>
+
+<note warning>Command used should always return a value that is not empty (and not a newline). If non-valid value is returned, ZBX_NOTSUPPORTED will be sent back by the agent.</note>
+
+== Example 1 ==
+Something very simple
+
+  UserParameter=ping[*],echo $1
+
+We may define unlimited number of items for monitoring all having format ping[something]. 
+  * ping[0] - will always return '0'
+  * ping[aaa] - will always return 'aaa'
+
+== Example 2 ==
+Let's add more sense!
+
+  UserParameter=mysql.ping[*],mysqladmin -u$1 -p$2 ping | grep -c alive
+
+This parameter can be used for monitoring availability of MySQL database. We can pass user name and password:
+
+  mysql.ping[zabbix,our_password]
+== Example 3 ==
+How many lines matching a regular expression in a file?
+
+  UserParameter=wc[*],grep -c "$2" $1
+
+This parameter can be used to calculate number of lines in a file.
+
+  wc[/etc/passwd,root]
+  wc[/etc/services,zabbix]
+
+<note important>Note that [[:1.8/manual/processes/zabbix_agentd|Zabbix agent daemon]] does not support user parameters with **-t** or **-p** agent switches (used to test single item or print out a list of all supported items) until version 1.8.3. See [[:1.8/manpages/zabbix_agentd|manpage]] in earlier versions for more information.</note>

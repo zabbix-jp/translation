@@ -1,0 +1,36 @@
+===== - #11 What's new in Zabbix 1.8.8 =====
+
+
+==== - Frontend improvements ====
+
+=== - Latest data improvements ===
+
+  * Starting with Zabbix 1.8.8, all hosts and hostgroups are shown in //Monitoring -> Latest data//. Previously, hosts without data were not listed here.
+  * //Monitoring -> Latest data// section gains a new filter to show items without data. Previously, they were not displayed at all. By default such items are still not visible.
+
+{{:1.8:manual:about:show_items_without_data.png|}}
+=== - API changes ===
+
+  * API search wildcard was changed from "%" to "*"
+=== - Updated translations ===
+
+  * French
+==== - Daemon improvements ====
+
+=== - Zabbix server improvements ===
+
+Zabbix server performance has been improved when calculating trigger expressions.
+
+The processes that take values from history cache and put them in the database - **history syncers** (configured by the server configuration parameter **StartDBSyncers**) take up to 1000 values on each iteration and calculate all triggers that reference corresponding items. Previously, each [[:1.8/manual/config/triggers#trigger_functions|trigger function]] would result in a separate query to the database. Starting with Zabbix 1.8.8, a single SQL query is prepared for all of the functions in all triggers that history syncer has been tasked with updating.
+
+Additionally, if there are multiple triggers in such a batch that check text or log items, last two values for items like those are cached for the current run.
+
+In total, this results in a significantly decreased query count against the database and thus performance improvements.
+
+The same improvements also affect the internal **timer** process (only one such process may run currently), which calculates triggers that include [[:1.8/manual/config/triggers#time_based_functions|time based functions]].
+
+History syncers try to take a new batch of values from the history cache 0-5 seconds after they have finished the work on the previous one, based on how many values it got previously (for example, if it got 1000 values, it will make the next attempt immediately after finishing the work).
+
+==== - General improvements ====
+
+Macro **{TRIGGER.ID}** is now supported in frontend and notifications if used inside trigger URL field.

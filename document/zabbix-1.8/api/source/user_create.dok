@@ -1,0 +1,75 @@
+===== create() =====
+This function allows you to create a user as defined by the **user data** array. Available only to super admins.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**user data**|//array or object//| No |Array of User objects or a single object|**userid** shouldn't be specified |
+|**usrgrps**|//array//| No |User Groups add User to. | |
+|**user_medias**|//array//| No |Create User Medias for User. | |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created User IDs. **userid** are assigned to each User object |
+|**error**|In case of any errors|
+==== Example ====
+Create new user and added it to 3 user groups. Password "zabbix" will automaticly be encoded by MD5 hash function.
+<code>
+{
+"jsonrpc":"2.0",
+"method":"user.create",
+"params":[{
+	"usrgrps":[{
+		"usrgrpid":"100100000000009",
+		"name":"Internal login"
+	},{
+		"usrgrpid":"100100000000020",
+		"name":"API access"
+	},{
+		"usrgrpid":"100100000000022",
+		"name":"Debug group"
+	}],
+	"alias":"Test User",
+	"name":"Test User Name",
+	"surname":"Test User Surname",
+	"passwd":"zabbix",
+	"url":"",
+	"autologin":"0",
+	"autologout":"600",
+	"lang":"en_gb",
+	"refresh":"90",
+	"type":"1",
+	"theme":"css_ob.css",
+	"attempt_failed":"0",
+	"attempt_ip":"",
+	"attempt_clock":"0",
+	"rows_per_page":"50"
+}],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+User added successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "userids": ["107819"]
+},
+"id":3
+}
+</code>
+
+User already exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CUser::create ] User [ Admin ] already exists"
+},
+"id":3
+}
+</code>

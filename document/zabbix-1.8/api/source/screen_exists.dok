@@ -1,0 +1,43 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether screen with given screen data exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|Yes |List of node IDs where to search for given screen |  |
+|**screenid**|//string//|Yes |Screen name |  |
+|**name**|//string//|Yes |Screen name |  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+
+==== Example ====
+
+Check if screen with name "ZABBIX Server" exists
+<code>
+{
+"jsonrpc":"2.0",
+"method":"screen.exists",
+"params":{
+	"name": "ZABBIX Server"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Screen exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

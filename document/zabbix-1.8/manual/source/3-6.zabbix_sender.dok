@@ -1,0 +1,28 @@
+==== - #6 Zabbix Sender (UNIX) ====
+
+
+Zabbix UNIX Sender is a command line utility which may be used to send performance data to Zabbix server for processing.
+
+The utility is usually used in long running user scripts for periodical sending of availability and performance data.
+Zabbix Sender can be started by executing:
+
+  shell> cd bin
+  shell> ./zabbix_sender -z zabbix -s LinuxDB3 -k db.connections -o 43
+
+Starting with Zabbix 1.8.4, zabbix_sender has been improved in realtime sending scenarios by gathering multiple values that are passed to it in close succession, and sending them to the server in single connection. Value that is not further apart from previous value than 0.2 seconds can be put in the same stack, but maximum pooling time still is 1 second.
+
+If sending many values from an input file, Zabbix sender will batch them at 250 values in one go (all values will be processed), for example:
+
+
+  # zabbix_sender -z 127.0.0.1 -i /tmp/traptest.txt 
+  Info from server: "Processed 250 Failed 0 Total 250 Seconds spent 0.002668"
+  Info from server: "Processed 50 Failed 0 Total 50 Seconds spent 0.000540"
+  sent: 300; skipped: 0; total: 300
+
+All entries from an input file are sent in a sequential order top-down. 
+
+If the target item has triggers referencing it, all timestamps in an input file must be in an increasing order, otherwise event calculation will not be correct. 
+
+<note>Starting from version 1.8.6 Zabbix Sender will terminate if invalid (not following //parameter=value// notation) parameter entry is present in specified configuration file.</note>
+
+See [[:1.8/manpages/zabbix_sender|Zabbix Sender manpage]] for more information.

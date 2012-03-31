@@ -1,0 +1,44 @@
+===== update() =====
+
+Available since version: **1.8**\\
+The method is used to control host group attributes. 
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**groupid**|//string//|  |Host name. | |
+|**name**|//any//| Yes |New value for a hostgroup name.  | |
+
+==== Returns =====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Host group IDs.|
+|**error**|In case of any errors|
+==== Example =====
+
+Rename host group:
+
+<code js>
+  {
+   "jsonrpc":"2.0",
+   "method":"hostgroup.update",
+   "params":[
+		{"groupid": "100100000000042", "name": "Rename 1"},
+		{"groupid": "100100000000013", "name": "Rename 2"}
+	],
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated host IDs:
+
+<code js>
+  {
+    "jsonrpc":"2.0",
+    "result": {
+	"groupids":["100100000000042","100100000000013"]
+    },
+    "id":2
+  }
+</code>

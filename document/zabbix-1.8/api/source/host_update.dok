@@ -1,0 +1,41 @@
+===== update() =====
+Available since version: **1.8**\\
+The method is used to control all host attributes including host template linkage, macros and host group membership. The method is a wrapper for **host.massUpdate** function.
+
+==== Parameters ====
+^Parameter         ^Type      ^Optional^Description^Details^
+|**hostid**        |//string//|  |Host ID. | |
+|**host attribute**|//any//   | Yes |New value for a host attribute.  | |
+
+==== Returns =====
+^Parameter ^Description^
+|**result**|Operation successful. Result will contain array of updated Host IDs.|
+|**error** |In case of any errors|
+
+==== Example =====
+Enable host, .i.e set its status to '0':
+
+<code js>
+  {
+   "jsonrpc":"2.0",
+   "method":"host.update",
+   "params":{
+      "hostid": "100100000010092",
+      "status": 0
+   },
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated host IDs:
+
+<code js>
+  {
+   "jsonrpc":"2.0",
+   "result": {
+       "hostids":["100100000010092"]
+   },
+   "id":2
+  }
+</code>

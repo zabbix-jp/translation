@@ -1,0 +1,42 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether action with given action name or action ID exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given action ID or action name|  |
+|**actionid**|//string//|yes |Action ID|  |
+|**name**|//string//|yes |Action name|  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+==== Example ====
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"action.exists",
+"params":{
+    "nodeids": ["1"],
+    "name": "Zabbix Server Action"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Action exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

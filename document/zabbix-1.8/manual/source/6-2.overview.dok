@@ -1,0 +1,29 @@
+==== - #2 Overview ====
+
+Currently two main categories of configuration are supported for export - hosts and their associated data, and network maps.
+
+=== - Host import/export ===
+
+Zabbix host [[:1.8/manual/xml_export_import/data_import|import]]/[[:1.8/manual/xml_export_import/data_export|export]] processes the following data:
+
+  * Hosts and their linkage to templates;
+  * Templates;
+  * Applications;
+  * Items;
+  * Triggers;
+  * Custom graphs;
+  * User macros.
+
+=== - Map import/export ===
+
+Zabbix [[:1.8/manual/xml_export_import/map_export_import|map import/export]] supports the following elements since version 1.8.2:
+
+  * Full map configuration;
+  * All map elements, including images, triggers, hosts, host groups and maps;
+  * All connectors with associated data, including labels and status indicators.
+
+Additionally, since [[:1.8/manual/about/what_s_new_1.8.3#image_import_and_export|1.8.3]] used [[:1.8/manual/xml_export_import/map_export_import#images|images]] (icons and background images) are exported as well.
+
+=== - Screen import/export ===
+
+Zabbix [[1.8/manual/xml_export_import/screen_export_import:|screen import/export]] supports all screen elements.

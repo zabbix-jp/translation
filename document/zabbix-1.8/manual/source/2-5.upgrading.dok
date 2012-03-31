@@ -1,0 +1,8 @@
+==== - #5 Upgrading ====
+
+
+=== - Change level releases ===
+
+For change level releases only upgrading of server binary and frontend is required. If mentioned in release notes, optional indexes may be added to the database to improve performance. Upgrading can be easily performed over several versions, for example, upgrading from 1.8.1 to 1.8.3 can be performed in single step.
+
+See [[:1.8/manual/about/installation_and_upgrade|installation and upgrade notes for more information]].

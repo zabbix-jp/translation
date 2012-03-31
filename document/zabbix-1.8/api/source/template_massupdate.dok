@@ -1,0 +1,52 @@
+
+===== massUpdate() =====
+Available since version: **1.8**\\
+==== Parameters ====
+multidimensional array with Templates data\\
+
+^Parameter^Type^Optional^Description^Details^
+|**templates**|//array//|   |Template objects to update | |
+|**host**|//string//| Yes |Template name. | |
+|**groups**|//array//| Yes |Update templates Host Group linkage. Missing objects will be linked, existed stay, others unlinked | |
+|**hosts**|//array//| Yes |Update templates Hosts linkage. Missing objects will be linked, existed stay, others unlinked | |
+|**macros**|//array//| Yes |Update templates Macros. Missing objects will be added, existed updated, others removed | |
+|**templates_link**|//array//| Yes |Update templates Template linkage. Missing objects will be linked, existed stay, others unlinked | |
+|**templates_clear**|//array//| Yes |Templates that should be unlinked and cleared. | |
+
+==== Returns =====
+^Parameter^Description^
+
+|**result**|Operation successful. Result will contain array of updated Template IDs.|
+|**error**|In case of any errors|
+==== Example ====
+
+Update template with **ID** "100100000014792" so:\\
+  - Add to group, and remove from others
+  - Link host to this template and unlink others
+  - Unlink and clear linked template
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"template.massUpdate",
+"params":{
+	"templates": [{"templateid": "100100000014792"}],
+	"groups": [{"groupid": "100100000000041"}],
+	"hosts": [{"hostid": "100100000010092"}],
+	"templates_clear": [{"templateid": 100100000010232}]
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+Templates updated successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+	"templateids":["100100000014792"]
+},
+"id":2
+}
+</code>

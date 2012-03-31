@@ -1,0 +1,55 @@
+===== massAdd() =====
+Available since version: **1.8**\\
+==== Parameters ====
+multidimensional array with Hosts, Groups, Template, Macros data\\
+
+Only host details can be added this way, not hosts themselves.
+
+^Parameter^Type^Optional^Description^Details^
+|**hosts**|//array//|  |Host objects to update | |
+|**groups**|//array//| Yes |Host group objects where hosts should be added. | |
+|**templates**|//array//| Yes |Template objects which should be linked to hosts. | |
+|**macros**|//array//| Yes |Macros objects which should be added to hosts.  | |
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated Host IDs.|
+|**error**|In case of any errors|
+==== Example ====
+
+Add two macros to host with **ID** "100100000010092"
+<code>
+{
+"jsonrpc":"2.0",
+"method":"host.massAdd",
+"params":{ 
+"hosts": 
+ {
+  "hostid": "100100000010092"
+ },
+"macros": [
+  {
+    "macro": "{$TEST1}",
+    "value": "MACROTEST1"
+  },
+  {
+    "macro": "{$TEST2}",
+    "value": "MACROTEST2"
+  }
+]
+},
+"auth":"f223adf833b2bf2ff38574a67bba6372",
+"id":2
+}
+</code>
+Hosts updated successfully:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "hostids":["100100000010092"]
+},
+"id":2
+}
+</code>

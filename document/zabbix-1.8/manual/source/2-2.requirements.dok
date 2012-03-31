@@ -1,0 +1,128 @@
+==== - #2 Requirements ====
+
+=== - Hardware requirements ===
+
+== - Memory Requirements ==
+
+Zabbix requires both physical and disk memory. 128 MB of physical memory and 256 MB of free disk space could be a good starting point. However, the amount of required disk memory obviously depends on the number of hosts and parameters that are being monitored. If you're planning to keep a long history of monitored parameters, you should be thinking of at least a couple of gigabytes to have enough space to store the history in the database. 
+Each Zabbix daemon process requires several connections to a database server. Amount of memory allocated for the connection depends on configuration of the database engine. 
+<note>The more physical memory you have, the faster the database (and therefore Zabbix) works! </note>
+
+== - CPU Requirements ==
+Zabbix and especially Zabbix database may require significant CPU resources depending on number of monitored parameters and chosen database engine.
+
+== - Other hardware ==
+A serial communication port and a serial GSM Modem required for using SMS notification support in Zabbix. USB-to-serial converter also will work.
+
+== - Examples of hardware configuration ==
+The table provides several hardware configurations:
+
+^Name    ^Platform  ^CPU/Memory   ^Database ^ Monitored hosts ^
+|Small |Ubuntu Linux|PII 350MHz 256MB|MySQL MyISAM|20|
+|Medium|Ubuntu Linux 64 bit|AMD Athlon 3200+ 2GB|MySQL InnoDB|500|
+|Large|Ubuntu Linux 64 bit|Intel Dual Core 6400 4GB|RAID10 MySQL InnoDB or PostgreSQL|>1000|
+|Very large|RedHat Enterprise|Intel Xeon 2xCPU 8GB|Fast RAID10 MySQL InnoDB or PostgreSQL|>10000|
+
+<note>Actual configuration depends on number of active items and refresh rates very much. It is highly recommended to run the database on a separate box for large installations.</note>
+
+=== - Supported Platforms===
+Due to security requirements and mission-critical nature of monitoring server, UNIX is the only operating system that can consistently deliver the necessary performance, fault tolerance and resilience. Zabbix operates on market leading versions.
+
+Zabbix is tested on the following platforms:
+  * AIX
+  * FreeBSD
+  * HP-UX
+  * Linux
+  * Mac OS/X
+  * NetBSD
+  * OpenBSD
+  * SCO Open Server
+  * Solaris
+  * Windows 2000, 2003, XP, Vista (only Zabbix agent)
+  
+<note>Zabbix may work on other Unix-like operating systems as well.</note>
+=== - Software Requirements ===
+Zabbix is built around modern Apache WEB server, leading database engines, and the PHP scripting language.
+
+The following software is required to run Zabbix:
+
+^Software^Version^Comments^
+|**Apache**  |1.3.12 or later| |
+|**PHP**  |5.0 or later| |
+|**PHP modules:\\ php-gd**  |GD 2.0 or later  |PHP GD module must support PNG images.|
+|**PHP TrueType support**  | |<nowiki>--</nowiki>with-ttf|
+|**PHP bc support**| |php-bcmath, <nowiki>--</nowiki>enable-bcmath|
+|**PHP XML support**| |php-xml or php5-dom, if provided as a separate package by the distributor|
+|**PHP session support**| |php-session, if provided as a separate package by the distributor|
+|**PHP socket support**| |php-net-socket, <nowiki>--</nowiki>enable-sockets. Required for user script support.|
+|**PHP multibyte support**| |php-mbstring, <nowiki>--</nowiki>enable-mbstring|
+|**IBM DB2\\ ibm_db2**  | |Required if IBM DB2 is used as Zabbix back end database.|
+|**MySQL\\ php-mysql**  |3.22 or later  |Required if MySQL is used as Zabbix back end database.|
+|**Oracle\\ oci8**  |  |Required if Oracle is used as Zabbix back-end database.|
+|**PostgreSQL\\ php-pgsql**  |7.0.2 or later if Zabbix < 1.8.9\\ 7.4 or later if Zabbix >= 1.8.9|Required if PostgreSQL is used as Zabbix back-end database.\\ Consider using PostgreSQL 8.x or later for much better performance.\\ It is suggested to use at least PostgreSQL 8.3, which [[http://www.postgresql.org/docs/8.3/static/release-8-3.html|introduced much better VACUUM performance]].|
+|**SQLite\\ php-sqlite3**  |3.3.5 or later  |Required if SQLite is used as Zabbix back-end database.|
+
+<note>Zabbix may work on previous versions of Apache, MySQL, Oracle, and PostgreSQL as well.</note>
+
+<note important>For other fonts than the default DejaVu, PHP function [[http://php.net/manual/en/function.imagerotate.php|imagerotate]] might be required. If it is missing, these fonts might be rendered incorrectly in Monitoring -> Overview header and other locations. This function is only available if PHP is compiled with bundled GD, which is not the case in Debian and other distributions.</note>
+
+== - WEB browser on client side ==
+
+Support for HTML and PNG images is required. Cookies and Java Script must be enabled. Latest versions of Mozilla Firefox, Microsoft Internet Explorer, Opera and Konqueror are supported. Other browsers (Google Chrome, Apple Safari) may work with Zabbix as well.
+
+=== - Server requirements ===
+
+^Requirement^Description^
+|OpenIPMI | Required for IPMI support|
+|libssh2  | Required for SSH support. Version 1.0 or higher.|
+|fping    | Required for [[:1.8/manual/config/items#icmp_pings|ICMP ping items]].|
+=== - Choice of database engine ===
+Zabbix Server and Proxy support five database engines:
+  * IBM DB2
+  * MySQL
+  * Oracle
+  * PostgreSQL
+  * SQLite
+
+<note>IBM DB2 is supported starting from Zabbix 1.8.4.</note>
+
+=== - Database size ===
+Zabbix configuration data require a fixed amount of disk space and do not grow much.
+
+Zabbix database size mainly depends on these variables, which define the amount of stored historical data:
+  * Number of processed values per second
+This is the average number of new values Zabbix server receives every second. For example, if we have 3000 items for monitoring with refresh rate of 60 seconds, the number of values per second is calculated as 3000/60 = **50**.
+
+It means that 50 new values are added to Zabbix database every second.
+  * Housekeeper settings for history
+Zabbix keeps values for a fixed period of time, normally several weeks or months. Each new value requires a certain amount of disk space for data and index.
+
+So, if we would like to keep 30 days of history and we receive 50 values per second, total number of values will be around (**30***24*3600)* **50** = 129.600.000, or about 130M of values.
+
+Depending on the database engine used, type of received values (floats, integers, strings, log files, etc), the disk space for keeping a single value may vary from 40 bytes to hundreds of bytes. Normally it is around 50 bytes per value.
+In our case, it means that 130M of values will require 130M * 50 bytes = **6.5GB** of disk space.
+  * Housekeeper setting for trends
+Zabbix keeps a 1-hour max/min/avg/count set of values for each item in the table **trends**. The data is used for trending and long period graphs. The one hour period can not be customised.
+
+Zabbix database, depending on database type, requires about 128 bytes per each total.
+Suppose we would like to keep trend data for 5 years. Values for 3000 items will require (3000/3600)*(24*3600***365**)* **128** = **6.3GB** per year, or **31.5GB** for 5 years. The first value **3600** in the formula represents trend averaging period, one hour.
+  * Housekeeper settings for events
+Each Zabbix event requires approximately 130 bytes of disk space. It is hard to estimate the number of events generated by Zabbix daily. In the worst case scenario, we may assume that Zabbix generates one event per second.
+
+It means that if we want to keep 3 years of events, this would require **3***365*24*3600* **130** = **11GB**
+
+The table contains formulas that can be used to calculate the disk space required for Zabbix system:
+
+^Parameter^Formula for required disk space (in bytes)^
+|**Zabbix configuration**  |Fixed size. Normally 10MB or less.  |
+|**History**  |days*(items/refresh rate)*24*3600*bytes\\ items : number of items\\ days : number of days to keep history\\ refresh rate : average refresh rate of items\\ bytes : number of bytes required to keep single value, depends on database engine, normally 50 bytes.  |
+|**Trends**  |days*(items/3600)*24*3600*bytes\\ items : number of items\\ days : number of days to keep history\\ bytes : number of bytes required to keep single trend, depends on database engine, normally 128 bytes.  |
+|**Events**  |days*events*24*3600*bytes\\ events : number of event per second. One (1) event per second in worst case scenario.\\ days : number of days to keep history\\ bytes : number of bytes required to keep single trend, depends on database engine, normally 130 bytes.  |
+
+So, the total required disk space can be calculated as:\\ 
+**Configuration + History + Trends + Events**\\ 
+The disk space will NOT be used immediately after Zabbix installation. Database size will grow then it will stop growing at some point, which depends on hosekeeper settings.
+<note>Disk space requirements for nodes in distributed setup are calculated in a similar way, but this also depends on a total number of child nodes linked to a node.</note>
+
+=== - Time synchronisation ===
+It is very important to have precise system date on server with Zabbix running. [[http://www.ntp.org/|ntpd]] is the most popular daemon that synchronizes the host's time with the time of other machines.

@@ -1,0 +1,71 @@
+===== Action =====
+==== Methods ====
+Class containing methods for operations with Actions.
+
+^Methods^Description^
+|[[1.8/api/action/get|get()]] |Get action details |
+|[[1.8/api/action/exists|exists()]] |Check if action exists |
+|[[1.8/api/action/create|create()]] |Create actions |
+|[[1.8/api/action/update|update()]] |Update action details |
+|[[1.8/api/action/delete|delete()]] |Delete actions |
+
+==== Object details ====
+The table contains complete list of Action attributes.
+
+=== Action ===
+^Parameter^Type^Description^Details^
+|**actionid**|//integer//| Action ID | |
+|**name**|//string//| Name | |
+|**eventsource**|//integer//| Event source | Triggers / Discovery / Auto registration |
+|**evaltype**|//integer//| Height | |
+|**status**|//integer//| Status | Enabled/Disabled |
+|**esc_period**|//integer//| Default escalation period | |
+|**def_shortdata**|//string//| Default message subject | |
+|**def_longdata**|//string//| Default message  | |
+|**recovery_msg**|//integer//| Send recovery message | On/Off|
+|**r_shortdata**|//string//| Default recovery message subject | |
+|**r_longdata**|//string//| Default message subject |  |
+
+
+=== Conditions ===
+^Parameter^Type^Description^Details^
+|**conditionid**|//integer//| Condition ID | |
+|**actionid**|//integer//| Action ID | |
+|**conditiontype**|//integer//| Condition type | |
+|**operator**|//integer//| Comparision type | |
+|**value**|//string//| Condition value | |
+
+=== Operations ===
+|**operationid**|//integer//| Condition ID | |
+|**actionid**|//integer//| Action ID | |
+|**operationtype**|//integer//| Condition type | |
+|**object**|//integer//| Comparision type | |
+|**objectid**|//integer//| Condition value | |
+|**shortdata**|//string//| Custom message subject | |
+|**longdata**|//string//| Custom message  | |
+|**esc_period**|//integer//| Custom escalation period | |
+|**esc_step_from**|//integer//| Escalation step start from | |
+|**esc_step_to**|//integer//| Escalation step end on | |
+|**default_msg**|//integer//| Use default mesages | On/Off|
+|**evaltype**|//string//| Default recovery message subject | |
+
+=== Operation media types ===
+|**opmediatypeid**|//integer//| Operation media type ID | |
+|**operationid**|//integer//| Operation ID | |
+|**mediatypeid**|//integer//| Media type ID | |
+		
+=== Operation conditions ===
+|**opconditionid**|//integer//| Operation Condition ID | |
+|**operationid**|//integer//| Operation ID | |
+|**conditiontype**|//integer//| Condition Type | |
+|**operator**|//integer//| Operator | |
+|**vaelue**|//integer//| Value | |
+
+==== Common tasks ====
+The table contains list of common action-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add an action | Use method **action.create** |
+|Add a bunch of new actions | Use method **action.create** with array of Action objects |
+|Remove action by Action IDs| Use method **action.delete** array of Action **IDs**|
+|Retrieve action details by Action IDs | Use method **action.get** with parameter **actionids** |
+|Retrieve action details by Action name | Use method **action.get** with parameter **filter**, specify **"name":"<your action>"** |

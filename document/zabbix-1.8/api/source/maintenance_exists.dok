@@ -1,0 +1,42 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether maintenance with given maintenance name or maintenance ID exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given maintenance ID or maintenance name|  |
+|**maintenanceid**|//string//|yes |Maintenance ID|  |
+|**maintenance**|//string//|yes |Maintenance name|  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+==== Example ====
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"maintenance.exists",
+"params":{
+    "nodeids": ["1"],
+    "maintenance": "ZABBIX Servers"
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Maintenance exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

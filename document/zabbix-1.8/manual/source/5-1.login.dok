@@ -1,0 +1,14 @@
+==== - #1 Login ====
+
+This is "Welcome to Zabbix" screen. When installed, use user name **Admin** with password **zabbix** to connect as Zabbix superuser.
+
+{{:1.8:manual:quickstart:login_screen.png|}}
+
+When logged in, you will see "Connected as Admin" in the lower right corner of the page and access to //Configuration// and //Administration// areas will be granted:
+
+{{:1.8:manual:quickstart:welcome_to_zabbix.png|}}
+
+=== - Protection against brute force attacks ===
+In case of five consecutive failed login attempts, Zabbix interface will pause for 30 seconds in order to prevent brute force and dictionary attacks.
+
+IP address of a failed login attempt will be displayed after successful login.

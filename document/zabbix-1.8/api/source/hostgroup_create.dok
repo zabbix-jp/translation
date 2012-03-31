@@ -1,0 +1,49 @@
+===== create() =====
+This function allows you to create a hostgroup as defined by the **hostgroup data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**hostgroup data**|//array or object//|  |Array of Host group objects or a single object|**groupid** shouldn't be specified |
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Host group IDs. **groupid** are assigned to each Host group object |
+|**error**|In case of any errors|
+==== Example ====
+
+<code>
+{
+"jsonrpc":"2.0",
+"method":"hostgroup.create",
+"params":[
+   {"name":"Linux Group"}
+],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":3
+}
+</code>
+
+Host group created successfully:
+<code>
+{
+"jsonrpc":"2.0",
+"result":{
+   "groupids": ["107819"]
+},
+"id":3
+}
+</code>
+
+Host group already exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CHostGroup::create ] HostGroup [ Linux Group ] already exists"
+},
+"id":3
+}
+</code>

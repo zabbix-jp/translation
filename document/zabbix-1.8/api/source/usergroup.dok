@@ -1,0 +1,43 @@
+===== Usergroup =====
+==== Methods ====
+
+Class containing methods for operations with User groups.
+^Methods^Description^
+|[[1.8/api/usergroup/get|get()]] |Get user group details |
+|[[1.8/api/usergroup/exists|exists()]] |Check if user group exists |
+|[[1.8/api/usergroup/create|create()]] |Create user groups |
+|[[1.8/api/usergroup/update|update()]] |Update user group details |
+|[[1.8/api/usergroup/delete|delete()]] |Delete user groups |
+|[[1.8/api/usergroup/massAdd|massAdd()]] |Mass add rights, users to user groups |
+|[[1.8/api/usergroup/massUpdate|massUpdate()]] |Mass update user group details, update list of rights, users |
+|[[1.8/api/usergroup/massRemove|massRemove()]] |Mass remove rights, users |
+
+
+==== Object details ====
+=== Usrgrp ===
+The table contains complete list of User Group attributes.
+
+^Parameter^Type^Description^Details^
+|**usrgrpid**|//integer//| User group id| |
+|**name**|//string//| Name | |
+|**gui_access**|//integer//| GUI access| system deafalt(0), internal(1), disabled(2) |
+|**users_status**|//integer//| User status| enabled(0), disabled(1) |
+|**api_access**|//integer//| API access| disabled(0), enabled(1) |
+|**debug_mode**|//integer//| Debug mode| disabled(0), enabled(1) |
+
+=== Rights ===
+The table contains complete list of Rights attributes.
+
+^Parameter^Type^Description^Details^
+|groupid|//integer//|User group ID | |
+|id|//integer//|Host Group ID. | |
+|permission|//string//|Permission. | deny(0), read(2), read-write(3) |
+==== Common tasks ====
+The table contains list of common user-related tasks and possible implementation using Zabbix API
+^Task^HOWTO^
+|Add a user group | Use method **usergroup.create** |
+|Add a bunch of new user groups | Use method **usergroup.create** with array of User group objects |
+|Add a users to user group | Use method **usergroup.massAdd** with array of user IDs |
+|Add a host group with read-write or read permissions to user group | Use method **usergroup.massAdd** with array of rights objects |
+|Retrieve user group details by Group IDs | Use method **usergroup.get** with parameter **usrgrpids** |
+|Retrieve user group details by User group name | Use method **usergroup.get** with parameter **filter**, specify **"name":"<your usergroup>"** |

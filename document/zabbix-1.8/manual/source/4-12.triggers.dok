@@ -1,0 +1,264 @@
+==== 12 Triggers ====
+
+Trigger is defined as a logical expression and represents system state.
+
+A trigger may have the following values:
+
+^VALUE  ^DESCRIPTION^
+|PROBLEM|Normally means that something happened. For example, processor load is too high. Called TRUE in older Zabbix versions.|
+|OK     |This is a normal trigger state. Called FALSE in older Zabbix versions.|
+|UNKNOWN|In this case, Zabbix cannot evaluate trigger expression. This may happen because of several reasons:\\ server is unreachable\\ trigger expression cannot be evaluated\\ trigger expression has been recently changed|
+
+=== - Expression for triggers ===
+
+The expressions used in triggers are very flexible. You can use them to create complex logical tests regarding monitored statistics. 
+
+== - Expression operators ==
+
+The following operators are supported for triggers **(descending priority of execution)**:
+
+^PRIORITY^OPERATOR^DEFINITION^
+|**1**  |**/**  |Division  |
+|**2**  |*****  |Multiplication  |
+|**3**  |**-**  |Arithmetical minus  |
+|**4**  |**+**  |Arithmetical plus  |
+|**5**  |**<**  |Less than. The operator is defined as:\\ <nowiki>A<B ⇔ (A<=B-0.000001)</nowiki> |
+|**6**  |**>**  |More than. The operator is defined as:\\ A>B ⇔ (A>=B+0.000001) |
+|**7**  |**#**  |Not equal. The operator is defined as:\\ <nowiki>A#B ⇔ (A<=B-0.000001) | (A>=B+0.000001)</nowiki>  |
+|**8**  |**=**  |Is equal. The operator is defined as:\\  A=B ⇔ (A>B-0.000001) & (A<B+0.000001)  |
+|**9**  |**&**  |Logical AND  |
+|**10**  |**|**  |Logical OR  |
+
+=== - Trigger functions ===
+
+Trigger functions allow to reference collected values, current time and other factors.
+
+== - Time based functions ==
+
+Trigger status (expression) is recalculated every time Zabbix server receives new value, if this value is part of this expression. If time based functions are used in the expression, it is recalculated every 30 seconds.
+
+Time based functions are:
+  * nodata()
+  * date()
+  * dayofmonth()
+  * dayofweek()
+  * time()
+  * now()
+
+== - List of trigger functions ==
+
+The following functions are supported:
+
+<note important>1) All functions return numeric values only. Comparison to strings is not supported, for example.\\ 2) String arguments should be double quoted. Otherwise, they might get misinterpreted. </note>
+
+^  ▼  ^  FUNCTION  ^  //Parameter(s)//  ^  //Supported value types//          ^
+^  :::^                      **Definition**                             ^^^
+| ||||
+^abschange    ^^//ignored//        ^//float, int, str, text, log//        ^
+^ |Returns absolute difference between last and previous values.\\ For strings:\\ 0 - values are equal\\ 1 - values differ  |||
+| ||||
+^avg          ^^//sec or #num//    ^//float, int//                        ^
+^ |Average value for period of time. Parameter defines length of the period in seconds.\\ The function accepts a second, optional parameter **time_shift**. It is useful when there is a need to compare the current average value with the average value time_shift seconds back. For instance, avg(3600,86400) will return the average value for an hour one day ago.\\ Parameter time_shift is supported from Zabbix 1.8.2.  |||
+| ||||
+^change       ^^//ignored//        ^//float, int, str, text, log//        ^
+^ |Returns difference between last and previous values.\\ For strings:\\ 0 - values are equal\\ 1 - values differ  |||
+| ||||
+^count        ^^//sec or #num//    ^//float, int, str, text, log//        ^
+^ |Number of historical values for period of time in seconds or number of last **#num** values matching condition.\\ The function accepts second optional parameter **pattern**, third parameter **operator**, and fourth parameter **time_shift**.\\ For example,\\ //count(600,12)// will return exact number of values equal to '12' stored in the history.\\ Integer items: exact match\\ Float items: match within 0.000001\\ String, text and log items: operators like (default), eq, ne are supported\\ Supported operators:\\ **eq** - equal\\ **ne** - not equal\\ **gt** - greater\\ **ge** - greater or equal\\ **lt** - less\\ **le** - less or equal\\ **like** (textual search only) - matches if contains pattern.\\ For example,\\ //count(600,12,"gt")//  will return exact number of values which are more than '12' stored in the history for the last 600 seconds.\\ Another example:\\ //count(#10,12,"gt",86400)//  will return exact number of values which are larger than '12' stored in the history among last 10 values 24 hours ago.\\ If there is a need to count arbitrary values, for instance, for the last 600 seconds 24 hours ago, count(600,,,86400) should be used.\\ Parameter #num is supported from Zabbix 1.6.1.\\ Parameter time_shift and string operators are supported from Zabbix 1.8.2.  |||
+| ||||
+^date         ^^//ignored//          ^//any//                             ^
+^ |Returns current date in YYYYMMDD format.\\ For example: 20031025  |||
+| ||||
+^dayofmonth    ^^//ignored//          ^//any//                             ^
+^ |Returns day of month in range of 1 to 31.\\ This function is supported since Zabbix 1.8.5. |||
+| ||||
+^dayofweek    ^^//ignored//          ^//any//                             ^
+^ |Returns day of week in range of 1 to 7. Mon - 1, Sun - 7.  |||
+| ||||
+^delta        ^^//sec or #num//      ^//float, int//                      ^
+^ |Same as max()-min().\\ Since Zabbix 1.8.2, the function supports a second, optional parameter time_shift. See function avg for an example of its use.  |||
+| ||||
+^diff         ^^//ignored//          ^//float, int, str, text, log//      ^
+^ |Returns:\\ 1 - last and previous values differ\\ 0 - otherwise  |||
+| ||||
+^fuzzytime    ^^//sec//              ^//float, int//                      ^
+^ |Returns 1 if timestamp (item value) does not differ from Zabbix server time for more than N seconds, 0 - otherwise.\\ Usually used with system.localtime to check that local time is in sync with local time of Zabbix server.  |||
+| ||||
+^iregexp      ^^//1st - string, 2nd - sec or #num//  ^//str, log, text//  ^
+^ |This function is non case-sensitive analogue of **regexp**.  |||
+| ||||
+^last         ^^//sec or #num//      ^//float, int, str, text, log//      ^
+^ |Last (most recent) value. Parameter:\\ sec - ignored\\ #num - Nth value\\ For example,\\ last(0) is always equal to last(#1)\\ last(#3) - third most recent value\\ The function also supports an optional time_shift parameter. For example,\\ last(0,86400) will return the most recent value one day ago.\\ Zabbix does not guarantee exact order of values if more than two values exist within one second in history.\\ Parameter #num is supported starting from Zabbix 1.6.2.\\ Parameter time_shift is supported starting from Zabbix 1.8.2.  |||
+| ||||
+^logeventid  ^^//string//          ^//log//                             ^
+^ |Check if Event ID of the last log entry matches a regular expression. Parameter defines the regular expression, [[http://en.wikipedia.org/wiki/Regular_expression#POSIX_Extended_Regular_Expressions|POSIX extended]] style.\\ Returns:\\ 0 - does not match\\ 1 - matches\\ This function is supported since Zabbix 1.8.5. |||
+| ||||
+^logseverity  ^^//ignored//          ^//log//                             ^
+^ |Returns log severity of the last log entry. Parameter is ignored.\\ 0 - default severity\\  N - severity (integer, useful for Windows event logs). Zabbix takes log severity from field **Information** of Windows event log.  |||
+| ||||
+^logsource    ^^//string//           ^//log//                             ^
+^ |Check if log source of the last log entry matches parameter.\\ 0 - does not match\\ 1 - matches\\ Normally used for Windows event logs. For example, logsource("VMWare Server")  |||
+| ||||
+^max          ^^//sec or #num//      ^//float, int//                       ^
+^ |Maximal value for period of time. Parameter defines length of the period in seconds.\\ Since Zabbix 1.8.2, the function supports a second, optional parameter time_shift. See function avg for an example of its use.  |||
+| ||||
+^min          ^^//sec or #num//      ^//float, int//                      ^
+^ |Minimal value for period of time. Parameter defines length of the period in seconds.\\ Since Zabbix 1.8.2, the function supports a second, optional parameter time_shift. See function avg for an example of its use.  |||
+| ||||
+^nodata       ^^//sec//              ^//any//                             ^
+^ |Returns:\\ 1 - if no data received during period of time in seconds. The period should not be less than 30 seconds.\\ 0 - otherwise  |||
+| ||||
+^now          ^^//ignored//          ^//any//                             ^
+^ |Returns number of seconds since the Epoch (00:00:00 UTC, January 1, 1970).  |||
+| ||||
+^prev         ^^//ignored//          ^//float, int, str, text, log//      ^
+^ |Returns previous value. Parameter is ignored.\\ Same as last(#2)  |||
+| ||||
+^regexp       ^^//1st - string, 2nd - sec or #num//  ^//str, log, text//  ^
+^ |Check if last value matches regular expression. Parameter defines regular expression, [[http://en.wikipedia.org/wiki/Regular_expression#POSIX_Extended_Regular_Expressions|POSIX extended]] style.\\ Second optional parameter is number of seconds or number of lines to analyse. In this case more than one value will be processed.\\ This function is case-sensitive.\\ Returns:\\ 1 - found\\ 0 - otherwise  |||
+| ||||
+^str          ^^//1st - string, 2nd - sec or #num//  ^//str, log, text//  ^
+^ |Find string in last (most recent) value. Parameter defines string to find. Case sensitive!\\ Second optional parameter is number of seconds or number of lines to analyse. In this case more than one value will be processed.\\ Returns:\\ 1 - found\\ 0 - otherwise  |||
+| ||||
+^strlen       ^^//sec or #num//      ^//str, log, text//                  ^
+^ |Length of the last (most recent) value in characters (not bytes).\\ Parameters are the same as for function last.\\ For example,\\ strlen(0) is equal to strlen(#1)\\ strlen(#3) - length of the third most recent value\\ strlen(0,86400) - length of the most recent value one day ago.\\ This function is supported since Zabbix 1.8.4.  |||
+| ||||
+^sum          ^^//sec or #num//      ^//float, int//                      ^
+^ |Sum of values for period of time. Parameter defines length of the period in seconds.\\ Since Zabbix 1.8.2, the function supports a second, optional parameter time_shift. See function avg for an example of its use.  |||
+| ||||
+^time         ^^//ignored//          ^//any//                             ^
+^ |Returns current time in HHMMSS format. Example: 123055  |||
+
+<note>Some of the functions cannot be used for non-numeric parameters!</note>
+
+== - Trigger function parameters ==
+
+Most of numeric functions accept number of seconds as an argument. You may also use prefix # to specify that argument has a different meaning:
+
+^FUNCTION CALL^MEANING^
+|**sum(600)** |Sum of all values within 600 seconds|
+|**sum(#5)**  |Sum of the last 5 values|
+
+Function **last** uses a different meaning for values, prefixed with the hash mark - it makes it choose n-th previous value, so given values (from most recent to least recent) 3, 7, 2, 6, 5, **last(#2)** would return //7// and **last(#5)** would return //5//.
+
+Trigger expressions support using various multipliers as [[:1.8/manual/config/suffixes|suffixes]].
+
+A simple useful expression might look like: 
+  {<server>:<key>.<function>(<parameter>)}<operator><constant>
+  
+A parameter must be given even for those functions which ignore it. Example: last(0)
+
+== Example 1 ==
+Processor load is too high on www.zabbix.com
+
+  {www.zabbix.com:system.cpu.load[all,avg1].last(0)}>5
+'%%www.zabbix.com%%:system.cpu.load[all,avg1]' gives a short name of the monitored parameter. It specifies that the server is '%%www.zabbix.com%%' and the key being monitored is 'system.cpu.load[all,avg1]'. By using the function 'last()', we are referring to the most recent value. Finally, '>5' means that the trigger is in the PROBLEM state whenever the most recent processor load measurement from %%www.zabbix.com%% is greater than 5. 
+
+== Example 2 ==
+www.zabbix.com is overloaded
+
+  {www.zabbix.com:system.cpu.load[all,avg1].last(0)}>5|{www.zabbix.com:system.cpu.load[all,avg1].min(600)}>2 
+The expression is true when either the current processor load is more than 5 or the processor load was more than 2 during last 10 minutes. 
+
+== Example 3 ==
+/etc/passwd has been changed
+
+Use of function diff: 
+  {www.zabbix.com:vfs.file.cksum[/etc/passwd].diff(0)}>0
+The expression is true when the previous value of checksum of /etc/passwd differs from the most recent one.
+
+Similar expressions could be useful to monitor changes in important files, such as /etc/passwd, /etc/inetd.conf, /kernel, etc.
+
+== Example 4 ==
+Someone is downloading a large file from the Internet
+
+Use of function min: 
+  {www.zabbix.com:net.if.in[eth0,bytes].min(300)}>100K
+The expression is true when number of received bytes on eth0 is more than 100 KB within last 5 minutes.
+
+== Example 5 ==
+Both nodes of clustered SMTP server are down
+
+Note use of two different hosts in one expression:
+  {smtp1.zabbix.com:net.tcp.service[smtp].last(0)}=0&{smtp2.zabbix.com:net.tcp.service[smtp].last(0)}=0
+The expression is true when both SMTP servers are down on both smtp1.zabbix.com and smtp2.zabbix.com.
+
+== Example 6 ==
+Zabbix agent needs to be upgraded
+
+Use of function str(): 
+  {zabbix.zabbix.com:agent.version.str("beta8")}=1
+The expression is true if Zabbix agent has version beta8 (presumably 1.0beta8).
+
+== Example 7 ==
+Server is unreachable
+  {zabbix.zabbix.com:icmpping.count(1800,0)}>5
+The expression is true if host "zabbix.zabbix.com" is unreachable more than 5 times in the last 30 minutes.
+
+== Example 8 ==
+No heartbeats within last 3 minutes
+
+Use of function nodata():
+  {zabbix.zabbix.com:tick.nodata(180)}=1
+'tick' must have type 'Zabbix trapper'. In order to make this trigger work, item 'tick' must be defined. The host should periodically send data for this parameter using zabbix_sender. If no data is received within 180 seconds, the trigger value becomes PROBLEM.
+
+== Example 9 ==
+CPU activity at night time
+
+Use of function time():
+  {zabbix:system.cpu.load[all,avg1].min(300)}>2&{zabbix:system.cpu.load[all,avg1].time(0)}>000000&{zabbix:system.cpu.load[all,avg1].time(0)}<060000
+The trigger may change its status to true, only at night (00:00-06:00) time.
+
+
+== Example 10 ==
+Check if client local time is in sync with Zabbix server time
+
+Use of function fuzzytime():
+  {MySQL_DB:system.localtime.fuzzytime(10)}=0
+The trigger will change to the problem state in case when local time on server MySQL_DB and Zabbix server differs by more than 10 seconds.
+
+=== - Trigger dependencies ===
+
+Trigger dependencies can be used to define relationship between triggers.
+
+Trigger dependencies is a very convenient way of limiting number of messages to be sent in case if an event belongs to several resources.
+
+For example, a host Host is behind router Router2 and the Router2 is behind Router1.
+  Zabbix - Router1 - Router2 - Host
+If the Router1 is down, then obviously the Host and the Router2 are also unreachable. One does not want to receive three notifications about the Host, the Router1 and the Router2. This is when Trigger dependencies may be handy.
+
+In this case, we define these dependencies:
+  trigger 'Host is down' depends on trigger 'Router2 is down'
+  trigger 'Router2 is down' depends on trigger 'Router1 is down'
+Before changing status of trigger 'Host is down', Zabbix will check if there are corresponding trigger dependencies defined. If so, and one of the triggers is in PROBLEM state, then trigger status will not be changed and thus actions will not be executed and notifications will not be sent.
+
+Zabbix performs this check recursively. If Router1 or Router2 is unreachable, the Host trigger won't be updated.
+
+=== - Trigger severity ===
+Trigger severity defines how important is a trigger. Zabbix supports following trigger severities:
+
+^SEVERITY^DEFINITION^COLOR^
+|**Not classified**  |Unknown severity.  |Gray.  |
+|**Information**  |For information purposes.  |Light green.  |
+|**Warning**  |Be warned.  |Light yellow.  |
+|**Average**  |Average problem.  |Dark red.  |
+|**High**  |Something important has happened.  |Red.  |
+|**Disaster**  |Disaster. Financial losses, etc.  |Bright red.  |
+
+The severities are used to:
+  * visual representation of triggers. Different colors for different severities.
+  * audio alarms in Status of Triggers screen. Different audio for different severities.
+  * user medias. Different media (notification channel) for different severities. For example, SMS - high severity, email - other.
+
+=== - Hysteresis ===
+
+Sometimes a trigger must have different conditions for different states. For example, we would like to define a trigger which would become PROBLEM when server room temperature is higher than 20C while it should stay in the state until temperature will not become lower than 15C.
+
+In order to do this, we define the following trigger:
+
+== Example 1 ==
+Temperature in server room is too high
+
+  ({TRIGGER.VALUE}=0&{server:temp.last(0)}>20)|
+  ({TRIGGER.VALUE}=1&{server:temp.last(0)}>15)
+Note use of macro {TRIGGER.VALUE}. The macro returns current trigger value.

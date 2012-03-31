@@ -1,0 +1,44 @@
+===== exists() =====
+
+Available since version: **1.8.3**\\
+This function allows you to check whether image with given image data exists.
+
+==== Parameters ====
+
+^Parameter^Type^Optional^Description^Details^
+|**nodeids**|//array//|yes |List of node IDs where to search for given image |  |
+|**imageid**|//string//|yes |Image ID |  |
+|**name**|//string//|yes |Name |  |
+|**imagetype**|//string//|No |Type |  |
+
+
+==== Returns ====
+
+^Parameter^Description^
+|**result**|Operation successful. Result will contain boolean variable.|
+|**error**|In case of any errors|
+
+==== Example ====
+Check if image icon with name Hub exists:
+<code>
+{
+"jsonrpc":"2.0",
+"method":"image.exists",
+"params":{
+	"name": "Hub",
+	"imagetype": 1
+},
+"auth":"3a57200802b24cda67c4e4010b50c065",
+"id":2
+}
+</code>
+  
+Image exists:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": true,
+"id":2
+}
+</code>

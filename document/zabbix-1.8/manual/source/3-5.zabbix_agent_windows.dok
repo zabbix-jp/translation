@@ -1,0 +1,90 @@
+==== - #5 Zabbix Agent (Windows) ====
+
+
+=== Installation ===
+
+Installation is very simple and includes 3 steps:
+
+==Step 1==
+
+Create configuration file.
+
+Create configuration file c:/zabbix_agentd.conf (it has similar syntax as the UNIX agent).
+
+An example configuration file is available in Zabbix source archive as //misc/confzabbix_agentd.win.conf//.
+==Step 2==
+
+Install agent as a Windows service.
+
+  zabbix_agentd.exe --install
+
+If you wish to use configuration file other than c:\zabbix_agentd.conf, you should use the following command for service installation:
+
+  zabbix_agentd.exe --config <your_configuration_file> --install
+
+Full path to configuration file should be specified.
+
+==Step 3==
+
+Run agent.
+
+Now you can use Control Panel to start agent's service or run:
+
+  zabbix_agentd.exe --start
+
+<note>Windows NT 4.0 note. Zabbix_agentd.exe uses PDH (Performance Data Helper) API to gather various system information, so PDH.DLL is needed. This DLL is not supplied with Windows NT 4.0, so you need to download and install it by yourself. Microsoft Knowledge Base article number 284996 describes this in detail and contains a download link. You can find this article at http://support.microsoft.com/default.aspx?scid=kb;en-us;284996</note>
+
+=== Usage ===
+
+Command line syntax:
+
+  zabbix_agentd.exe [-Vhp] [-idsx] [-c <file>] [-t <metric>]
+
+===== Configuration file =====
+
+Zabbix Windows agent accepts the following command line parameters:
+
+Options:
+<code>
+  -c --config <file>   Specify alternate configuration file (default is c:\zabbix_agentd.conf).
+  -h --help            Display help information.
+  -V --version         Display version number.
+  -p --print           Print known items and exit.
+  -t --test <item key> Test single item and exit.
+</code>
+Functions:
+<code>
+  -i --install   Install Zabbix agent as a service.
+  -d --uninstall Uninstall Zabbix agent service.
+  -s --start     Start Zabbix agent service.
+  -x --stop      Stop Zabbix agent service.
+</code>
+The configuration file (c:/zabbix_agentd.conf) contains configuration parameters for zabbix_agentd.exe. Supported parameters:
+
+^Parameter^Mandatory^Range^Default^Description^
+| Alias| no | | |Sets an alias for parameter. It can be useful to substitute long and complex parameter name with a smaller and simpler one.\\ For example, if you wish to retrieve paging file usage in percents from the server,\\ you may use parameter "perf_counter[\Paging File(_Total)\% Usage]", or you may define an alias by adding the following line to configuration file\\ Alias = pg_usage:perf_counter[\Paging File(_Total)\% Usage]\\ After that you can use parameter name "pg_usage" to retrieve the same information.\\ You can specify as many "Alias" records as you wish.\\ Aliases cannot be used for parameters defined in "PerfCounter" configuration file records. \\ \\ Starting from version 1.8.6 Zabbix Agent will not start up in case incorrectly formatted Alias entry or duplicate Alias key is present in configuration file.|
+| BufferSend| no | 1-3600 |5 |Do not keep data longer than N seconds in buffer. |
+| BufferSize| no | 2-65535 |100 |Maximum number of values in a memory buffer. The agent will send\\ all collected data to Zabbix server or Proxy if the buffer is full. |
+| DebugLevel| no | 0-4 |3 |Specifies debug level\\ 0 - no debug\\ 1 - critical information\\ 2 - error information\\ 3 - warnings\\ 4 - for debugging (produces lots of information) |
+| DisableActive| no | |0 |Disable active checks. The agent will work in passive mode listening for server. |
+| DisablePassive| no | |0 |Disable passive checks. The agent will not listen on any TCP port.\\ Only active checks will be processed.\\ 0 - do not disable\\ 1 - disable |
+| EnableRemoteCommands| no | |0 |Whether remote commands from Zabbix server are allowed.\\ 0 - not allowed\\ 1 - allowed |
+| Hostname| | |system.hostname |Unique, case sensitive hostname.\\ Required for active checks and must match hostname as configured on the server.\\ System hostname is used if undefined. |
+| Include| no | | |You may include individual file in the configuration file. |
+| ListenIP| no | |0.0.0.0 |Agent will listen on the specified interface. |
+| ListenPort| no | 1024-32767 |10050 |Agent will listen on this port for connections from the server. |
+| LogFileSize| no | 0-1024 |1 |Maximum size of log file in MB.\\ 0 - disable automatic log rotation. |
+| LogFile| no | | |Name of log file.\\ If not set, Windows Event Log is used. |
+| LogRemoteCommands| no | |0 |Enable logging of executed shell commands as warnings.\\ 0 - disabled\\ 1 - enabled |
+| MaxLinesPerSecond| no | 1-1000 |100 |Maximum number of new lines the agent will send per second to Zabbix Server\\ or Proxy processing 'log', 'logrt' and 'eventlog' active checks.\\ The provided value will be overridden by the parameter 'maxlines',\\ provided in 'log', 'logrt' or 'eventlog' item keys. |
+| PerfCounter| no | | |Syntax: <parameter_name>,"<perf_counter_path>",<period>\\ Defines new parameter <parameter_name> which is an average value for system performance counter <perf_counter_path> for the specified time period <period> (in seconds).\\ For example, if you wish to receive average number of processor interrupts per second for last minute, you can define new parameter "interrupts" as following:\\ PerfCounter = interrupts,"\Processor(0)\Interrupts/sec",60\\ Please note double quotes around performance counter path.\\ Samples for calculating average value will be taken every second.\\ You may run "typeperf -qx" to get list of all performance counters available in Windows. \\ \\ Starting from version 1.8.6 Zabbix Agent will not start up in case incorrectly formatted PerfCounter entry or duplicate PerfCounter key is present in configuration file.|
+| RefreshActiveChecks| no | 60-3600 |120 |How often list of active checks is refreshed, in seconds. |
+| ServerPort| no | |10051 |Server port for retrieving list of and sending active checks. |
+| Server| yes | | |List of comma delimited IP addresses (or hostnames) of Zabbix servers.\\ No spaces allowed. First entry is used for receiving list of and sending active checks.\\ If IPv6 support is enabled then '127.0.0.1', '::127.0.0.1', '::ffff:127.0.0.1' are treated equally. |
+| SourceIP| no | | |Source IP address for outgoing connections. |
+| StartAgents| no | 1-100 |3 |Number of pre-forked instances of zabbix_agentd that process passive checks.\\ The upper limit used to be 16 before version 1.8.5. |
+| Timeout| no | 1-30 |3 |Spend no more than Timeout seconds on processing |
+| UnsafeUserParameters| no | 0-1 |0 |Allow all characters to be passed in arguments to user-defined parameters.\\ 0 - do not allow\\ 1 - allow |
+| UserParameter| | | |User-defined parameter to monitor. There can be several user-defined parameters.\\ Format: UserParameter=<key>,<shell command>\\ Note that shell command must not return empty string or EOL only.\\ Example: UserParameter=system.test,echo 1 \\ \\ Starting from version 1.8.6 Zabbix Agent will not start up in case incorrectly formatted UserParameter entry or duplicate UserParameter key is present in configuration file.|
+
+<note>Starting from version 1.8.6 Zabbix agent will not start up if invalid (not following //parameter=value// notation) or unknown parameter entry is present in configuration file.</note>

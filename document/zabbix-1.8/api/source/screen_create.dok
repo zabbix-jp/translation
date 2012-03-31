@@ -1,0 +1,159 @@
+===== create() =====
+This function allows you to create a screen as defined by the **screen data** array.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**screen data**|//array or object//|  |Array of Screen objects with additional parameter **screenitems**|**screenid** shouldn't be specified |
+|**screenitems data**|//array or object//|  | array of screen item objects| |
+
+
+====Returns====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of created Screen IDs. **screenid** are assigned to each Screen object |
+|**error**|In case of any errors|
+
+==== Example ====
+Create new screen
+<code js>
+{
+"jsonrpc":"2.0",
+"method":"screen.create",
+"params":[{
+	"name":"ZABBIX Server",
+	"hsize":"2",
+	"vsize":"4",
+	"screenitems":[{
+		"resourcetype":"2",
+		"resourceid":"100100000000002",
+		"width":"0",
+		"height":"0",
+		"x":"0",
+		"y":"0",
+		"colspan":"2",
+		"rowspan":"0",
+		"elements":"0",
+		"valign":"0",
+		"halign":"0",
+		"style":"0",
+		"url":"",
+		"dynamic":"0"
+	},{
+		"resourcetype":"0",
+		"resourceid":"100100000000002",
+		"width":"400",
+		"height":"100",
+		"x":"0",
+		"y":"1",
+		"colspan":"0",
+		"rowspan":"0",
+		"elements":"0",
+		"valign":"0",
+		"halign":"0",
+		"style":"0",
+		"url":"",
+		"dynamic":"1"
+	},{
+		"resourcetype":"0",
+		"resourceid":"100100000000003",
+		"width":"400",
+		"height":"100",
+		"x":"0",
+		"y":"3",
+		"colspan":"0",
+		"rowspan":"0",
+		"elements":"0",
+		"valign":"0",
+		"halign":"0",
+		"style":"0",
+		"url":"",
+		"dynamic":"0"
+	},{
+		"resourcetype":"0",
+		"resourceid":"100100000000004",
+		"width":"400",
+		"height":"100",
+		"x":"1",
+		"y":"3",
+		"colspan":"0",
+		"rowspan":"0",
+		"elements":"0",
+		"valign":"0",
+		"halign":"0",
+		"style":"0",
+		"url":"",
+		"dynamic":"0"
+	},{
+		"resourcetype":"0",
+		"resourceid":"100100000000005",
+		"width":"400",
+		"height":"100",
+		"x":"1",
+		"y":"2",
+		"colspan":"0",
+		"rowspan":"0",
+		"elements":"0",
+		"valign":"0",
+		"halign":"0",
+		"style":"0",
+		"url":"",
+		"dynamic":"0"
+	},{
+		"resourcetype":"0",
+		"resourceid":"100100000000587",
+		"width":"500",
+		"height":"100",
+		"x":"1",
+		"y":"1",
+		"colspan":"0",
+		"rowspan":"0",
+		"elements":"0",
+		"valign":"0",
+		"halign":"0",
+		"style":"0",
+		"url":"",
+		"dynamic":"0"
+	},{
+		"resourcetype":"7",
+		"resourceid":"0",
+		"width":"500",
+		"height":"100",
+		"x":"0",
+		"y":"2",
+		"colspan":"0",
+		"rowspan":"0",
+		"elements":"0",
+		"valign":"0",
+		"halign":"0",
+		"style":"0",
+		"url":"",
+		"dynamic":"0"
+	}]
+}],
+"auth":"038e1d7b1735c6a5436ee9eae095879e",
+"id":2
+}
+</code>
+
+Screen created successfully:
+<code js>
+{
+"jsonrpc":"2.0",
+"result":{
+	"screenids":["100100000012213"]
+},
+"id":2
+}
+</code>
+
+Screen already exists:
+<code js>
+{
+"jsonrpc":"2.0",
+"error":{
+      "code":-32602,
+      "message":"Invalid params.",
+      "data":"[ CScreen::create ] Screen [ ZABBIX Server ] already exists"
+},
+"id":2
+}
+</code>

@@ -1,0 +1,13 @@
+==== 6 Host templates ====
+
+
+Use of templates is an excellent way of making maintenance of Zabbix much easier.
+
+A template can be linked to a number of hosts. Items, triggers and graphs of the template will be automatically added to the linked hosts. Change definition of a template item (trigger, graph) and the change will be automatically applied to the hosts.
+
+Host template attributes:
+^Parameter^Description^
+|**Name**  |Unique template (host) name. The name must be unique within ZABBIX Node.  |
+|**Groups**  |List of host groups the template belongs to.  |
+|**New group**  |Assign new host group to the template.  |
+|**Link with template**  |Used to create hierarchical templates.   |

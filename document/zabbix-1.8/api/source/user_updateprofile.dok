@@ -1,0 +1,54 @@
+===== updateProfile() =====
+Available since version: **1.8**\\
+The method is used to control most user attributes. By this method user may change only it's own settings.
+
+==== Parameters ====
+^Parameter^Type^Optional^Description^Details^
+|**user attribute**|//any//| Yes |New value for a user attribute.  | password, url, autologin, autologut, locale, theme, refresh period, rows per page|
+
+==== Returns =====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of updated User Object.|
+|**error**|In case of any errors|
+
+==== Example =====
+Change rows per page shown by frontend to 50:
+
+<code>
+  {
+   "jsonrpc":"2.0",
+   "method":"user.updateProfile",
+   "params":{
+      "rows_per_page": "50"
+   },
+   "auth":"700ca65537074ec963db7efabda78259",
+   "id":2
+  }
+</code>
+
+Retrieved updated user IDs:
+
+<code>
+{
+"jsonrpc":"2.0",
+"result": [{
+	"userid":"100100000000001",
+	"alias":"Admin",
+	"name":"admin",
+	"surname":"admin",
+	"passwd":"7815696ecbf1c96e6894b779456d330e",
+	"url":"",
+	"autologin":"1",
+	"autologout":"0",
+	"lang":"en_gb",
+	"refresh":"2000",
+	"type":"3",
+	"theme":"css_od.css",
+	"attempt_failed":"0",
+	"attempt_ip":"127.0.0.1",
+	"attempt_clock":"1281014721",
+	"rows_per_page":"100"
+}],
+"id":2
+}
+</code>

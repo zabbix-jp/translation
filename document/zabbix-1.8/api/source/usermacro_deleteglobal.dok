@@ -1,0 +1,52 @@
+===== deleteGlobal() =====
+Available since version: **1.8**\\
+This function allows you to delete information about one or several globalmacros. All globalmacro-related information will be removed including items, graphs, macros, application, historical data, etc.
+
+==== Parameters ====
+Array of Globalmacro macros
+
+==== Returns ====
+^Parameter^Description^
+|**result**|Operation successful. Result will contain array of deleted Globalmacro IDs.|
+|**error**|In case of any errors|
+
+==== Example ====
+Delete globalmacros by macro
+<code js>
+{
+"jsonrpc": "2.0",
+"method": "usermacro.deleteGlobal",
+"params": [
+    "{$MACRO3}",
+    "{$MACRO4}"
+],
+"auth": "3a57200802b24cda67c4e4010b50c065",
+"id": 2
+}
+</code>
+  
+Globalmacros deleted successfully:
+
+<code js>
+{
+"jsonrpc": "2.0",
+"result": {
+   "globalmacroids": ["107824", "107825"]
+},
+"id": 2
+}
+</code>
+
+Globalmacro does not exist:
+
+<code js>
+{
+"jsonrpc": "2.0",
+"error": {
+      "code": -32500,
+      "message": "Application error.",
+      "data": "[ CGlobalmacro::delete ] Globalmacro does not exist"
+},
+"id": 2
+}
+</code>
