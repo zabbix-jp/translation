@@ -1,19 +1,15 @@
 releasenote/omegat/*
 releasenote/target/*
-releasenote/tm/*
-releasenote/tm/auto/*
+releasenote/*.tmx
 
 frontend/omegat/*
 frontend/target/*
-frontend/tm/*
-frontend/tm/auto/*
+frontend/*.tmx
 
 document/zabbix-1.8/api/omegat/*
 document/zabbix-1.8/api/target/*
-document/zabbix-1.8/api/tm/*
-document/zabbix-1.8/api/auto/*
+document/zabbix-1.8/*.tmx
 
 document/zabbix-1.8/manual/omegat/*
 document/zabbix-1.8/manual/target/*
-document/zabbix-1.8/manual/tm/*
-document/zabbix-1.8/manual/auto/*
+document/zabbix-1.8/manual/*.tmx
