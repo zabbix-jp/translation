@@ -118,6 +118,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>%1$s failed login attempt logged.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120420T155820Z" changeid="kodai">
+        <seg>%1$s回のログイン失敗がログに記録されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>%1$s failed login attempts logged.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120420T155816Z" changeid="kodai">
+        <seg>%1$s回のログイン失敗がログに記録されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>%2$d of %1$d issue is shown</seg>
       </tuv>
       <tuv lang="JA">
@@ -186,6 +202,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>(0 - 無限)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Only Super Admins can create group)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120420T162216Z" changeid="kodai">
+        <seg>(Zabbix特権管理者のみがOnly Super Admins can create group)</seg>
       </tuv>
     </tu>
     <tu>
@@ -854,6 +878,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Add to favourites.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115017Z" changeid="kodai">
+        <seg>お気に入りに追加。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Add to group</seg>
       </tuv>
       <tuv lang="JA">
@@ -1006,6 +1038,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Agent or SNMP or JMX or IPMI interface</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115039Z" changeid="kodai">
+        <seg>エージェント、SNMP、JMX、IPMIインターフェース</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Aggregated</seg>
       </tuv>
       <tuv lang="JA">
@@ -1024,7 +1064,7 @@
       <tuv lang="EN-US">
         <seg>Alias</seg>
       </tuv>
-      <tuv lang="JA">
+      <tuv lang="JA" changedate="20120422T143025Z" changeid="kodai">
         <seg>エイリアス</seg>
       </tuv>
     </tu>
@@ -1390,6 +1430,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>At (hour:minute)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T144622Z" changeid="kodai">
+        <seg>開始時刻 (時:分)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>At least one host or group should be selected</seg>
       </tuv>
       <tuv lang="JA">
@@ -1426,6 +1474,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>監査</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Audit actions</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115051Z" changeid="kodai">
+        <seg>監査アクション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Audit logs</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115055Z" changeid="kodai">
+        <seg>監査ログ</seg>
       </tuv>
     </tu>
     <tu>
@@ -1478,10 +1542,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Authentication method changed to HTTP.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115106Z" changeid="kodai">
+        <seg>認証方式をHTTPに変更。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Authentication method changed to LDAP</seg>
       </tuv>
       <tuv lang="JA">
         <seg>認証方式をLDAPに変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Authentication method changed to LDAP.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115110Z" changeid="kodai">
+        <seg>認証方式をLDAPに変更。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1790,6 +1870,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CONFIGURATION OF AUTHENTICATION</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115120Z" changeid="kodai">
+        <seg>認証の設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>CONFIGURATION OF DISCOVERY</seg>
       </tuv>
       <tuv lang="JA">
@@ -1816,8 +1904,8 @@
       <tuv lang="EN-US">
         <seg>CONFIGURATION OF GRAPH PROTOTYPES</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>グラフプロトタイプの設定</seg>
+      <tuv lang="JA" changedate="20120422T135750Z" changeid="kodai">
+        <seg>グラフのプロトタイプの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -1826,6 +1914,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>グラフの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CONFIGURATION OF GUI</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115126Z" changeid="kodai">
+        <seg>GUIの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -1846,6 +1942,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CONFIGURATION OF HOUSEKEEPER</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115138Z" changeid="kodai">
+        <seg>Housekeeperの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CONFIGURATION OF ICON MAPPING</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115145Z" changeid="kodai">
+        <seg>アイコンマッピングの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CONFIGURATION OF IMAGES</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115149Z" changeid="kodai">
+        <seg>イメージの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>CONFIGURATION OF IT SERVICES</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T151348Z" changeid="kodai">
@@ -1856,8 +1976,8 @@
       <tuv lang="EN-US">
         <seg>CONFIGURATION OF ITEM PROTOTYPES</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイテムプロトタイプの設定</seg>
+      <tuv lang="JA" changedate="20120422T135754Z" changeid="kodai">
+        <seg>アイテムのプロトタイプの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -1866,6 +1986,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>アイテムの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CONFIGURATION OF MACROS</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115153Z" changeid="kodai">
+        <seg>マクロの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -1910,6 +2038,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CONFIGURATION OF REGULAR EXPRESSIONS</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115201Z" changeid="kodai">
+        <seg>正規表現の設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>CONFIGURATION OF SCREEN</seg>
       </tuv>
       <tuv lang="JA">
@@ -1950,10 +2086,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CONFIGURATION OF TRIGGER DISPLAYING OPTIONS</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115214Z" changeid="kodai">
+        <seg>トリガー表示オプションの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>CONFIGURATION OF TRIGGER PROTOTYPES</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>トリガープロトタイプの設定</seg>
+      <tuv lang="JA" changedate="20120422T135802Z" changeid="kodai">
+        <seg>トリガーのプロトタイプの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CONFIGURATION OF TRIGGER SEVERITIES</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115221Z" changeid="kodai">
+        <seg>トリガー深刻度の設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -1990,10 +2142,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CONFIGURATION OF VALUE MAPPING</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115228Z" changeid="kodai">
+        <seg>値のマッピングの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>CONFIGURATION OF WEB MONITORING</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ウェブ監視の設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CONFIGURATION OF WORKING TIME</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115234Z" changeid="kodai">
+        <seg>ワーキングタイムの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -2014,6 +2182,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Calculate SLA, acceptable SLA (in %)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T145859Z" changeid="kodai">
+        <seg>SLAの計算、SLAの許容値(%)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Calculated</seg>
       </tuv>
       <tuv lang="JA">
@@ -2024,8 +2200,8 @@
       <tuv lang="EN-US">
         <seg>Calculated permissions</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120329T143545Z" changeid="kodai">
-        <seg>有効な権限Calculated permissions</seg>
+      <tuv lang="JA" changedate="20120422T142747Z" changeid="kodai">
+        <seg>有効な権限</seg>
       </tuv>
     </tu>
     <tu>
@@ -2334,6 +2510,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot add more than one item with type &quot;Graph sum&quot; on graph &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115321Z" changeid="kodai">
+        <seg>グラフ&quot;%1$s&quot;にグラフの合計値は2つ以上設定できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot add network map</seg>
       </tuv>
       <tuv lang="JA">
@@ -2486,6 +2670,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot change authentication method to LDAP.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115333Z" changeid="kodai">
+        <seg>認証方式をLDAPに変更できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot change authentication method to Zabbix internal</seg>
       </tuv>
       <tuv lang="JA">
@@ -2494,10 +2686,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot change authentication method to Zabbix internal.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115338Z" changeid="kodai">
+        <seg>認証方式をZabbix内部データベースに変更できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot change template for Screen &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115412Z" changeid="kodai">
+        <seg>スクリーン&quot;%s&quot;のテンプレートを変更できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot changed authentication method to HTTP</seg>
       </tuv>
       <tuv lang="JA">
         <seg>認証方式をHTTPに変更できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot changed authentication method to HTTP.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115417Z" changeid="kodai">
+        <seg>認証方式をHTTPに変更できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2582,6 +2798,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot create dependency</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115425Z" changeid="kodai">
+        <seg>依存関係を作成できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot create discovery rule</seg>
       </tuv>
       <tuv lang="JA">
@@ -2590,18 +2814,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot create group without name.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115441Z" changeid="kodai">
+        <seg>名前がないグループは作成できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot create host group.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115449Z" changeid="kodai">
+        <seg>ホストグループを作成できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot create icon map</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップを作成できません</seg>
+      <tuv lang="JA" changedate="20120422T142147Z" changeid="kodai">
+        <seg>アイコンマッピングを作成できません</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Cannot create icon maps with identical name &quot;%s&quot;.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>&quot;%s&quot;と同名のアイコンマップは作成できません。</seg>
+      <tuv lang="JA" changedate="20120422T142156Z" changeid="kodai">
+        <seg>&quot;%s&quot;と同名のアイコンマッピングは作成できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2630,6 +2870,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot delete Zabbix internal user &quot;%1$s&quot;, try disabling that user.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115532Z" changeid="kodai">
+        <seg>Zabbixユーザ&quot;%1$s&quot;を削除できません。ユーザを無効に設定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot delete action</seg>
       </tuv>
       <tuv lang="JA">
@@ -2654,6 +2902,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot delete dependency</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115540Z" changeid="kodai">
+        <seg>依存関係を削除できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot delete discovery rule</seg>
       </tuv>
       <tuv lang="JA">
@@ -2672,8 +2928,16 @@
       <tuv lang="EN-US">
         <seg>Cannot delete graph prototype</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>グラフプロトタイプを削除できません</seg>
+      <tuv lang="JA" changedate="20120422T140033Z" changeid="kodai">
+        <seg>グラフのプロトタイプを削除できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot delete graph prototype.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135810Z" changeid="kodai">
+        <seg>グラフのプロトタイプを削除できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2720,8 +2984,8 @@
       <tuv lang="EN-US">
         <seg>Cannot delete icon map</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップを削除できません</seg>
+      <tuv lang="JA" changedate="20120422T142201Z" changeid="kodai">
+        <seg>アイコンマッピングを削除できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -2894,6 +3158,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot delete templated graphs.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115614Z" changeid="kodai">
+        <seg>テンプレートのグラフを削除できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot delete templated item.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T151747Z" changeid="kodai">
@@ -2966,6 +3238,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot delete user medias</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115625Z" changeid="kodai">
+        <seg>ユーザのメディアを削除できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot delete value map</seg>
       </tuv>
       <tuv lang="JA">
@@ -3006,6 +3286,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot find background image for map &quot;%1$s.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115644Z" changeid="kodai">
+        <seg>マップ&quot;%1$sの背景イメージが見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot find graph</seg>
       </tuv>
       <tuv lang="JA">
@@ -3014,10 +3302,50 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot find graph &quot;%1$s&quot; used in screen &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115713Z" changeid="kodai">
+        <seg>スクリーン&quot;%2$s&quot;で利用されているグラフ&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find group &quot;%1$s&quot; used in map %2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115742Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;で利用されているグループ&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find group &quot;%1$s&quot; used in screen &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115809Z" changeid="kodai">
+        <seg>スクリーン&quot;%2$s&quot;で利用されているグループ&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot find host</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ホストが見つかりません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find host &quot;%1$s&quot; used in map %2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115833Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;で利用されているホスト&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find host &quot;%1$s&quot; used in screen &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115856Z" changeid="kodai">
+        <seg>スクリーン&quot;%2$s&quot;で利用されているホスト&quot;%1$s&quot;が見つかりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3046,10 +3374,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot find icon &quot;%1$s&quot; for map &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T115919Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;のアイコン&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find icon map &quot;%1$s&quot; for map &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T142206Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;のアイコンマッピング&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot find icon map &quot;%1$s&quot; used in exported map &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>エクスポートされたマップ&quot;%2$s&quot;で利用されているアイコンマップ&quot;%1$s&quot;が見つかりません。</seg>
+      <tuv lang="JA" changedate="20120422T142212Z" changeid="kodai">
+        <seg>エクスポートされたマップ&quot;%2$s&quot;で利用されているアイコンマッピング&quot;%1$s&quot;が見つかりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3070,10 +3414,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot find item &quot;%1$s&quot; used in screen &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120036Z" changeid="kodai">
+        <seg>スクリーン&quot;%2$s&quot;で利用されているアイテム&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot find map</seg>
       </tuv>
       <tuv lang="JA">
         <seg>マップが見つかりません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find map &quot;%1$s&quot; used in map %2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120053Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;で利用されているマップ&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find map &quot;%1$s&quot; used in screen &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120118Z" changeid="kodai">
+        <seg>スクリーン&quot;%2$s&quot;で利用されているマップ&quot;%1$s&quot;が見つかりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3094,10 +3462,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot find screen &quot;%1$s&quot; used in screen &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120135Z" changeid="kodai">
+        <seg>スクリーン&quot;%2$s&quot;で利王されているスクリーン&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot find trigger</seg>
       </tuv>
       <tuv lang="JA">
         <seg>トリガーが見つかりません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find trigger &quot;%1$s&quot; for map &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120153Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;のトリガー&quot;%1$s&quot;が見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find trigger &quot;%1$s&quot; used in map %2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120210Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;で利用されているトリガー&quot;%1$s&quot;が見つかりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3126,10 +3518,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot import template &quot;%2$s&quot;, linked template &quot;%3$s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120314Z" changeid="kodai">
+        <seg>テンプレート&quot;%2$s&quot;をインポートできません。リンクされているテンプレート&quot;%3$s&quot;が存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot import template &quot;%2$s&quot;, linked templates &quot;%3$s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120341Z" changeid="kodai">
+        <seg>テンプレート&quot;%2$s&quot;をインポートできません。リンクされているテンプレート&quot;%3$s&quot;が存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot include view file &quot;%s&quot;.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ビューファイル&quot;%s&quot;を読み込めません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot insert user medias</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120403Z" changeid="kodai">
+        <seg>ユーザのメディアを追加できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -3328,8 +3744,8 @@
       <tuv lang="EN-US">
         <seg>Cannot unlink and clear graph prototypes</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>グラフプロトタイプのリンク削除と削除が行えません</seg>
+      <tuv lang="JA" changedate="20120422T135816Z" changeid="kodai">
+        <seg>グラフのプロトタイプのリンク削除と削除が行えません</seg>
       </tuv>
     </tu>
     <tu>
@@ -3344,8 +3760,8 @@
       <tuv lang="EN-US">
         <seg>Cannot unlink and clear item prototypes</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイテムプロトタイプのリンク削除と削除が行えません</seg>
+      <tuv lang="JA" changedate="20120422T135821Z" changeid="kodai">
+        <seg>アイテムのプロトタイプのリンク削除と削除が行えません</seg>
       </tuv>
     </tu>
     <tu>
@@ -3512,8 +3928,8 @@
       <tuv lang="EN-US">
         <seg>Cannot update icon map</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップを更新できません</seg>
+      <tuv lang="JA" changedate="20120422T142216Z" changeid="kodai">
+        <seg>アイコンマッピングを更新できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -3702,6 +4118,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot update user medias</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120414Z" changeid="kodai">
+        <seg>ユーザのメディアを更新できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot update user.</seg>
       </tuv>
       <tuv lang="JA" changedate="20111114T150115Z" changeid="kodai">
@@ -3822,6 +4246,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Check expression part starting from &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120444Z" changeid="kodai">
+        <seg>条件式の%1$s&quot;から始まる部分を確認してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Check expression part starting from '</seg>
       </tuv>
       <tuv lang="JA">
@@ -3834,6 +4266,14 @@
       </tuv>
       <tuv lang="JA" changedate="20110922T083215Z" changeid="kodai">
         <seg>サービスのリンクのロジック構造を確認してください</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Check logic structure in service links.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120232Z" changeid="kodai">
+        <seg>サービスのリンクのロジック構造を確認してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3910,6 +4350,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Choices are: from 0 (do not populate) to %3$d.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124025Z" changeid="kodai">
+        <seg>0 (自動設定しない)から%3$dの間で設定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Circular link can not be created</seg>
       </tuv>
       <tuv lang="JA">
@@ -3930,6 +4378,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>マップのアイコン&quot;%s&quot;に循環するリンクは作成できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Circular reference in maps: %1$s.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120517Z" changeid="kodai">
+        <seg>マップ%1$sに循環参照が存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Circular reference in templates: %1$s.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120538Z" changeid="kodai">
+        <seg>テンプレート%1$sに循環参照が存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4150,6 +4614,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Configuration import</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120826Z" changeid="kodai">
+        <seg>設定のインポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of GUI</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120819Z" changeid="kodai">
+        <seg>GUIの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Configuration of IT services</seg>
       </tuv>
       <tuv lang="JA">
@@ -4182,10 +4662,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Configuration of applications</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120833Z" changeid="kodai">
+        <seg>アプリケーションの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of authentication</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120837Z" changeid="kodai">
+        <seg>認証の設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Configuration of discovery</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ディスカバリの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of discovery rules</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120844Z" changeid="kodai">
+        <seg>ディスカバリルールの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -4198,10 +4702,82 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Configuration of host groups</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120849Z" changeid="kodai">
+        <seg>ホストグループの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of hosts</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120855Z" changeid="kodai">
+        <seg>ホストの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of housekeeper</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120906Z" changeid="kodai">
+        <seg>housekeeperの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of icon mapping</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120911Z" changeid="kodai">
+        <seg>アイコンマッピングの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of images</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120915Z" changeid="kodai">
+        <seg>イメージの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of item prototypes</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135825Z" changeid="kodai">
+        <seg>アイテムのプロトタイプの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Configuration of items</seg>
       </tuv>
       <tuv lang="JA">
         <seg>アイテムの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of macros</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120927Z" changeid="kodai">
+        <seg>マクロの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of maintenance</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120932Z" changeid="kodai">
+        <seg>メンテナンスの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of media types</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120936Z" changeid="kodai">
+        <seg>メディアタイプの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -4214,10 +4790,42 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Configuration of nodes</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120941Z" changeid="kodai">
+        <seg>ノードの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of proxies</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120945Z" changeid="kodai">
+        <seg>プロキシの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of regular expressions</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120951Z" changeid="kodai">
+        <seg>正規表現の設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Configuration of screens</seg>
       </tuv>
       <tuv lang="JA">
         <seg>スクリーンの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of scripts</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T120956Z" changeid="kodai">
+        <seg>スクリプトの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -4238,6 +4846,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Configuration of templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121001Z" changeid="kodai">
+        <seg>テンプレートの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Configuration of trigger</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T152518Z" changeid="kodai">
@@ -4246,10 +4862,74 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Configuration of trigger displaying options</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121012Z" changeid="kodai">
+        <seg>トリガー表示オプションの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of trigger prototypes</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135830Z" changeid="kodai">
+        <seg>トリガーのプロトタイプの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of trigger severities</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121025Z" changeid="kodai">
+        <seg>トリガー深刻度の設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Configuration of triggers</seg>
       </tuv>
       <tuv lang="JA">
         <seg>トリガーの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of user groups</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121030Z" changeid="kodai">
+        <seg>ユーザグループの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of users</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121035Z" changeid="kodai">
+        <seg>ユーザの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of value mapping</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121041Z" changeid="kodai">
+        <seg>値のマッピングの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of web monitoring</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T134129Z" changeid="kodai">
+        <seg>ウェブ監視の設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration of working time</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121052Z" changeid="kodai">
+        <seg>ワーキングタイムの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -4394,6 +5074,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>Y座標</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Coordinates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T140757Z" changeid="kodai">
+        <seg>座標</seg>
       </tuv>
     </tu>
     <tu>
@@ -4630,6 +5318,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Create graph prototype</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135836Z" changeid="kodai">
+        <seg>グラフのプロトタイプの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Create group</seg>
       </tuv>
       <tuv lang="JA">
@@ -4638,10 +5334,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Create host group</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121125Z" changeid="kodai">
+        <seg>ホストグループの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Create icon map</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップの作成</seg>
+      <tuv lang="JA" changedate="20120422T142220Z" changeid="kodai">
+        <seg>アイコンマッピングの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -4658,6 +5362,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>アイテムの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create item prototype</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135841Z" changeid="kodai">
+        <seg>アイテムのプロトタイプの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -4682,6 +5394,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>メディアタイプの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create node</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121138Z" changeid="kodai">
+        <seg>ノードの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -4750,6 +5470,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Create template</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121144Z" changeid="kodai">
+        <seg>テンプレートの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Create trigger</seg>
       </tuv>
       <tuv lang="JA">
@@ -4758,10 +5486,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Create trigger prototype</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135847Z" changeid="kodai">
+        <seg>トリガーのプロトタイプの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Create user</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T161615Z" changeid="kodai">
         <seg>ユーザーの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create user group</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121155Z" changeid="kodai">
+        <seg>ユーザグループの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -4800,8 +5544,8 @@
       <tuv lang="EN-US">
         <seg>Created: Item prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T092321Z" changeid="kodai">
-        <seg>作成: &quot;%2$s&quot;のアイテムプロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T135903Z" changeid="kodai">
+        <seg>作成: &quot;%2$s&quot;のアイテムのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4816,8 +5560,8 @@
       <tuv lang="EN-US">
         <seg>Created: Trigger prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T092415Z" changeid="kodai">
-        <seg>作成: &quot;%2$s&quot;のトリガープロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T135907Z" changeid="kodai">
+        <seg>作成: &quot;%2$s&quot;のトリガーのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5398,10 +6142,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Default escalation period</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121405Z" changeid="kodai">
+        <seg>デフォルトのエスカレーション間隔</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Default escalation period (minimum 60 seconds)</seg>
       </tuv>
-      <tuv lang="JA" changedate="20111109T133950Z" changeid="kodai">
-        <seg>デフォルトのエスカレーション期間 (最小60秒)</seg>
+      <tuv lang="JA" changedate="20120422T121410Z" changeid="kodai">
+        <seg>デフォルトのエスカレーション間隔 (最小60秒)</seg>
       </tuv>
     </tu>
     <tu>
@@ -5434,6 +6186,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>デフォルトのテーマ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Default theme &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121424Z" changeid="kodai">
+        <seg>デフォルトのテーマ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5616,8 +6376,8 @@
       <tuv lang="EN-US">
         <seg>Delete icon map?</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップを削除しますか？</seg>
+      <tuv lang="JA" changedate="20120422T142224Z" changeid="kodai">
+        <seg>アイコンマッピングを削除しますか？</seg>
       </tuv>
     </tu>
     <tu>
@@ -5658,6 +6418,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ネットワークマップを削除しますか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Delete proxy?</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121432Z" changeid="kodai">
+        <seg>プロキシを削除しますか？</seg>
       </tuv>
     </tu>
     <tu>
@@ -6112,8 +6880,8 @@
       <tuv lang="EN-US">
         <seg>Deleted: Item prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T093050Z" changeid="kodai">
-        <seg>削除: &quot;%2$s&quot;のアイテムプロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T135918Z" changeid="kodai">
+        <seg>削除: &quot;%2$s&quot;のアイテムのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6136,8 +6904,8 @@
       <tuv lang="EN-US">
         <seg>Deleted: Trigger prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T093127Z" changeid="kodai">
-        <seg>削除: &quot;%2$s&quot;のトリガープロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T135924Z" changeid="kodai">
+        <seg>削除: &quot;%2$s&quot;のトリガーのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6510,6 +7278,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Disabled or no trigger</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121452Z" changeid="kodai">
+        <seg>無効に設定されているかトリガーが存在しません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Disaster</seg>
       </tuv>
       <tuv lang="JA">
@@ -6578,6 +7354,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ディスカバリチェック</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Discovery list</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121505Z" changeid="kodai">
+        <seg>ディスカバリリスト</seg>
       </tuv>
     </tu>
     <tu>
@@ -6750,14 +7534,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Displaying</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Displaying</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Displaying %1$s of %2$s found</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T134021Z" changeid="kodai">
@@ -6814,6 +7590,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Do not keep actions older than (in days) &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121522Z" changeid="kodai">
+        <seg>アクションの保存期間 (日) &quot;%1$s&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do not keep actions older than (in days) [%1$s]</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T094219Z" changeid="kodai">
@@ -6826,6 +7610,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>イベントの保存期間(日)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not keep events older than (in days) &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121531Z" changeid="kodai">
+        <seg>イベントの保存期間 (日) &quot;%1$s&quot;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6866,14 +7658,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>点線</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Down</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Down</seg>
       </tuv>
     </tu>
     <tu>
@@ -6926,6 +7710,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Drag here to change the type of the interface to &quot;IPMI&quot; type.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135022Z" changeid="kodai">
+        <seg>ここにドラッグしてインターフェースのタイプをIPMIに変更。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Drag here to change the type of the interface to &quot;JMX&quot; type.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135026Z" changeid="kodai">
+        <seg>ここにドラッグしてインターフェースのタイプをJMXに変更。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Drag here to change the type of the interface to &quot;SNMP&quot; type.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135033Z" changeid="kodai">
+        <seg>ここにドラッグしてインターフェースのタイプをSNMPに変更。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Drag here to change the type of the interface to &quot;agent&quot; type.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135040Z" changeid="kodai">
+        <seg>ここにドラッグしてインターフェースのタイプをエージェントに変更。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Draw style</seg>
       </tuv>
       <tuv lang="JA">
@@ -6942,10 +7758,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Dropdown first entry &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121625Z" changeid="kodai">
+        <seg>ドロプダウンの1つ目の項目 &quot;%1$s&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dropdown first entry [%1$s]</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T094450Z" changeid="kodai">
         <seg>ドロプダウンの1つ目の項目 [%1$s]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dropdown remember selected &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121634Z" changeid="kodai">
+        <seg>ドロップダウンの選択を記憶する &quot;%1$s&quot;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7034,6 +7866,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ダイナミックアイテム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>E</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>E</seg>
       </tuv>
     </tu>
     <tu>
@@ -7502,6 +8342,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>End of</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>End of</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>English (GB)</seg>
       </tuv>
       <tuv lang="JA">
@@ -7630,6 +8478,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Error: %1$s</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121640Z" changeid="kodai">
+        <seg>エラー: %1$s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Escalation</seg>
       </tuv>
       <tuv lang="JA">
@@ -7690,6 +8546,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>イベントの障害対応コメント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Event acknowledges &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121653Z" changeid="kodai">
+        <seg>イベントの障害対応コメント&quot;%1$s&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8398,6 +9262,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>File is too big, max upload size is %1$s bytes.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121758Z" changeid="kodai">
+        <seg>ファイルサイズが大きすぎます。アップロードファイルサイズの最大値は%1$sバイトです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Fill with default value</seg>
       </tuv>
       <tuv lang="JA">
@@ -8646,6 +9518,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>GRAPH PROTOTYPES OF</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T154902Z" changeid="kodai">
+        <seg>グラフのプロトタイプ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>GRAPHS</seg>
       </tuv>
       <tuv lang="JA">
@@ -8782,6 +9662,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Global expression does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121852Z" changeid="kodai">
+        <seg>グローバル条件式が存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Global script</seg>
       </tuv>
       <tuv lang="JA">
@@ -8826,6 +9714,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>グラフ &quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Graph &quot;%1$s&quot; with template host cannot contain items from other hosts.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122004Z" changeid="kodai">
+        <seg>テンプレートのホストを含むグラフ&quot;%1$s&quot;に他のホストのアイテムを含めることはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8918,6 +9814,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Graph prototype &quot;%1$s&quot; with template host cannot contain items from other hosts.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135929Z" changeid="kodai">
+        <seg>テンプレートのホストを含むグラフのプロトタイプ&quot;%1$s&quot;に他のホストのアイテムを含めることはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Graph prototype [%1$s] unlinked.</seg>
       </tuv>
       <tuv lang="JA">
@@ -8936,16 +9840,24 @@
       <tuv lang="EN-US">
         <seg>Graph prototype must have at least one prototype</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>グラフプロトタイプは少なくとも1つ以上のプロトタイプを設定する必要があります</seg>
+      <tuv lang="JA" changedate="20120422T135932Z" changeid="kodai">
+        <seg>グラフのプロトタイプは少なくとも1つ以上のプロトタイプを設定する必要があります</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Graph prototypes</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>グラフプロトタイプ</seg>
+      <tuv lang="JA" changedate="20120422T135935Z" changeid="kodai">
+        <seg>グラフのプロトタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Graph prototypes of</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T154911Z" changeid="kodai">
+        <seg>グラフのプロトタイプ:</seg>
       </tuv>
     </tu>
     <tu>
@@ -9046,6 +9958,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Group &quot;%1$s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122058Z" changeid="kodai">
+        <seg>グループ&quot;%1$s&quot;は存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Group &quot;%1$s&quot; is internal and can not be deleted.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122121Z" changeid="kodai">
+        <seg>グループ&quot;%1$s&quot;は内部的に使用されているため削除できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Group &quot;%s&quot; cannot be deleted, because it is used in a global script.</seg>
       </tuv>
       <tuv lang="JA">
@@ -9081,6 +10009,14 @@
         <seg>Group for discovered hosts</seg>
       </tuv>
       <tuv lang="JA">
+        <seg>ディスカバリで発見されたホストのグループ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Group for discovered hosts.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122129Z" changeid="kodai">
         <seg>ディスカバリで発見されたホストのグループ</seg>
       </tuv>
     </tu>
@@ -9128,32 +10064,8 @@
       <tuv lang="EN-US">
         <seg>Groups in maintenance</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>メンテナンス中のホストグループ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>H.i</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>H.i</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>H:i</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>H:i</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>H:i:s</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>H:i:s</seg>
+      <tuv lang="JA" changedate="20120422T144731Z" changeid="kodai">
+        <seg>メンテナンス対象のホストグループ</seg>
       </tuv>
     </tu>
     <tu>
@@ -9202,14 +10114,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>ホスト</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>HTTP</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>HTTP</seg>
       </tuv>
     </tu>
     <tu>
@@ -9414,6 +10318,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Host &quot;%1$s&quot; already exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122157Z" changeid="kodai">
+        <seg>ホスト&quot;%1$s&quot;はすでに存在しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Host &quot;%1$s&quot; does not exist or you have no access to this host.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T100558Z" changeid="kodai">
@@ -9424,8 +10336,8 @@
       <tuv lang="EN-US">
         <seg>Host &quot;%s&quot; already exists.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>ホスト&quot;%s&quot;はすでに存在しています</seg>
+      <tuv lang="JA" changedate="20120422T122159Z" changeid="kodai">
+        <seg>ホスト&quot;%s&quot;はすでに存在しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9878,6 +10790,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hosts / templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122209Z" changeid="kodai">
+        <seg>ホスト / テンプレート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hosts and templates</seg>
       </tuv>
       <tuv lang="JA">
@@ -9886,10 +10806,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hosts in</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T145155Z" changeid="kodai">
+        <seg>グループに含まれるホスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hosts in maintenance</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>メンテナンス中のホスト</seg>
+      <tuv lang="JA" changedate="20120422T144747Z" changeid="kodai">
+        <seg>メンテナンス対象のホスト</seg>
       </tuv>
     </tu>
     <tu>
@@ -10150,6 +11078,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>IT SERVICES: CHILDS</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122221Z" changeid="kodai">
+        <seg>ITサービス: 子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>IT SERVICES: PARENTS</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122227Z" changeid="kodai">
+        <seg>ITサービス: 親</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>IT service</seg>
       </tuv>
       <tuv lang="JA">
@@ -10170,6 +11114,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ITサービス稼働レポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ITEM PROTOTYPES OF</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T154925Z" changeid="kodai">
+        <seg>アイテムのプロトタイプ:</seg>
       </tuv>
     </tu>
     <tu>
@@ -10272,120 +11224,120 @@
       <tuv lang="EN-US">
         <seg>Icon map</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ</seg>
+      <tuv lang="JA" changedate="20120422T142245Z" changeid="kodai">
+        <seg>アイコンマッピング</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%1$s&quot; cannot be deleted.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20110922T084630Z" changeid="kodai">
-        <seg>アイコンマップ&quot;%1$s&quot;を削除できません。</seg>
+      <tuv lang="JA" changedate="20120422T142252Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%1$s&quot;を削除できません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%1$s&quot; has mapping with incorrect iconid &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%1$s&quot;は正しくないアイコンID&quot;%2$s&quot;と関連づけられています。</seg>
+      <tuv lang="JA" changedate="20120422T142258Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%1$s&quot;は正しくないアイコンID&quot;%2$s&quot;と関連づけられています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%1$s&quot; has mapping with incorrect inventory link &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%1$s&quot;は正しくないインベントリリンク&quot;%2$s&quot;と関連づけられています。</seg>
+      <tuv lang="JA" changedate="20120422T142301Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%1$s&quot;は正しくないインベントリリンク&quot;%2$s&quot;と関連づけられています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%s&quot; already exists.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%s&quot;はすでに存在します。</seg>
+      <tuv lang="JA" changedate="20120422T142304Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%s&quot;はすでに存在します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%s&quot; cannot have mapping with empty expression.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%s&quot;は空白の条件式と関連づけることはできません。</seg>
+      <tuv lang="JA" changedate="20120422T142306Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%s&quot;は空白の条件式と関連づけることはできません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%s&quot; cannot have mapping with global expression that does not exist.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%s&quot;は存在しないグローバル条件式と関連づけることはできません。</seg>
+      <tuv lang="JA" changedate="20120422T142309Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%s&quot;は存在しないグローバル条件式と関連づけることはできません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%s&quot; has incorrect expression.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%s&quot;の条件式が正しくありません。</seg>
+      <tuv lang="JA" changedate="20120422T142311Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%s&quot;の条件式が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map &quot;%s&quot; must have at least one mapping.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%s&quot;は少なくとも1つ以上の項目と関連づける必要があります。</seg>
+      <tuv lang="JA" changedate="20120422T142313Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%s&quot;は少なくとも1つ以上の項目と関連づける必要があります。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map created</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップを作成しました</seg>
+      <tuv lang="JA" changedate="20120422T142315Z" changeid="kodai">
+        <seg>アイコンマッピングを作成しました</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map deleted</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップを削除しました</seg>
+      <tuv lang="JA" changedate="20120422T142317Z" changeid="kodai">
+        <seg>アイコンマッピングを削除しました</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map name cannot be empty.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ名を設定してください。</seg>
+      <tuv lang="JA" changedate="20120422T142319Z" changeid="kodai">
+        <seg>アイコンマッピング名を設定してください。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map updated</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップを更新しました</seg>
+      <tuv lang="JA" changedate="20120422T142321Z" changeid="kodai">
+        <seg>アイコンマッピングを更新しました</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon map with iconmapid &quot;%s&quot; does not exist.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップID&quot;%s&quot;を持つアイコンマップは存在しません。</seg>
+      <tuv lang="JA" changedate="20120422T142338Z" changeid="kodai">
+        <seg>アイコンマッピングID&quot;%s&quot;を持つアイコンマッピングは存在しません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Icon mapping</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンのマッピング</seg>
+      <tuv lang="JA" changedate="20120422T142326Z" changeid="kodai">
+        <seg>アイコンマッピング</seg>
       </tuv>
     </tu>
     <tu>
@@ -10400,8 +11352,8 @@
       <tuv lang="EN-US">
         <seg>Iconmap is not enabled</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップが無効です</seg>
+      <tuv lang="JA" changedate="20120422T142342Z" changeid="kodai">
+        <seg>アイコンマッピングが無効です</seg>
       </tuv>
     </tu>
     <tu>
@@ -10498,6 +11450,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>イメージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Images for all maps will be updated!</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122312Z" changeid="kodai">
+        <seg>すべてのマップのイメージがアップデートされます！</seg>
       </tuv>
     </tu>
     <tu>
@@ -10606,10 +11566,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>In</seg>
+        <seg>Impossible to remove last row and column.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>In</seg>
+      <tuv lang="JA" changedate="20120422T122336Z" changeid="kodai">
+        <seg>最後の行と列は削除できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10690,6 +11650,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>IPアドレス&quot;%s&quot;が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect IP for passive proxy &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122358Z" changeid="kodai">
+        <seg>パッシブプロキシ&quot;%1$s&quot;のIPアドレスが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10974,6 +11942,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect characters used for Node name.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122446Z" changeid="kodai">
+        <seg>ノード名に不正な文字列が利用されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect characters used for Proxy name &quot;%s&quot;.</seg>
       </tuv>
       <tuv lang="JA">
@@ -11006,6 +11982,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect closing curly braces in trigger expression.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122617Z" changeid="kodai">
+        <seg>トリガー条件式に不正な閉じ括弧&quot;}&quot;が存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect closing parenthesis in trigger expression.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122634Z" changeid="kodai">
+        <seg>トリガー条件式に不正な閉じ括弧&quot;)&quot;が存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect command</seg>
       </tuv>
       <tuv lang="JA">
@@ -11018,6 +12010,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>不正なコンディションタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect count of quotes in expression.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122704Z" changeid="kodai">
+        <seg>条件式のクォートの数が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect curly braces count in expression.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122727Z" changeid="kodai">
+        <seg>条件式の括弧&quot;{}&quot;の数が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11122,6 +12130,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120312T095737Z" changeid="kodai">
         <seg>トリガーの設定が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect file upload.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122801Z" changeid="kodai">
+        <seg>アップロードされたファイルが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11266,6 +12282,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120312T095850Z" changeid="kodai">
         <seg>インターフェースのポート&quot;%s&quot;が正しくありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect interface port &quot;%s&quot; provided.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122819Z" changeid="kodai">
+        <seg>インターフェースのポート&quot;%s&quot;が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11502,6 +12526,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect node type.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122829Z" changeid="kodai">
+        <seg>ノードタイプが正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect operation type</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T161234Z" changeid="kodai">
@@ -11528,8 +12560,8 @@
       <tuv lang="EN-US">
         <seg>Incorrect parameter is used for icon map &quot;%s&quot;.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップ&quot;%s&quot;のパラメータが正しくありません。</seg>
+      <tuv lang="JA" changedate="20120422T142346Z" changeid="kodai">
+        <seg>アイコンマッピング&quot;%s&quot;のパラメータが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11576,8 +12608,8 @@
       <tuv lang="EN-US">
         <seg>Incorrect parameters for icon map update method &quot;%s&quot;.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>アイコンマップの更新メソッド&quot;%s&quot;のパラメータが正しくありません。</seg>
+      <tuv lang="JA" changedate="20120422T142353Z" changeid="kodai">
+        <seg>アイコンマッピングの更新メソッド&quot;%s&quot;のパラメータが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11594,6 +12626,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120309T173151Z" changeid="kodai">
         <seg>ユーザーグループのパラメータが正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect parenthesis count in expression.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122848Z" changeid="kodai">
+        <seg>条件式の括弧&quot;()&quot;の数が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11718,6 +12758,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect syntax near &quot;%1$s&quot; at position &quot;%2$s&quot;</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123132Z" changeid="kodai">
+        <seg>間違った書式&quot;%1$s&quot;が&quot;%2$s&quot;付近に見つかりました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect syntax near &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123151Z" changeid="kodai">
+        <seg>&quot;%1$s&quot;付近の書式が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect template.</seg>
       </tuv>
       <tuv lang="JA" changedate="20110922T090612Z" changeid="kodai">
@@ -11730,6 +12786,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>期間が間違っています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect time period &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123210Z" changeid="kodai">
+        <seg>期間&quot;%1$s&quot;が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11814,6 +12878,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect usage of expression logic linking symbols.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123303Z" changeid="kodai">
+        <seg>条件式の論理演算式の使い方が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect usage of quotes</seg>
       </tuv>
       <tuv lang="JA">
@@ -11834,6 +12906,30 @@
       </tuv>
       <tuv lang="JA" changedate="20120309T173900Z" changeid="kodai">
         <seg>間違ったユーザーデータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect user data in &quot;get_accessible_groups_by_user&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123324Z" changeid="kodai">
+        <seg>&quot;get_accessible_groups_by_user&quot;中のユーザーデータが正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect user data in &quot;get_accessible_hosts_by_user&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123331Z" changeid="kodai">
+        <seg>&quot;get_accessible_hosts_by_user&quot;中のユーザーデータが正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect user data in &quot;get_accessible_nodes_by_user&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123337Z" changeid="kodai">
+        <seg>&quot;get_accessible_nodes_by_user&quot;中のユーザーデータが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11862,6 +12958,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect value &quot;%1$s&quot; for &quot;%2$s&quot; field: must be between %3$s and %4$s.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121242Z" changeid="kodai">
+        <seg>&quot;%2$s&quot;フィールドの値&quot;%1$s&quot;が正しくありません: %3$sから%4$sの間で設定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect value &quot;%1$s&quot; for float field &quot;%2$s&quot;.</seg>
       </tuv>
       <tuv lang="JA">
@@ -11886,6 +12990,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect value &quot;NULL&quot; for NOT NULL field &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123425Z" changeid="kodai">
+        <seg>NOT NULLフィールド&quot;%1$s&quot;への&quot;NULL&quot;値は正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect value &quot;NULL&quot; for NOT NULL field &quot;%s&quot;.</seg>
       </tuv>
       <tuv lang="JA">
@@ -11898,6 +13010,30 @@
       </tuv>
       <tuv lang="JA">
         <seg>値が間違っています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect value for field &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131421Z" changeid="kodai">
+        <seg>フィールド&quot;%1$s&quot;の値が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect value for field &quot;%1$s&quot;: cannot be empty.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T121341Z" changeid="kodai">
+        <seg>フィールド&quot;%1$s&quot;の値が正しくありません: 空の値を設定することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect value for field &quot;%1$s&quot;: must be between %2$s and %3$s.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131454Z" changeid="kodai">
+        <seg>フィールド&quot;%1$s&quot;の値が正しくありません: %2$sから%3$sの間で設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12022,10 +13158,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Interface is linked to item &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123458Z" changeid="kodai">
+        <seg>インターフェースは&quot;%2$s&quot;のアイテム&quot;%1$s&quot;にリンクされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Interface is linked to item &quot;%s&quot;</seg>
       </tuv>
       <tuv lang="JA">
         <seg>インターフェースはアイテム&quot;%s&quot;にリンクされています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interface is used by items that require this type of the interface.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123550Z" changeid="kodai">
+        <seg>インターフェースはこのタイプのインターフェースを利用するアイテムで利用されています</seg>
       </tuv>
     </tu>
     <tu>
@@ -12038,10 +13190,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Interface with DNS &quot;%1$s&quot; cannot have empty IP address.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123641Z" changeid="kodai">
+        <seg>DNS &quot;%1$s&quot;が設定されたインターフェースにIPアドレスを設定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interface with IP &quot;%1$s&quot; cannot have empty DNS name while having &quot;Use DNS&quot; property on &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123810Z" changeid="kodai">
+        <seg>&quot;%2$s&quot;の&quot;DNSを使用&quot;にチェックが入っている場合、IPアドレス&quot;%1$s&quot;のインターフェースのDNS名は必須項目です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Interface with IP &quot;%1$s&quot; cannot have empty DNS name while having &quot;Use DNS&quot; property on host &quot;%2$s&quot;.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ホスト&quot;%2$s&quot;no&quot;DNSを使用&quot;にチェックが入っている場合、IP&quot;%1$s&quot;のインターフェースのDNS名は必須項目です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interface with IP &quot;%1$s&quot; cannot have empty DNS name.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123857Z" changeid="kodai">
+        <seg>IPアドレス&quot;%1$s&quot;が設定されたインターフェースにDNS名を設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12122,6 +13298,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>SNMPポートが間違っています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Invalid hostid for macro &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T123920Z" changeid="kodai">
+        <seg>マクロ&quot;%1$s&quot;のhostidが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12270,6 +13454,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Item &quot;%1$s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124035Z" changeid="kodai">
+        <seg>アイテム&quot;%1$s&quot;は存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Item &quot;%1$s:%2$s&quot; already exists, inherited from another template.</seg>
       </tuv>
       <tuv lang="JA">
@@ -12398,10 +13590,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Item prototypes of</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T154915Z" changeid="kodai">
+        <seg>アイテムのプロトタイプ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Item updated</seg>
       </tuv>
       <tuv lang="JA">
         <seg>アイテムを更新しました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Item uses incorrect interface type.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124108Z" changeid="kodai">
+        <seg>アイテムに正しくないインターフェースタイプが設定されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12418,6 +13626,46 @@
       </tuv>
       <tuv lang="JA" changedate="20120312T101219Z" changeid="kodai">
         <seg>キー&quot;%1$s&quot;が設定されたアイテムは&quot;%2$s&quot;にディスカバリルールとしてすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Item with key &quot;%1$s&quot; already exists on &quot;%2$s&quot; as an item created from item prototype.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124119Z" changeid="kodai">
+        <seg>キー&quot;%1$s&quot;が設定されたアイテムはホスト&quot;%2$s&quot;にプロトタイプから生成されたアイテムとしてすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Item with key &quot;%1$s&quot; already exists on &quot;%2$s&quot; as an item prototype.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124121Z" changeid="kodai">
+        <seg>キー&quot;%1$s&quot;が設定されたアイテムはホスト&quot;%2$s&quot;にプロトタイプとしてすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Item with key &quot;%1$s&quot; already exists on &quot;%2$s&quot; as an item.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124144Z" changeid="kodai">
+        <seg>キー&quot;%1$s&quot;が設定されたアイテムはホスト&quot;%2$s&quot;にすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Item with key &quot;%1$s&quot; already exists on &quot;%2$s&quot; as unknown item element.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124152Z" changeid="kodai">
+        <seg>キー&quot;%1$s&quot;が設定されたアイテムはホスト&quot;%2$s&quot;に不明なアイテムとしてすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Item with key &quot;%1$s&quot; already exists on &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124222Z" changeid="kodai">
+        <seg>キー&quot;%1$s&quot;が設定されたアイテムは指定したホスト&quot;%2$s&quot;にすでに存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12710,6 +13958,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Keep lost resources period (in days)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135540Z" changeid="kodai">
+        <seg>存在しなくなったリソースの保持期間(日)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Keep trends</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T101326Z" changeid="kodai">
@@ -12730,6 +13986,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>キー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Key &quot;%1$s&quot; does not match &lt;grpmax|grpmin|grpsum|grpavg&gt;[&quot;Host group(s)&quot;, &quot;Item key&quot;, &quot;&lt;last|min|max|avg|sum|count&gt;&quot;, &quot;parameter&quot;].</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124316Z" changeid="kodai">
+        <seg>キー&quot;%1$s&quot;が&lt;grpmax|grpmin|grpsum|grpavg&gt;[&quot;Host group(s)&quot;, &quot;Item key&quot;, &quot;&lt;last|min|max|avg|sum|count&gt;&quot;, &quot;parameter&quot;]とマッチしません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12950,6 +14214,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Last $1%d issue</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124331Z" changeid="kodai">
+        <seg>最新$1%d件の障害</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Last %1$d issues</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124341Z" changeid="kodai">
+        <seg>最新%1$d件の障害</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Last %d issues</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T101402Z" changeid="kodai">
@@ -13022,10 +14302,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Last error message of scenario &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124358Z" changeid="kodai">
+        <seg>シナリオ&quot;%s&quot;の最新エラーメッセージ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Last failed attempt was from</seg>
       </tuv>
       <tuv lang="JA">
         <seg>最後のログイン失敗は次のホストから行われています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Last failed attempt was from %2$s on %3$s at %4$s.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120420T155754Z" changeid="kodai">
+        <seg>最後のログイン失敗はホスト%2$sから%3$sの%4$sに行われています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13358,6 +14654,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Log unmatched SNMP traps</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T142616Z" changeid="kodai">
+        <seg>マッチしないSNMPトラップをログに記録</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Logged in as</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T173326Z" changeid="kodai">
@@ -13438,18 +14742,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>M</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>M</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>M Y</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y M</seg>
+      <tuv lang="JA" changedate="20120422T164736Z" changeid="kodai">
+        <seg>Y/m</seg>
       </tuv>
     </tu>
     <tu>
@@ -13566,6 +14862,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Macro &quot;%1$s&quot; is not unique.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124503Z" changeid="kodai">
+        <seg>マクロ&quot;%1$s&quot;がユニークではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Macro &quot;%1$s&quot; value is too long, it should not exceed 255 chars.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T101529Z" changeid="kodai">
@@ -13610,6 +14914,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>マクロ名が長すぎます。255文字以下で設定してください</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Macro with hostmacroid &quot;%1$s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124546Z" changeid="kodai">
+        <seg>hostmacroid &quot;%1$s&quot;を持つマクロが存在しません</seg>
       </tuv>
     </tu>
     <tu>
@@ -13950,10 +15262,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Master node &quot;ID&quot; must be empty.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124647Z" changeid="kodai">
+        <seg>マスターノードの&quot;ID&quot;は空白に設定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Master node already exists</seg>
       </tuv>
       <tuv lang="JA">
         <seg>マスターノードは既に存在します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Master node already exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124655Z" changeid="kodai">
+        <seg>マスターノードがすでに存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14442,6 +15770,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>グラフのアイテムが見つかりません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Missing items for graph &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124735Z" changeid="kodai">
+        <seg>グラフ&quot;%1$s&quot;のアイテムが存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15014,10 +16350,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No URLs defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124751Z" changeid="kodai">
+        <seg>URLが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No accessible resources</seg>
       </tuv>
       <tuv lang="JA">
         <seg>アクセスできるリソースがありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No acknowledges defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124858Z" changeid="kodai">
+        <seg>障害対応コメントが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15062,6 +16414,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No application with ID &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124830Z" changeid="kodai">
+        <seg>ID&quot;%1$s&quot;を持つアプリケーションが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No applications defined</seg>
       </tuv>
       <tuv lang="JA">
@@ -15078,6 +16438,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No audit defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124851Z" changeid="kodai">
+        <seg>監査ログが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No authentication type specified for action operation command &quot;%s&quot;.</seg>
       </tuv>
       <tuv lang="JA">
@@ -15090,6 +16458,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120309T173336Z" changeid="kodai">
         <seg>実行するアクションのコマンド&quot;%s&quot;に認証ユーザー名が設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No charts defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124908Z" changeid="kodai">
+        <seg>グラフが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15238,6 +16614,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No events defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124935Z" changeid="kodai">
+        <seg>イベントが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No events found</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T101929Z" changeid="kodai">
@@ -15270,6 +16654,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No file was uploaded.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T124950Z" changeid="kodai">
+        <seg>ファイルがアップロードされていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No flexible intervals</seg>
       </tuv>
       <tuv lang="JA">
@@ -15290,6 +16682,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>関数が存在しません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No graph ID provided for screen element.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125009Z" changeid="kodai">
+        <seg>スクリーンの要素にグラフIDが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15362,6 +16762,30 @@
       </tuv>
       <tuv lang="JA">
         <seg>テンプレート[ %s ]にグループが設定されていません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No history defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125019Z" changeid="kodai">
+        <seg>ヒストリが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No host IDs given.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125031Z" changeid="kodai">
+        <seg>ホストIDが存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No host group ID provided for screen element.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125102Z" changeid="kodai">
+        <seg>スクリーンの要素にホストグループIDが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15446,6 +16870,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No icon for map element &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125130Z" changeid="kodai">
+        <seg>マップの要素&quot;%s&quot;にアイコンが存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No icon map defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T142400Z" changeid="kodai">
+        <seg>アイコンマッピングが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No image</seg>
       </tuv>
       <tuv lang="JA">
@@ -15478,6 +16918,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No interface found</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125154Z" changeid="kodai">
+        <seg>インターフェースが見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No interface found.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125158Z" changeid="kodai">
+        <seg>インターフェースが見つかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No interfaces defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125207Z" changeid="kodai">
+        <seg>インターフェースが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No interfaces for host &quot;%s&quot;.</seg>
       </tuv>
       <tuv lang="JA">
@@ -15489,6 +16953,14 @@
         <seg>No interfaces for proxy &quot;%s&quot;</seg>
       </tuv>
       <tuv lang="JA">
+        <seg>プロキシ&quot;%s&quot;にインターフェースが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No interfaces for proxy &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125226Z" changeid="kodai">
         <seg>プロキシ&quot;%s&quot;にインターフェースが設定されていません。</seg>
       </tuv>
     </tu>
@@ -15506,6 +16978,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>プロキシ&quot;%s&quot;にインターフェースが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No item ID provided for screen element.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125252Z" changeid="kodai">
+        <seg>スクリーンの要素にアイテムIDが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15534,6 +17014,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No item with itemid &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125314Z" changeid="kodai">
+        <seg>アイテムID&quot;%1$s&quot;を持つアイテムは存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No item with itemid=&quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125321Z" changeid="kodai">
+        <seg>アイテムID&quot;%1$s&quot;を持つアイテムは存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No items</seg>
       </tuv>
       <tuv lang="JA">
@@ -15558,10 +17054,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No items prototypes defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T135949Z" changeid="kodai">
+        <seg>アイテムのプロトタイプが設定されていません。No items prototypes defined.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No key id provided.</seg>
       </tuv>
       <tuv lang="JA" changedate="20110923T112216Z" changeid="kodai">
         <seg>キーIDが提供されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No latest data defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125346Z" changeid="kodai">
+        <seg>最新データが存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15590,10 +17102,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No maintenance defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T145537Z" changeid="kodai">
+        <seg>メンテナンスが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No maintenance period defined.</seg>
       </tuv>
       <tuv lang="JA" changedate="20111109T134703Z" changeid="kodai">
         <seg>メンテナンス期間が設定されていません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No map ID provided for screen element.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125407Z" changeid="kodai">
+        <seg>スクリーンの要素にマップIDが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15710,6 +17238,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No permission for Graph &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125421Z" changeid="kodai">
+        <seg>グラフ&quot;%1$s&quot;への権限がありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No permission for item &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125431Z" changeid="kodai">
+        <seg>アイテム&quot;%1$s&quot;への権限がありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No permission for trigger &quot;%s&quot;</seg>
       </tuv>
       <tuv lang="JA">
@@ -15742,10 +17286,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No permissions for map &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125439Z" changeid="kodai">
+        <seg>マップ&quot;%1$s&quot;への権限がありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No permissions for screen</seg>
       </tuv>
       <tuv lang="JA">
         <seg>スクリーンへの権限がありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No permissions for screen &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125450Z" changeid="kodai">
+        <seg>スクリーン&quot;%1$s&quot;への権限がありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15814,6 +17374,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No regular expressions defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125505Z" changeid="kodai">
+        <seg>正規表現が設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No required items on [ %2$s ]</seg>
       </tuv>
       <tuv lang="JA" changedate="20110922T084440Z" changeid="kodai">
@@ -15874,6 +17442,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>スクリーンの行が存在しません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No rows in screen.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125513Z" changeid="kodai">
+        <seg>スクリーンに行がありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No screen ID provided for screen element.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125522Z" changeid="kodai">
+        <seg>スクリーンの要素にスクリーンIDが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15974,6 +17558,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No steps defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125530Z" changeid="kodai">
+        <seg>ステップが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No such error &quot;%s&quot;.</seg>
       </tuv>
       <tuv lang="JA" changedate="20110927T091947Z" changeid="kodai">
@@ -16018,6 +17610,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>何も選択されていません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No target selected.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125538Z" changeid="kodai">
+        <seg>何も選択されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16086,6 +17686,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No trigger with triggerid &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125622Z" changeid="kodai">
+        <seg>トリガーID&quot;%1$s&quot;を持つトリガーは存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No triggers defined</seg>
       </tuv>
       <tuv lang="JA">
@@ -16134,10 +17742,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No value map defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125632Z" changeid="kodai">
+        <seg>値のマッピングが設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No web checks defined.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T134147Z" changeid="kodai">
+        <seg>ウェブ監視が設定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No web scenarios defined.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T102343Z" changeid="kodai">
-        <seg>Webシナリオが設定されていません。</seg>
+      <tuv lang="JA" changedate="20120422T134151Z" changeid="kodai">
+        <seg>シナリオが設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16178,6 +17802,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>同じIDを持ったノードがすでに存在します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Node with same ID already exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125659Z" changeid="kodai">
+        <seg>同じIDを持つノードがすでに存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16369,6 +18001,14 @@
         <seg>Nothing to do</seg>
       </tuv>
       <tuv lang="JA">
+        <seg>実行するものがありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nothing to do.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T145615Z" changeid="kodai">
         <seg>実行するものがありません</seg>
       </tuv>
     </tu>
@@ -16606,6 +18246,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>OTHER CONFIGURATION PARAMETERS</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125743Z" changeid="kodai">
+        <seg>その他の設定パラメータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>OVERVIEW</seg>
       </tuv>
       <tuv lang="JA">
@@ -16726,6 +18374,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Only Super Admins can create icon maps.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125804Z" changeid="kodai">
+        <seg>特権管理者のみがアイコンのマッピングを作成できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Only Super Admins can create media types</seg>
       </tuv>
       <tuv lang="JA">
@@ -16814,6 +18470,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Only Super Admins can update icon maps.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125818Z" changeid="kodai">
+        <seg>特権管理者のみがアイコンのマッピングを更新できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Only Super Admins can update media types</seg>
       </tuv>
       <tuv lang="JA">
@@ -16888,8 +18552,8 @@
       <tuv lang="EN-US">
         <seg>Only super admins can create icon maps.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T124448Z" changeid="kodai">
-        <seg>特権管理者のみがアイコンマップを作成できます</seg>
+      <tuv lang="JA" changedate="20120422T142420Z" changeid="kodai">
+        <seg>特権管理者のみがアイコンマッピングを作成できます</seg>
       </tuv>
     </tu>
     <tu>
@@ -16936,16 +18600,16 @@
       <tuv lang="EN-US">
         <seg>Operation condition</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120309T161052Z" changeid="kodai">
-        <seg>実行条件の状態</seg>
+      <tuv lang="JA" changedate="20120422T141703Z" changeid="kodai">
+        <seg>アクションの実行条件</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Operation details</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120309T161056Z" changeid="kodai">
-        <seg>実行条件の詳細</seg>
+      <tuv lang="JA" changedate="20120422T141541Z" changeid="kodai">
+        <seg>実行内容の詳細</seg>
       </tuv>
     </tu>
     <tu>
@@ -16998,6 +18662,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other configuration parameters</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125858Z" changeid="kodai">
+        <seg>その他の設定パラメータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other groups</seg>
       </tuv>
       <tuv lang="JA">
@@ -17030,6 +18702,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other | group</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125906Z" changeid="kodai">
+        <seg>その他 | グループ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Others</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T124609Z" changeid="kodai">
@@ -17050,14 +18730,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>プロキシごとの概要</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>P</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>P</seg>
       </tuv>
     </tu>
     <tu>
@@ -17142,42 +18814,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>PHP max execution time</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>PHP max execution time</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>PHP max input time</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>PHP max input time</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>PHP mbstring module missing (PHP configuration parameter --enable-mbstring)</seg>
       </tuv>
       <tuv lang="JA" changedate="20111109T135112Z" changeid="kodai">
         <seg>PHP mbstringモジュールが存在しません (PHPのconfigure時のパラメータ --enable-mbstring)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>PHP memory limit</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>PHP memory limit</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>PHP post max size</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>PHP post max size</seg>
       </tuv>
     </tu>
     <tu>
@@ -17206,14 +18846,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>PHP upload max filesize</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>PHP upload max filesize</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>PHP version</seg>
       </tuv>
       <tuv lang="JA">
@@ -17234,14 +18866,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>プレーンテキスト</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>POP</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>POP</seg>
       </tuv>
     </tu>
     <tu>
@@ -17290,6 +18914,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>パレット</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Palette #%1$s</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125921Z" changeid="kodai">
+        <seg>パレット #%1$s</seg>
       </tuv>
     </tu>
     <tu>
@@ -17406,6 +19038,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Peak memory usage: %s</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125947Z" changeid="kodai">
+        <seg>ピークのメモリ使用量: %s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Percentage</seg>
       </tuv>
       <tuv lang="JA">
@@ -17418,6 +19058,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>パーセンタイルライン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Percentile line (Left)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130006Z" changeid="kodai">
+        <seg>パーセンタイルライン (左)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Percentile line (Right)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130017Z" changeid="kodai">
+        <seg>パーセンタイルライン (右)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Percentile line (left)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130028Z" changeid="kodai">
+        <seg>パーセンタイルライン (左)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Percentile line (right)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130040Z" changeid="kodai">
+        <seg>パーセンタイルライン (右)</seg>
       </tuv>
     </tu>
     <tu>
@@ -17534,6 +19206,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please be aware that database still contains data related to the deleted node.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130100Z" changeid="kodai">
+        <seg>データベースにはまだ削除したノードに関するデータが残っていることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please correct all issues and press &quot;Retry&quot; button</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130128Z" changeid="kodai">
+        <seg>すべての問題を解決して&quot;Retry&quot;ボタンを押してください</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please enter a correct update interval.</seg>
       </tuv>
       <tuv lang="JA" changedate="20110926T092730Z" changeid="kodai">
@@ -17586,6 +19274,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ポーランド語 (pl_PL)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Populates host inventory field</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130147Z" changeid="kodai">
+        <seg>ホストインベントリフィールドの自動設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -17918,6 +19614,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Proxy &quot;%s&quot; already exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130202Z" changeid="kodai">
+        <seg>プロキシ&quot;%s&quot;はすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Proxy added</seg>
       </tuv>
       <tuv lang="JA">
@@ -17946,6 +19650,22 @@
       </tuv>
       <tuv lang="JA" changedate="20120312T124810Z" changeid="kodai">
         <seg>プロキシホスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Proxy interface creation failed.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130219Z" changeid="kodai">
+        <seg>プロキシのインターフェース作成に失敗しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Proxy interface update failed.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130230Z" changeid="kodai">
+        <seg>プロキシのインターフェース更新に失敗しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18018,14 +19738,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>レポート</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>RMCP+</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>RMCP+</seg>
       </tuv>
     </tu>
     <tu>
@@ -18146,6 +19858,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>取得不可アイテムの更新間隔(秒)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Refresh unsupported items (in sec) &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130257Z" changeid="kodai">
+        <seg>取得不可アイテムの更新間隔(秒) &quot;%1$s&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -18294,6 +20014,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remove from favourites.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130310Z" changeid="kodai">
+        <seg>お気に入りから削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Remove from host group</seg>
       </tuv>
       <tuv lang="JA">
@@ -18370,6 +20098,30 @@
       </tuv>
       <tuv lang="JA">
         <seg>レポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Report 1</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130323Z" changeid="kodai">
+        <seg>レポート1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Report 2</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130326Z" changeid="kodai">
+        <seg>レポート2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Report 3</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130329Z" changeid="kodai">
+        <seg>レポート3</seg>
       </tuv>
     </tu>
     <tu>
@@ -19422,10 +21174,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Screen &quot;%1$s&quot; added.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130348Z" changeid="kodai">
+        <seg>スクリーン&quot;%1$s&quot;を追加しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Screen &quot;%1$s&quot; already exists.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T125222Z" changeid="kodai">
         <seg>スクリーン&quot;%1$s&quot;はすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Screen &quot;%1$s&quot; updated.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130358Z" changeid="kodai">
+        <seg>スクリーン&quot;%1$s&quot;を更新しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19454,10 +21222,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Screen item in same cell already exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130452Z" changeid="kodai">
+        <seg>同じセルにスクリーンの要素がすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Screen should contain at least one row and column</seg>
       </tuv>
       <tuv lang="JA">
         <seg>スクリーンには少なくとも1つ以上の行と列が必要です</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Screen should contain at least one row and column.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130438Z" changeid="kodai">
+        <seg>スクリーンは少なくとも1つ以上の行か列を設定する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19486,6 +21270,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Screen with ID &quot;%s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130507Z" changeid="kodai">
+        <seg>ID &quot;%s&quot;を持つスクリーンは存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Screen with id &quot;%d&quot; does not exist</seg>
       </tuv>
       <tuv lang="JA">
@@ -19498,6 +21290,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>スクリーン&quot;%s&quot;は存在しません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Screen with name &quot;%s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130518Z" changeid="kodai">
+        <seg>スクリーン&quot;%s&quot;は存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19554,6 +21354,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>スクリプト名</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Script profiler</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130527Z" changeid="kodai">
+        <seg>スクリプトプロファイラ</seg>
       </tuv>
     </tu>
     <tu>
@@ -20190,6 +21998,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Show events max &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130627Z" changeid="kodai">
+        <seg>イベントの最大表示期間 &quot;%1$s&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Show events max [%1$s]</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T125324Z" changeid="kodai">
@@ -20210,6 +22026,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>イベントの表示期間(日)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Show events not older than (in days) &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130628Z" changeid="kodai">
+        <seg>イベントの表示期間(日) &quot;%1$s&quot;</seg>
       </tuv>
     </tu>
     <tu>
@@ -21334,6 +23158,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>TRIGGER PROTOTYPES OF</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T154905Z" changeid="kodai">
+        <seg>トリガーのプロトタイプ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>TRIGGERS</seg>
       </tuv>
       <tuv lang="JA">
@@ -21362,6 +23194,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120312T125648Z" changeid="kodai">
         <seg>テーブル&quot;%1$s&quot;にフィールド&quot;%2$s&quot;が存在しません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Table &quot;%1$s&quot; doesn't have a field named &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130734Z" changeid="kodai">
+        <seg>テーブル&quot;%1$s&quot;にフィールド名&quot;%2$s&quot;が存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21418,6 +23258,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>テンプレート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Template &quot;%1$s&quot; already exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130810Z" changeid="kodai">
+        <seg>テンプレート&quot;%1$s&quot;はそでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Template &quot;%1$s&quot; does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130825Z" changeid="kodai">
+        <seg>テンプレート&quot;%1$s&quot;は存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21502,6 +23358,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Template screens</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130836Z" changeid="kodai">
+        <seg>テンプレートスクリーン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Template trigger</seg>
       </tuv>
       <tuv lang="JA">
@@ -21526,10 +23390,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Template with application &quot;%1$s&quot; already linked to host.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130903Z" changeid="kodai">
+        <seg>アプリケーション&quot;%1$s&quot;を持つテンプレートがすでにホストにリンクされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Template with item key</seg>
       </tuv>
       <tuv lang="JA">
         <seg>テンプレートのアイテムのキー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Template with item key &quot;%1$s&quot; already linked to host.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T130933Z" changeid="kodai">
+        <seg>キー&quot;%1$s&quot;を持つアイテムを含むテンプレートがすでにホストにリンクされています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21680,16 +23560,16 @@
       <tuv lang="EN-US">
         <seg>The image is used in icon map %2$s.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>イメージはアイコンマップ%2$sに利用されています。</seg>
+      <tuv lang="JA" changedate="20120422T142408Z" changeid="kodai">
+        <seg>イメージはアイコンマッピング%2$sに利用されています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>The image is used in icon maps %2$s.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20110922T095422Z" changeid="kodai">
-        <seg>イメージはアイコンマップ%2$sに利用されています。</seg>
+      <tuv lang="JA" changedate="20120422T142410Z" changeid="kodai">
+        <seg>イメージはアイコンマッピング%2$sに利用されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22070,6 +23950,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Trigger &quot;%1$s&quot; already exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131042Z" changeid="kodai">
+        <seg>トリガー&quot;%1$s&quot;はすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Trigger &quot;%1$s&quot; does not have item prototype.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T125847Z" changeid="kodai">
@@ -22328,16 +24216,16 @@
       <tuv lang="EN-US">
         <seg>Trigger prototype</seg>
       </tuv>
-      <tuv lang="JA" changedate="20111020T070919Z" changeid="kodai">
-        <seg>トリガープロトタイプ</seg>
+      <tuv lang="JA" changedate="20120422T135958Z" changeid="kodai">
+        <seg>トリガーのプロトタイプ</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Trigger prototype &quot;%1$s:%2$s&quot; updated.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20111020T070916Z" changeid="kodai">
-        <seg>トリガープロトタイプ&quot;%1$s:%2$s&quot;を更新しました。</seg>
+      <tuv lang="JA" changedate="20120422T140051Z" changeid="kodai">
+        <seg>トリガーのプロトタイプ&quot;%1$s:%2$s&quot;を更新しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22370,6 +24258,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>トリガーのプロトタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Trigger prototypes of</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T154921Z" changeid="kodai">
+        <seg>トリガーのプロトタイプ:</seg>
       </tuv>
     </tu>
     <tu>
@@ -22418,6 +24314,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>同じ名前で異なるタイプのトリガーが存在します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Trigger with same name but other type exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131116Z" changeid="kodai">
+        <seg>同じ名前で異なるタイプのトリガーが存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22734,6 +24638,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unable to remove local node.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131130Z" changeid="kodai">
+        <seg>ローカルノードは削除できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unable to select configuration</seg>
       </tuv>
       <tuv lang="JA">
@@ -22746,6 +24658,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120312T130023Z" changeid="kodai">
         <seg>選択した設定は行えません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unable to uploade file because &quot;file_uploads&quot; is disabled.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131201Z" changeid="kodai">
+        <seg>file_uploads&quot;が無効のためファイルをアップロードできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23008,8 +24928,8 @@
       <tuv lang="EN-US">
         <seg>Unlinked: Graph prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T131210Z" changeid="kodai">
-        <seg>リンク削除: &quot;%2$s&quot;のグラフプロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T140006Z" changeid="kodai">
+        <seg>リンク削除: &quot;%2$s&quot;のグラフのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23024,8 +24944,8 @@
       <tuv lang="EN-US">
         <seg>Unlinked: Item prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T131240Z" changeid="kodai">
-        <seg>リンク削除: &quot;%2$s&quot;のアイテムプロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T140010Z" changeid="kodai">
+        <seg>リンク削除: &quot;%2$s&quot;のアイテムのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23040,8 +24960,8 @@
       <tuv lang="EN-US">
         <seg>Unlinked: Trigger prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T131311Z" changeid="kodai">
-        <seg>リンク削除: &quot;%2$s&quot;のトリガープロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T140013Z" changeid="kodai">
+        <seg>リンク削除: &quot;%2$s&quot;のトリガーのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23192,8 +25112,8 @@
       <tuv lang="EN-US">
         <seg>Updated: Item prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T131410Z" changeid="kodai">
-        <seg>更新: &quot;%2$s&quot;のアイテムプロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T140020Z" changeid="kodai">
+        <seg>更新: &quot;%2$s&quot;のアイテムのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23208,8 +25128,8 @@
       <tuv lang="EN-US">
         <seg>Updated: Trigger prototype &quot;%1$s&quot; on &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T131436Z" changeid="kodai">
-        <seg>更新: &quot;%2$s&quot;のトリガープロトタイプ&quot;%1$s&quot;。</seg>
+      <tuv lang="JA" changedate="20120422T140025Z" changeid="kodai">
+        <seg>更新: &quot;%2$s&quot;のトリガーのプロトタイプ&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23297,6 +25217,14 @@
         <seg>Used in map &quot;%2$s&quot;</seg>
       </tuv>
       <tuv lang="JA" changedate="20110922T084704Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;に利用されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Used in map &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T122245Z" changeid="kodai">
         <seg>マップ&quot;%2$s&quot;に利用されています。</seg>
       </tuv>
     </tu>
@@ -23454,6 +25382,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>User group for database down message.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131223Z" changeid="kodai">
+        <seg>データベース停止メッセージの送信先グループ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>User groups</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T173309Z" changeid="kodai">
@@ -23474,6 +25410,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120312T131549Z" changeid="kodai">
         <seg>ユーザはグループ&quot;%s&quot;のメンバーになることにより自分自身のフロントエンドへのアクセス設定を変更することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User may not modify system status for himself by becoming a member of user group &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131306Z" changeid="kodai">
+        <seg>ユーザはグループ&quot;%s&quot;のメンバーになることにより自分自身のシステムステータスを変更することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23654,10 +25598,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Value map &quot;%1$s&quot; &quot;%2$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131331Z" changeid="kodai">
+        <seg>値のマッピング &quot;%1$s&quot; &quot;%2$s&quot;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Value map &quot;%1$s&quot; already exists.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T131653Z" changeid="kodai">
         <seg>値のマッピング&quot;%1$s&quot;はすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Value map &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131323Z" changeid="kodai">
+        <seg>値のマッピング&quot;%1$s&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -23734,6 +25694,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Value maps are used to create a mapping between numeric values and string representations.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131350Z" changeid="kodai">
+        <seg>値のマッピングは数値の値と文字表記をマッピングするために利用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Value type must be Float for aggregate items</seg>
       </tuv>
       <tuv lang="JA">
@@ -23746,6 +25714,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>アグリゲートアイテムのデータ型は浮動小数を選択してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Value: no data</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131400Z" changeid="kodai">
+        <seg>値: データなし</seg>
       </tuv>
     </tu>
     <tu>
@@ -23866,6 +25842,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ウェブ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Web checks</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T134205Z" changeid="kodai">
+        <seg>ウェブ監視</seg>
       </tuv>
     </tu>
     <tu>
@@ -24038,10 +26022,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Work 24x7.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T125601Z" changeid="kodai">
+        <seg>24x7として動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Working time</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ワーキングタイム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Working time &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131517Z" changeid="kodai">
+        <seg>ワーキングタイム&quot;%1$s&quot;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24070,6 +26070,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Wrong fields for element.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131525Z" changeid="kodai">
+        <seg>要素の設定が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Wrong fields for graph</seg>
       </tuv>
       <tuv lang="JA">
@@ -24078,10 +26086,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Wrong fields for graph.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131529Z" changeid="kodai">
+        <seg>グラフの設定が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Wrong fields for host &quot;%s&quot;.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>ホスト&quot;%s&quot;の設定が正しくありません</seg>
+      <tuv lang="JA" changedate="20120422T131533Z" changeid="kodai">
+        <seg>ホスト&quot;%s&quot;の設定が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24090,6 +26106,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>アイテムの設定が正しくありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Wrong fields for items.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131540Z" changeid="kodai">
+        <seg>アイテムの設定が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24134,10 +26158,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Wrong fields for proxy &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131632Z" changeid="kodai">
+        <seg>プロキシ&quot;%s&quot;の設定が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Wrong fields for screen &quot;%1$s&quot;.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T132113Z" changeid="kodai">
         <seg>スクリーン&quot;%1$s&quot;の設定が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Wrong fields for screen &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131648Z" changeid="kodai">
+        <seg>スクリーン&quot;%s&quot;の設定が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24170,6 +26210,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>トリガーの設定が正しくありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Wrong fields for trigger.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131655Z" changeid="kodai">
+        <seg>トリガーの設定が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24238,10 +26286,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>X</seg>
+        <seg>X label</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>X</seg>
+      <tuv lang="JA" changedate="20120422T131702Z" changeid="kodai">
+        <seg>Xラベル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML file contains error %1$s:</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131733Z" changeid="kodai">
+        <seg>XMLファイルにエラーが含まれています %1$s</seg>
       </tuv>
     </tu>
     <tu>
@@ -24254,10 +26310,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Y</seg>
+        <seg>XML file contains fatal error %1$s:</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y</seg>
+      <tuv lang="JA" changedate="20120422T131751Z" changeid="kodai">
+        <seg>XMLファイルに致命的なエラーが含まれています %1$s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML file contains warning %1$s:</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131803Z" changeid="kodai">
+        <seg>XMLファイルにワーニングが含まれています %1$s</seg>
       </tuv>
     </tu>
     <tu>
@@ -24286,42 +26350,50 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Y label</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131808Z" changeid="kodai">
+        <seg>Yラベル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Y-m-d H:i:s</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y-m-d H:i:s</seg>
+      <tuv lang="JA" changedate="20120422T164742Z" changeid="kodai">
+        <seg>Y/m/d H:i:s</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Y.M.d H:i:s</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y.M.d H:i:s</seg>
+      <tuv lang="JA" changedate="20120422T164746Z" changeid="kodai">
+        <seg>Y/m/d H:i:s</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Y.m.d</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y.m.d</seg>
+      <tuv lang="JA" changedate="20120422T164748Z" changeid="kodai">
+        <seg>Y/m/d</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Y.m.d H:i</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y.m.d H:i</seg>
+      <tuv lang="JA" changedate="20120422T164750Z" changeid="kodai">
+        <seg>Y/m/d H:i</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Y.m.d H:i:s</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y.m.d H:i:s</seg>
+      <tuv lang="JA" changedate="20120422T164752Z" changeid="kodai">
+        <seg>Y/m/d H:i:s</seg>
       </tuv>
     </tu>
     <tu>
@@ -24558,10 +26630,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Z</seg>
+        <seg>Your setup is not configured for distributed monitoring.</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Z</seg>
+      <tuv lang="JA" changedate="20120422T131843Z" changeid="kodai">
+        <seg>分散監視用に設定されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24702,6 +26774,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix is temporarily unavailable!</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131859Z" changeid="kodai">
+        <seg>Zabbixは一時的に利用できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Zabbix server</seg>
       </tuv>
       <tuv lang="JA">
@@ -24726,6 +26806,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix server info</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131918Z" changeid="kodai">
+        <seg>Zabbixサーバの情報</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Zabbix server ip or port is not set!</seg>
       </tuv>
       <tuv lang="JA">
@@ -24744,16 +26832,16 @@
       <tuv lang="EN-US">
         <seg>Zabbix server name</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Zabbixサーバname</seg>
+      <tuv lang="JA" changedate="20120422T131921Z" changeid="kodai">
+        <seg>Zabbixサーバ名</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Zabbix server port</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Zabbixサーバport</seg>
+      <tuv lang="JA" changedate="20120422T131925Z" changeid="kodai">
+        <seg>Zabbixサーバのポート</seg>
       </tuv>
     </tu>
     <tu>
@@ -24778,14 +26866,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>ズーム</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>[H:i:s]</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>[H:i:s]</seg>
       </tuv>
     </tu>
     <tu>
@@ -24824,8 +26904,8 @@
       <tuv lang="EN-US">
         <seg>[Y.M.d H:i:s]</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>[Y.M.d H:i:s]</seg>
+      <tuv lang="JA" changedate="20120422T164644Z" changeid="kodai">
+        <seg>[Y/m/d H:i:s]</seg>
       </tuv>
     </tu>
     <tu>
@@ -24926,42 +27006,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>and</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>and</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>and can't be deleted</seg>
       </tuv>
       <tuv lang="JA">
         <seg>削除できません</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>as Blue</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>as Blue</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>as Green</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>as Green</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>as Red</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>as Red</seg>
       </tuv>
     </tu>
     <tu>
@@ -25038,74 +27086,66 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>d</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>d</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>d M Y</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y M d</seg>
+      <tuv lang="JA" changedate="20120422T164650Z" changeid="kodai">
+        <seg>Y/m/d</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>d M Y H:i</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y M d H:i</seg>
+      <tuv lang="JA" changedate="20120422T164654Z" changeid="kodai">
+        <seg>Y/m/d H:i</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>d M Y H:i:s</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y M d H:i:s</seg>
+      <tuv lang="JA" changedate="20120422T164658Z" changeid="kodai">
+        <seg>Y/m/d H:i:s</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>d.M</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>M.d</seg>
+      <tuv lang="JA" changedate="20120422T164704Z" changeid="kodai">
+        <seg>m/d</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>d.m</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>m.d</seg>
+      <tuv lang="JA" changedate="20120422T164706Z" changeid="kodai">
+        <seg>m/d</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>d.m H:i</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>m.d H:i</seg>
+      <tuv lang="JA" changedate="20120422T164709Z" changeid="kodai">
+        <seg>m/d H:i</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>d.m.Y H:i</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y.m.d H:i</seg>
+      <tuv lang="JA" changedate="20120422T164841Z" changeid="kodai">
+        <seg>Y/m/d H:i</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>d.m.y</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>y.m.d</seg>
+      <tuv lang="JA" changedate="20120422T164714Z" changeid="kodai">
+        <seg>y/m/d</seg>
       </tuv>
     </tu>
     <tu>
@@ -25190,14 +27230,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>every</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>every</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>executed</seg>
       </tuv>
       <tuv lang="JA">
@@ -25218,14 +27250,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>回のログイン失敗がログに記録されています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>fixed</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>fixed</seg>
       </tuv>
     </tu>
     <tu>
@@ -25254,14 +27278,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>found</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>found</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>from</seg>
       </tuv>
       <tuv lang="JA">
@@ -25274,14 +27290,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>次のホストから</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>h</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>h</seg>
       </tuv>
     </tu>
     <tu>
@@ -25314,14 +27322,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>ホストグループ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>http://www.zabbix.com</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>http://www.zabbix.com</seg>
       </tuv>
     </tu>
     <tu>
@@ -25608,8 +27608,8 @@
       <tuv lang="EN-US">
         <seg>m.d.Y H:i:s</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>Y.m.d H:i:s</seg>
+      <tuv lang="JA" changedate="20120422T164811Z" changeid="kodai">
+        <seg>Y/m/d H:i:s</seg>
       </tuv>
     </tu>
     <tu>
@@ -25950,6 +27950,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>short description</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131949Z" changeid="kodai">
+        <seg>短い説明</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>show icon mappings</seg>
       </tuv>
       <tuv lang="JA">
@@ -26082,6 +28090,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>はエクスポートされたスクリーンに含まれています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>value</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120422T131957Z" changeid="kodai">
+        <seg>値</seg>
       </tuv>
     </tu>
     <tu>
