@@ -2,9 +2,10 @@ releasenote/omegat/*
 releasenote/target/*
 releasenote/*.tmx
 
-frontend/omegat/*
+frontend/omegat/project_save.tmx.*
 frontend/target/*
 frontend/*.tmx
+frontend/tm/*
 
 document/zabbix-1.8/api/omegat/*
 document/zabbix-1.8/api/target/*
