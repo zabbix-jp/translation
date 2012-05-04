@@ -238,6 +238,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A nice overview of the new functionality is at &lt;a0&gt;http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.13&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T171839Z" changeid="kodai">
+        <seg>新機能の概要は&lt;a0&gt;http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.13&lt;/a0&gt;から参照することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A nice overview of the new functionality is at &lt;a0&gt;http://www.zabbix.com/documentation/1.8/manual/about/what_s_new_1.8.8&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changedate="20110913T070330Z" changeid="kodai">
@@ -1290,6 +1298,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120419T184105Z" changeid="kodai">
         <seg>1.8.12rc2に含まれるすべてのバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Complete List of Bug Fixes and Improvements included into 1.8.13rc1</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172038Z" changeid="kodai">
+        <seg>1.8.13rc1に含まれるすべてのバグフィックスと改善の一覧</seg>
       </tuv>
     </tu>
     <tu>
@@ -2598,6 +2614,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It might be handy for troubleshooting configuration related issues.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172028Z" changeid="kodai">
+        <seg>この機能は設定ファイルに関連んする問題のトラブルシューティングに役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It requires recompilation of ZABBIX Server and installation of new front-end only.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3214,6 +3238,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Neq agent check</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172241Z" changeid="kodai">
+        <seg>エージェントの新しいアイテム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Network maps can now be referenced on the frontend not only by id, but also by name, just like screens in 1.8.4.</seg>
       </tuv>
       <tuv lang="JA" changedate="20110406T234544Z" changeid="kodai">
@@ -3282,6 +3314,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>新しいログイン後のグリーティングメッセージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New check agent.hostname is introduced to return agent's hostname.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172257Z" changeid="kodai">
+        <seg>新しく追加されたアイテムagent.hostnameはエージェントのホスト名設定を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5814,6 +5854,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.12.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T171729Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.12のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document contains the release notes for Zabbix 1.8.12rc1.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120413T065132Z" changeid="kodai">
@@ -5826,6 +5874,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120419T184022Z" changeid="kodai">
         <seg>このドキュメントはZabbix 1.8.12rc2のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 1.8.13rc1.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T171818Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 1.8.13rc1のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6854,6 +6910,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What's New in 1.8.13</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T171853Z" changeid="kodai">
+        <seg>1.8.13の変更点</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>What's New in 1.8.2</seg>
       </tuv>
       <tuv lang="JA">
@@ -7806,6 +7870,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.12.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T171721Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.8.12のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.12rc1 (First Release Candidate).</seg>
       </tuv>
       <tuv lang="JA" changedate="20120413T065125Z" changeid="kodai">
@@ -7818,6 +7890,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120419T184015Z" changeid="kodai">
         <seg>Zabbix SIAはZabbix 1.8.12rc2 (2番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 1.8.13rc1 (First Release Candidate).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T171812Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 1.8.13rc1 (1番目のRelease Candidate)のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15001,6 +15081,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3929&lt;/a0&gt;] removed deprecated Switch module from the gen.pl script</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T173144Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3929&lt;/a0&gt;] gen.plスクリプトから非推奨のSwichモジュールを削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3935&lt;/a0&gt;] fixed possible function redeclaration error</seg>
       </tuv>
       <tuv lang="JA" changedate="20110728T140050Z" changeid="kodai">
@@ -16233,6 +16321,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4685&lt;/a0&gt;] fixed hangup when users login at the same timed</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172109Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4685&lt;/a0&gt;] 同時にユーザがログインを行った場合にハングアップする問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4694&lt;/a0&gt;] fixed possible SQL errors or server crash while processing trends by history syncer</seg>
       </tuv>
       <tuv lang="JA" changedate="20120313T202849Z" changeid="kodai">
@@ -16465,10 +16561,82 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4810&lt;/a0&gt;] fixed the ifInOctets and ifOutOctets items in the Dell_PowerConnect_5224, Template_Dell_PowerConnect_5324, Template_C3750-48TS and Template_Cisco_PIX515E templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172214Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4810&lt;/a0&gt;] Dell_PowerConnect_5224、Template_Dell_PowerConnect_5324、Template_C3750-48TS、Template_Cisco_PIX515EテンプレートのifInOctetsとifOutOctetsアイテムを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4813&lt;/a0&gt;] fixed incorrect exception handling in maps when checking for circularity</seg>
       </tuv>
       <tuv lang="JA" changedate="20120413T113632Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4813&lt;/a0&gt;] マップの循環参照チェックの誤った例外処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4849&lt;/a0&gt;] implemented a check that a trigger expression doesn't use items from both hosts and templates at the same time</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T173002Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4849&lt;/a0&gt;] トリガー条件式にホストとテンプレートのアイテムを同時に使用していないかをチェックする機能を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4857&lt;/a0&gt;] fixed poller hanging on ssh check when using public key authentication</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172344Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4857&lt;/a0&gt;] ssh監視で公開鍵認証を利用している場合にpollerがハングアップする問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4877&lt;/a0&gt;] updated French translation; thanks to Joseph Bueno</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172502Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4877&lt;/a0&gt;] フランス語翻訳を修正; Joseph Buenoに感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4881&lt;/a0&gt;] fixed slow select queries from partitioned history tables</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172436Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4881&lt;/a0&gt;] パーティショニングされたヒストリテーブルに対する遅いselectクエリを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4884&lt;/a0&gt;] fixed incorrect calculation of items using option &quot;Delta (speed per second)&quot; after recovery from unsupported state</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172830Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4884&lt;/a0&gt;] アイテムの設定で&quot;差分/時間&quot;を利用している場合に、取得不可から復帰した際に誤った計算を行う問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4900&lt;/a0&gt;] improved performance of the 'Status of Zabbix' dashboard widget</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172527Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4900&lt;/a0&gt;] ダッシュボードの「Zabbixサーバの状態」のパフォーマンスを改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4905&lt;/a0&gt;] fixed processing of system.swap.in/out[,pages] under Linux 2.6</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172554Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4905&lt;/a0&gt;] Linux 2.6のsystem.swap.in/out[,pages]の処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4907&lt;/a0&gt;] fixed processing of system.swap.in/out[,sectors/count] under Linux</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172614Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4907&lt;/a0&gt;] Linuxのsystem.swap.in/out[,sectors/count]の処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16669,6 +16837,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20120326T201710Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBXNEXT-1149&lt;/a0&gt;] ネストされたマップのインポート、インポート画面の再設計</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1188&lt;/a0&gt;] added support of &quot;agent.hostname&quot; check</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120504T172232Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1188&lt;/a0&gt;] 「agent.hostname」アイテムを追加</seg>
       </tuv>
     </tu>
     <tu>
