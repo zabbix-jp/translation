@@ -1,6 +1,7 @@
-releasenote/omegat/*
+releasenote/omegat/project_save.tmx.**
 releasenote/target/*
 releasenote/*.tmx
+frontend/tm/*
 
 frontend/omegat/project_save.tmx.*
 frontend/target/*

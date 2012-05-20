@@ -110,6 +110,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A database patch must be applied for migration from 2.0.0rc4.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091415Z" changeid="kodai">
+        <seg>2.0.0rc4からアップグレードするためにはデータベースのパッチ適用が必須です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A database patch must be applied.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090052Z" changeid="kodai">
+        <seg>データベースのパッチ適用が必須です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A host may have unlimited number of linked templates.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1286,6 +1302,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Complete List of Bug Fixes and Improvements included into 1.8.12</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120505T212855Z" changeid="kodai">
+        <seg>1.8.12に含まれるすべてのバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Complete List of Bug Fixes and Improvements included into 1.8.12rc1</seg>
       </tuv>
       <tuv lang="JA" changedate="20120413T065423Z" changeid="kodai">
@@ -1778,6 +1802,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ICMP監視機能が拡張され、ロストパケットや最小/最大/平均レスポンスタイムなどより詳細な監視を行うことができるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Existing default templates were improved to take advantage of low level discovery, also added new templates.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085841Z" changeid="kodai">
+        <seg>既存のテンプレートをローレベルディスカバリを利用するように改善し、新しいテンプレートを追加しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2430,6 +2462,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is feature complete release but the default set of templates is not complete.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085521Z" changeid="kodai">
+        <seg>新機能はすべて実装されていますが、デフォルトのテンプレートの作成が完了していません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is for beta testing only.</seg>
       </tuv>
       <tuv lang="JA">
@@ -2830,6 +2870,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>List of Bug Fixes and Improvements included into 2.0.0rc3</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085851Z" changeid="kodai">
+        <seg>2.0.0rc3に含まれるバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List of Bug Fixes and Improvements included into 2.0.0rc4</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091723Z" changeid="kodai">
+        <seg>2.0.0rc4に含まれるバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List of Bug Fixes and Improvements included into 2.0.0rc5</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090153Z" changeid="kodai">
+        <seg>2.0.0rc5に含まれるバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List of Bug Fixes and Improvements included into 2.0.0rc6</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091431Z" changeid="kodai">
+        <seg>2.0.0rc6に含まれるバグフィックスと改善の一覧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>List of Bug Fixes included into 1.8.8rc2</seg>
       </tuv>
       <tuv lang="JA" changedate="20110920T065442Z" changeid="kodai">
@@ -3122,6 +3194,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>その他にもスクリプトを追加、設定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More templates will be available in stable Zabbix 2.0.0.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085549Z" changeid="kodai">
+        <seg>Zabbix 2.0.0の安定板ではより多くのテンプレートが利用できるようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3458,6 +3538,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>新しいマニュアルは次のベータリリースで公開する予定です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New set of default templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085559Z" changeid="kodai">
+        <seg>新しいテンプレート</seg>
       </tuv>
     </tu>
     <tu>
@@ -4130,6 +4218,22 @@
       </tuv>
       <tuv lang="JA" changedate="20110106T091759Z" changeid="kodai">
         <seg>不明なイベントとトリガーの再設計</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Read carefully for upgrade procedure from 2.0.0rc4</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091353Z" changeid="kodai">
+        <seg>2.0.0rc4からのアップグレードはマニュアルの手順を必ず参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Read carefully for upgrade procedure from 2.0.0rc5</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090044Z" changeid="kodai">
+        <seg>2.0.0rc5からのアップグレードはマニュアルの手順を必ず参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5222,6 +5326,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The patch for different database engines is located under upgrades/dbpatches/2.0/&lt;dbtype&gt;/rc4_rc5.sql.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090138Z" changeid="kodai">
+        <seg>データベースごとのパッチはupgrades/dbpatches/2.0/&lt;dbtype&gt;/rc4_rc5.sqlに置かれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The pollers are very efficient and do not require connections to the database.</seg>
       </tuv>
       <tuv lang="JA">
@@ -6162,6 +6274,38 @@
       </tuv>
       <tuv lang="JA" changedate="20120323T180558Z" changeid="kodai">
         <seg>このドキュメントはZabbix 2.0.0rc2のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 2.0.0rc3.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085431Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 2.0.0rc3のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 2.0.0rc4.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091708Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 2.0.0rc4のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 2.0.0rc5.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090001Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 2.0.0rc5のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 2.0.0rc6.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091344Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 2.0.0rc6のリリースノートを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8190,6 +8334,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 2.0.0rc3 (Third Release Candidate of 2.0.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085419Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 2.0.0rc3(3番目のRelease Candidate)をアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 2.0.0rc4 (Fourth Release Candidate of 2.0.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091659Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 2.0.0rc4(4番目のRelease Candidate)をアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 2.0.0rc5 (Fifth Release Candidate of 2.0.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T085952Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 2.0.0rc5(5番目のRelease Candidate)をアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 2.0.0rc6 (Sixth Release Candidate of 2.0.0).</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091336Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 2.0.0rc6(6番目のRelease Candidate)をアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Zabbix Server</seg>
       </tuv>
       <tuv lang="JA">
@@ -8890,6 +9066,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] ハンガリー語訳を更新; Laszlo Szaboに感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] updated Brazilian Portuguese, Czech, Dutch, Greek, Japanese, Latvian, Polish, Russian, Spanish and Ukrainian translations; thanks to Zabbix translators</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092442Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] ブラジル系ポルトガル語、チェコ語、オランダ語、ギリシャ語、日本語、ラトビア語、ポーランド語、ロシア語、スペイン語ウクライナ語を更新; 翻訳者に感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] updated Brazilian Portuguese, Dutch, Greek, Russian and Ukrainian translations; thanks to Zabbix translators</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090329Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] ブラジル系ポルトガル語、オランダ語、ギリシャ語、ロシア語、ウクライナ語の翻訳を更新; 翻訳者に感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] updated Brazilian Portuguese, French, Russian and Ukrainian translations; thanks to Zabbix translators</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091500Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] ブラジル系ポルトガル語、フランス語、ロシア語、ウクライナ語を更新; 翻訳者に感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] updated Czech, French, German, Greek, Japanese, Polish, Russian, Spanish and Turkish translations; thanks to Zabbix translators</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090242Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-1357&lt;/a0&gt;] チェコ語、フランス語、ドイツ語、ギリシャ語、日本語、ポーランド語、ロシア語、スペイン語、トルコ語の翻訳を更新; 翻訳者に感謝</seg>
       </tuv>
     </tu>
     <tu>
@@ -13489,10 +13697,34 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3148&lt;/a0&gt;] fixed user macro not expanded in trigger names</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094432Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3148&lt;/a0&gt;] トリガー名のユーザ定義マクロが展開されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3151&lt;/a0&gt;] added support of monitoring files larger than 2GB in the vfs.file.size[] item</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090449Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3151&lt;/a0&gt;] vfs.file.size[]アイテムが2GB以上のファイルの監視をサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3152&lt;/a0&gt;] fixed global messages being shown even if all severities are unchecked</seg>
       </tuv>
       <tuv lang="JA" changedate="20120413T113831Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3152&lt;/a0&gt;] 設定画面ですべての深刻度からチェックを外しているにも関わらずGUIメッセージが表示される問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3152&lt;/a0&gt;] fixed messages are shown even if all severities are unchecked</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100350Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3152&lt;/a0&gt;] すべての深刻度のチェックを外したにも関わらずメッセージが表示される問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -13669,6 +13901,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20110105T112827Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3218&lt;/a0&gt;] サーバとプロキシのビルド時にデフォルトでlibcurlを利用しないように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3219&lt;/a0&gt;] added newlines to script execution error messages</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T091034Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3219&lt;/a0&gt;] スクリプト実行エラーメッセージに新しい行を追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -14729,6 +14969,22 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3721&lt;/a0&gt;] design improvements</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090013Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3721&lt;/a0&gt;] デザインの改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3725&lt;/a0&gt;] added check for xml file size exceeds upload_max_filesize php setting</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100228Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3725&lt;/a0&gt;] XMLのアップロード時にupload_max_filesizeのPHP設定を超えた場合のチェックを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3728&lt;/a0&gt;] fixed a warning message when removing a user script</seg>
       </tuv>
       <tuv lang="JA" changedate="20110728T144736Z" changeid="kodai">
@@ -15081,6 +15337,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3929&lt;/a0&gt;] removed deprecated Switch module from gen_schema.pl and get_data.pl scripts</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T091539Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3929&lt;/a0&gt;] gen_schema.plとget_data.plスクリプトから非推奨のSwitchモジュールを削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-3929&lt;/a0&gt;] removed deprecated Switch module from the gen.pl script</seg>
       </tuv>
       <tuv lang="JA" changedate="20120504T173144Z" changeid="kodai">
@@ -15213,6 +15477,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20110801T081503Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-3990&lt;/a0&gt;] 設定のリロード時にZabbixプロキシやサーバが終了してしまう問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-3991&lt;/a0&gt;] forbid passive proxy interfaces with ip 0.0.0.0</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100306Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-3991&lt;/a0&gt;] パッシブプロキシの設定で0.0.0.0のIPアドレスを禁止</seg>
       </tuv>
     </tu>
     <tu>
@@ -15353,6 +15625,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4038&lt;/a0&gt;] fixed warnings for incorrect input values</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100918Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4038&lt;/a0&gt;] 誤った入力値のワーニングを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4043&lt;/a0&gt;] fixed processing of system.cpu.util on Solaris with non-sequential cpu numbers</seg>
       </tuv>
       <tuv lang="JA" changedate="20110824T133015Z" changeid="kodai">
@@ -15485,6 +15765,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20111121T134341Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4104&lt;/a0&gt;] Windows上でのスクリプト実行時の処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4110&lt;/a0&gt;] renamed 'Password' to 'Key passphrase' in action form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T093417Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4110&lt;/a0&gt;] アクションのフォームの「パスワード」を「キーパスフレーズ」に変更</seg>
       </tuv>
     </tu>
     <tu>
@@ -15929,6 +16217,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4348&lt;/a0&gt;] fixed graph values not displayed for regular user</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T091139Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4348&lt;/a0&gt;] 一般ユーザにグラフの値が表示されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4351&lt;/a0&gt;] updated French translation; thanks to Joseph Bueno</seg>
       </tuv>
       <tuv lang="JA" changedate="20111220T090355Z" changeid="kodai">
@@ -16025,10 +16321,26 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4402&lt;/a0&gt;] added contexts for ambiguous translations</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094803Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4402&lt;/a0&gt;] 翻訳のための説明を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4404&lt;/a0&gt;] fixed incorrect max value for the MaxHousekeeperDelete option in the default zabbix_server.conf file</seg>
       </tuv>
       <tuv lang="JA" changedate="20120313T213134Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4404&lt;/a0&gt;] デフォルトのzabbix_server.conf内のMaxHousekeeperDeleteオプションの誤った最大値を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4412&lt;/a0&gt;] fixed updating of trigger last change by significant event</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095950Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4412&lt;/a0&gt;] 多数のイベントによるトリガーのlastchangeの更新処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16105,10 +16417,34 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4471&lt;/a0&gt;] fixed warnings when applying 2.0 dbpatches</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094134Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4471&lt;/a0&gt;] 2.0のデータベースパッチ適用時のワーニングを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4491&lt;/a0&gt;,&lt;a1&gt;ZBX-4559&lt;/a1&gt;] updated Japanese translation; thanks to Kodai Terashima</seg>
       </tuv>
       <tuv lang="JA" changedate="20120313T213754Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4491&lt;/a0&gt;,&lt;a1&gt;ZBX-4559&lt;/a1&gt;] 日本語翻訳を更新; Kodai Terashimaに感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4493&lt;/a0&gt;] fixed host popup menu overlap the screen range</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094537Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4493&lt;/a0&gt;] ホストのポップアップが画面からはみ出る問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4495&lt;/a0&gt;] fixed hintbox positioning</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100351Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4495&lt;/a0&gt;] ヒントボックスの位置を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16209,6 +16545,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4568&lt;/a0&gt;] fixed new host groups not populated with selected group when 'remember selected' is disabled in GUI settings</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T094710Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4568&lt;/a0&gt;] GUI設定で「選択を記憶」を無効にした場合に新しいホストグループが選択されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4569&lt;/a0&gt;] fixed newline at end of file for some upgrade patches</seg>
       </tuv>
       <tuv lang="JA" changedate="20120313T212020Z" changeid="kodai">
@@ -16217,10 +16561,26 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4572&lt;/a0&gt;] fixed incorrect value input in GUI configuration form raising critical error</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T092606Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4572&lt;/a0&gt;] GUI設定の画面でクリティカルエラーが表示されたときの誤った値の入力処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4579&lt;/a0&gt;] fixed incorrect &quot;unknown&quot; values in availability report if no events present</seg>
       </tuv>
       <tuv lang="JA" changedate="20120313T203230Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4579&lt;/a0&gt;] イベントが存在しない場合に稼働レポート画面の「不明」の値が正しくない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4583&lt;/a0&gt;] fixed possible processing of null as object in CUIwidget</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T095242Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4583&lt;/a0&gt;] CUIwidgetでnullをオブジェクトとして処理する可能性がある問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16297,10 +16657,34 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4649&lt;/a0&gt;] fixed Editing screen does not work properly after moving content to other cell</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T125933Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4649&lt;/a0&gt;] 要素を他のセルに移動した後にスクリーンの修正が正しく動作しない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4650&lt;/a0&gt;] fixed possible server crash while processing trigger expressions</seg>
       </tuv>
       <tuv lang="JA" changedate="20120313T205458Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4650&lt;/a0&gt;] トリガー条件式の処理中にサーバがクラッシュする可能性がある問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4671&lt;/a0&gt;] fixed truncation of the calculated item formula</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T125746Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4671&lt;/a0&gt;] 計算アイテムの式が欠ける問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4676&lt;/a0&gt;] fixed link to triggers from dashboard 'system status' widget not reseting host filter</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T094128Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4676&lt;/a0&gt;] 「システムステータス」ウィジェットからトリガーへのリンクをクリックしたときにホストフィルタがリセットされない問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16329,6 +16713,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4686&lt;/a0&gt;] fixed the &quot;Change&quot; link not being accessible for graph type screen items in embedded screens</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T093519Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4686&lt;/a0&gt;] スクリーンに埋め込まれたグラフタイプのスクリーンアイテムの「変更」リンクにアクセスできない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4694&lt;/a0&gt;] fixed possible SQL errors or server crash while processing trends by history syncer</seg>
       </tuv>
       <tuv lang="JA" changedate="20120313T202849Z" changeid="kodai">
@@ -16349,6 +16741,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20120326T204858Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4697&lt;/a0&gt;] 別のグループに所属しているホストのグループ単位での一括更新時に発生するエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4698&lt;/a0&gt;] fixed selected host group forgotten if &quot;remember selected&quot; is disabled</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T091246Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4698&lt;/a0&gt;] 「選択を記憶」を無効にした場合のホストグループの選択の処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16429,6 +16829,38 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20120326T211106Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4736&lt;/a0&gt;] ホストインベントリ画面のundefined variableエラーの問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4738&lt;/a0&gt;] fixed several checkboxes state not being saved after an unsuccessful item mass update</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T091906Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4738&lt;/a0&gt;] アイテムの一括更新が失敗した後にいくつかのチェックボックスの状態が保存されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4738&lt;/a0&gt;] improved the host interface select in the item mass update form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090109Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4738&lt;/a0&gt;] アイテムの一括更新画面のホストのインターフェースの選択を改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4739&lt;/a0&gt;] fixed mass update failing with many items selected</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T095854Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4739&lt;/a0&gt;] 多数のアイテム選択時に一括更新が失敗する問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4740&lt;/a0&gt;] fixed host filter when switching to 'configuration of items' from another host configuration page</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T095531Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4740&lt;/a0&gt;] 他のホスト設定ページから「アイテムの設定」に移動した場合のホストのフィルタを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16521,6 +16953,30 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4780&lt;/a0&gt;] removed vfs.fs.discovery returned value limit when processed by proxy</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T095744Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4780&lt;/a0&gt;] プロキシによるvfs.fs.discoveryの返却値の制限を削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4781&lt;/a0&gt;] fixed error message when copying items to multiple hosts</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100940Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4781&lt;/a0&gt;] アイテムを複数ホストにコピーする時のエラーメッセージを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4784&lt;/a0&gt;] fixed inherited triggers being updated on any host update</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T093912Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4784&lt;/a0&gt;] ホストの更新によって継承されたトリガーが更新される問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4787&lt;/a0&gt;] fixed graph axis item selection popup shows only monitored hosts</seg>
       </tuv>
       <tuv lang="JA" changedate="20120326T204522Z" changeid="kodai">
@@ -16533,6 +16989,22 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20120326T201915Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4788&lt;/a0&gt;] 一括更新で依存関係を変更した場合にトリガーの深刻度がリセットされてしまう問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4790&lt;/a0&gt;] fixed *ERROR*s in trigger expressions in items.php; fixed undefined variables when filtering without host</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100130Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4790&lt;/a0&gt;] items.phpのトリガー条件式の*ERROR*を修正; ホストを設定しないフィルタ処理の変数未定義エラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4792&lt;/a0&gt;] fixed missing field &quot;Allowed hosts&quot; when item type Zabbix trapper</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100859Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4792&lt;/a0&gt;] Zabbixトラッパーアイテムに「許可されたホスト」フィールドが消えていた問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16561,10 +17033,42 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4801&lt;/a0&gt;] fixed processing of proc.num[] and proc.mem[] checks with name of processes more than 15 characters</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100801Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4801&lt;/a0&gt;] proc.num[]とproc.mem[]のチェック処理に15文字以上のプロセス名を利用できるように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4802&lt;/a0&gt;] improved memory de-allocation code clarity</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T095825Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4802&lt;/a0&gt;] メモリ解放のコードを分かりやすいように改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4806&lt;/a0&gt;] fixed &quot;New flexible interval&quot; not shown in item form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100013Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4806&lt;/a0&gt;] アイテムの設定画面に「例外の更新間隔の作成」が表示されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4810&lt;/a0&gt;] fixed the ifInOctets and ifOutOctets items in the Dell_PowerConnect_5224, Template_Dell_PowerConnect_5324, Template_C3750-48TS and Template_Cisco_PIX515E templates</seg>
       </tuv>
       <tuv lang="JA" changedate="20120504T172214Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4810&lt;/a0&gt;] Dell_PowerConnect_5224、Template_Dell_PowerConnect_5324、Template_C3750-48TS、Template_Cisco_PIX515EテンプレートのifInOctetsとifOutOctetsアイテムを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4811&lt;/a0&gt;] added 'filter' and 'lifetime' fields to discovery rules export</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100721Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4811&lt;/a0&gt;] ディスカバリルールのエクスポートに「filter」と「lifetime」フィールドを追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -16577,10 +17081,138 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] all status-related fields will now be disabled when choosing &quot;do not calculate&quot; in the IT service configuration form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092148Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] ITサービスの設定画面で「計算なし」を選択した場合に、すべてのステータス関連のフィールドを無効にするように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] fixed IT service configuration pop up menu translation</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T093046Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] ITサービスのポップアップメニューの翻訳を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] fixed IT service sorting on the service configuration page</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T093024Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] サービスの設定画面のITサービスのソート処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] fixed IT service status update when changing the linked trigger severity</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T093126Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] リンクされているトリガーの深刻度が変更された場合のITサービスのステータスの更新処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] fixed sorting for results returned by the &quot;selectDepdendencies&quot; and &quot;selectParentDependencies&quot; parameters for service.get</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T093233Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] service.getメソッドの「selectDepdendencies」と「selectParentDependencies」パラメータの出力結果のソート処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] forbidden deleting IT services that have dependecies</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091756Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] 依存関係を持っているITサービスの削除を禁止</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] implemented multiselect support for the IT service dependency pop up</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092213Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] ITサービスの依存関係のポップアップで複数選択のサポートを実装</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] improved IT service configuration and SLA report page performance</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092958Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4815&lt;/a0&gt;] ITサービスの設定画面とSLAレポート画面のパフォーマンスを改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4821&lt;/a0&gt;] fixed flexible interval update using item mass update form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T095929Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4821&lt;/a0&gt;] アイテムの一括更新を利用した例外の更新間隔の更新処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4824&lt;/a0&gt;] fixed memory leak while switching item to not supported status</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T093947Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4824&lt;/a0&gt;] アイテムが取得不可ステータスの状態になっている間のメモリリークを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4829&lt;/a0&gt;] fixed incorrect redirect in 'insert trigger' popup in trigger expression builder</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T093758Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4829&lt;/a0&gt;] トリガー条件式ビルダーの「トリガーの挿入」ポップアップの誤ったリダイレクトを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4830&lt;/a0&gt;] fixed error when trying to create item without host</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T094007Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4830&lt;/a0&gt;] ホストがないアイテム作成時のエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4836&lt;/a0&gt;] fixed undefined variables in actionconf.php when trying to add maintenance status; fixed some random ordering for conditions</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T093657Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4836&lt;/a0&gt;] メンテナンスステータス追加時のactionconf.phpの未定義エラーを修正; アクション実行条件の項目のソート処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4840&lt;/a0&gt;] improved slow SQL queries in processing of {ITEM.VALUE} and {ITEM.LOG.*} macros</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T092127Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4840&lt;/a0&gt;] {ITEM.VALUE}と{ITEM.LOG}マクロ処理の遅いSQLクエリを改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4841&lt;/a0&gt;] fixed inability to select other but the first of the discovery checks for a discovery rule in popup.php</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T093342Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4841&lt;/a0&gt;] ディスカバリルールのpopup.phpで1つ目のディスカバリチェックしか選択できない問題を修正.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4849&lt;/a0&gt;] implemented a check that a trigger expression doesn't use items from both hosts and templates at the same time</seg>
       </tuv>
       <tuv lang="JA" changedate="20120504T173002Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4849&lt;/a0&gt;] トリガー条件式にホストとテンプレートのアイテムを同時に使用していないかをチェックする機能を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4857&lt;/a0&gt;] added validation for empty username, public and private keys in an item form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095525Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4857&lt;/a0&gt;] ユーザ名、アイテム設定画面の公開鍵と秘密鍵の設定が空の場合のチェック処理を追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -16593,10 +17225,58 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4862&lt;/a0&gt;] fixed Error when trying to remove additional templates in the host mass update form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T091457Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4862&lt;/a0&gt;] ホストの一括更新画面で追加のテンプレートを削除しようとした時のエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4865&lt;/a0&gt;] fixed error bar in case of error with words longer than screen</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T092020Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4865&lt;/a0&gt;] 画面よりも長い文字列が表示された場合のエラーバーの問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4869&lt;/a0&gt;] added support for nested screens import</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085927Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4869&lt;/a0&gt;] ネストされたスクリーンのインポートをサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4871&lt;/a0&gt;] fixed templates listed when adding log items in history</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T091413Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4871&lt;/a0&gt;] ヒストリにログアイテムを追加する画面でテンプレートがリストされる問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4875&lt;/a0&gt;] fixed graph item with long description cannot be dragged/sorted properly in graph form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T130153Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4875&lt;/a0&gt;] グラフの設定画面で長い名前のグラフアイテムが正しくドラッグ/順書の入れ替えが行えない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4877&lt;/a0&gt;] updated French translation; thanks to Joseph Bueno</seg>
       </tuv>
       <tuv lang="JA" changedate="20120504T172502Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4877&lt;/a0&gt;] フランス語翻訳を修正; Joseph Buenoに感謝</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4880&lt;/a0&gt;] fixed error 'JSON-rpc error generation failed.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100134Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4880&lt;/a0&gt;] APIの「JSON-rpc error generation failed」エラーを修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16609,6 +17289,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4882&lt;/a0&gt;] fixed processing of quoted strings in SNMP lld rules</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090750Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4882&lt;/a0&gt;] ローレベルディスカバリルールのSNMPのクォート処理の問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4884&lt;/a0&gt;] fixed incorrect calculation of items using option &quot;Delta (speed per second)&quot; after recovery from unsupported state</seg>
       </tuv>
       <tuv lang="JA" changedate="20120504T172830Z" changeid="kodai">
@@ -16617,10 +17305,66 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4889&lt;/a0&gt;] fixed execution of GUI Scripts for disabled hosts</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095728Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4889&lt;/a0&gt;] 無効の状態のホストに対するGUIスクリプトの実行処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4890&lt;/a0&gt;] fixed creating hosts by administrators</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090425Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4890&lt;/a0&gt;] Zabbix管理者によるホストの作成の問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4893&lt;/a0&gt;] fixed linking of item applications by a discovery rule</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T125815Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4893&lt;/a0&gt;] ディスカバリルールによるアイテムのアプリケーションのリンクの問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4895&lt;/a0&gt;] fixed host proxy exported as id</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100304Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4895&lt;/a0&gt;] ホストのプロキシ設定がidとしてエクスポートされる問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4900&lt;/a0&gt;] improved performance of 'Status of Zabbix' dashboard widget</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100536Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4900&lt;/a0&gt;] 「Zabbixサーバの状態」ダッシュボードウィジェットのパフォーマンスを改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBX-4900&lt;/a0&gt;] improved performance of the 'Status of Zabbix' dashboard widget</seg>
       </tuv>
       <tuv lang="JA" changedate="20120504T172527Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4900&lt;/a0&gt;] ダッシュボードの「Zabbixサーバの状態」のパフォーマンスを改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4902&lt;/a0&gt;] fixed errors in configuration export</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100623Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4902&lt;/a0&gt;] テンプレートのエクスポートのエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4903&lt;/a0&gt;] fixed sorting in 'Overview' screen</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100403Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4903&lt;/a0&gt;] 「概要」画面のソート処理を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16637,6 +17381,246 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20120504T172614Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBX-4907&lt;/a0&gt;] Linuxのsystem.swap.in/out[,sectors/count]の処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4910&lt;/a0&gt;] fixed updating of &quot;SNMPv3 priv passphrase&quot; field in low-level discovered SNMPv3 items</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T125550Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4910&lt;/a0&gt;] SNMPv3によるローレベルディスカバリの「SNMPv3認証パスフレーズ」の更新の問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4914&lt;/a0&gt;] fixed graph name encoding in form preview</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100334Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4914&lt;/a0&gt;] プレビュー画面のグラフ名のエンコードを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4915&lt;/a0&gt;] fixed host group filtering without hosts or templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094841Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4915&lt;/a0&gt;] ホストやテンプレートを指定しないホストグループのフィルタリングを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4920&lt;/a0&gt;] fixed templates from 1.8 xml are dependent on 'hosts' rules</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T093630Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4920&lt;/a0&gt;] 1.8のテンプレートxmlファイルがホストのルールに依存する問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4921&lt;/a0&gt;] fixed possible SQL errors while processing LLD data with long values</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095655Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4921&lt;/a0&gt;] ローレベルディスカバリで長い値を処理する場合にSQLエラーが発生する可能性がある問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4922&lt;/a0&gt;] fixed importing of linked templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T130238Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4922&lt;/a0&gt;] リンクされたテンプレートのインポートを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4924&lt;/a0&gt;] fixed deletion of template screens</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094553Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4924&lt;/a0&gt;] テンプレートのスクリーン削除処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4926&lt;/a0&gt;] fixed unable to add simple graphs and plain text to screen templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095622Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4926&lt;/a0&gt;] スクリーンのテンプレートにシンプルグラフとプレーンテキストが追加できない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4927&lt;/a0&gt;] fix proxy deletion message and remove excess space from the audit record</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T100507Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4927&lt;/a0&gt;] プロキシの削除メッセージと監査ログ画面の余分なスペースを削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4938&lt;/a0&gt;] fixed constant not used in CAction.php</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095555Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4938&lt;/a0&gt;] CAction.phpの利用されていない定数を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4941&lt;/a0&gt;] added default DBHost configuration parameter value &quot;localhost&quot;</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094117Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4941&lt;/a0&gt;] DBHost設定パラメータのデフォルト値にlocalhostを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4942&lt;/a0&gt;] do not send prototypes for active agent to process</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094007Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4942&lt;/a0&gt;] アクティブエージェントにプロトタイプを送付しないように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4944&lt;/a0&gt;] fixed translation string in top100 report</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092723Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4944&lt;/a0&gt;] 障害発生数上位100項目画面の翻訳文字列を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4945&lt;/a0&gt;] fixed several map element selection not working on Command + Click on Macs</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092537Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4945&lt;/a0&gt;] Mac上でCommand+クリックを利用してマップの要素の複数選択ができない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4953&lt;/a0&gt;] fixed unclear messages in setup.php</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094606Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4953&lt;/a0&gt;] setup.phpの分かりにくいメッセージを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4956&lt;/a0&gt;] fixed incorrent trigger existance checks</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092934Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4956&lt;/a0&gt;] 正しくないトリガーの存在チェックを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4957&lt;/a0&gt;] removed error column from item prototypes list, removed 'not supported' status from item prototype edit form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092823Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4957&lt;/a0&gt;] アイテムのプロトタイプのリストからエラーのカラムを削除し、アイテムのプロトタイプ設定画面から「取得不可」ステータスを削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4960&lt;/a0&gt;] fixed LDAP frontend messages, fixed message in latest data</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T093408Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4960&lt;/a0&gt;] LDAP関連と最新データ画面のメッセージを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4964&lt;/a0&gt;] added requirements checks for xmlreader and xmlwriter</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094235Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4964&lt;/a0&gt;] xmlreaderとxmlwriterの要求チェックを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4967&lt;/a0&gt;] fixed template full clone</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094259Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4967&lt;/a0&gt;] テンプレートの「すべてを複製」処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4969&lt;/a0&gt;] fixed item key param macro not resolved in simple graph popup</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094217Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4969&lt;/a0&gt;] シンプルグラフでアイテムのパラメータのマクロが展開されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4978&lt;/a0&gt;] fixed setup welcome image</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092612Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4978&lt;/a0&gt;] インストーレーション画面の最初のイメージを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4980&lt;/a0&gt;] fixed trapper process crash/hang on decoding big base64 encoded values</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091308Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4980&lt;/a0&gt;] 大きなbase64エンコードされたデータをデコードする際にtrapperプロセスがクラッシュ/ハングする問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4981&lt;/a0&gt;] triggers with lld created or web items are not exported for now</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092917Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4981&lt;/a0&gt;] ローレベルディスカバリで作成されたトリガーやWebアイテムをエクスポートされないように修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-4997&lt;/a0&gt;] fixed inherited items interfaces are set to null when update by import parent template</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090746Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-4997&lt;/a0&gt;] 親テンプレートによって更新された場合に継承されたアイテムのインターフェースにnullが設定される問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-5002&lt;/a0&gt;] fixed undefined index error when rendering a node tree on a DM setup</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091107Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-5002&lt;/a0&gt;] 分散監視を設定している場合に、ノードツリーの表示でインデックスの未定義エラーが表示される問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-5003&lt;/a0&gt;] backticked table and field names in the MySQL scheme and default data</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091009Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-5003&lt;/a0&gt;] MySQLのスキーマとデータのテーブルとフィールド名にバッククォートを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-5004&lt;/a0&gt;] fixed error when import templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091023Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-5004&lt;/a0&gt;] テンプレートのインポート時のエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-5005&lt;/a0&gt;] fixed escape of percent character in translation string</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090519Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-5005&lt;/a0&gt;] 翻訳文字列のパーセント文字のエスケープ処理を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBX-5008&lt;/a0&gt;] fixed updating users that do not belong to the selected node</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091218Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBX-5008&lt;/a0&gt;] 選択したノードに属していないユーザ更新時の問題を修正</seg>
       </tuv>
     </tu>
     <tu>
@@ -16833,10 +17817,50 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1126&lt;/a0&gt;] redesign Script execution</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090003Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1126&lt;/a0&gt;] スクリプトの実行を再実装</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBXNEXT-1149&lt;/a0&gt;] import of nested maps, import form redesign</seg>
       </tuv>
       <tuv lang="JA" changedate="20120326T201710Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBXNEXT-1149&lt;/a0&gt;] ネストされたマップのインポート、インポート画面の再設計</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1153&lt;/a0&gt;] added support for nested templates in import</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090139Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1153&lt;/a0&gt;] ネストされたテンプレートのインポートをサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1161&lt;/a0&gt;] fixed multiple IT service validation issues</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090717Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1161&lt;/a0&gt;] 複数のITサービスのバリデーションの問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1161&lt;/a0&gt;] implemented the service API</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085945Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1161&lt;/a0&gt;] サービスのAPIを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1181&lt;/a0&gt;] redesign Host mass update</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092459Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1181&lt;/a0&gt;] ホストの一括更新を再デザイン</seg>
       </tuv>
     </tu>
     <tu>
@@ -16849,10 +17873,122 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] fixed &quot;Graph&quot; links not being displayed for services with children on the SLA report page</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095035Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] SLAレポート画面で子要素を持つサービスの「グラフ」リンクが表示されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] fixed problem reasons not being displayed for parent services on the SLA report page</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095234Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] SLAレポート画面で親サービスの障害理由が表示されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] fixed service ordering on the SLA report page</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094937Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] SLAレポート画面のサービスのソート順を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] fixed service status and problems being calculated if the service status algorithm is set to &quot;do not calculate&quot;</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095331Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] サービスのステータス計算アルゴリズムを「計算なし」に設定した場合でもサービスのステータスと障害の計算が行われる問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] fixed service status not being updated when changing the severity of a linked trigger</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095417Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] リンクしているトリガーの深刻度が変更されたときにサービスのステータスが更新されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] fixed time period not being remembered when following a link to a detailed service SLA report</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T095123Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] サービスのSLAレポート画面へのリンクをクリックした場合に期間が記憶されない問題を修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] implemented permission checks for the &quot;selectDependencies&quot; service.get parameter</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T094913Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] service.getメソッドの「selectDependencies」パラメータに権限チェック処理を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] implemented the &quot;selectTrigger&quot;, &quot;selectParentDependencies&quot; and &quot;selectAlarms&quot; parameters for the service.get method</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092309Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] service.getメソッドに「selectTrigger」、「selectParentDependencies」、「selectAlarms」パラメータを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] implemented the service.getsla method</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092226Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] service.getslaメソッドを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] improved the design of the SLA report page</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092323Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1189&lt;/a0&gt;] SLAレポートページのデザインを改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1196&lt;/a0&gt;] redesigned setup form</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T092345Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1196&lt;/a0&gt;] インストーレーション画面のデザインを変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBXNEXT-119&lt;/a0&gt;] added support for time shifted functions</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBXNEXT-119&lt;/a0&gt;] タイムシフト機能を追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1220&lt;/a0&gt;] added support of monitoring of log files larger than 2GB</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090405Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1220&lt;/a0&gt;] 2GB以上のログファイルの監視をサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1220&lt;/a0&gt;] fixed compilation errors on Solaris</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091623Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1220&lt;/a0&gt;] Solaris上でのコンパイルエラーを修正</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-1225&lt;/a0&gt;] added the &quot;Classic&quot; frontend theme</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T090212Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-1225&lt;/a0&gt;] 「クラシック」フロントエンドテーマを追加</seg>
       </tuv>
     </tu>
     <tu>
@@ -17117,6 +18253,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA">
         <seg>[&lt;a0&gt;ZBXNEXT-396&lt;/a0&gt;] zabbix[queue]に「from」と「to」のオプションパラメータを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-397&lt;/a0&gt;] removed records from &quot;ids&quot; table to prevent SQL errors while adding a new item</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T100609Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-397&lt;/a0&gt;] 新規アイテム追加時のSQLエラーを回避するために「ids」テーブルから値を削除</seg>
       </tuv>
     </tu>
     <tu>
@@ -17393,6 +18537,14 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-908&lt;/a0&gt;] redesign Configuration-&gt;Host-&gt;Graphs</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T090031Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-908&lt;/a0&gt;] 設定-&gt;ホスト-&gt;グラフの再デザイン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[&lt;a0&gt;ZBXNEXT-914&lt;/a0&gt;] redesign Administration-&gt;DM</seg>
       </tuv>
       <tuv lang="JA" changedate="20120326T201825Z" changeid="kodai">
@@ -17405,6 +18557,30 @@ TRUE events」を「Multiple PROBLEM events」に変更</seg>
       </tuv>
       <tuv lang="JA" changedate="20110913T073706Z" changeid="kodai">
         <seg>[&lt;a0&gt;ZBXNEXT-921&lt;/a0&gt;] データなしのアイテムを表示するオプションを追加</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-973&lt;/a0&gt;] changed colors in the &quot;MySQL operations&quot; graph</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091604Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-973&lt;/a0&gt;] 「MySQL operations」グラフの色を変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-973&lt;/a0&gt;] changed units to &quot;bps&quot; for monitoring of network traffic items</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120520T091540Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-973&lt;/a0&gt;] ネットワークトラフィックの監視アイテムの単位を「bps」に変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[&lt;a0&gt;ZBXNEXT-973&lt;/a0&gt;] redesign of existing templates</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120519T085901Z" changeid="kodai">
+        <seg>[&lt;a0&gt;ZBXNEXT-973&lt;/a0&gt;] テンプレートの再作成</seg>
       </tuv>
     </tu>
     <tu>
