@@ -3544,8 +3544,8 @@
       <tuv lang="EN-US">
         <seg>Cannot find item &quot;%1$s&quot; used in exported screen &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120520T080225Z" changeid="kodai">
-        <seg>エクスポートされたスクリーンで利用されているアイテム&quot;%1$s&quot;が見つかりません。</seg>
+      <tuv lang="JA" changedate="20120520T085113Z" changeid="kodai">
+        <seg>エクスポートされたスクリーン&quot;%2$s&quot;で利用されているアイテム&quot;%1$s&quot;が見つかりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24462,8 +24462,8 @@
       <tuv lang="EN-US">
         <seg>Template &quot;%1$s&quot; for host &quot;%2$s&quot; does not exist.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120520T081932Z" changeid="kodai">
-        <seg>ホスト&quot;%2$s&quot;のテンプレートは存在しません。</seg>
+      <tuv lang="JA" changedate="20120520T085209Z" changeid="kodai">
+        <seg>ホスト&quot;%2$s&quot;のテンプレート&quot;%1$s&quot;は存在しません。</seg>
       </tuv>
     </tu>
     <tu>
