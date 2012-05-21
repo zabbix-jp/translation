@@ -3384,8 +3384,8 @@
       <tuv lang="EN-US">
         <seg>Cannot find group &quot;%1$s&quot; used in map &quot;%2$s&quot;.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120520T075822Z" changeid="kodai">
-        <seg>マップ&quot;%2$s&quot;で利用されているグラフ&quot;%1$s&quot;が見つかりません。</seg>
+      <tuv lang="JA" changedate="20120521T161917Z" changeid="kodai">
+        <seg>マップ&quot;%2$s&quot;で利用されているグループ&quot;%1$s&quot;が見つかりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5128,16 +5128,16 @@
       <tuv lang="EN-US">
         <seg>Configuration of user groups</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120422T121030Z" changeid="kodai">
-        <seg>ユーザグループの設定</seg>
+      <tuv lang="JA" changedate="20120521T161937Z" changeid="kodai">
+        <seg>ユーザーグループの設定</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Configuration of users</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120422T121035Z" changeid="kodai">
-        <seg>ユーザの設定</seg>
+      <tuv lang="JA" changedate="20120521T161956Z" changeid="kodai">
+        <seg>ユーザーの設定</seg>
       </tuv>
     </tu>
     <tu>
@@ -5760,8 +5760,8 @@
       <tuv lang="EN-US">
         <seg>Create user group</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120422T121155Z" changeid="kodai">
-        <seg>ユーザグループの作成</seg>
+      <tuv lang="JA" changedate="20120521T162038Z" changeid="kodai">
+        <seg>ユーザーグループの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -5962,6 +5962,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>D</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>D, d M Y H:i:s O</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120521T162048Z" changeid="kodai">
+        <seg>D, Y/m/d H:i:s O</seg>
       </tuv>
     </tu>
     <tu>
@@ -13962,8 +13970,8 @@
       <tuv lang="EN-US">
         <seg>Invalid screen found.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120507T130830Z" changeid="kodai">
-        <seg>不正なないスクリーンが見つかりました。</seg>
+      <tuv lang="JA" changedate="20120521T162128Z" changeid="kodai">
+        <seg>正しくないスクリーンがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14844,6 +14852,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ログ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>LOST</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>LOST</seg>
       </tuv>
     </tu>
     <tu>
@@ -16466,16 +16482,16 @@
       <tuv lang="EN-US">
         <seg>Minimum time period to display is %1$s hour.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T131933Z" changeid="kodai">
-        <seg>表示できる最大の期間は%1$s時間です。</seg>
+      <tuv lang="JA" changedate="20120521T162225Z" changeid="kodai">
+        <seg>表示できる最小の期間は%1$s時間です。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Minimum time period to display is %1$s hours.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120312T131946Z" changeid="kodai">
-        <seg>表示できる最大の期間は%1$s時間です。</seg>
+      <tuv lang="JA" changedate="20120521T162228Z" changeid="kodai">
+        <seg>表示できる最小の期間は%1$s時間です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19864,6 +19880,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>POP</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>POP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PORT cannot be empty for host interface</seg>
       </tuv>
       <tuv lang="JA" changedate="20110923T113321Z" changeid="kodai">
@@ -19946,8 +19970,8 @@
       <tuv lang="EN-US">
         <seg>Parameter sec or #num or user macro expected, &quot;%1$s&quot; given.</seg>
       </tuv>
-      <tuv lang="JA" changedate="20120507T125427Z" changeid="kodai">
-        <seg>&quot;%1$s&quot;が入力されましたが、秒、#数字、ユーザーマクロのいづれかを設定してください。</seg>
+      <tuv lang="JA" changedate="20120521T162151Z" changeid="kodai">
+        <seg>&quot;%1$s&quot;が入力されましたが、秒、#数字、ユーザーマクロのいずれかを設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27132,6 +27156,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>W</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>W</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>WEB CHECKS</seg>
       </tuv>
       <tuv lang="JA">
@@ -27660,6 +27692,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>X</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>X</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>X label</seg>
       </tuv>
       <tuv lang="JA" changedate="20120422T131702Z" changeid="kodai">
@@ -27696,6 +27736,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120422T131803Z" changeid="kodai">
         <seg>XMLファイルにワーニングが含まれています %1$s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Y</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Y</seg>
       </tuv>
     </tu>
     <tu>
@@ -28044,7 +28092,23 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Z</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Z</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ZABBIX</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Zabbix</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix</seg>
       </tuv>
       <tuv lang="JA">
         <seg>Zabbix</seg>
@@ -28690,6 +28754,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>esc_step_fromとesc_step_toは両方設定する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>every</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>every</seg>
       </tuv>
     </tu>
     <tu>
