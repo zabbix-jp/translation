@@ -118,6 +118,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A database patch must be applied for migration from earlier releases.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T205246Z" changeid="kodai">
+        <seg>以前のバージョンからアップグレードするためにはデータベースへのパッチ適用が必要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A database patch must be applied.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120520T090052Z" changeid="kodai">
@@ -4126,6 +4134,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please read Zabbix 2.0 &lt;a0&gt;upgrade notes&lt;/a0&gt; and &lt;a1&gt;upgrade procedure&lt;/a1&gt; for migration details.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T205213Z" changeid="kodai">
+        <seg>Zabbix 2.0のアップグレードの詳細は&lt;a0&gt;アップグレードの注意点&lt;/a0&gt;と&lt;a1&gt;アップグレード手順&lt;/a1&gt;を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please report any issues to Zabbix Bug Tracking system at &lt;a0&gt;https://support.zabbix.com&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA">
@@ -4193,6 +4209,14 @@
         <seg>Processing of escalations has been improved to work more efficiantly.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120203T093132Z" changeid="kodai">
+        <seg>より効率的に動作するようにエスカレーションの処理を改善しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Processing of escalations has been improved to work more efficiently.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T205309Z" changeid="kodai">
         <seg>より効率的に動作するようにエスカレーションの処理を改善しました。</seg>
       </tuv>
     </tu>
@@ -5302,6 +5326,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The new forms have a better look and greatly improved usability.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T205317Z" changeid="kodai">
+        <seg>新しい設定画面は見た目とユーザビリティがより改善されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The new templates will be available in one of release candidates prior to stable Zabbix 2.0.0.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120316T083359Z" changeid="kodai">
@@ -5498,6 +5530,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>サーバサイト拡張チェックは、ZABBIXサーバ側でカスタムチェックを実行することが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The software can be downloaded from &lt;a0&gt;http://www.zabbix.com/download.php&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T205006Z" changeid="kodai">
+        <seg>ソフトウェアのダウンロードはこちらから行えます。&lt;a0&gt;http://www.zabbix.com/download.php&lt;/a0&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6262,6 +6302,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document contains the release notes for Zabbix 2.0.0.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T204938Z" changeid="kodai">
+        <seg>このドキュメントはZabbix 2.0.0のリリースノートを含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document contains the release notes for Zabbix 2.0.0rc1.</seg>
       </tuv>
       <tuv lang="JA" changedate="20120316T083036Z" changeid="kodai">
@@ -6586,6 +6634,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>アップグレード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Upgrade notes</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T205015Z" changeid="kodai">
+        <seg>アップグレード方法</seg>
       </tuv>
     </tu>
     <tu>
@@ -8314,6 +8370,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120203T092359Z" changeid="kodai">
         <seg>Zabbix SIAはZabbix 1.9.9 (Zabbix 2.0の4番目のベータリリース)のリリースをアナウンスすることを光栄に思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix SIA is proud to announce the availability of Zabbix 2.0.0, next major release.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120524T204930Z" changeid="kodai">
+        <seg>Zabbix SIAはZabbix 2.0.0のリリースをアナウンスすることを光栄に思います。</seg>
       </tuv>
     </tu>
     <tu>
