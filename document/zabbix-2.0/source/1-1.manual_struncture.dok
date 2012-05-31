@@ -1,0 +1,34 @@
+==== - #1 Manual structure ====
+
+=== Structure ===
+
+The content of this Zabbix 2.0 manual is divided into sections and subsections to provide easy access to particular subjects of interest.
+
+When you navigate to respective sections, make sure that you expand section folders to reveal full content of what is included in subsections and individual pages.
+
+Cross-linking between pages of related content is provided as much as possible to make sure that relevant information is not missed by the users.
+
+=== Sections ===
+
+[[:2.0/manual/introduction/about|Introduction]] provides general information about current Zabbix software. Reading this section should equip you with some good reasons to choose Zabbix.
+
+[[:2.0/manual/concepts|Zabbix concepts]] explain the terminology used in Zabbix and provides details on Zabbix components.
+
+[[:2.0/manual/installation/getting_zabbix|Installation]] and [[:2.0/manual/quickstart/item|Quickstart]] sections should help you to get started with Zabbix. [[:2.0/manual/appliance|Zabbix appliance]] is an alternative for getting a quick taster of what it is like to use Zabbix.
+
+[[:2.0/manual/config|Configuration]] is one of the largest and more important sections in this manual. It contains loads of essential advice about how to set up Zabbix to monitor your environment, from setting up hosts to getting essential data to viewing data to configuring notifications and remote commands to be executed in case of problems.
+
+[[:2.0/manual/it_services|IT services]] section details how to use Zabbix for a high-level overview of your monitoring environment.
+
+[[:2.0/manual/web_monitoring|Web monitoring]] should help you learn how to monitor the availability of web sites.
+
+[[:2.0/manual/maintenance|Maintenance]], [[:2.0/manual/regular_expressions|Regular expressions]], [[:2.0/manual/acknowledges|Event acknowledgment]] and [[:2.0/manual/xml_export_import|XML export/import]] are further sections that reveal how to use these various aspects of Zabbix software.
+
+[[:2.0/manual/discovery|Discovery]] contains instructions for setting up automatic discovery of network devices, active agents, file systems, network interfaces, etc.
+
+[[:2.0/manual/distributed_monitoring|Distributed monitoring]] deals with the possibilities of using Zabbix in larger and more complex environments.
+
+[[:2.0/manual/web_interface|Web interface]] contains information specific for using the web interface of Zabbix.
+
+Detailed lists of technical information are included in [[:2.0/manual/appendix|Appendixes]]. This is where you will also find FAQ and Zabbix API sections.
+

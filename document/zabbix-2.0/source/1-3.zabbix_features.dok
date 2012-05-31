@@ -1,0 +1,92 @@
+==== -#3 Zabbix features ====
+
+=== Overview ===
+
+Zabbix is a highly integrated network monitoring solution, offering a multiplicity of features in a single package.
+
+**[[:2.0:manual:config:items|Data gathering]]**
+
+  * availability and performance checks
+  * support for SNMP (both trapping and polling), IPMI, JMX monitoring
+  * custom checks
+  * gathering desired data at custom intervals
+  * performed by server/proxy and by agents
+
+**[[:2.0:manual:config:triggers|Flexible threshold definitions]]**
+
+  * you can define very flexible problem thresholds, called triggers, referencing values from the back-end database
+
+**[[:2.0:manual:config:notifications|Highly configurable alerting]]**
+
+  * sending notifications can be customized for the escalation schedule, recipient, media type
+  * notifications can be made meaningful and helpful using macro variables
+  * automatic actions include remote commands
+
+**[[:2.0:manual:config:visualisation:graphs:simple|Real-time graphing]]**
+
+  * monitored items are immediately graphed using the built-in graphing functionality
+
+**[[:2.0:manual:web_monitoring|Web monitoring capabilities]]**
+
+  * Zabbix can follow a path of simulated mouse clicks on a web site and check for functionality and response time
+
+**[[:2.0:manual:config:visualisation|Extensive visualisation options]]**
+
+  * ability to create custom graphs that can combine multiple items into a single view
+  * network maps
+  * custom screens and slide shows for a dashboard-style overview
+  * reports
+  * high-level (business) view of monitored resources
+
+**[[:2.0:manual:installation:requirements#database_size|Historical data storage]]**
+
+  * data stored in a database
+  * configurable history
+  * built-in housekeeping procedure
+
+**[[:2.0:manual:config:hosts|Easy configuration]]**
+
+  * add monitored devices as hosts
+  * hosts are picked up for monitoring, once in the database
+  * apply templates to monitored devices
+
+**[[:2.0:manual:config:templates|Use of templates]]**
+
+  * grouping checks in templates
+  * templates can inherit other templates
+
+**[[:2.0:manual:discovery|Network discovery]]**
+
+  * automatic discovery of network devices
+  * agent auto registration
+  * discovery of file systems, network interfaces and SNMP OIDs
+
+**[[:2.0:manual:web_interface|Fast web interface]]**
+
+  * a web-based front-end in PHP
+  * accessible from anywhere
+  * you can click your way through
+  * audit log
+
+**[[:2.0:manual:appendix:api:api|Zabbix API]]**
+
+  * Zabbix API provides programmable interface to Zabbix for mass manipulations, 3rd party software integration and other purposes. 
+
+**[[:2.0:manual:config:users_and_usergroups|Permissions system]]**
+
+  * secure user authentication
+  * certain users can be limited to certain views
+
+**[[:2.0:manual:concepts:agent|Full featured and easily extensible agent]]**
+
+  * deployed on monitoring targets
+  * can be deployed on both Linux and Windows
+
+**[[:2.0:manual:concepts:server|Binary daemons]]**
+
+  * written in C, for performance and small memory footprint
+  * easily portable
+
+**[[:2.0:manual:distributed_monitoring|Ready for complex environments]]**
+
+  * remote monitoring made easy by using a Zabbix proxy
