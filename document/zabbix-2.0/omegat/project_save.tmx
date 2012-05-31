@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header
+    creationtool="OmegaT"
+    creationtoolversion="2.3.0_6"
+    segtype="sentence"
+    o-tmf="OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- #1 Manual structure</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120531T193702Z" changeid="kodai">
+        <seg>- #1 マニュアルの構造</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reading this section should equip you with some good reasons to choose Zabbix.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120531T193834Z" changeid="kodai">
+        <seg>Zabbixを選択する良い理由を知りたい場合はこのセクションを読んでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sections</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120531T193721Z" changeid="kodai">
+        <seg>セクション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Structure</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120531T193716Z" changeid="kodai">
+        <seg>構造</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[[:2.0/manual/concepts|Zabbix concepts]] explain the terminology used in Zabbix and provides details on Zabbix components.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120531T193925Z" changeid="kodai">
+        <seg>[[:2.0/manual/concepts|Zabbix concepts]]ではZabbixで利用されているテクノロジーやZabbixコンポーネントの詳細を解説しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[[:2.0/manual/installation/getting_zabbix|Installation]] and [[:2.0/manual/quickstart/item|Quickstart]] sections should help you to get started with Zabbix.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120531T194013Z" changeid="kodai">
+        <seg>[[:2.0/manual/installation/getting_zabbix|Installation]]と[[:2.0/manual/quickstart/item|Quickstart]]のセクションではZabbixを利用し始めるために有用な情報を掲載しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[[:2.0/manual/introduction/about|Introduction]] provides general information about current Zabbix software.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120531T193750Z" changeid="kodai">
+        <seg>[[:2.0/manual/introduction/about|Introduction]]では現在のZabbixソフトウェアの一般的な情報を記載しています。</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
