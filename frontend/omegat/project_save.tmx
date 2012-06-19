@@ -3286,6 +3286,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot delete user media.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121257Z" changeid="kodai">
+        <seg>ユーザーのメディアを削除できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot delete user medias</seg>
       </tuv>
       <tuv lang="JA" changedate="20120507T125340Z" changeid="kodai">
@@ -3742,6 +3750,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot insert user media.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121317Z" changeid="kodai">
+        <seg>ユーザーメディアを追加できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot insert user medias</seg>
       </tuv>
       <tuv lang="JA" changedate="20120507T125346Z" changeid="kodai">
@@ -3897,6 +3913,14 @@
         <seg>Cannot rename guest user</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T161533Z" changeid="kodai">
+        <seg>ゲストユーザーの名前は変更できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot rename guest user.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121333Z" changeid="kodai">
         <seg>ゲストユーザーの名前は変更できません</seg>
       </tuv>
     </tu>
@@ -4322,6 +4346,14 @@
       </tuv>
       <tuv lang="JA" changedate="20120309T161543Z" changeid="kodai">
         <seg>ユーザーを更新できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot update user media.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121346Z" changeid="kodai">
+        <seg>ユーザーのメディアを更新できません</seg>
       </tuv>
     </tu>
     <tu>
@@ -5370,6 +5402,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>Copyright 2001-2011 by</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Correct login &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121403Z" changeid="kodai">
+        <seg>ユーザー&quot;%s&quot;のログイン</seg>
       </tuv>
     </tu>
     <tu>
@@ -10950,6 +10990,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Host group &quot;%1$s&quot; already exists.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121727Z" changeid="kodai">
+        <seg>ホストグループ&quot;%1$s&quot;はすでに存在しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Host group &quot;%s&quot; already exists.</seg>
       </tuv>
       <tuv lang="JA" changedate="20111109T134315Z" changeid="kodai">
@@ -14032,10 +14080,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is not possible to filter by user password.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121739Z" changeid="kodai">
+        <seg>ユーザーのパスワードによるフィルターは行えません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is not possible to search by user password</seg>
       </tuv>
       <tuv lang="JA" changedate="20120309T173115Z" changeid="kodai">
         <seg>ユーザーのパスワードによる検索は行えません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is not possible to search by user password.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121744Z" changeid="kodai">
+        <seg>ユーザーのパスワードによる検索は行えません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15400,6 +15464,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Login failed &quot;%s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121755Z" changeid="kodai">
+        <seg>ログイン失敗&quot;%s&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Login failed [%s]</seg>
       </tuv>
       <tuv lang="JA">
@@ -15420,6 +15492,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>ログイン名かパスワードが間違っています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Login name or password is incorrect.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121800Z" changeid="kodai">
+        <seg>ログイン名かパスワードが間違っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16464,10 +16544,50 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Minimum required PHP memory limit is %s (configuration option &quot;memory_limit&quot;)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121822Z" changeid="kodai">
+        <seg>PHPメモリ上限の最小値は%sです (&quot;memory_limit&quot;設定オプション)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum required PHP upload filesize is %s (configuration option &quot;upload_max_filesize&quot;)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121835Z" changeid="kodai">
+        <seg>PHPアップロードファイルサイズの最小値は%sです (&quot;upload_max_filesize&quot;設定オプション)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Minimum required PHP version is %s</seg>
       </tuv>
       <tuv lang="JA" changedate="20111020T065834Z" changeid="kodai">
         <seg>PHPの最小バージョンは%sです</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum required limit on execution time of PHP scripts is %s (configuration option &quot;max_execution_time&quot;)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121845Z" changeid="kodai">
+        <seg>PHPスクリプトの実行時間の最小値は%sです (&quot;max_execution_time&quot;設定オプション)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum required limit on input parse time for PHP scripts is %s (configuration option &quot;max_input_time&quot;)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121857Z" changeid="kodai">
+        <seg>PHPスクリプトの入力パース時間の最小値は%sです (&quot;max_input_time&quot;設定オプション)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum required size of PHP post is %s (configuration option &quot;post_max_size&quot;)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121906Z" changeid="kodai">
+        <seg>PHPのpostサイズの最小値は%sです (&quot;post_max_size&quot;設定オプション)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19408,6 +19528,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Only Zabbix Admins can add user media.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121913Z" changeid="kodai">
+        <seg>特権管理者のみがユーザーのメディアを追加できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Only Zabbix Admins can change user Medias</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T124422Z" changeid="kodai">
@@ -19416,9 +19544,25 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Only Zabbix Admins can change user media.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121929Z" changeid="kodai">
+        <seg>特権管理者のみがユーザーのメディアを変更できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Only Zabbix Admins can remove user Medias</seg>
       </tuv>
       <tuv lang="JA" changedate="20120312T124427Z" changeid="kodai">
+        <seg>特権管理者のみがユーザーのメディアを削除できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Only Zabbix Admins can remove user media.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T121939Z" changeid="kodai">
         <seg>特権管理者のみがユーザーのメディアを削除できます。</seg>
       </tuv>
     </tu>
@@ -19728,10 +19872,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP bcmath extension missing (PHP configuration parameter --enable-bcmath)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122021Z" changeid="kodai">
+        <seg>PHP bcmathモジュールが存在しません (PHPのconfigure時のパラメータ --enable-bcmath)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP bcmath module missing (PHP configuration parameter --enable-bcmath)</seg>
       </tuv>
       <tuv lang="JA" changedate="20111109T135003Z" changeid="kodai">
         <seg>PHP bcmathモジュールが存在しません (PHPのconfigure時のパラメータ --enable-bcmath)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP ctype extension missing (PHP configuration parameter --enable-ctype)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122027Z" changeid="kodai">
+        <seg>PHP ctypeモジュールが存在しません (PHPのconfigure時のパラメータ --enable-ctype)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19752,10 +19912,82 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP gd FreeType support</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122112Z" changeid="kodai">
+        <seg>PHP gd FreeTypeのサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP gd FreeType support missing</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122120Z" changeid="kodai">
+        <seg>PHP gd FreeTypeがサポートされていません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP gd JPEG image support missing</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122128Z" changeid="kodai">
+        <seg>PHP gd JPEGイメージがサポートされていません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP gd JPEG support</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122135Z" changeid="kodai">
+        <seg>PHP gd JPEGのサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP gd PNG image support missing</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122146Z" changeid="kodai">
+        <seg>PHP gd PNGイメージがサポートされていません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP gd PNG support</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122151Z" changeid="kodai">
+        <seg>PHP gd PNGのサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP gd extension missing (PHP configuration parameter --with-gd)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122212Z" changeid="kodai">
+        <seg>PHP GDモジュールが存在しません (PHPのconfigure時のパラメータ --with-gd)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP gettext extension missing (PHP configuration parameter --with-gettext)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122233Z" changeid="kodai">
+        <seg>PHP gettextモジュールが存在しません (PHPのconfigure時のパラメータ --with-gettext)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP gettext module missing (PHP configuration parameter --enable-gettext)</seg>
       </tuv>
       <tuv lang="JA" changedate="20111109T135042Z" changeid="kodai">
         <seg>PHP gettextモジュールが存在しません (PHPのconfigure時のパラメータ --enable-gettext)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP libxml extension missing</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122242Z" changeid="kodai">
+        <seg>PHP libxmlモジュールが存在しません</seg>
       </tuv>
     </tu>
     <tu>
@@ -19784,6 +20016,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP mbstring extension missing (PHP configuration parameter --enable-mbstring)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122301Z" changeid="kodai">
+        <seg>PHP mbstringモジュールが存在しません (PHPのconfigure時のパラメータ --enable-mbstring)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP mbstring module missing (PHP configuration parameter --enable-mbstring)</seg>
       </tuv>
       <tuv lang="JA" changedate="20111109T135112Z" changeid="kodai">
@@ -19800,6 +20040,46 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP option max_execution_time</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122315Z" changeid="kodai">
+        <seg>PHP max_execution_timeオプション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP option max_input_time</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122321Z" changeid="kodai">
+        <seg>PHP max_input_timeオプション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP option memory_limit</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122330Z" changeid="kodai">
+        <seg>PHP memory_limitオプション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP option post_max_size</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122336Z" changeid="kodai">
+        <seg>PHP post_max_sizeオプション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP option upload_max_filesize</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122341Z" changeid="kodai">
+        <seg>PHP upload_max_filesizeオプション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP post max size</seg>
       </tuv>
       <tuv lang="JA">
@@ -19808,10 +20088,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP session extension missing (PHP configuration parameter --enable-session)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122346Z" changeid="kodai">
+        <seg>PHP sessionモジュールが存在しません (PHPのconfigure時のパラメータ --enable-session)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP session module missing (PHP configuration parameter --enable-session)</seg>
       </tuv>
       <tuv lang="JA" changedate="20111109T135132Z" changeid="kodai">
         <seg>PHP sessionモジュールが存在しません (PHPのconfigure時のパラメータ --enable-session)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP sockets extension missing (PHP configuration parameter --enable-sockets)</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122350Z" changeid="kodai">
+        <seg>PHP socketsモジュールが存在しません (PHPのconfigure時のパラメータ --enable-sockets)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19848,9 +20144,25 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP xmlreader extension missing</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122358Z" changeid="kodai">
+        <seg>PHP xmlreaderモジュールが存在しません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP xmlreader module missing</seg>
       </tuv>
       <tuv lang="JA" changedate="20120520T081622Z" changeid="kodai">
+        <seg>PHP xmlreaderモジュールが存在しません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP xmlwriter extension missing</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122403Z" changeid="kodai">
         <seg>PHP xmlreaderモジュールが存在しません</seg>
       </tuv>
     </tu>
@@ -19876,14 +20188,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>プレーンテキスト</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>POP</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>POP</seg>
       </tuv>
     </tu>
     <tu>
@@ -20590,6 +20894,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>php-ldapモジュールが見つかりません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Probably php-ldap module is missing.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122414Z" changeid="kodai">
+        <seg>php-ldapモジュールが見つかりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27756,6 +28068,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Y axis MAX value must be greater than Y axis MIN value.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T122456Z" changeid="kodai">
+        <seg>Y軸の最大値はY軸の最小値よりも大きな値を設定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Y axis MIN value</seg>
       </tuv>
       <tuv lang="JA">
@@ -28268,6 +28588,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix server activity check interval</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T123146Z" changeid="kodai">
+        <seg>Zabbixサーバーの動作チェック間隔</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Zabbix server daemon not running;
 4.</seg>
       </tuv>
@@ -28310,6 +28638,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Zabbix server is running check interval &quot;%1$s&quot;.</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T123138Z" changeid="kodai">
+        <seg>Zabbixサーバーの動作チェック間隔&quot;%1$s&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Zabbix server might be down!</seg>
+      </tuv>
+      <tuv lang="JA" changedate="20120619T123157Z" changeid="kodai">
+        <seg>Zabbixサーバが停止しています！</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Zabbix server name</seg>
       </tuv>
       <tuv lang="JA" changedate="20120507T125254Z" changeid="kodai">
@@ -28346,14 +28690,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>ズーム</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>[H:i:s]</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>[H:i:s]</seg>
       </tuv>
     </tu>
     <tu>
