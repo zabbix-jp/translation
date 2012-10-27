@@ -510,6 +510,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Absolute difference between last and previous value is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T035955Z">
+        <seg>最新値と前回値の絶対値の差 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Absolute difference between last and previous value is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040002Z">
+        <seg>最新値と前回値の絶対値の差 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Absolute difference between last and previous value is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040005Z">
+        <seg>最新値と前回値の絶対値の差 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Absolute difference between last and previous value is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040019Z">
+        <seg>最新値と前回値の絶対値の差 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Acceptable SLA</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120520T075424Z">
@@ -1734,18 +1766,42 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Axis side</seg>
+        <seg>Average value of a period T is &lt; N</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>軸の位置</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040048Z">
+        <seg>期間Tの値の平均値 &lt; N</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>B</seg>
+        <seg>Average value of a period T is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040050Z">
+        <seg>期間Tの値の平均値 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Average value of a period T is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040052Z">
+        <seg>期間Tの値の平均値is &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Average value of a period T is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040057Z">
+        <seg>期間Tの値の平均値 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Axis side</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>B</seg>
+        <seg>軸の位置</seg>
       </tuv>
     </tu>
     <tu>
@@ -1790,14 +1846,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Base DN</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Base DN</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Basic authentication</seg>
       </tuv>
       <tuv lang="JA">
@@ -1806,34 +1854,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Bind DN</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Bind DN</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Bind Password</seg>
       </tuv>
       <tuv lang="JA">
         <seg>Bind Password</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Bind password</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211837Z">
-        <seg>Bind password</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Black &amp; Blue</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Black &amp; Blue</seg>
       </tuv>
     </tu>
     <tu>
@@ -2886,10 +2910,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot create circular dependencies.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040131Z">
+        <seg>循環する依存関係は作成できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot create dependency</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120422T115425Z">
         <seg>依存関係を作成できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot create dependency on trigger itself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040149Z">
+        <seg>自身に対する依存関係は作成できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3062,6 +3102,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot delete graphs created by low level discovery.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040300Z">
+        <seg>ローレベルディスカバリによって作成されたグラフは削除できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot delete group</seg>
       </tuv>
       <tuv lang="JA">
@@ -3122,6 +3170,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>アイテムを削除できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot delete items created by low level discovery.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040319Z">
+        <seg>ローレベルディスカバリによって作成されたアイテムは削除できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3326,6 +3382,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot delete trigger prototype</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040333Z">
+        <seg>トリガープロトタイプを削除できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot delete trigger.</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20111020T061221Z">
@@ -3338,6 +3402,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>トリガーを削除できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot delete triggers created by low level discovery.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040350Z">
+        <seg>ローレベルディスカバリによって作成されたトリガーは削除できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4054,6 +4126,54 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cannot set "templateid" for application "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040424Z">
+        <seg>アプリケーション"%1$s"に"templateid"を設定できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot set "templateid" for graph "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040443Z">
+        <seg>グラフ"%1$s"に"templateid"を設定できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot set "templateid" for item "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040458Z">
+        <seg>アイテム"%1$s"に"templateid"を設定できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot set "templateid" for screen "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040515Z">
+        <seg>スクリーン"%1$s"に"templateid"を設定できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot set "templateid" for trigger "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040527Z">
+        <seg>トリガー"%1$s"に"templateid"を設定できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot set "templateid" for trigger prototype "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040923Z">
+        <seg>トリガーのプロトタイプ"%1$s"に"templateid"を設定できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cannot switch host for interface.</seg>
       </tuv>
       <tuv lang="JA" changeid="atsushi" changedate="20120422T142114Z">
@@ -4146,6 +4266,54 @@
       </tuv>
       <tuv lang="JA">
         <seg>更新できません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot update "templateid" for application "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040708Z">
+        <seg>アプリケーション"%1$s"の"templateid"を更新できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot update "templateid" for graph "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040747Z">
+        <seg>グラフ"%1$s"の"templateid"を更新できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot update "templateid" for item "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040805Z">
+        <seg>アイテム"%1$s"の"templateid"を更新できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot update "templateid" for screen "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040823Z">
+        <seg>スクリーン"%1$s"の"templateid"を更新できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot update "templateid" for trigger "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040842Z">
+        <seg>トリガー"%1$s"の"templateid"を更新できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot update "templateid" for trigger prototype "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T040907Z">
+        <seg>トリガーのプロトタイプ"%1$s"の"templateid"を更新できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6030,6 +6198,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Current date is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041633Z">
+        <seg>現在の年月日 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Current date is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041635Z">
+        <seg>現在の年月日 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Current date is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041637Z">
+        <seg>現在の年月日 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Current date is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041644Z">
+        <seg>現在の年月日 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Current host</seg>
       </tuv>
       <tuv lang="JA">
@@ -6042,6 +6242,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>現在のノード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Current time is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041159Z">
+        <seg>現在の時刻 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Current time is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041208Z">
+        <seg>現在の時刻 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Current time is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041214Z">
+        <seg>現在の時刻 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Current time is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T041220Z">
+        <seg>現在の時刻 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -6510,10 +6742,74 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Day of month is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042002Z">
+        <seg>現在の月の日付 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Day of month is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042004Z">
+        <seg>現在の月の日付 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Day of month is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042008Z">
+        <seg>現在の月の日付 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Day of month is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042011Z">
+        <seg>現在の月の日付 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Day of week</seg>
       </tuv>
       <tuv lang="JA">
         <seg>曜日</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Day of week is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042116Z">
+        <seg>現在の曜日 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Day of week is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042120Z">
+        <seg>現在の曜日 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Day of week is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042123Z">
+        <seg>現在の曜日 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Day of week is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T042128Z">
+        <seg>現在の曜日 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -7574,6 +7870,86 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Difference between MAX and MIN value of a period T is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T043735Z">
+        <seg>期間Tの間の最大値と最小値の差 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between MAX and MIN value of a period T is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T043738Z">
+        <seg>期間Tの間の最大値と最小値の差 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between MAX and MIN value of a period T is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T043740Z">
+        <seg>期間Tの間の最大値と最小値の差 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between MAX and MIN value of a period T is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T043745Z">
+        <seg>期間Tの間の最大値と最小値の差 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and preceding values, then N = 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T114208Z">
+        <seg>最新値と前回値が異なる N = 1、その他の場合 N = 0 (=条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and preceding values, then N NOT 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T114221Z">
+        <seg>最新値と前回値が異なる N = 1、その他の場合 N = 0 (#条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value of a period T is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T114332Z">
+        <seg>最新値と前回値の差 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value of a period T is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T114348Z">
+        <seg>最新値と前回値の差 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value of a period T is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T114346Z">
+        <seg>最新値と前回値の差 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value of a period T is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T114342Z">
+        <seg>最新値と前回値の差 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dimension (cols x rows)</seg>
       </tuv>
       <tuv lang="JA">
@@ -8298,6 +8674,14 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120312T094512Z">
         <seg>ドロップダウンの選択を記憶する [%1$s]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Duplicate dependencies in trigger "%1$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T090525Z">
+        <seg>トリガー"%1$s"の依存関係が重複しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9074,6 +9458,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>イベントID</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Event ID of last log entry matching regular expression T, then N = 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T120706Z">
+        <seg>最新のログのイベントIDが正規表現と一致 N = 1、その他の場合 N = 0 (=条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Event ID of last log entry matching regular expression T, then N NOT 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T120726Z">
+        <seg>最新のログのイベントIDが正規表現と一致 N = 1、その他の場合 N = 0 (#条件)</seg>
       </tuv>
     </tu>
     <tu>
@@ -9902,10 +10302,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Find string V in last (most recent) value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T120920Z">
+        <seg>最新値に文字列Vが存在する場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finish</seg>
       </tuv>
       <tuv lang="JA">
         <seg>終了</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finnish (fi_FI)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T121015Z">
+        <seg>フィンランド語 (fi_FI)</seg>
       </tuv>
     </tu>
     <tu>
@@ -10390,6 +10806,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Graph "%1$s" does not exist on template "%2$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T090639Z">
+        <seg>グラフ"%1$s"はテンプレート"%2$s"に存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Graph "%1$s" skipped - user rule.</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120725T075051Z">
@@ -10602,6 +11026,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>"%1$s"の名前を持つグラフがすでに存在します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Graph with name "%1$s" already exists in graphs or graph prototypes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T111913Z">
+        <seg>"%1$s"の名前を持つグラフはグラフもしくはグラフのプロトタイプにすでに存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12886,6 +13318,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect column span provided for screen element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112036Z">
+        <seg>スクリーンの要素に正しくないセルの幅が指定されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect command</seg>
       </tuv>
       <tuv lang="JA">
@@ -13654,6 +14094,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect row span provided for screen element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112013Z">
+        <seg>スクリーンの要素に正しくないセルの高さが指定されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect screen ID "%s" provided for screen element.</seg>
       </tuv>
       <tuv lang="JA">
@@ -14120,6 +14568,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Indonesian (id_ID)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112046Z">
+        <seg>インドネシア語 (id_ID)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Infinity</seg>
       </tuv>
       <tuv lang="JA">
@@ -14564,6 +15020,14 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120430T085056Z">
         <seg>アイテム"%1$s"はフィールド番号が存在しないホストインベントリ"%2$d"を自動設定することができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Item "%1$s" does not exist on template "%2$s".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112107Z">
+        <seg>アイテム"%1$s"はテンプレート"%2$s"に存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15416,6 +15880,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Last (most recent) T value is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T121144Z">
+        <seg>最新(T秒前/T個前)の値 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Last (most recent) T value is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T121152Z">
+        <seg>最新(T秒前/T個前)の値 &lt; N = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Last (most recent) T value is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T121154Z">
+        <seg>最新(T秒前/T個前)の値 &lt; N &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Last (most recent) T value is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T121157Z">
+        <seg>最新(T秒前/T個前)の値 &lt; N NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Last 20 issues</seg>
       </tuv>
       <tuv lang="JA">
@@ -15864,6 +16360,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Log severity of the last log entry is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112359Z">
+        <seg>最新のログの深刻度 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Log severity of the last log entry is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112403Z">
+        <seg>最新のログの深刻度 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Log severity of the last log entry is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112405Z">
+        <seg>最新のログの深刻度 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Log severity of the last log entry is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112411Z">
+        <seg>最新のログの深刻度 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Log time format</seg>
       </tuv>
       <tuv lang="JA">
@@ -16160,10 +16688,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Macro with globalmacroid "%1$s" does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112450Z">
+        <seg>globalmacroid "%1$s"を持つマクロは存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Macro with hostmacroid "%1$s" does not exist.</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120422T124546Z">
-        <seg>hostmacroid "%1$s"を持つマクロが存在しません</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112456Z">
+        <seg>hostmacroid "%1$s"を持つマクロは存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16648,6 +17184,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Maximum value for period of time is T &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112519Z">
+        <seg>期間Tの値の最大値&lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maximum value for period of time is T = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112522Z">
+        <seg>期間Tの値の最大値 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maximum value for period of time is T &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112524Z">
+        <seg>期間Tの値の最大値 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maximum value for period of time is T NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112528Z">
+        <seg>期間Tの値の最大値 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Maximum visible host name length is %2$d characters, "%3$s" is %1$d character.</seg>
       </tuv>
       <tuv lang="JA">
@@ -17072,6 +17640,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Minimum value for period of time is T &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112539Z">
+        <seg>期間Tの値の最小値 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum value for period of time is T = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112541Z">
+        <seg>期間Tの値の最小値 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum value for period of time is T &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112543Z">
+        <seg>期間Tの値の最小値 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum value for period of time is T NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112546Z">
+        <seg>期間Tの値の最小値 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Minor problem</seg>
       </tuv>
       <tuv lang="JA">
@@ -17340,6 +17940,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>ミュート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>N = 1 - if found, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T120954Z">
+        <seg>N = 1、その他の場合 N = 0 (=条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>N NOT 1 - if found, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T121000Z">
+        <seg>N = 1、その他の場合 N = 0 (#条件)</seg>
       </tuv>
     </tu>
     <tu>
@@ -17952,6 +18568,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No data received during period of time T, if N = 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112800Z">
+        <seg>期間Tの間にデータが存在しない N= 1、それ以外 N = 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No data received during period of time T, if N NOT 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112831Z">
+        <seg>期間Tの間にデータが存在しない N NOT 1、それ以外 N = 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No default interface for "%1$s" type on "%2$s".</seg>
       </tuv>
       <tuv lang="JA" changeid="atsushi" changedate="20120423T131653Z">
@@ -18052,6 +18684,14 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120312T101905Z">
         <seg>エラーはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No events</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112843Z">
+        <seg>イベントはありません</seg>
       </tuv>
     </tu>
     <tu>
@@ -19672,6 +20312,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Number of seconds since the Epoch is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112922Z">
+        <seg>エポック時間からの経過秒数 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of seconds since the Epoch is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112924Z">
+        <seg>エポック時間からの経過秒数 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of seconds since the Epoch is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112926Z">
+        <seg>エポック時間からの経過秒数 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of seconds since the Epoch is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T112929Z">
+        <seg>エポック時間からの経過秒数 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Number of status changes</seg>
       </tuv>
       <tuv lang="JA">
@@ -19684,6 +20356,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>ステップ数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period of time T &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122339Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period of time T = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122342Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period of time T &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122344Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period of time T NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122347Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -20744,6 +21448,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP session auto start must be disabled (PHP directive "session.auto_start")</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122446Z">
+        <seg>PHP session auto startは無効に設定する必要があります (PHPのパラメータsession.auto_start)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP session extension missing (PHP configuration parameter --enable-session)</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120619T122346Z">
@@ -20760,14 +21472,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>PHP sockets</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211851Z">
-        <seg>PHP sockets</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>PHP sockets extension missing (PHP configuration parameter --enable-sockets)</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120619T122350Z">
@@ -20780,14 +21484,6 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20111109T135154Z">
         <seg>PHP socketsモジュールが存在しません (PHPのconfigure時のパラメータ --enable-sockets)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>PHP time zone</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211852Z">
-        <seg>PHP time zone</seg>
       </tuv>
     </tu>
     <tu>
@@ -21232,6 +21928,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Persian (fa_IR)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113006Z">
+        <seg>ペルシャ語 (fa_IR)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Peta</seg>
       </tuv>
       <tuv lang="JA">
@@ -21462,6 +22166,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>前</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous value is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113016Z">
+        <seg>前回の値 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous value is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113018Z">
+        <seg>前回の値 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous value is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113020Z">
+        <seg>前回の値 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous value is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113022Z">
+        <seg>前回の値 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -22130,6 +22866,38 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Regular expression V matching last value in period T, then N = 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122747Z">
+        <seg>最新(T秒前/T個前)の値が正規表現Vに一致する場合 N = 1、その他の場合 N = 0 (=条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Regular expression V matching last value in period T, then N = 1, 0 - otherwise (non case-sensitive)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122806Z">
+        <seg>最新(T秒前/T個前)の値が正規表現Vに一致する場合 N = 1、その他の場合 N = 0 (=条件、大文字小文字を区別しない)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Regular expression V matching last value in period T, then N NOT 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122752Z">
+        <seg>最新(T秒前/T個前)の値が正規表現Vに一致する場合 N = 1、その他の場合 N = 0 (#条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Regular expression V matching last value in period T, then N NOT 1, 0 - otherwise (non case-sensitive)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122812Z">
+        <seg>最新(T秒前/T個前)の値が正規表現Vに一致する場合 N = 1、その他の場合 N = 0 (#条件、大文字小文字を区別しない)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Regular expression added</seg>
       </tuv>
       <tuv lang="JA">
@@ -22428,8 +23196,8 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>Required host permissions</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>ホストの権限が必要です</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T123323Z">
+        <seg>必要なホストへのアクセス権</seg>
       </tuv>
     </tu>
     <tu>
@@ -22858,14 +23626,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>S</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>S</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>SCENARIOS</seg>
       </tuv>
       <tuv lang="JA">
@@ -22930,34 +23690,10 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>SLA</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>SLA</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>SLIDE SHOWS</seg>
       </tuv>
       <tuv lang="JA">
         <seg>スライドショー</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>SMS</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>SMS</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>SMTP</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>SMTP</seg>
       </tuv>
     </tu>
     <tu>
@@ -22970,14 +23706,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>SMTP helo</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>SMTP helo</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>SMTP server</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120507T125219Z">
@@ -22986,26 +23714,10 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>SNMP</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211854Z">
-        <seg>SNMP</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>SNMP Key</seg>
       </tuv>
       <tuv lang="JA">
         <seg>SNMPキー</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>SNMP OID</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>SNMP OID</seg>
       </tuv>
     </tu>
     <tu>
@@ -23186,14 +23898,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>SSH</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>SSH</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>SSH agent</seg>
       </tuv>
       <tuv lang="JA">
@@ -23238,14 +23942,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120507T125213Z">
         <seg>Zabbixサーバーの状態</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Safari</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211854Z">
-        <seg>Safari</seg>
       </tuv>
     </tu>
     <tu>
@@ -23458,6 +24154,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Screen "%1$s" already exists on template "%2$2".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113057Z">
+        <seg>スクリーン"%1$s"はテンプレート"%2$2"にすでに存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Screen "%1$s" already exists.</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120312T125222Z">
@@ -23502,6 +24206,22 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>スクリーンを削除しました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Screen elements column span is too big.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113112Z">
+        <seg>スクリーンのセルの幅が大きすぎます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Screen elements row span is too big.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113124Z">
+        <seg>スクリーンのセルの高さが大きすぎます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25148,14 +25868,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Start in</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211855Z">
-        <seg>Start in</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>State</seg>
       </tuv>
       <tuv lang="JA">
@@ -25372,14 +26084,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Straight</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211856Z">
-        <seg>Straight</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Style</seg>
       </tuv>
       <tuv lang="JA">
@@ -25424,6 +26128,38 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>成功の監査</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sum of values for period of time is T &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113142Z">
+        <seg>期間Tの値の合計値 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sum of values for period of time is T NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113146Z">
+        <seg>期間Tの値の合計値 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sum of values of a period T is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113149Z">
+        <seg>期間Tの値の合計値 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sum of values of a period T is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T113153Z">
+        <seg>期間Tの値の合計値 &gt; N</seg>
       </tuv>
     </tu>
     <tu>
@@ -25536,22 +26272,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>システムステータス</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>T</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>T</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>TCP</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>TCP</seg>
       </tuv>
     </tu>
     <tu>
@@ -25686,8 +26406,8 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>Target list</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>ターゲットリストTarget list</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T123635Z">
+        <seg>ターゲットリスト</seg>
       </tuv>
     </tu>
     <tu>
@@ -25696,14 +26416,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ターゲットタイプ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Telnet</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211856Z">
-        <seg>Telnet</seg>
       </tuv>
     </tu>
     <tu>
@@ -26328,6 +27040,22 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>タイムスタンプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Timestamp not different from Zabbix server time for more than T seconds, then N = 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122909Z">
+        <seg>タイムスタンプがZabbixサーバの時刻とT秒以上の差がある場合 N = 1、その他の場合 N =0 (=条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Timestamp not different from Zabbix server time for more than T seconds, then N NOT 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T122913Z">
+        <seg>タイムスタンプがZabbixサーバの時刻とT秒以上の差がある場合 N = 1、その他の場合 N =0 (#条件)</seg>
       </tuv>
     </tu>
     <tu>
@@ -29934,14 +30662,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>and</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211903Z">
-        <seg>and</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>and can't be deleted</seg>
       </tuv>
       <tuv lang="JA">
@@ -29952,24 +30672,24 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>as Blue</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211903Z">
-        <seg>as Blue</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T123756Z">
+        <seg>青</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>as Green</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211903Z">
-        <seg>as Green</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T123759Z">
+        <seg>緑</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>as Red</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211904Z">
-        <seg>as Red</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121027T123802Z">
+        <seg>赤</seg>
       </tuv>
     </tu>
     <tu>
@@ -30042,14 +30762,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ctypeモジュール</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>d</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211904Z">
-        <seg>d</seg>
       </tuv>
     </tu>
     <tu>
@@ -30134,14 +30846,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>dd</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211905Z">
-        <seg>dd</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>default</seg>
       </tuv>
       <tuv lang="JA">
@@ -30206,22 +30910,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>every</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211906Z">
-        <seg>every</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>exactly</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211907Z">
-        <seg>exactly</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>executed</seg>
       </tuv>
       <tuv lang="JA">
@@ -30242,14 +30930,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>回のログイン失敗がログに記録されています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>fixed</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>fixed</seg>
       </tuv>
     </tu>
     <tu>
@@ -30278,14 +30958,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>found</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>found</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>from</seg>
       </tuv>
       <tuv lang="JA">
@@ -30302,14 +30974,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>h</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>h</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>has been deleted from the system</seg>
       </tuv>
       <tuv lang="JA">
@@ -30322,14 +30986,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>はテンプレートのトリガーとの依存関係が設定されています</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>hh</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211907Z">
-        <seg>hh</seg>
       </tuv>
     </tu>
     <tu>
@@ -30426,14 +31082,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>間違った文字 '%1$s' が %2$d 付近に見つかりました</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>is</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211908Z">
-        <seg>is</seg>
       </tuv>
     </tu>
     <tu>
@@ -30638,14 +31286,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>m</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>m</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>m.d.Y H:i:s</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120422T164811Z">
@@ -30718,22 +31358,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>mm</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211909Z">
-        <seg>mm</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>ms</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211909Z">
-        <seg>ms</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>multibyte chars are restricted</seg>
       </tuv>
       <tuv lang="JA">
@@ -30786,14 +31410,6 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>新規</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>no</seg>
-      </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211910Z">
-        <seg>no</seg>
       </tuv>
     </tu>
     <tu>
@@ -30854,22 +31470,6 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>of</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>of</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>of every</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>of every</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>of key</seg>
       </tuv>
       <tuv lang="JA">
@@ -30878,26 +31478,10 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>on</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>on</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>option in</seg>
       </tuv>
       <tuv lang="JA">
         <seg>次のファイルのオプションに</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>or</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>or</seg>
       </tuv>
     </tu>
     <tu>
