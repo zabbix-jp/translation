@@ -1,15 +1,15 @@
-10/27/12 9:38 PM
+10/30/12 11:57 PM
 Project Statistics
 
                  	Segments	Words	Characters (without spaces)	Characters (including spaces)	
-Total:           	    5907	23193	                     122679	                       138871	
-Remaining:       	     101	  272	                       1245	                         1404	
-Unique:          	    2978	12223	                      64155	                        72855	
-Unique Remaining:	      52	  212	                       1062	                         1209	
+Total:           	    5907	23177	                     122641	                       138817	
+Remaining:       	       3	    7	                         56	                           60	
+Unique:          	    2978	12207	                      64116	                        72800	
+Unique Remaining:	       3	    7	                         56	                           60	
 
 
 Individual File Statistics:
 
 File Name        	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (without spaces)	Remaining Characters (without spaces)	Unique Characters (without spaces)	Unique Remaining Characters (without spaces)	Total Characters (including spaces)	Remaining Characters (including spaces)	Unique Characters (including spaces)	Unique Remaining Characters (including spaces)	
-frontend-2.0.po  	          3010	                54	           2925	                       49	      12076	            210	       11794	                   205	                            63461	                                 1011	                             61988	                                        1006	                              72022	                                   1154	                               70381	                                          1149	
-frontend-trunk.po	          2897	                47	             53	                        3	      11117	             62	         429	                     7	                            59218	                                  234	                              2167	                                          56	                              66849	                                    250	                                2474	                                            60	
+frontend-2.0.po  	          3010	                 0	           2925	                        0	      12060	              0	       11778	                     0	                            63422	                                    0	                             61949	                                           0	                              71967	                                      0	                               70326	                                             0	
+frontend-trunk.po	          2897	                 3	             53	                        3	      11117	              7	         429	                     7	                            59219	                                   56	                              2167	                                          56	                              66850	                                     60	                                2474	                                            60	

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.5.5" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.5.5_3" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -1806,6 +1806,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>B</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145529Z">
+        <seg>B</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>BACK</seg>
       </tuv>
       <tuv lang="JA">
@@ -1846,6 +1854,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base DN</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145530Z">
+        <seg>Base DN</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Basic authentication</seg>
       </tuv>
       <tuv lang="JA">
@@ -1854,10 +1870,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Bind DN</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145531Z">
+        <seg>Bind DN</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Bind Password</seg>
       </tuv>
       <tuv lang="JA">
         <seg>Bind Password</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Bind password</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145531Z">
+        <seg>Bind password</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Black &amp; Blue</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145532Z">
+        <seg>Black &amp; Blue</seg>
       </tuv>
     </tu>
     <tu>
@@ -7914,6 +7954,38 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T114221Z">
         <seg>最新値と前回値が異なる N = 1、その他の場合 N = 0 (#条件)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T140346Z">
+        <seg>最新値と前回値の差 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T140348Z">
+        <seg>最新値と前回値の差 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T140350Z">
+        <seg>最新値と前回値の差 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Difference between last and previous value is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T140353Z">
+        <seg>最新値と前回値の差 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -16104,6 +16176,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Length of last (most recent) T value in characters is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T141756Z">
+        <seg>最新(T秒前/T個前)の文字列の長さ &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Length of last (most recent) T value in characters is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T141758Z">
+        <seg>最新(T秒前/T個前)の文字列の長さ = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Length of last (most recent) T value in characters is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T141800Z">
+        <seg>最新(T秒前/T個前)の文字列の長さ &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Length of last (most recent) T value in characters is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T141937Z">
+        <seg>最新(T秒前/T個前)の文字列の長さ NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Line</seg>
       </tuv>
       <tuv lang="JA">
@@ -16388,6 +16492,38 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T112411Z">
         <seg>最新のログの深刻度 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Log source of the last log entry matching parameter T, then N &lt; 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T142518Z">
+        <seg>最新のイベントログのログソースに文字列Tと一致 N &lt; 1、その他の場合 N = 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Log source of the last log entry matching parameter T, then N = 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T142522Z">
+        <seg>最新のイベントログのログソースに文字列Tと一致 N = 1、その他の場合 N = 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Log source of the last log entry matching parameter T, then N &gt; 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T142529Z">
+        <seg>最新のイベントログのログソースに文字列Tと一致 N &gt; 1、その他の場合 N = 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Log source of the last log entry matching parameter T, then N NOT 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T142533Z">
+        <seg>最新のイベントログのログソースに文字列Tと一致 N NOT 1、その他の場合 N = 0</seg>
       </tuv>
     </tu>
     <tu>
@@ -21448,6 +21584,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP session auto start</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145532Z">
+        <seg>PHP session auto start</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP session auto start must be disabled (PHP directive "session.auto_start")</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T122446Z">
@@ -21472,6 +21616,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHP sockets</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145534Z">
+        <seg>PHP sockets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHP sockets extension missing (PHP configuration parameter --enable-sockets)</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120619T122350Z">
@@ -21484,6 +21636,14 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20111109T135154Z">
         <seg>PHP socketsモジュールが存在しません (PHPのconfigure時のパラメータ --enable-sockets)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHP time zone</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145534Z">
+        <seg>PHP time zone</seg>
       </tuv>
     </tu>
     <tu>
@@ -22484,6 +22644,38 @@ X-Poedit-Basepath: ../../</seg>
         <seg>Project-Id-Version: Zabbix 1.9
 Report-Msgid-Bugs-To: 
 POT-Creation-Date: 2012-09-08 12:32+0300
+PO-Revision-Date: 2012-06-20 11:12+0200
+Last-Translator: Kodai &lt;kodai74@gmail.com&gt;
+Language-Team: Zabbix
+Language: ja
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=1; plural=0;
+X-Generator: Pootle 2.1.4
+X-Poedit-Basepath: ../../</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project-Id-Version: Zabbix 2.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2012-10-29 13:54+0200
+PO-Revision-Date: 2012-06-20 11:12+0200
+Last-Translator: Kodai &lt;kodai74@gmail.com&gt;
+Language-Team: Zabbix
+Language: ja
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=1; plural=0;
+X-Generator: Pootle 2.1.4
+X-Poedit-Basepath: ../../</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145527Z">
+        <seg>Project-Id-Version: Zabbix 2.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2012-10-29 13:54+0200
 PO-Revision-Date: 2012-06-20 11:12+0200
 Last-Translator: Kodai &lt;kodai74@gmail.com&gt;
 Language-Team: Zabbix
@@ -23626,6 +23818,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>S</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145520Z">
+        <seg>S</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SCENARIOS</seg>
       </tuv>
       <tuv lang="JA">
@@ -23690,10 +23890,34 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SLA</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145520Z">
+        <seg>SLA</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SLIDE SHOWS</seg>
       </tuv>
       <tuv lang="JA">
         <seg>スライドショー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SMS</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145519Z">
+        <seg>SMS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SMTP</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145519Z">
+        <seg>SMTP</seg>
       </tuv>
     </tu>
     <tu>
@@ -23706,6 +23930,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SMTP helo</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145519Z">
+        <seg>SMTP helo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SMTP server</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120507T125219Z">
@@ -23714,10 +23946,26 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SNMP</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145519Z">
+        <seg>SNMP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SNMP Key</seg>
       </tuv>
       <tuv lang="JA">
         <seg>SNMPキー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SNMP OID</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145519Z">
+        <seg>SNMP OID</seg>
       </tuv>
     </tu>
     <tu>
@@ -23898,6 +24146,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SSH</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145516Z">
+        <seg>SSH</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SSH agent</seg>
       </tuv>
       <tuv lang="JA">
@@ -23942,6 +24198,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120507T125213Z">
         <seg>Zabbixサーバーの状態</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Safari</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145537Z">
+        <seg>Safari</seg>
       </tuv>
     </tu>
     <tu>
@@ -25868,6 +26132,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Start in</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145718Z">
+        <seg>開始時刻</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>State</seg>
       </tuv>
       <tuv lang="JA">
@@ -26084,6 +26356,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Straight</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145721Z">
+        <seg>Straight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Style</seg>
       </tuv>
       <tuv lang="JA">
@@ -26276,6 +26556,22 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>T</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145721Z">
+        <seg>T</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>TCP</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145722Z">
+        <seg>TCP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>TELNET agent</seg>
       </tuv>
       <tuv lang="JA">
@@ -26416,6 +26712,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>ターゲットタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Telnet</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145724Z">
+        <seg>Telnet</seg>
       </tuv>
     </tu>
     <tu>
@@ -30662,6 +30966,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>and</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145725Z">
+        <seg>and</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>and can't be deleted</seg>
       </tuv>
       <tuv lang="JA">
@@ -30766,6 +31078,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>d</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145726Z">
+        <seg>d</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>d M Y</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120422T164650Z">
@@ -30846,6 +31166,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>dd</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145727Z">
+        <seg>dd</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>default</seg>
       </tuv>
       <tuv lang="JA">
@@ -30910,6 +31238,22 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>every</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145728Z">
+        <seg>every</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>exactly</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145728Z">
+        <seg>exactly</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>executed</seg>
       </tuv>
       <tuv lang="JA">
@@ -30930,6 +31274,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>回のログイン失敗がログに記録されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>fixed</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145729Z">
+        <seg>fixed</seg>
       </tuv>
     </tu>
     <tu>
@@ -30958,6 +31310,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>found</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145729Z">
+        <seg>found</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>from</seg>
       </tuv>
       <tuv lang="JA">
@@ -30974,6 +31334,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>h</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145729Z">
+        <seg>h</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>has been deleted from the system</seg>
       </tuv>
       <tuv lang="JA">
@@ -30986,6 +31354,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>はテンプレートのトリガーとの依存関係が設定されています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>hh</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145730Z">
+        <seg>hh</seg>
       </tuv>
     </tu>
     <tu>
@@ -31082,6 +31458,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>間違った文字 '%1$s' が %2$d 付近に見つかりました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>is</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145731Z">
+        <seg>is</seg>
       </tuv>
     </tu>
     <tu>
@@ -31286,6 +31670,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>m</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145731Z">
+        <seg>m</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>m.d.Y H:i:s</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120422T164811Z">
@@ -31358,6 +31750,22 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>mm</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145731Z">
+        <seg>mm</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145732Z">
+        <seg>ms</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>multibyte chars are restricted</seg>
       </tuv>
       <tuv lang="JA">
@@ -31410,6 +31818,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>新規</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>no</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145732Z">
+        <seg>no</seg>
       </tuv>
     </tu>
     <tu>
@@ -31470,6 +31886,22 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>of</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145732Z">
+        <seg>of</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>of every</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145733Z">
+        <seg>of every</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>of key</seg>
       </tuv>
       <tuv lang="JA">
@@ -31478,10 +31910,26 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>on</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145733Z">
+        <seg>on</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>option in</seg>
       </tuv>
       <tuv lang="JA">
         <seg>次のファイルのオプションに</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>or</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145733Z">
+        <seg>or</seg>
       </tuv>
     </tu>
     <tu>
@@ -31560,7 +32008,7 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>s</seg>
       </tuv>
-      <tuv lang="JA">
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145734Z">
         <seg>s</seg>
       </tuv>
     </tu>
@@ -31656,7 +32104,7 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>to</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211826Z">
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145734Z">
         <seg>to</seg>
       </tuv>
     </tu>
@@ -31760,7 +32208,7 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>w</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211825Z">
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145735Z">
         <seg>w</seg>
       </tuv>
     </tu>
@@ -31808,7 +32256,7 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>y</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211747Z">
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145735Z">
         <seg>y</seg>
       </tuv>
     </tu>
@@ -31824,7 +32272,7 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>yes</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211746Z">
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145736Z">
         <seg>yes</seg>
       </tuv>
     </tu>
@@ -31832,8 +32280,16 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>yyyy</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211746Z">
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145736Z">
         <seg>yyyy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>¬µ</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121030T145737Z">
+        <seg>¬µ</seg>
       </tuv>
     </tu>
     <tu>
