@@ -5126,6 +5126,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Column span of screen element located at X - %1$s and Y - %2$s is too big.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T063249Z">
+        <seg>X - %1$s、Y - %2$sに設定されているスクリーンの列の幅が大きすぎます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Columns</seg>
       </tuv>
       <tuv lang="JA">
@@ -10318,6 +10326,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>File format is unsupported.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ファイルフォーマットがサポートされていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>File is too big, max upload size is %1$s bytes.</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120422T121758Z">
@@ -12686,6 +12702,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Identical expression already exists</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121105T061546Z">
+        <seg>同じ設定の正規表現がすでに存在します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Idle till</seg>
       </tuv>
       <tuv lang="JA">
@@ -12742,10 +12766,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Image load error [%1$s] in [%2$s].</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>[%2$s]内の[%1$s]のイメージの読み込みエラー。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Image size must be less than 1MB</seg>
       </tuv>
       <tuv lang="JA">
         <seg>イメージのサイズは1MB以下の必要があります</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Image size must be less than 1MB.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>イメージのサイズは1MB未満にしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13386,6 +13426,14 @@
       </tuv>
       <tuv lang="JA" changeid="atsushi" changedate="20120422T152957Z">
         <seg>色"%1$s"が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incorrect column span provided for screen element located at X - %1$s and Y - %2$s.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T061935Z">
+        <seg>X - %1$s、Y - %2$sに設定されているスクリーンの列の幅が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14166,6 +14214,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Incorrect row span provided for screen element located at X - %1$s and Y - %2$s.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T061917Z">
+        <seg>X - %1$s、Y - %2$sに設定されているスクリーンの行の高さが正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Incorrect row span provided for screen element.</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T112013Z">
@@ -14880,6 +14936,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Invalid date "%s".</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>日付"%s"が正しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Invalid hostid for macro "%1$s".</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120422T123920Z">
@@ -14900,6 +14964,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>キーのフォーマットが間違っています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Invalid maintenance period</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>メンテナンス期間が正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15962,24 +16034,24 @@
       <tuv lang="EN-US">
         <seg>Last (most recent) T value is = N</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20121027T121152Z">
-        <seg>最新(T秒前/T個前)の値 &lt; N = N</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062604Z">
+        <seg>最新(T秒前/T個前)の値 = N</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Last (most recent) T value is &gt; N</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20121027T121154Z">
-        <seg>最新(T秒前/T個前)の値 &lt; N &gt; N</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062607Z">
+        <seg>最新(T秒前/T個前)の値 &gt; N</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Last (most recent) T value is NOT N</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20121027T121157Z">
-        <seg>最新(T秒前/T個前)の値 &lt; N NOT N</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062612Z">
+        <seg>最新(T秒前/T個前)の値 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -17320,6 +17392,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Maximum value for period T is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062006Z">
+        <seg>期間Tの値の最大値 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maximum value for period T is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062017Z">
+        <seg>期間Tの値の最大値 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maximum value for period T is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062026Z">
+        <seg>期間Tの値の最大値 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maximum value for period T is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062038Z">
+        <seg>期間Tの値の最大値 NOT N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Maximum value for period of time is T &lt; N</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T112519Z">
@@ -17772,6 +17876,38 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120521T162228Z">
         <seg>表示できる最小の期間は%1$s時間です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum value for period T is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062058Z">
+        <seg>期間Tの値の最小値 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum value for period T is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062104Z">
+        <seg>期間Tの値の最小値 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum value for period T is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062107Z">
+        <seg>期間Tの値の最小値 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Minimum value for period T is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062111Z">
+        <seg>期間Tの値の最小値 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -18716,6 +18852,22 @@
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T112831Z">
         <seg>期間Tの間にデータが存在しない N NOT 1、それ以外 N = 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No data received during period of time T, then N = 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062127Z">
+        <seg>期間Tの間にデータが存在しない N= 1、それ以外 N = 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No data received during period of time T, then N NOT 1, 0 - otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062158Z">
+        <seg>期間Tの間にデータが存在しない N NOT 1、それ以外 N NOT 0</seg>
       </tuv>
     </tu>
     <tu>
@@ -20492,6 +20644,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>ステップ数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period T is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062237Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period T is = N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062241Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 = N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period T is &gt; N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062244Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of successfully retrieved values V (which fulfill operator O) for period T is NOT N</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062251Z">
+        <seg>期間T内に含まれる(条件Oを満たす)値Vの個数 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -22280,6 +22464,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Portuguese (pt_PT)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ポルトガル語 (pt_PT)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Position</seg>
       </tuv>
       <tuv lang="JA">
@@ -22676,6 +22868,38 @@ X-Poedit-Basepath: ../../</seg>
         <seg>Project-Id-Version: Zabbix 2.0
 Report-Msgid-Bugs-To: 
 POT-Creation-Date: 2012-10-29 13:54+0200
+PO-Revision-Date: 2012-06-20 11:12+0200
+Last-Translator: Kodai &lt;kodai74@gmail.com&gt;
+Language-Team: Zabbix
+Language: ja
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=1; plural=0;
+X-Generator: Pootle 2.1.4
+X-Poedit-Basepath: ../../</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project-Id-Version: Zabbix 2.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2012-11-02 18:25+0200
+PO-Revision-Date: 2012-06-20 11:12+0200
+Last-Translator: Kodai &lt;kodai74@gmail.com&gt;
+Language-Team: Zabbix
+Language: ja
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=1; plural=0;
+X-Generator: Pootle 2.1.4
+X-Poedit-Basepath: ../../</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121105T061510Z">
+        <seg>Project-Id-Version: Zabbix 2.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2012-11-02 18:25+0200
 PO-Revision-Date: 2012-06-20 11:12+0200
 Last-Translator: Kodai &lt;kodai74@gmail.com&gt;
 Language-Team: Zabbix
@@ -23678,6 +23902,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>行の結合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Row span of screen element located at X - %1$s and Y - %2$s is too big.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062328Z">
+        <seg>X - %1$s、Y - %2$sに設定されているスクリーンの行の高さが正しくありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25782,8 +26014,8 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>Slide show</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>スライドショーの作成</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20121231T062416Z">
+        <seg>スライドショー</seg>
       </tuv>
     </tu>
     <tu>
@@ -26428,6 +26660,14 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sum of values of a period T is &lt; N</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>期間Tの値の合計値 &lt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sum of values of a period T is = N</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T113149Z">
@@ -26440,6 +26680,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20121027T113153Z">
         <seg>期間Tの値の合計値 &gt; N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sum of values of a period T is NOT N</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>期間Tの値の合計値 NOT N</seg>
       </tuv>
     </tu>
     <tu>
@@ -27016,6 +27264,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>テストデータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Test expressions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121105T061553Z">
+        <seg>テスト条件式</seg>
       </tuv>
     </tu>
     <tu>
@@ -28056,6 +28312,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>火曜</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Turkish (tr_TR)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>トルコ語 (tr_TR)</seg>
       </tuv>
     </tu>
     <tu>
@@ -31186,6 +31450,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delimiter</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20121105T061600Z">
+        <seg>区切り文字</seg>
       </tuv>
     </tu>
     <tu>
