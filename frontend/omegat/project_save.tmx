@@ -1958,6 +1958,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Bulgarian (bg_BG)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20130115T035106Z">
+        <seg>ブルガリア語 (bg_BG)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Bulk acknowledge</seg>
       </tuv>
       <tuv lang="JA">
@@ -22914,6 +22922,38 @@ X-Poedit-Basepath: ../../</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Project-Id-Version: Zabbix 2.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2013-01-13 22:25+0200
+PO-Revision-Date: 2012-12-25 07:09+0200
+Last-Translator: Atsushi &lt;a.tanaka77@gmail.com&gt;
+Language-Team: Zabbix
+Language: ja
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=1; plural=0;
+X-Generator: Pootle 2.1.6
+X-Poedit-Basepath: ../../</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20130115T035421Z">
+        <seg>Project-Id-Version: Zabbix 2.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2013-01-13 22:25+0200
+PO-Revision-Date: 2012-12-25 07:09+0200
+Last-Translator: Atsushi &lt;a.tanaka77@gmail.com&gt;
+Language-Team: Zabbix
+Language: ja
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=1; plural=0;
+X-Generator: Pootle 2.1.6
+X-Poedit-Basepath: ../../</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Prototypes</seg>
       </tuv>
       <tuv lang="JA">
@@ -24028,8 +24068,8 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>Run remote commands on hosts</seg>
       </tuv>
-      <tuv lang="JA">
-        <seg>複数ホストでリモートコマンドを実行</seg>
+      <tuv lang="JA" changeid="kodai" changedate="20130115T035025Z">
+        <seg>ホストでリモートコマンドを実行</seg>
       </tuv>
     </tu>
     <tu>
@@ -25392,6 +25432,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA">
         <seg>サービスは同時に親と子になることはできません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Service created</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20130115T035118Z">
+        <seg>サービスを作成しました</seg>
       </tuv>
     </tu>
     <tu>
@@ -32552,7 +32600,7 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>yyyy</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20121030T145736Z">
+      <tuv lang="JA" changeid="kodai" changedate="20130115T035335Z">
         <seg>yyyy</seg>
       </tuv>
     </tu>
@@ -32568,7 +32616,7 @@ X-Poedit-Basepath: ../../</seg>
       <tuv lang="EN-US">
         <seg>µ</seg>
       </tuv>
-      <tuv lang="JA" changeid="kodai" changedate="20120908T211745Z">
+      <tuv lang="JA" changeid="kodai" changedate="20130115T035334Z">
         <seg>µ</seg>
       </tuv>
     </tu>
