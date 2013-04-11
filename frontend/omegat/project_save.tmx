@@ -214,6 +214,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Only super admins can create groups)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20130309T101449Z">
+        <seg>(特権管理者のみがグループを作成できます)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Only superadmins can create group)</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120309T150849Z">
@@ -16472,6 +16480,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Lithuanian (lt_LT)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20130309T101459Z">
+        <seg>リトアニア語 (lt_LT)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Loading...</seg>
       </tuv>
       <tuv lang="JA">
@@ -28672,6 +28688,14 @@ X-Poedit-Basepath: ../../</seg>
       </tuv>
       <tuv lang="JA" changeid="kodai" changedate="20120312T130023Z">
         <seg>選択した設定は行えません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unable to upload file because "file_uploads" is disabled.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="kodai" changedate="20130309T101515Z">
+        <seg>"file_uploads"が無効のためファイルをアップロードできません。</seg>
       </tuv>
     </tu>
     <tu>

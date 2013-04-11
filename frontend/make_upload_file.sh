@@ -27,3 +27,5 @@ OUTFILE=$2
 
 grep -v "msgstr\[1\]" $INFILE > $OUTFILE
 $MSGFMT -c --statistics $OUTFILE
+
+rm -rf message.mo
